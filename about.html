@@ -2,23 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon-32x32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Dr. Sumesh Subramanian, MS Ortho. Founder of OrthoCure Bone & Joint Speciality Clinic in Chennai.">
-  <title>About Dr. Sumesh | OrthoCure Clinic</title>
+  <meta name="description" content="Welcome to OrthoCure Bone & Joint Speciality Clinic – Expert orthopaedic care by Dr. Sumesh Subramanian.">
+  <meta name="keywords" content="orthopaedic, bone clinic, joint pain, arthritis, spine care, chennai orthopaedic doctor">
+  <meta name="author" content="Dr. Sumesh Subramanian">
+  <title>OrthoCure | Dr. Sumesh Subramanian</title>
+  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon-32x32.png">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; }
-    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
-    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; scroll-behavior: smooth; }
+    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.2s; }
+    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.4s; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s ease, transform 0.3s ease; }
+    nav a:hover { color: #FFE082; transform: scale(1.05); }
+    section { max-width: 900px; margin: 40px auto; padding: 0 20px; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.6s; }
     h2 { color: #007B5E; }
-    img.profile-pic { max-width: 150px; border-radius: 100px; float: right; margin-left: 20px; }
+    .cta { background: #007B5E; color: white; padding: 30px 20px; text-align: center; border-radius: 10px; margin: 40px 0; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .cta:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+    .cta a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s ease; }
+    .cta a:hover { background: #e0f2f1; }
+    .highlights { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-top: 40px; }
+    .highlight { flex: 1 1 250px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease; }
+    .highlight:hover { transform: translateY(-5px); }
+    .highlight h3 { color: #007B5E; margin-bottom: 10px; }
+    .highlight p { font-size: 15px; }
+    footer p { margin: 4px 0; font-size: 14px; }
+    footer a { color: #66d9ef; text-decoration: none; }
+    @keyframes fadeIn {
+      to { opacity: 1; transform: none; }
+      from { opacity: 0; transform: translateY(20px); }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>About Dr. Sumesh Subramanian</h1>
-    <p>Founder, OrthoCure Bone & Joint Speciality Clinic</p>
+    <h1>Dr. Sumesh Subramanian, MS Ortho</h1>
+    <p>OrthoCure Bone & Joint Speciality Clinic</p>
+    <p><em>Start Healing. Stay Moving.</em></p>
   </header>
 
   <nav>
@@ -30,16 +50,34 @@
   </nav>
 
   <section>
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2dplLdp0LKKd-xx.jpg" alt="Dr Sumesh" class="profile-pic">
-    <h2>Orthopaedic Surgeon | MS Ortho | Fellowship in Arthroplasty</h2>
-    <p>Dr. Sumesh Subramanian is a board-certified orthopaedic surgeon and founder of OrthoCure Bone & Joint Speciality Clinic, based in Ambattur, Chennai. With expertise in joint care, spine health, and biologics, Dr. Sumesh provides evidence-based, ethical orthopaedic care tailored to each patient.</p>
-    <p>He holds an MS in Orthopaedics and has completed a fellowship in Arthroplasty. As an Assistant Professor and practicing consultant, he combines academic insight with real-world experience to deliver modern and compassionate care.</p>
-    <p>Dr. Sumesh is passionate about patient education and believes in empowering people to understand their conditions, treatments, and options — both online and in-person.</p>
+    <h2>Welcome to OrthoCure</h2>
+    <p>We offer expert orthopaedic care for joint pain, back issues, arthritis, injuries, and more. Consult with Dr. Sumesh Subramanian, a trusted orthopaedic surgeon based in Chennai, to begin your journey to healing.</p>
+
+    <div class="cta">
+      <h3>🩺 Ready to Book Your Consultation?</h3>
+      <a href="/OrthoCure/consult.html">Book Online Now</a>
+    </div>
+
+    <div class="highlights">
+      <div class="highlight">
+        <h3>🦴 Expert Orthopaedic Care</h3>
+        <p>Led by Dr. Sumesh Subramanian, MS Ortho – evidence-based treatment for all musculoskeletal conditions.</p>
+      </div>
+      <div class="highlight">
+        <h3>🏥 Advanced Digital X-ray & Rehab</h3>
+        <p>On-site diagnostics and physiotherapy services designed for faster, safer recovery.</p>
+      </div>
+      <div class="highlight">
+        <h3>💬 Online & In-Person Consults</h3>
+        <p>Book consultations that suit your schedule and comfort, both online and in clinic.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Clinic</p>
-    <p>Email: drsumesh.ortho@gmail.com | TNMC Reg No: 119811</p>
+    <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 Ambattur, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
+    <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
 </body>
 </html>
