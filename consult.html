@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Book an online consultation with Dr. Sumesh Subramanian, OrthoCure Clinic, Chennai.">
-  <title>Consult Online | OrthoCure Clinic</title>
+  <meta name="description" content="Consult with Dr. Sumesh Subramanian at OrthoCure Clinic – Book appointments for online or in-person orthopaedic care in Ambattur, Chennai.">
+  <meta name="keywords" content="online ortho consultation, in-person ortho appointment, Ambattur orthopaedic doctor, Dr. Sumesh Subramanian">
+  <meta name="author" content="Dr. Sumesh Subramanian">
+  <title>Consult | OrthoCure Clinic</title>
+  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon.png">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; scroll-behavior: smooth; }
     header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
     nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s ease, transform 0.3s ease; }
+    nav a:hover { color: #FFE082; transform: scale(1.05); }
     section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #007B5E; }
-    iframe { width: 100%; height: 1500px; border: none; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .info { margin-bottom: 30px; }
+    .consult-box { background: #e6f2ef; padding: 30px; border-radius: 10px; margin: 30px 0; }
+    .consult-box h3 { color: #004d40; margin-top: 0; }
+    .consult-box p { font-size: 16px; margin-bottom: 15px; }
+    .consult-box a { display: inline-block; margin-top: 10px; padding: 12px 20px; background: #007B5E; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; }
+    .consult-box a:hover { background: #004d40; }
+    .split { display: flex; flex-direction: column; gap: 40px; }
+    @media(min-width: 768px) { .split { flex-direction: row; } .consult-box { flex: 1; } }
+    footer p { margin: 4px 0; font-size: 14px; }
+    footer a { color: #66d9ef; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Online Consultation</h1>
-    <p>Safe, secure, and legally compliant video consultations by Dr. Sumesh Subramanian</p>
+    <h1>Dr. Sumesh Subramanian, MS Ortho</h1>
+    <p>OrthoCure Bone & Joint Speciality Clinic</p>
+    <p><em>Start Healing. Stay Moving.</em></p>
   </header>
 
   <nav>
@@ -31,25 +42,27 @@
   </nav>
 
   <section>
-    <div class="info">
-      <h2>🩺 Book a Video Consultation</h2>
-      <p>✅ Consultation Fee: ₹300<br>
-         ✅ Available Mon–Sat, 10AM–1PM, 2PM–4PM, 5PM–9PM<br>
-         ✅ Google Meet Link will be shared after confirmation</p>
-      <p><strong>Step-by-step:</strong><br>
-         1. Fill the form below<br>
-         2. Wait for WhatsApp confirmation<br>
-         3. Pay via UPI <code>9677253746@axl</code><br>
-         4. Receive Google Meet link<br>
-         5. E-prescription sent post-consult</p>
-    </div>
+    <h2 style="color:#007B5E">Choose Your Consultation Type</h2>
+    <div class="split">
+      <div class="consult-box">
+        <h3>🖥️ Online Consultation</h3>
+        <p>Consult Dr. Sumesh from the comfort of your home. Ideal for follow-ups, second opinions, and minor joint or back issues. Secure, fast, and fully compliant with telemedicine guidelines.</p>
+        <a href="https://drsumeshortho.github.io/online-consult/" target="_blank">Book Online Consultation</a>
+      </div>
 
-    <iframe src="https://drsumeshortho.github.io/online-consult" title="Consultation Form"></iframe>
+      <div class="consult-box">
+        <h3>🏥 In-Person OPD Visit</h3>
+        <p>Visit OrthoCure Clinic in Ambattur for physical examination, X-rays, injections, and treatment procedures. Best for new problems or injuries needing full evaluation.</p>
+        <a href="https://maps.app.goo.gl/GvRZmeYD2nfjTbHG6" target="_blank">Get Directions to Clinic</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Clinic</p>
-    <p>Email: drsumesh.ortho@gmail.com | TNMC Reg No: 119811</p>
+    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 Ambattur, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
+    <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
 </body>
 </html>
+
