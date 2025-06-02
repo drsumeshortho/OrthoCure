@@ -1,45 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to OrthoCure Bone & Joint Speciality Clinic – Expert orthopaedic care by Dr. Sumesh Subramanian in Chennai.">
-  <meta name="keywords" content="orthopaedic, bone clinic, joint pain, arthritis, spine care, Chennai ortho, OrthoCure Ambattur">
-  <meta name="author" content="Dr. Sumesh Subramanian">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OrthoCure | Dr. Sumesh Subramanian</title>
-  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon.png">
+
+  <!-- SEO & Branding -->
+  <meta name="description" content="Expert orthopaedic care at OrthoCure Clinic – Chennai. Specialist treatment for joint pain, spine care, and arthritis by Dr. Sumesh Subramanian." />
+  <meta name="keywords" content="OrthoCure, orthopaedic clinic, Chennai bone doctor, joint pain, spine care, arthritis treatment, Dr Sumesh Subramanian" />
+  <meta name="author" content="Dr. Sumesh Subramanian" />
+  <meta name="theme-color" content="#007B5E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OrthoCure | Dr. Sumesh Subramanian" />
+  <meta property="og:description" content="Leading orthopaedic clinic in Chennai. Online & in-clinic consultation available. Book now!" />
+  <meta property="og:image" content="https://drsumeshortho.github.io/OrthoCure/assets/dp.jpg" />
+  <meta property="og:url" content="https://drsumeshortho.github.io/OrthoCure/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon.png" />
+
+  <!-- FontAwesome -->
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all';">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "OrthoCure Bone & Joint Speciality Clinic",
+    "url": "https://drsumeshortho.github.io/OrthoCure/",
+    "logo": "https://drsumeshortho.github.io/OrthoCure/assets/favicon.png",
+    "image": "https://drsumeshortho.github.io/OrthoCure/assets/dp.jpg",
+    "description": "Specialist orthopaedic treatment for joint pain, arthritis, spine issues and injury recovery.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ambattur",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "India"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "drsumesh.ortho@gmail.com",
+      "contactType": "Patient Services"
+    }
+  }
+  </script>
+
+  <!-- Styles -->
   <style>
     body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f9f8; color: #2c3e50; }
-    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
-    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s ease; }
+
+    header, footer {
+      background: #002B36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background: #007B5E;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
     nav a:hover { color: #ffe082; }
+
     .hero {
       position: relative;
       background: url('/OrthoCure/assets/hero-bg.jpg') center/cover no-repeat;
+      color: white;
       padding: 100px 20px;
       text-align: center;
-      color: white;
     }
+
     .hero::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0,0,0,0.5);
       z-index: 0;
     }
-    .hero h1, .hero p, .hero a {
+
+    .hero > * {
       position: relative;
       z-index: 1;
       opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease forwards;
+      animation: fadeInUp 1s forwards;
     }
-    .hero h1 { font-size: 2.5em; margin-bottom: 10px; animation-delay: 0.2s; }
-    .hero p { font-size: 1.2em; margin-bottom: 20px; animation-delay: 0.4s; }
+
+    .hero h1 { font-size: 2.5em; margin: 0 0 10px; animation-delay: 0.3s; }
+    .hero p { font-size: 1.2em; margin-bottom: 20px; animation-delay: 0.5s; }
     .hero a {
       background: white;
       color: #007B5E;
@@ -47,39 +110,56 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
-      animation-delay: 0.6s;
+      animation-delay: 0.7s;
     }
+
     .hero a:hover { background: #e0f2f1; }
+
     @keyframes fadeInUp {
       to {
         opacity: 1;
         transform: translateY(0);
       }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
     }
+
     section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
-    .features, .services { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+
+    .features {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .card {
-      background: #fff;
+      background: white;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       flex: 1;
       min-width: 280px;
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s;
     }
+
     .card:hover { transform: translateY(-5px); }
+
     .card i { font-size: 2em; color: #007B5E; margin-bottom: 10px; }
-    .card h3 { margin-bottom: 10px; color: #007B5E; }
+    .card h3 { color: #007B5E; margin-bottom: 8px; }
+
     .cta {
       background: #007B5E;
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 40px 20px;
       margin: 40px 0;
       border-radius: 10px;
     }
+
     .cta a {
       background: white;
       color: #007B5E;
@@ -87,16 +167,36 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
+
     .cta a:hover { background: #e0f2f1; }
-    footer p { margin: 4px 0; font-size: 14px; }
+
+    .doctor-intro {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .doctor-intro img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    footer p { font-size: 14px; margin: 5px 0; }
     footer a { color: #66d9ef; text-decoration: none; }
-    .doctor-intro { max-width: 900px; margin: auto; padding: 30px 20px; text-align: center; }
-    .doctor-intro img { width: 120px; border-radius: 50%; margin-bottom: 15px; }
+
+    @media (max-width: 600px) {
+      nav { flex-direction: column; align-items: center; }
+      .hero h1 { font-size: 1.6em; }
+      .hero p { font-size: 1em; }
+      .card { min-width: 100%; }
+    }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Dr. Sumesh Subramanian, MS Ortho</h1>
     <p>OrthoCure Bone & Joint Speciality Clinic</p>
@@ -121,36 +221,38 @@
     <div class="card">
       <i class="fas fa-bone"></i>
       <h3>Joint Pain</h3>
-      <p>Diagnosis and treatment of chronic and acute joint conditions.</p>
+      <p>Advanced treatment for arthritis, injuries, and degeneration.</p>
     </div>
     <div class="card">
       <i class="fas fa-spine"></i>
       <h3>Spine Care</h3>
-      <p>Comprehensive care for back pain and spine issues.</p>
+      <p>Relief for back pain and spine disorders with precision care.</p>
     </div>
     <div class="card">
       <i class="fas fa-walking"></i>
       <h3>Rehabilitation</h3>
-      <p>Physiotherapy and guided recovery programs post-injury.</p>
+      <p>Customized physiotherapy programs to restore mobility.</p>
     </div>
   </section>
 
   <div class="cta">
     <h2>Take the First Step Towards Healing</h2>
-    <p>Consult online or visit our clinic in Ambattur, Chennai</p>
+    <p>Online and in-person consultations available in Ambattur, Chennai.</p>
     <a href="/OrthoCure/consult.html">Start Your Consultation</a>
   </div>
 
   <div class="doctor-intro">
-    <img src="/OrthoCure/assets/dp.jpg" alt="Dr. Sumesh Subramanian">
-    <p><strong>Dr. Sumesh Subramanian</strong> is a highly qualified orthopaedic surgeon specializing in joint preservation, spine care, and non-invasive treatments. With a patient-first approach, OrthoCure offers evidence-based care to help you stay active and pain-free.</p>
+    <img src="/OrthoCure/assets/dp.jpg" alt="Dr. Sumesh Subramanian" loading="lazy">
+    <p><strong>Dr. Sumesh Subramanian</strong> is a fellowship-trained orthopaedic surgeon dedicated to non-invasive treatments and long-term joint preservation. His compassionate approach and clinical precision make OrthoCure a trusted name in Chennai.</p>
   </div>
 
   <footer>
     <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
-    <p>📍 Ambattur, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
+    <p>📍 Ambattur, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
     <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
+
 </body>
 </html>
+
 
