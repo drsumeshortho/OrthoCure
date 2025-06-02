@@ -3,69 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Dr. Sumesh Subramanian, orthopaedic surgeon and founder of OrthoCure Bone & Joint Speciality Clinic in Chennai.">
-  <meta name="keywords" content="Dr. Sumesh Subramanian, orthopaedic, OrthoCure, bone and joint clinic, Ambattur, Chennai">
+  <meta name="description" content="Reach OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal. Find address, location map, consultation timings, and WhatsApp contact.">
+  <meta name="keywords" content="OrthoCure, Dr Sumesh Subramanian, clinic address, ortho contact Chennai, bone and joint clinic Thirumullaivoyal">
   <meta name="author" content="Dr. Sumesh Subramanian">
-  <title>About | OrthoCure Clinic</title>
-  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon-32x32.png">
+  <title>Contact | OrthoCure Clinic</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; scroll-behavior: smooth; }
-    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.2s; }
-    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.4s; }
-    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s ease, transform 0.3s ease; }
-    nav a:hover { color: #FFE082; transform: scale(1.05); }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.6s; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f9f8; color: #2c3e50; }
+    header, footer { background: #002B36; color: white; text-align: center; padding: 20px; }
+    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #FFE082; }
+    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
     h2 { color: #007B5E; }
-    .cta { background: #007B5E; color: white; padding: 30px 20px; text-align: center; border-radius: 10px; margin: 40px 0; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .cta:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-    .cta a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s ease; }
-    .cta a:hover { background: #e0f2f1; }
-    footer p { margin: 4px 0; font-size: 14px; }
-    footer a { color: #66d9ef; text-decoration: none; }
-
-    @keyframes fadeIn {
-      to { opacity: 1; transform: none; }
-      from { opacity: 0; transform: translateY(20px); }
+    .contact-info { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 30px; }
+    .contact-info p { margin: 10px 0; }
+    .map-container iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .timings { background: #e0f2f1; padding: 15px; border-radius: 6px; margin-top: 20px; }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 14px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      z-index: 10000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
+    .floating-whatsapp:hover { background: #1ebe5d; }
+    footer p { font-size: 14px; margin: 5px 0; }
+    footer a { color: #66d9ef; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <h1>About Dr. Sumesh Subramanian</h1>
-    <p>Founder, OrthoCure Bone & Joint Speciality Clinic</p>
+    <h1>Contact OrthoCure Clinic</h1>
     <p><em>Start Healing. Stay Moving.</em></p>
   </header>
 
   <nav>
-    <a href="/OrthoCure/">Home</a>
-    <a href="/OrthoCure/about.html">About</a>
-    <a href="/OrthoCure/consult.html">Consult</a>
-    <a href="/OrthoCure/blog.html">Blog</a>
-    <a href="/OrthoCure/contact.html">Contact</a>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
   </nav>
 
   <section>
-    <h2>Meet Your Orthopaedic Expert</h2>
-    <p>Dr. Sumesh Subramanian (MBBS, MS Ortho, Fellowship in Arthroplasty) is a trusted orthopaedic surgeon with a passion for evidence-based care, precision treatment, and patient education. With over a decade of clinical experience and academic involvement, he brings world-class orthopaedic solutions to his patients in Chennai and beyond.</p>
+    <div class="contact-info">
+      <h2>📍 Clinic Address</h2>
+      <p><strong>OrthoCure Bone & Joint Speciality Clinic</strong></p>
+      <p>Thirumullaivoyal, Chennai, Tamil Nadu – 600062</p>
+      <p>Email: <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/919677253746" target="_blank">+91 96772 53746</a></p>
+    </div>
 
-    <p>He founded OrthoCure Bone & Joint Speciality Clinic with a vision to offer compassionate and accurate diagnosis, minimal intervention when possible, and a holistic approach to joint health and recovery.</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=Thirumullaivoyal,+Chennai,+Tamil+Nadu&output=embed" allowfullscreen></iframe>
+    </div>
 
-    <h2>Why Choose OrthoCure?</h2>
-    <ul>
-      <li>Specialised in joint, spine, and injury care</li>
-      <li>Backed by strong academic credentials</li>
-      <li>Combines traditional expertise with modern technology</li>
-      <li>Focus on long-term outcomes and patient awareness</li>
-    </ul>
-
-    <div class="cta">
-      <h3>🩺 Looking for Trusted Orthopaedic Care?</h3>
-      <a href="/OrthoCure/consult.html">Book a Consultation</a>
+    <div class="timings">
+      <h3>🕒 Consultation Timings</h3>
+      <ul>
+        <li>Monday to Saturday</li>
+        <li>10:00 AM – 1:00 PM</li>
+        <li>2:00 PM – 4:00 PM</li>
+        <li>5:00 PM – 9:00 PM</li>
+      </ul>
     </div>
   </section>
 
+  <a class="floating-whatsapp" href="https://wa.me/919677253746" title="Chat on WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
   <footer>
-    <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Thirumullaivoyal, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
     <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
