@@ -1,58 +1,111 @@
-drsumeshortho.github.io/
-├── index.html            <!-- Homepage -->
-├── about.html            <!-- About the doctor and clinic -->
-├── contact.html          <!-- Contact info, map, hours -->
-├── blog.html             <!-- Future blog hub -->
-├── consult/
-│   └── index.html        <!-- Online consultation form -->
-├── assets/
-│   ├── css/style.css     <!-- Shared styling -->
-│   └── images/           <!-- Logo, photos, etc. -->
-└── CNAME                 <!-- Contains 'www.myorthocure.com' -->
-
-/* Sample index.html */
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OrthoCure Bone and Joint Speciality Clinic - Start Healing. Stay Moving.">
-  <title>OrthoCure Clinic | Dr. Sumesh Subramanian</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrthoCure | Dr. Sumesh Subramanian</title>
+
+  <!-- SEO & Branding -->
+  <meta name="description" content="Expert orthopaedic care at OrthoCure Clinic – Chennai. Specialist treatment for joint pain, spine care, and arthritis by Dr. Sumesh Subramanian." />
+  <meta name="keywords" content="OrthoCure, orthopaedic clinic, Chennai bone doctor, joint pain, spine care, arthritis treatment, Dr Sumesh Subramanian" />
+  <meta name="author" content="Dr. Sumesh Subramanian" />
+  <meta name="theme-color" content="#007B5E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OrthoCure | Dr. Sumesh Subramanian" />
+  <meta property="og:description" content="Leading orthopaedic clinic in Chennai. Online & in-clinic consultation available. Book now!" />
+  <meta property="og:image" content="https://www.myorthocure.com/assets/dp.jpg" />
+  <meta property="og:url" content="https://www.myorthocure.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+  <!-- FontAwesome -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all';">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "OrthoCure Bone & Joint Speciality Clinic",
+    "url": "https://www.myorthocure.com/",
+    "logo": "https://www.myorthocure.com/assets/favicon.png",
+    "image": "https://www.myorthocure.com/assets/dp.jpg",
+    "description": "Specialist orthopaedic treatment for joint pain, arthritis, spine issues and injury recovery.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ambattur",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "India"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "drsumesh.ortho@gmail.com",
+      "contactType": "Patient Services"
+    }
+  }
+  </script>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <header>
-    <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
-    <p>Start Healing. Stay Moving.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/consult/">Consult</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
+    <h1>Dr. Sumesh Subramanian, MS Ortho</h1>
+    <p>OrthoCure Bone & Joint Speciality Clinic</p>
+    <p><em>Start Healing. Stay Moving.</em></p>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Expert Orthopaedic Care in Ambattur</h2>
-      <p>Online & in-clinic consultations with Dr. Sumesh Subramanian (MS Ortho, Fellowship Arthroplasty)</p>
-      <a href="/consult/" class="btn">Book Online Consultation</a>
-    </section>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
 
-    <section class="services">
-      <h3>Our Services</h3>
-      <ul>
-        <li>Joint Pain Management</li>
-        <li>Physiotherapy & Rehab</li>
-        <li>Spine Care & Ortho Biologics</li>
-      </ul>
-    </section>
-  </main>
+  <div class="hero">
+    <h1>Healing Bones. Restoring Movement.</h1>
+    <p>Specialist orthopaedic care by Dr. Sumesh Subramanian</p>
+    <a href="/consult/">Book Your Consultation</a>
+  </div>
+
+  <section class="features">
+    <div class="card">
+      <i class="fas fa-bone"></i>
+      <h3>Joint Pain</h3>
+      <p>Advanced treatment for arthritis, injuries, and degeneration.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-spine"></i>
+      <h3>Spine Care</h3>
+      <p>Relief for back pain and spine disorders with precision care.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-walking"></i>
+      <h3>Rehabilitation</h3>
+      <p>Customized physiotherapy programs to restore mobility.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Take the First Step Towards Healing</h2>
+    <p>Online and in-person consultations available in Ambattur, Chennai.</p>
+    <a href="/consult/">Start Your Consultation</a>
+  </div>
+
+  <div class="doctor-intro">
+    <img src="/assets/dp.jpg" alt="Dr. Sumesh Subramanian" loading="lazy">
+    <p><strong>Dr. Sumesh Subramanian</strong> is a fellowship-trained orthopaedic surgeon dedicated to non-invasive treatments and long-term joint preservation. His compassionate approach and clinical precision make OrthoCure a trusted name in Chennai.</p>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Clinic</p>
+    <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 Ambattur, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
+    <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
 </body>
 </html>
