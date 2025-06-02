@@ -9,16 +9,35 @@
   <title>OrthoCure | Dr. Sumesh Subramanian</title>
   <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon.png">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; scroll-behavior: smooth; }
     header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
     nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #007B5E; }
-    .cta { background: #007B5E; color: white; padding: 30px 20px; text-align: center; border-radius: 10px; margin: 40px 0; }
-    .cta a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s ease, transform 0.3s ease; }
+    nav a:hover { color: #FFE082; transform: scale(1.05); }
+    .hero { background: url('/OrthoCure/assets/hero-bg.jpg') no-repeat center center/cover; height: 85vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; position: relative; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: rgba(0, 43, 54, 0.6); }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-content h1 { font-size: 36px; margin-bottom: 10px; }
+    .hero-content p { font-size: 20px; }
+    .hero-cta { display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #ffe082; color: #002b36; font-weight: bold; text-decoration: none; border-radius: 6px; }
+    .hero-cta:hover { background-color: #ffca28; }
+    .quick-links { display: flex; justify-content: space-around; margin: 60px auto; max-width: 900px; text-align: center; flex-wrap: wrap; gap: 20px; }
+    .tile { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease; flex: 1 1 250px; }
+    .tile:hover { transform: translateY(-5px); }
+    .tile img { width: 60px; margin-bottom: 15px; }
+    .tile a { display: inline-block; margin-top: 10px; color: #007B5E; text-decoration: underline; font-weight: 600; }
+    .highlight-banner { background: #007B5E; color: white; padding: 40px 20px; text-align: center; }
+    .highlight-banner ul { list-style: none; padding: 0; margin-top: 20px; }
+    .highlight-banner li { font-size: 18px; margin-bottom: 12px; }
+    .testimonial { background: #f1f8f6; padding: 40px; text-align: center; font-style: italic; color: #2c3e50; }
+    .testimonial blockquote { font-size: 20px; }
+    .testimonial p { margin-top: 10px; font-weight: bold; }
     footer p { margin: 4px 0; font-size: 14px; }
     footer a { color: #66d9ef; text-decoration: none; }
+    @media (max-width: 768px) {
+      .quick-links { flex-direction: column; }
+      .hero { height: 70vh; }
+    }
   </style>
 </head>
 <body>
@@ -36,20 +55,54 @@
     <a href="/OrthoCure/contact.html">Contact</a>
   </nav>
 
-  <section>
-    <h2>Welcome to OrthoCure</h2>
-    <p>We offer expert orthopaedic care for joint pain, back issues, arthritis, injuries, and more. Consult with Dr. Sumesh Subramanian, a trusted orthopaedic surgeon based in Chennai, to begin your journey to healing.</p>
-
-    <div class="cta">
-      <h3>🩺 Ready to Book Your Consultation?</h3>
-      <a href="/OrthoCure/consult.html">Book Online Now</a>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to OrthoCure</h1>
+      <p>Expert Bone & Joint Care by Dr. Sumesh Subramanian</p>
+      <a href="/OrthoCure/consult.html" class="hero-cta">Book an Appointment</a>
     </div>
   </section>
 
+  <section class="quick-links">
+    <div class="tile">
+      <img src="/OrthoCure/assets/icon_consult.png" alt="Consult Icon">
+      <h3>Consult Online</h3>
+      <a href="/OrthoCure/consult.html">Start Now</a>
+    </div>
+    <div class="tile">
+      <img src="/OrthoCure/assets/icon_services.png" alt="Services Icon">
+      <h3>Our Services</h3>
+      <a href="/OrthoCure/about.html">Explore</a>
+    </div>
+    <div class="tile">
+      <img src="/OrthoCure/assets/icon_location.png" alt="Location Icon">
+      <h3>Visit Us</h3>
+      <a href="/OrthoCure/contact.html">Get Directions</a>
+    </div>
+  </section>
+
+  <section class="highlight-banner">
+    <h2>Why Choose OrthoCure?</h2>
+    <ul>
+      <li>🩺 Experienced Orthopaedic Specialist</li>
+      <li>🧠 Modern Diagnostics & X-ray Facility</li>
+      <li>🧘‍♂️ Physiotherapy, Rehab & Recovery Focus</li>
+      <li>💬 Easy Online Consultation</li>
+    </ul>
+  </section>
+
+  <section class="testimonial">
+    <blockquote>
+      “Dr. Sumesh takes the time to explain everything. I felt safe and cared for at OrthoCure.”
+    </blockquote>
+    <p>— Patient Feedback</p>
+  </section>
+
   <footer>
-    <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Ambattur, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
     <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
 </body>
 </html>
+
