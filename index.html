@@ -8,7 +8,9 @@
   <meta name="author" content="Dr. Sumesh Subramanian">
   <title>OrthoCure | Dr. Sumesh Subramanian</title>
   <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all';">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <style>
     body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f9f8; color: #2c3e50; }
     header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
@@ -18,14 +20,17 @@
     .hero { background: url('/OrthoCure/assets/hero-bg.jpg') center/cover no-repeat; padding: 80px 20px; text-align: center; color: white; }
     .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
     .hero p { font-size: 1.2em; margin-bottom: 20px; }
-    .hero a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .hero a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s ease; }
+    .hero a:hover { background: #e0f2f1; }
     section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
     .features, .services { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
-    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); flex: 1; min-width: 280px; text-align: center; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); flex: 1; min-width: 280px; text-align: center; transition: transform 0.3s ease; }
+    .card:hover { transform: translateY(-5px); }
     .card i { font-size: 2em; color: #007B5E; margin-bottom: 10px; }
     .card h3 { margin-bottom: 10px; color: #007B5E; }
     .cta { background: #007B5E; color: white; padding: 40px 20px; text-align: center; margin: 40px 0; border-radius: 10px; }
-    .cta a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .cta a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s ease; }
+    .cta a:hover { background: #e0f2f1; }
     footer p { margin: 4px 0; font-size: 14px; }
     footer a { color: #66d9ef; text-decoration: none; }
     .quick-info { background: #fff3cd; padding: 20px; border-radius: 10px; margin: 40px auto; max-width: 860px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
@@ -113,7 +118,7 @@
   </section>
 
   <section class="doctor-intro">
-    <img src="/OrthoCure/assets/dp.jpg" alt="Dr. Sumesh">
+    <img src="/OrthoCure/assets/dp.jpg" alt="Dr. Sumesh" loading="lazy">
     <h3>Meet Dr. Sumesh Subramanian</h3>
     <p>MS Orthopaedics, Fellowship in Arthroplasty, TNMC Reg No: 119811</p>
     <p>Assistant Professor & Consultant Orthopaedic Surgeon. Committed to safe, evidence-based, and ethical orthopaedic care. Fluent in English and Tamil.</p>
@@ -126,3 +131,4 @@
   </footer>
 </body>
 </html>
+
