@@ -3,56 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Book online or in-person orthopaedic consultations with Dr. Sumesh Subramanian at OrthoCure Clinic, Ambattur.">
-  <meta name="keywords" content="online consultation ortho, ortho appointment Chennai, Dr. Sumesh ortho booking, OrthoCure Ambattur consult">
+  <meta name="description" content="Securely book an online orthopaedic consultation with Dr. Sumesh Subramanian at OrthoCure Bone & Joint Speciality Clinic.">
+  <meta name="keywords" content="OrthoCure online consult, orthopaedic booking, Dr Sumesh Subramanian, Ambattur ortho clinic, video consultation bone doctor">
   <meta name="author" content="Dr. Sumesh Subramanian">
-  <title>Consult | OrthoCure Clinic</title>
-  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon.png">
+  <title>Online Consultation | OrthoCure Clinic</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f0f7f5 url('/OrthoCure/assets/bg-pattern.png') repeat; color: #2c3e50; }
-    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fefc; color: #2c3e50; }
+    header, footer { background: #002B36; color: white; text-align: center; padding: 20px; }
     nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s ease, transform 0.3s ease; }
-    nav a:hover { color: #FFE082; transform: scale(1.05); }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #007B5E; }
-    .consult-card { background: #ffffffcc; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 40px; }
-    .consult-card h3 { margin-top: 0; }
-    .consult-card i { margin-right: 10px; color: #007B5E; }
-    .consult-card a { display: inline-block; margin-top: 10px; padding: 10px 20px; background: #007B5E; color: white; text-decoration: none; border-radius: 6px; transition: background 0.3s ease; }
-    .consult-card a:hover { background: #004d40; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #FFE082; }
+    section { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #007B5E; margin-bottom: 10px; }
+    form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    label { display: block; margin-top: 15px; font-weight: 600; }
+    input, textarea, select { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; margin-top: 5px; }
+    button { margin-top: 20px; background: #007B5E; color: white; border: none; padding: 12px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #004d40; }
+    .disclaimer { font-size: 13px; color: #555; margin-top: 15px; line-height: 1.5; }
+    .thankyou { text-align: center; margin-top: 30px; }
     footer p { margin: 4px 0; font-size: 14px; }
     footer a { color: #66d9ef; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Consult Dr. Sumesh Subramanian, MS Ortho</h1>
-    <p>OrthoCure Bone & Joint Speciality Clinic</p>
-    <p><em>Start Healing. Stay Moving.</em></p>
+    <h1>Book Online Consultation</h1>
+    <p>Dr. Sumesh Subramanian, MS Ortho</p>
+    <p><em>OrthoCure Bone & Joint Speciality Clinic</em></p>
   </header>
 
   <nav>
-    <a href="/OrthoCure/">Home</a>
-    <a href="/OrthoCure/about.html">About</a>
-    <a href="/OrthoCure/consult.html">Consult</a>
-    <a href="/OrthoCure/blog.html">Blog</a>
-    <a href="/OrthoCure/contact.html">Contact</a>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
   </nav>
 
   <section>
-    <div class="consult-card">
-      <h2><i class="fas fa-video"></i> Online Consultation</h2>
-      <p>Book a video consultation with Dr. Sumesh Subramanian from the comfort of your home. Perfect for follow-ups, second opinions, or initial guidance.</p>
-      <a href="https://drsumeshortho.github.io/OrthoCure/consult-form">Book Online Consult</a>
-    </div>
+    <h2>Online Consultation Form</h2>
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec">
+      <label for="name">Full Name *</label>
+      <input type="text" name="name" id="name" required>
 
-    <div class="consult-card">
-      <h2><i class="fas fa-clinic-medical"></i> In-Person OPD Visit</h2>
-      <p>Visit OrthoCure Clinic in Ambattur, Chennai for a physical examination, X-rays, physiotherapy and hands-on care. Walk-ins accepted based on availability.</p>
-      <a href="https://maps.app.goo.gl/GvRZmeYD2nfjTbHG6" target="_blank">Find Clinic on Google Maps</a>
-    </div>
+      <label for="age">Age *</label>
+      <input type="number" name="age" id="age" required>
+
+      <label for="gender">Gender *</label>
+      <select name="gender" id="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="email">Email ID *</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="whatsapp">WhatsApp Number *</label>
+      <input type="tel" name="whatsapp" id="whatsapp" required>
+
+      <label for="consultationDay">Consultation Day *</label>
+      <select name="consultationDay" id="consultationDay" required>
+        <option value="">Select a day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+      </select>
+
+      <label for="preferredTime">Preferred Time Slot *</label>
+      <select name="preferredTime" id="preferredTime" required>
+        <option value="">Choose</option>
+        <option>10AM–1PM</option>
+        <option>2PM–4PM</option>
+        <option>5PM–9PM</option>
+      </select>
+
+      <label for="preferredExactTime">Exact Preferred Time (Optional)</label>
+      <input type="text" name="preferredExactTime" id="preferredExactTime" placeholder="e.g. 11:30AM">
+
+      <label for="problem">Briefly Describe Your Problem *</label>
+      <textarea name="problem" id="problem" rows="4" required></textarea>
+
+      <input type="hidden" name="consent" value="Yes">
+
+      <button type="submit">Submit Consultation Request</button>
+
+      <p class="disclaimer">
+        By submitting this form, you consent to be contacted via WhatsApp/email. This form is secure and complies with India’s Telemedicine Guidelines (2020). Online consultation does not replace in-person examination or emergency care.
+      </p>
+    </form>
   </section>
 
   <footer>
