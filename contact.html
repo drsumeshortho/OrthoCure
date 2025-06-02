@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon-32x32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to OrthoCure Bone & Joint Speciality Clinic – Expert orthopaedic care by Dr. Sumesh Subramanian.">
   <meta name="keywords" content="orthopaedic, bone clinic, joint pain, arthritis, spine care, chennai orthopaedic doctor">
@@ -9,16 +10,24 @@
   <title>OrthoCure | Dr. Sumesh Subramanian</title>
   <link rel="icon" type="image/png" href="/OrthoCure/assets/favicon-32x32.png">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; }
-    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
-    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #2c3e50; scroll-behavior: smooth; }
+    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.2s; }
+    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.4s; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s ease, transform 0.3s ease; }
+    nav a:hover { color: #FFE082; transform: scale(1.05); }
+    section { max-width: 900px; margin: 40px auto; padding: 0 20px; opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.6s; }
     h2 { color: #007B5E; }
-    .cta { background: #007B5E; color: white; padding: 30px 20px; text-align: center; border-radius: 10px; margin: 40px 0; }
-    .cta a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .cta { background: #007B5E; color: white; padding: 30px 20px; text-align: center; border-radius: 10px; margin: 40px 0; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .cta:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+    .cta a { background: white; color: #007B5E; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s ease; }
+    .cta a:hover { background: #e0f2f1; }
     footer p { margin: 4px 0; font-size: 14px; }
     footer a { color: #66d9ef; text-decoration: none; }
+
+    @keyframes fadeIn {
+      to { opacity: 1; transform: none; }
+      from { opacity: 0; transform: translateY(20px); }
+    }
   </style>
 </head>
 <body>
