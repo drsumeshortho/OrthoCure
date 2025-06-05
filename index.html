@@ -45,12 +45,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .floating-whatsapp:hover { background: #1ebe5d; }
     footer p { font-size: 14px; margin: 5px 0; }
     footer a { color: #66d9ef; text-decoration: none; }
-
+    .affiliation-badges {
+      margin-top: 10px;
+    }
+    .affiliation-badges img {
+      height: 40px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
     @media (max-width: 600px) {
       nav { flex-direction: column; align-items: center; }
       section { padding: 0 15px; }
       header h1, footer p { font-size: 1.2em; }
       .floating-whatsapp { font-size: 20px; padding: 10px; }
+      .affiliation-badges img { height: 32px; margin: 0 6px; }
     }
   </style>
 </head>
@@ -96,6 +104,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </a>
 
   <footer>
+    <div class="affiliation-badges">
+      <img src="/assets/ioa-badge.png" alt="IOA Member">
+      <img src="/assets/tnoa-badge.png" alt="TNOA Member">
+      <p><small>Proud Member – IOA & TNOA</small></p>
+    </div>
     <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Thirumullaivoyal, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
     <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
@@ -103,4 +116,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </body>
 </html>
-
