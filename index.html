@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Home | OrthoCure Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to OrthoCure Bone & Joint Speciality Clinic in Chennai – Trusted orthopaedic care by Dr. Sumesh Subramanian. Book consultations online.">
@@ -48,194 +48,44 @@
   }
   </script>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f4f9f8;
-      color: #2c3e50;
-      line-height: 1.6;
-    }
-    header {
-      background: #002B36;
-      color: white;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      flex-wrap: wrap;
-    }
-    .logo {
-      max-height: 60px;
-    }
-    .clinic-title {
-      flex: 1;
-      text-align: center;
-    }
-    .clinic-title h1 {
-      margin: 0;
-      font-size: 1.6em;
-    }
-    .clinic-title p {
-      font-size: 0.9em;
-      margin-top: 5px;
-      font-style: italic;
-    }
-    nav {
-      background: #007B5E;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #FFE082;
-    }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/hero-bg.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-    }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .cta {
-      background: #007B5E;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      border-radius: 8px;
-      margin-top: 30px;
-      transition: transform 0.3s ease;
-    }
-    .cta:hover {
-      transform: scale(1.02);
-    }
-    .cta a {
-      background: white;
-      color: #007B5E;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .cta a:hover {
-      background: #e0f2f1;
-    }
-    .map-preview {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .map-preview iframe {
-      width: 100%;
-      max-width: 1000px;
-      height: 300px;
-      border: none;
-      border-radius: 8px;
-    }
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 50px;
-      font-size: 16px;
-      text-align: center;
-      z-index: 10000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: bold;
-    }
-    .floating-whatsapp:hover {
-      background: #1ebe5d;
-    }
-    footer p {
-      font-size: 14px;
-      margin: 5px 0;
-    }
-    footer a {
-      color: #66d9ef;
-      text-decoration: none;
-    }
-    .affiliation-badges {
-      margin-top: 10px;
-    }
-    .affiliation-badges img {
-      height: 40px;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f9f8; color: #2c3e50; line-height: 1.6; }
+    header { background: #002B36; color: white; display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 10px 20px; flex-wrap: wrap; }
+    .logo { max-height: 60px; }
+    .clinic-title { flex: 1; text-align: center; }
+    .clinic-title h1 { margin: 0; font-size: 1.6em; }
+    .clinic-title p { font-size: 0.9em; margin-top: 5px; font-style: italic; }
+    nav { background: #007B5E; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #FFE082; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/hero-bg.jpg') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; opacity: 0; transform: translateY(20px); animation: fadeInUp 1s forwards; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; }
+    section { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    .cta { background: #007B5E; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-top: 30px; transition: transform 0.3s ease; }
+    .cta:hover { transform: scale(1.02); }
+    .cta a { background: white; color: #007B5E; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+    .cta a:hover { background: #e0f2f1; }
+    .map-preview { text-align: center; margin-top: 40px; }
+    .map-preview iframe { width: 100%; max-width: 1000px; height: 300px; border: none; border-radius: 8px; }
+    .floating-whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 16px; border-radius: 50px; font-size: 16px; text-align: center; z-index: 10000; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px; font-weight: bold; }
+    .floating-whatsapp:hover { background: #1ebe5d; }
+    footer p { font-size: 14px; margin: 5px 0; }
+    footer a { color: #66d9ef; text-decoration: none; }
+    .affiliation-badges { margin-top: 10px; }
+    .affiliation-badges img { height: 40px; margin: 0 10px; vertical-align: middle; }
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .clinic-title h1 {
-        font-size: 1.3em;
-      }
-      .hero h1 {
-        font-size: 1.8em;
-      }
-      .hero p {
-        font-size: 1em;
-      }
-      .cta h3 {
-        font-size: 1.2em;
-      }
-      .cta a {
-        font-size: 0.9em;
-        padding: 8px 16px;
-      }
-      section {
-        padding: 0 15px;
-      }
-      .affiliation-badges img {
-        height: 30px;
-      }
+      header { flex-direction: column; align-items: center; text-align: center; }
+      .clinic-title h1 { font-size: 1.3em; }
+      .hero h1 { font-size: 1.8em; }
+      .hero p { font-size: 1em; }
+      .cta h3 { font-size: 1.2em; }
+      .cta a { font-size: 0.9em; padding: 8px 16px; }
+      section { padding: 0 15px; }
+      .affiliation-badges img { height: 30px; }
     }
   </style>
 </head>
-
-
 <body>
   <header>
     <img src="/assets/logo.png" alt="OrthoCure Logo" class="logo">
@@ -244,7 +94,6 @@
       <p>Start Healing. Stay Moving.</p>
     </div>
   </header>
-
   <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
@@ -252,12 +101,10 @@
     <a href="/blog.html">Blog</a>
     <a href="/contact.html">Contact</a>
   </nav>
-
   <section class="hero">
     <h1>Expert Orthopaedic Care coming soon at Thirumullaivoyal</h1>
     <p>Led by Dr. Sumesh Subramanian, MS Ortho, Fellowship in Arthroplasty</p>
   </section>
-
   <section>
     <h2>Why Choose OrthoCure?</h2>
     <ul>
@@ -265,21 +112,17 @@
       <li>✅ Located conveniently in Thirumullaivoyal</li>
       <li>✅ Modern imaging & evidence-based treatment</li>
     </ul>
-
     <div class="cta">
       <h3>Need Consultation?</h3>
       <a href="/consult/">Book Online Now</a>
     </div>
   </section>
-
   <section class="map-preview">
     <iframe src="https://maps.google.com/maps?q=13.130566178794025,80.13042623858249&hl=en&z=16&amp;output=embed"></iframe>
   </section>
-
   <a class="floating-whatsapp" href="https://wa.me/919677253746?text=Hi%20Dr.%20Sumesh%2C%20I%20would%20like%20to%20book%20an%20appointment" title="Chat on WhatsApp" target="_blank">
     <i class="fab fa-whatsapp"></i><span>Chat</span>
   </a>
-
   <footer>
     <div class="affiliation-badges">
       <img src="/assets/ioa-badge.png" alt="IOA Member">
@@ -288,7 +131,7 @@
     </div>
     <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Thirumullaivoyal, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
-    <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
+    <p><small>Website built with ❤ by Dr. Sumesh</small></p>
   </footer>
 </body>
-</html>https://www.orthomedia.org.uk/page/surgical-techniques-and-training-videos?utm_source=SocialMedia&utm_medium=linkedin&utm_term=the+bone+%26+joint+journal+&utm_content=&utm_campaign=
+</html>
