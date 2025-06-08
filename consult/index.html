@@ -40,7 +40,6 @@
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0,0,0,0.6);
       z-index: 9999;
-      display: flex;
       justify-content: center;
       align-items: center;
     }
@@ -87,7 +86,9 @@
           body: formData
         });
 
-        if (response.ok) {
+        const result = await response.text();
+
+        if (response.ok && result.includes("success")) {
           form.reset();
           document.getElementById("confirmation-modal").style.display = "flex";
         } else {
@@ -175,4 +176,3 @@
   </footer>
 </body>
 </html>
-
