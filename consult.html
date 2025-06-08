@@ -90,12 +90,13 @@
         });
 
         const text = await response.text();
+        const cleaned = text.trim().toLowerCase();
 
-        if (text.trim().toLowerCase() === "success" || response.ok) {
+        if (cleaned.includes("success")) {
           form.reset();
           document.getElementById("confirmation-modal").style.display = "flex";
         } else {
-          alert("❌ Submission failed. Please try again.");
+          alert("❌ Submission failed. Please try again.\nServer response: " + cleaned);
         }
       } catch (error) {
         console.error("Fetch error:", error);
