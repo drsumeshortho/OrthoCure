@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FormData Test</title>
+</head>
+<body>
+  <h2>Test Consultation Submission</h2>
+  <form id="testForm" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST">
+    <input type="text" name="name" placeholder="Name" required><br>
+    <input type="number" name="age" placeholder="Age" required><br>
+    <input type="text" name="gender" placeholder="Gender" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="text" name="consultationDay" placeholder="Day" required><br>
+    <input type="text" name="preferredTime" placeholder="Time Slot" required><br>
+    <input type="text" name="preferredExactTime" placeholder="Exact Time"><br>
+    <input type="tel" name="whatsapp" placeholder="WhatsApp" required><br>
+    <textarea name="problem" placeholder="Problem" required></textarea><br>
+    <input type="checkbox" name="consent" value="Yes" required> I agree<br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    document.getElementById("testForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.text())
+      .then(text => document.getElementById("result").innerText = text)
+      .catch(err => alert("❌ Error: " + err));
+    });
+  </script>
+</body>
+</html>
