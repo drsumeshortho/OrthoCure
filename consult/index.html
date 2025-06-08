@@ -76,26 +76,25 @@
       event.preventDefault();
       const form = event.target;
       const formData = new FormData(form);
-      const jsonObject = {};
-      formData.forEach((value, key) => {
-        jsonObject[key] = value;
-      });
 
       const submitButton = form.querySelector('input[type="submit"]');
       submitButton.value = 'Submitting...';
       submitButton.disabled = true;
 
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(jsonObject)
-      });
+      try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec", {
+          method: "POST",
+          body: formData
+        });
 
-      if (response.ok) {
-        form.reset();
-        document.getElementById("confirmation-modal").style.display = "flex";
-      } else {
-        alert("Something went wrong. Please try again later.");
+        if (response.ok) {
+          form.reset();
+          document.getElementById("confirmation-modal").style.display = "flex";
+        } else {
+          alert("❌ Submission failed. Please try again.");
+        }
+      } catch (error) {
+        alert("🚫 Network error. Please check your connection.");
       }
 
       submitButton.value = 'Submit';
@@ -176,3 +175,4 @@
   </footer>
 </body>
 </html>
+
