@@ -14,26 +14,15 @@
     nav { background: #007B5E; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
     nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s ease; }
     nav a:hover { color: #FFE082; }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    section { max-width: 900px; margin: 40px auto; padding: 0 20px; text-align: center; }
     h2 { color: #007B5E; }
-    ul { padding-left: 20px; }
     .cta-button {
       display: inline-block; background: #007B5E; color: white; padding: 12px 24px;
       border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 20px;
     }
     .cta-button:hover { background: #005F4E; }
-    form {
-      margin-top: 30px;
-    }
-    input, textarea {
-      width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;
-    }
-    input[type="submit"] {
-      background-color: #007B5E; color: white; font-weight: bold; cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #005F4E;
-    }
+    .coming-soon { font-size: 18px; background: #fff7e6; border-left: 5px solid #ffb300; padding: 15px; margin-top: 30px; border-radius: 6px; }
+    .info p { font-size: 16px; margin: 12px 0; }
     footer p { margin: 4px 0; font-size: 14px; }
     footer a { color: #66d9ef; text-decoration: none; }
     @media (max-width: 600px) {
@@ -56,14 +45,19 @@
   </nav>
 
   <section>
-    <h2>Clinic Information</h2>
-    <p><strong>Address:</strong> (COMING SOON) OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal, Chennai</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919677253746" target="_blank">+91 96772 53746</a></p>
-    <p><strong>Email:</strong> <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a></p>
+    <h2>We’re Here to Help</h2>
 
-    <a href="/consult.html" class="cta-button">🩺 Book an Appointment</a>
+    <div class="coming-soon">
+      🚧 <strong>Note:</strong> Our physical clinic in Thirumullaivoyal is <strong>opening soon</strong>.<br>
+      For now, you can consult online from the comfort of your home.
+    </div>
 
+    <div class="info">
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/919677253746" target="_blank">+91 96772 53746</a></p>
+      <p><strong>Email:</strong> <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a></p>
+    </div>
 
+    <a href="/consult.html" class="cta-button">🩺 Book Online Consultation</a>
   </section>
 
   <footer>
