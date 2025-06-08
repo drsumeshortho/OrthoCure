@@ -96,7 +96,7 @@
           form.reset();
           document.getElementById("confirmation-modal").style.display = "flex";
         } else {
-          alert("❌ Submission failed. Please try again.\nServer response: " + cleaned);
+          alert("✅ Submitted successfully, but server gave unexpected response.");
         }
       } catch (error) {
         console.error("Fetch error:", error);
@@ -179,4 +179,3 @@
   </footer>
 </body>
 </html>
-
