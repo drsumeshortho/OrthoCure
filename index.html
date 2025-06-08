@@ -25,6 +25,11 @@
       color: white;
       padding: 100px 20px;
       text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .hero h1 { font-size: 2.8em; margin-bottom: 10px; }
     .hero p { font-size: 1.2em; font-style: italic; }
@@ -42,15 +47,15 @@
       background: #e0f2f1;
     }
     section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
-    .intro {
-      background: #ffffff;
-      padding: 20px;
-      border-left: 5px solid #009688;
+    .trustbar {
+      background: #e6f4f1;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
       border-radius: 6px;
+      color: #00695c;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      margin-top: 20px;
     }
-    .intro h2 { color: #009688; }
     footer { background: #013440; color: white; padding: 20px; text-align: center; }
     footer p { font-size: 14px; margin: 5px 0; }
     footer a { color: #80deea; text-decoration: none; }
@@ -58,7 +63,9 @@
 </head>
 <body>
   <header>
-    <img src="/assets/logo.png" alt="OrthoCure Logo" class="logo">
+    <a href="/">
+      <img src="/assets/logo.png" alt="OrthoCure Logo" class="logo">
+    </a>
     <div class="clinic-title">
       <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
       <p>Start Healing. Stay Moving.</p>
@@ -79,9 +86,8 @@
     <a href="/consult.html" class="cta-button">🩺 Book Online Consultation</a>
   </section>
 
-  <section class="intro">
-    <h2>About OrthoCure</h2>
-    <p>We provide ethical, evidence-based orthopaedic care. Our services include general orthopaedic consultations, trauma management, digital X-ray, and physiotherapy-based rehabilitation — all under one roof. Designed to bring world-class care to the heart of your neighbourhood.</p>
+  <section class="trustbar">
+    Trusted by patients | TNMC Registered | Secure Online Booking | Digital X-ray Enabled
   </section>
 
   <footer>
@@ -91,3 +97,4 @@
   </footer>
 </body>
 </html>
+
