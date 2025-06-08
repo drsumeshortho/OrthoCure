@@ -8,6 +8,8 @@
   <meta name="keywords" content="OrthoCure online consult, Dr. Sumesh Subramanian appointment, Chennai ortho consultation, bone joint specialist online">
   <meta name="author" content="Dr. Sumesh Subramanian">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fcfc; color: #2c3e50; }
     header, footer { background: #013440; color: white; padding: 20px; text-align: center; }
@@ -15,13 +17,13 @@
     nav a { color: white; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #FFC107; }
     section { max-width: 600px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #009688; margin-bottom: 20px; text-align: center; }
-    form { display: flex; flex-direction: column; gap: 15px; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    h2 { color: #009688; margin-bottom: 20px; text-align: center; font-size: 1.8rem; }
+    form { display: flex; flex-direction: column; gap: 15px; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); font-size: 1.05rem; }
     input, textarea, select {
-      padding: 14px;
+      padding: 16px;
       border: 1px solid #ccc;
       border-radius: 6px;
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
     input[type="submit"] {
       background-color: #007B5E;
@@ -29,7 +31,8 @@
       font-weight: bold;
       cursor: pointer;
       border: none;
-      padding: 16px;
+      padding: 18px;
+      font-size: 1.1rem;
     }
     input[type="submit"]:hover {
       background-color: #005F4E;
@@ -68,15 +71,15 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       z-index: 1000;
     }
-    .note { font-size: 0.9rem; color: #555; font-style: italic; }
+    .note { font-size: 0.9rem; color: #555; font-style: italic; text-align: center; }
   </style>
   <script>
     async function handleSubmit(event) {
       event.preventDefault();
       const form = event.target;
       const formData = new FormData(form);
-
       const submitButton = form.querySelector('input[type="submit"]');
+
       submitButton.value = 'Submitting...';
       submitButton.disabled = true;
 
@@ -86,9 +89,6 @@
           body: formData
         });
 
-        const result = await response.text();
-
-        // Accept any 200 response regardless of text content
         if (response.ok) {
           form.reset();
           document.getElementById("confirmation-modal").style.display = "flex";
@@ -112,19 +112,19 @@
 <body>
   <header>
     <h1>Online Consultation</h1>
-    <p><em>Book your secure online orthopaedic appointment</em></p>
+    <p><em>Start Healing. Stay Moving.</em></p>
   </header>
 
   <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
-    <a href="/consult.html">Consult</a>
+    <a href="/consult/index.html">Consult</a>
     <a href="/blog.html">Blog</a>
     <a href="/contact.html">Contact</a>
   </nav>
 
   <section>
-    <h2>Book Your Appointment</h2>
+    <h2>Book Your Online Appointment</h2>
     <form onsubmit="handleSubmit(event)">
       <input type="text" name="name" placeholder="Full Name" required>
       <input type="number" name="age" placeholder="Age" required>
@@ -134,7 +134,7 @@
         <option value="Female">Female</option>
         <option value="Other">Other</option>
       </select>
-      <input type="email" name="email" placeholder="Email" required>
+      <input type="email" name="email" placeholder="Email Address" required>
       <select name="consultationDay" required>
         <option value="">Select Day</option>
         <option value="Monday">Monday</option>
@@ -145,37 +145,34 @@
         <option value="Saturday">Saturday</option>
       </select>
       <select name="preferredTime" required>
-        <option value="">Select Time Slot</option>
+        <option value="">Preferred Time Slot</option>
         <option value="10AM–1PM">10AM–1PM</option>
         <option value="2PM–4PM">2PM–4PM</option>
         <option value="5PM–9PM">5PM–9PM</option>
       </select>
-      <input type="text" name="preferredExactTime" placeholder="Preferred Time (Optional)">
-      <span class="note">We'll confirm the exact timing on WhatsApp.</span>
+      <input type="text" name="preferredExactTime" placeholder="Optional: Exact time within selected slot">
       <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
-      <textarea name="problem" placeholder="Briefly describe your issue (e.g. pain, stiffness, injury, etc.)" rows="4" required></textarea>
+      <textarea name="problem" rows="3" placeholder="Brief Description of the Problem" required></textarea>
       <input type="hidden" name="consent" value="Yes">
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit Appointment Request">
     </form>
+    <p class="note">We strictly follow Govt. of India Telemedicine Practice Guidelines – 2020. All your information is confidential and secure.</p>
   </section>
 
-  <div id="confirmation-modal" class="confirmation-modal">
+  <div id="confirmation-modal" class="confirmation-modal" onclick="closeModal()">
     <div class="confirmation-box">
-      <h3>✅ Appointment Request Sent</h3>
-      <p>Thank you for booking your consultation.<br>We will message you shortly via WhatsApp to confirm the exact time.</p>
-      <button onclick="closeModal()" style="margin-top: 20px; background-color: #009688; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-size: 1rem; cursor: pointer;">Okay</button>
+      <h3>✅ Appointment Request Sent!</h3>
+      <p>We’ll contact you on WhatsApp to confirm the time and share payment details.</p>
+      <button onclick="closeModal()">OK</button>
     </div>
   </div>
 
-  <a href="https://wa.me/919677253746" class="floating-whatsapp">💬 Chat</a>
+  <a href="https://wa.me/919677253746" class="floating-whatsapp" target="_blank">Chat on WhatsApp</a>
 
   <footer>
-    <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
-    <p style="font-size: 13px; margin-top: 10px; color: #c8e6c9;">
-      🛡️ This consultation platform complies with the <a href="https://www.nmc.org.in/telemedicine-guidelines" target="_blank" style="color: #b2dfdb; text-decoration: underline;">Government of India Telemedicine Guidelines (2020)</a>.
-    </p>
+    <p><small>This form complies with India’s official Telemedicine Practice Guidelines.</small></p>
   </footer>
 </body>
 </html>
-
