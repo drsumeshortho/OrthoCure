@@ -4,96 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consult | OrthoCure Clinic</title>
-  <meta name="description" content="Book an orthopaedic consultation with Dr. Sumesh Subramanian at OrthoCure Clinic. Online and in-person options available.">
-  <meta name="keywords" content="Orthopaedic consultation Chennai, Book appointment ortho, Dr. Sumesh Subramanian consult, OrthoCure Clinic Thirumullaivoyal">
+  <meta name="description" content="Book an online orthopaedic consultation with Dr. Sumesh Subramanian at OrthoCure Clinic. Secure and simple appointment system for expert care.">
+  <meta name="keywords" content="OrthoCure online consult, Dr. Sumesh Subramanian appointment, Chennai ortho consultation, bone joint specialist online">
   <meta name="author" content="Dr. Sumesh Subramanian">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fbfa; color: #2c3e50; }
-    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
-    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fcfc; color: #2c3e50; }
+    header, footer { background: #013440; color: white; padding: 20px; text-align: center; }
+    nav { background: #009688; display: flex; justify-content: center; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #FFD54F; }
-    section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #007B5E; }
-    .options, .timings { background: #e6f4f1; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
-    ul { padding-left: 20px; }
-    .cta-buttons { text-align: center; margin-top: 40px; }
-    .cta-buttons a {
-      background: #007B5E;
+    nav a:hover { color: #FFC107; }
+    section { max-width: 600px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #009688; margin-bottom: 20px; text-align: center; }
+    form { display: flex; flex-direction: column; gap: 15px; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    input, textarea, select {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    input[type="submit"] {
+      background-color: #007B5E;
       color: white;
-      padding: 12px 24px;
-      margin: 10px;
-      border-radius: 8px;
-      text-decoration: none;
       font-weight: bold;
-      display: inline-block;
+      cursor: pointer;
+      border: none;
     }
-    .cta-buttons a:hover { background: #004d3f; }
-    .floating-whatsapp {
-      position: fixed; bottom: 20px; right: 20px;
-      background: #25D366; color: white; padding: 10px 16px; border-radius: 50px;
-      font-size: 16px; display: flex; align-items: center; gap: 8px;
-      z-index: 1000; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    input[type="submit"]:hover {
+      background-color: #005F4E;
     }
-    .floating-whatsapp:hover { background: #1ebe5d; }
-    footer p { font-size: 14px; margin: 5px 0; }
-    footer a { color: #66d9ef; text-decoration: none; }
+    .confirmation { display: none; text-align: center; padding: 20px; color: green; font-weight: bold; }
   </style>
+  <script>
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" }
+      });
+      if (response.ok) {
+        form.style.display = "none";
+        document.getElementById("confirmation").style.display = "block";
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>Consult Dr. Sumesh Subramanian</h1>
-    <p><em>Start Healing. Stay Moving.</em></p>
+    <h1>Online Consultation</h1>
+    <p><em>Book your secure online orthopaedic appointment</em></p>
   </header>
 
   <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
-    <a href="/consult/">Consult</a>
+    <a href="/consult.html">Consult</a>
     <a href="/blog.html">Blog</a>
     <a href="/contact.html">Contact</a>
   </nav>
 
   <section>
-    <h2>Available Consultation Modes</h2>
-    <div class="options">
-      <ul>
-        <li>🏥 <strong>In-Clinic Consultation</strong> at Thirumullaivoyal – Advanced diagnostics, X-ray & physical exam</li>
-        <li>💻 <strong>Online Consultation</strong> via WhatsApp/Google Meet – Secure, convenient, same-day slots</li>
-        <li>🧘 <strong>Rehab & Physiotherapy</strong> guidance post-consult – Tailored recovery protocols</li>
-      </ul>
-    </div>
-
-    <h2>Online Consultation Timings</h2>
-    <div class="timings">
-      <ul>
-        <li>🕙 Morning: 10:00 AM – 1:00 PM</li>
-        <li>🕑 Afternoon: 2:00 PM – 4:00 PM</li>
-        <li>🌙 Evening: 5:00 PM – 9:00 PM</li>
-        <li>📆 Monday to Saturday (Sunday Closed)</li>
-      </ul>
-    </div>
-
-    <div class="cta-buttons">
-      <a href="https://wa.me/919677253746?text=Hi%20Dr.%20Sumesh%2C%20I%20would%20like%20to%20book%20a%20consultation" target="_blank">
-        💬 Book via WhatsApp
-      </a>
-      <a href="https://www.myorthocure.com/consult-form" target="_blank">
-        📝 Fill Online Consultation Form
-      </a>
-    </div>
+    <h2>Book Your Appointment</h2>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="number" name="age" placeholder="Age" required>
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="email" name="email" placeholder="Email" required>
+      <select name="consultationDay" required>
+        <option value="">Select Day</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+      <select name="preferredTime" required>
+        <option value="">Select Time Slot</option>
+        <option value="10AM–1PM">10AM–1PM</option>
+        <option value="2PM–4PM">2PM–4PM</option>
+        <option value="5PM–9PM">5PM–9PM</option>
+      </select>
+      <input type="text" name="preferredExactTime" placeholder="Preferred Time (Optional)">
+      <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+      <textarea name="problem" placeholder="Briefly describe your issue" rows="4" required></textarea>
+      <input type="hidden" name="consent" value="Yes">
+      <input type="submit" value="Submit">
+    </form>
+    <div id="confirmation" class="confirmation">Thank you! Your appointment request has been submitted.</div>
   </section>
-
-  <a class="floating-whatsapp" href="https://wa.me/919677253746?text=Hi%20Dr.%20Sumesh%2C%20I%20need%20help%20with%20an%20appointment" title="Chat on WhatsApp" target="_blank">
-    <i class="fab fa-whatsapp"></i><span>Chat</span>
-  </a>
 
   <footer>
     <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
-    <p><small>Website built with clinical precision by Dr. Sumesh</small></p>
   </footer>
 </body>
 </html>
+
