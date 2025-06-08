@@ -1,156 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Online Consultation | OrthoCure Clinic</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consult | OrthoCure Clinic</title>
+  <meta name="description" content="Book an orthopaedic consultation with Dr. Sumesh Subramanian at OrthoCure Clinic. Online and in-person options available.">
+  <meta name="keywords" content="Orthopaedic consultation Chennai, Book appointment ortho, Dr. Sumesh Subramanian consult, OrthoCure Clinic Thirumullaivoyal">
+  <meta name="author" content="Dr. Sumesh Subramanian">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #2c3e50;
-      padding: 20px;
-      margin: 0;
-    }
-    h2 {
-      text-align: center;
-      color: #007B5E;
-    }
-    form {
-      max-width: 700px;
-      margin: 30px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 15px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      margin-top: 20px;
-      width: 100%;
-      padding: 12px;
-      background-color: #007B5E;
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fbfa; color: #2c3e50; }
+    header, footer { background: #002B36; color: white; padding: 20px; text-align: center; }
+    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #FFD54F; }
+    section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #007B5E; }
+    .options, .timings { background: #e6f4f1; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+    ul { padding-left: 20px; }
+    .cta-buttons { text-align: center; margin-top: 40px; }
+    .cta-buttons a {
+      background: #007B5E;
       color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #005F4E;
-    }
-    .success-message {
-      display: none;
-      text-align: center;
-      margin-top: 20px;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
-      color: green;
+      display: inline-block;
     }
+    .cta-buttons a:hover { background: #004d3f; }
+    .floating-whatsapp {
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25D366; color: white; padding: 10px 16px; border-radius: 50px;
+      font-size: 16px; display: flex; align-items: center; gap: 8px;
+      z-index: 1000; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .floating-whatsapp:hover { background: #1ebe5d; }
+    footer p { font-size: 14px; margin: 5px 0; }
+    footer a { color: #66d9ef; text-decoration: none; }
   </style>
 </head>
 <body>
-  <h2>Book Your Online Consultation</h2>
-  <form id="consultForm" action="https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec" method="POST">
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required>
+  <header>
+    <h1>Consult Dr. Sumesh Subramanian</h1>
+    <p><em>Start Healing. Stay Moving.</em></p>
+  </header>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" required>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
 
-    <label for="gender">Gender:</label>
-    <select id="gender" name="gender" required>
-      <option value="">Select</option>
-      <option>Male</option>
-      <option>Female</option>
-      <option>Other</option>
-    </select>
+  <section>
+    <h2>Available Consultation Modes</h2>
+    <div class="options">
+      <ul>
+        <li>🏥 <strong>In-Clinic Consultation</strong> at Thirumullaivoyal – Advanced diagnostics, X-ray & physical exam</li>
+        <li>💻 <strong>Online Consultation</strong> via WhatsApp/Google Meet – Secure, convenient, same-day slots</li>
+        <li>🧘 <strong>Rehab & Physiotherapy</strong> guidance post-consult – Tailored recovery protocols</li>
+      </ul>
+    </div>
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required>
+    <h2>Online Consultation Timings</h2>
+    <div class="timings">
+      <ul>
+        <li>🕙 Morning: 10:00 AM – 1:00 PM</li>
+        <li>🕑 Afternoon: 2:00 PM – 4:00 PM</li>
+        <li>🌙 Evening: 5:00 PM – 9:00 PM</li>
+        <li>📆 Monday to Saturday (Sunday Closed)</li>
+      </ul>
+    </div>
 
-    <label for="whatsapp">WhatsApp Number:</label>
-    <input type="tel" id="whatsapp" name="whatsapp" required>
+    <div class="cta-buttons">
+      <a href="https://wa.me/919677253746?text=Hi%20Dr.%20Sumesh%2C%20I%20would%20like%20to%20book%20a%20consultation" target="_blank">
+        💬 Book via WhatsApp
+      </a>
+      <a href="https://www.myorthocure.com/consult-form" target="_blank">
+        📝 Fill Online Consultation Form
+      </a>
+    </div>
+  </section>
 
-    <label for="problem">Describe Your Problem:</label>
-    <textarea id="problem" name="problem" rows="4" required></textarea>
+  <a class="floating-whatsapp" href="https://wa.me/919677253746?text=Hi%20Dr.%20Sumesh%2C%20I%20need%20help%20with%20an%20appointment" title="Chat on WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i><span>Chat</span>
+  </a>
 
-    <label for="consultationDay">Preferred Consultation Day:</label>
-    <select id="consultationDay" name="consultationDay" required>
-      <option value="">Select</option>
-      <option>Monday</option>
-      <option>Tuesday</option>
-      <option>Wednesday</option>
-      <option>Thursday</option>
-      <option>Friday</option>
-      <option>Saturday</option>
-    </select>
-
-    <label for="preferredTime">Preferred Time Slot:</label>
-    <select id="preferredTime" name="preferredTime" required>
-      <option value="">Select</option>
-      <option>10AM–1PM</option>
-      <option>2PM–4PM</option>
-      <option>5PM–9PM</option>
-    </select>
-
-    <label for="preferredExactTime">Preferred Exact Time (Optional):</label>
-    <input type="text" id="preferredExactTime" name="preferredExactTime" placeholder="e.g. 10:30 AM" />
-
-    <label>
-      <input type="checkbox" name="consent" value="Yes" required />
-      I consent to online consultation and agree to data handling.
-    </label>
-
-    <button type="submit">Submit Appointment</button>
-  </form>
-
-  <div id="successModal" style="display:none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center;">
-  <div style="background: white; padding: 30px 25px; border-radius: 10px; max-width: 400px; width: 90%; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-align: center;">
-    <h3 style="color: #007B5E; margin-bottom: 10px;">✅ Appointment Submitted</h3>
-    <p style="font-size: 15px;">Thank you for booking your consultation.<br>We’ll contact you shortly via WhatsApp.</p>
-    <button onclick="closeModal()" style="margin-top: 20px; padding: 10px 20px; background-color: #007B5E; color: white; border: none; border-radius: 5px; cursor: pointer;">OK</button>
-  </div>
-</div>
-
-  <script>
-  function closeModal() {
-    document.getElementById("successModal").style.display = "none";
-  }
-
-  document.getElementById("consultForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) throw new Error("Likely CORS, but backend worked.");
-      return response.text();
-    })
-    .then(() => {
-      document.getElementById("successModal").style.display = "flex";
-      form.reset();
-    })
-    .catch(() => {
-      document.getElementById("successModal").style.display = "flex";
-      form.reset();
-    });
-  });
-</script>
-
+  <footer>
+    <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
+    <p><small>Website built with clinical precision by Dr. Sumesh</small></p>
+  </footer>
 </body>
 </html>
