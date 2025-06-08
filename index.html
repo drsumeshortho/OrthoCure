@@ -1,137 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home | OrthoCure Clinic</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to OrthoCure Bone & Joint Speciality Clinic in Chennai – Trusted orthopaedic care by Dr. Sumesh Subramanian. Book consultations online.">
-  <meta name="keywords" content="Orthopaedic Clinic Chennai, Dr. Sumesh Subramanian, OrthoCure, Bone and Joint Care, Ortho Specialist Thirumullaivoyal">
+  <title>OrthoCure Clinic | Start Healing. Stay Moving.</title>
+  <meta name="description" content="OrthoCure Bone & Joint Speciality Clinic – Chennai's trusted orthopaedic care center led by Dr. Sumesh Subramanian. Book online consultations today.">
+  <meta name="keywords" content="OrthoCure, Dr. Sumesh Subramanian, orthopaedic clinic Chennai, bone joint pain doctor, online ortho consult">
   <meta name="author" content="Dr. Sumesh Subramanian">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "OrthoCure Bone & Joint Speciality Clinic",
-    "image": "https://www.myorthocure.com/assets/logo.png",
-    "@id": "https://www.myorthocure.com",
-    "url": "https://www.myorthocure.com",
-    "telephone": "+919677253746",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Thirumullaivoyal",
-      "addressLocality": "Chennai",
-      "addressRegion": "TN",
-      "postalCode": "600062",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 13.130566178794025,
-      "longitude": 80.13042623858249
-    },
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "10:00",
-      "closes": "21:00"
-    }],
-    "medicalSpecialty": "Orthopaedic"
-  }
-  </script>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f9f8; color: #2c3e50; line-height: 1.6; }
-    header { background: #002B36; color: white; display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 10px 20px; flex-wrap: wrap; }
-    .logo { max-height: 60px; }
-    .clinic-title { flex: 1; text-align: center; }
-    .clinic-title h1 { margin: 0; font-size: 1.6em; }
-    .clinic-title p { font-size: 0.9em; margin-top: 5px; font-style: italic; }
-    nav { background: #007B5E; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
-    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
-    nav a:hover { color: #FFE082; }
-    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/hero-bg.jpg') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; opacity: 0; transform: translateY(20px); animation: fadeInUp 1s forwards; }
-    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
-    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
-    .hero p { font-size: 1.2em; }
-    section { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-    .cta { background: #007B5E; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-top: 30px; transition: transform 0.3s ease; }
-    .cta:hover { transform: scale(1.02); }
-    .cta a { background: white; color: #007B5E; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
-    .cta a:hover { background: #e0f2f1; }
-    .map-preview { text-align: center; margin-top: 40px; }
-    .map-preview iframe { width: 100%; max-width: 1000px; height: 300px; border: none; border-radius: 8px; }
-    .floating-whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 16px; border-radius: 50px; font-size: 16px; text-align: center; z-index: 10000; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px; font-weight: bold; }
-    .floating-whatsapp:hover { background: #1ebe5d; }
-    footer p { font-size: 14px; margin: 5px 0; }
-    footer a { color: #66d9ef; text-decoration: none; }
-    .affiliation-badges { margin-top: 10px; }
-    .affiliation-badges img { height: 40px; margin: 0 10px; vertical-align: middle; }
-    @media (max-width: 768px) {
-      header { flex-direction: column; align-items: center; text-align: center; }
-      .clinic-title h1 { font-size: 1.3em; }
-      .hero h1 { font-size: 1.8em; }
-      .hero p { font-size: 1em; }
-      .cta h3 { font-size: 1.2em; }
-      .cta a { font-size: 0.9em; padding: 8px 16px; }
-      section { padding: 0 15px; }
-      .affiliation-badges img { height: 30px; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fcfc; color: #2c3e50; }
+    header { background: #013440; color: white; padding: 20px; text-align: center; position: relative; }
+    header::before {
+      content: url('/assets/logo.png');
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      transform: scale(1.8);
     }
+    nav { background: #009688; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #FFC107; }
+    .hero {
+      background: linear-gradient(to bottom right, #009688, #004d40);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.8em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; font-style: italic; }
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #007B5E;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background: #e0f2f1;
+    }
+    section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
+    .intro {
+      background: #ffffff;
+      padding: 20px;
+      border-left: 5px solid #009688;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+    .intro h2 { color: #009688; }
+    footer { background: #013440; color: white; padding: 20px; text-align: center; }
+    footer p { font-size: 14px; margin: 5px 0; }
+    footer a { color: #80deea; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <img src="/assets/logo.png" alt="OrthoCure Logo" class="logo">
-    <div class="clinic-title">
-      <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
-      <p>Start Healing. Stay Moving.</p>
-    </div>
+    <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+    <p><em>Start Healing. Stay Moving.</em></p>
   </header>
+
   <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
-    <a href="/consult/">Consult</a>
+    <a href="/consult.html">Consult</a>
     <a href="/blog.html">Blog</a>
     <a href="/contact.html">Contact</a>
   </nav>
+
   <section class="hero">
     <h1>Expert Orthopaedic Care coming soon at Thirumullaivoyal</h1>
     <p>Led by Dr. Sumesh Subramanian, MS Ortho, Fellowship in Arthroplasty</p>
+    <a href="/consult.html" class="cta-button">🩺 Book Online Consultation</a>
   </section>
-  <section>
-    <h2>Why Choose OrthoCure?</h2>
-    <ul>
-      <li>✅ Trusted by hundreds of patients for bone and joint care</li>
-      <li>✅ Located conveniently in Thirumullaivoyal</li>
-      <li>✅ Modern imaging & evidence-based treatment</li>
-    </ul>
-    <div class="cta">
-      <h3>Need Consultation?</h3>
-      <a href="/consult/">Book Online Now</a>
-    </div>
+
+  <section class="intro">
+    <h2>About OrthoCure</h2>
+    <p>We provide ethical, evidence-based orthopaedic care. Our services include general orthopaedic consultations, trauma management, digital X-ray, and physiotherapy-based rehabilitation — all under one roof. Designed to bring world-class care to the heart of your neighbourhood.</p>
   </section>
-  <section class="map-preview">
-    <iframe src="https://maps.google.com/maps?q=13.130566178794025,80.13042623858249&hl=en&z=16&amp;output=embed"></iframe>
-  </section>
-  <a class="floating-whatsapp" href="https://wa.me/919677253746?text=Hi%20Dr.%20Sumesh%2C%20I%20would%20like%20to%20book%20an%20appointment" title="Chat on WhatsApp" target="_blank">
-    <i class="fab fa-whatsapp"></i><span>Chat</span>
-  </a>
+
   <footer>
-    <div class="affiliation-badges">
-      <img src="/assets/ioa-badge.png" alt="IOA Member">
-      <img src="/assets/tnoa-badge.png" alt="TNOA Member">
-      <p><small>Proud Member – IOA & TNOA</small></p>
-    </div>
     <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
-    <p>📍 Thirumullaivoyal, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
-    <p><small>Website built with ❤ by Dr. Sumesh</small></p>
+    <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
+    <p><small>Website built for impact by Dr. Sumesh & D</small></p>
   </footer>
 </body>
 </html>
