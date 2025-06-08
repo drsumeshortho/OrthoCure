@@ -17,6 +17,41 @@
     main { padding: 40px 20px; text-align: center; }
     h1 { color: #009688; margin-bottom: 20px; font-size: 2rem; }
     p { font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+    .snippet {
+      background: white;
+      border-left: 5px solid #009688;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 700px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .snippet h2 { margin-top: 0; color: #007B5E; }
+    .snippet p { margin: 10px 0; }
+    .trust {
+      background-color: #e0f7fa;
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.95rem;
+      border-radius: 6px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #00695c;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+    .logos img {
+      height: 40px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .logos img:hover {
+      transform: scale(1.1);
+    }
     a.button {
       display: inline-block;
       margin-top: 30px;
@@ -49,7 +84,22 @@
   <main>
     <h1>Trusted Orthopaedic Wisdom. Right From the Source.</h1>
     <p>The official blog by Dr. Sumesh Subramanian delivers science-backed insights, patient-first advice, and real-world orthopaedic knowledge you can trust. Stay informed. Stay strong.</p>
-    <a href="https://drsumeshortho.blogspot.com" target="_blank" class="button">Visit Blog Now</a>
+
+    <div class="snippet">
+      <h2>📌 Don’t Miss:</h2>
+      <p><strong>“Top 5 Reasons for Knee Pain After 40”</strong> — A must-read for active adults</p>
+      <p><strong>“Do You Really Need Surgery?”</strong> — A surgeon’s honest view on conservative vs. operative care</p>
+    </div>
+
+    <a href="https://drsumeshortho.blogspot.com" target="_blank" class="button">📚 Read All Blog Posts</a>
+
+    <div class="trust">
+      This blog complies with the Indian Orthopaedic Association and Telemedicine Practice Guidelines 2020. For transparency, accuracy, and evidence-based care.
+      <div class="logos">
+        <a href="https://ioaindia.org/" target="_blank"><img src="/assets/ioa-logo.png" alt="IOA Logo"></a>
+        <a href="https://www.tnoa.info/" target="_blank"><img src="/assets/tnoa-logo.png" alt="TNOA Logo"></a>
+      </div>
+    </div>
   </main>
 
   <footer>
