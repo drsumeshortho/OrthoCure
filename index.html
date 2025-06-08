@@ -9,6 +9,44 @@
   <meta name="author" content="Dr. Sumesh Subramanian">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "OrthoCure Bone & Joint Speciality Clinic",
+    "image": "https://www.myorthocure.com/assets/logo.png",
+    "@id": "https://www.myorthocure.com",
+    "url": "https://www.myorthocure.com",
+    "telephone": "+919677253746",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Thirumullaivoyal",
+      "addressLocality": "Chennai",
+      "addressRegion": "TN",
+      "postalCode": "600062",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.130566178794025,
+      "longitude": 80.13042623858249
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "21:00"
+    }],
+    "medicalSpecialty": "Orthopaedic"
+  }
+  </script>
   <style>
     * {
       box-sizing: border-box;
@@ -71,6 +109,15 @@
       color: white;
       text-align: center;
       padding: 100px 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     .hero h1 {
       font-size: 2.5em;
@@ -91,6 +138,10 @@
       text-align: center;
       border-radius: 8px;
       margin-top: 30px;
+      transition: transform 0.3s ease;
+    }
+    .cta:hover {
+      transform: scale(1.02);
     }
     .cta a {
       background: white;
@@ -183,6 +234,8 @@
     }
   </style>
 </head>
+
+
 <body>
   <header>
     <img src="/assets/logo.png" alt="OrthoCure Logo" class="logo">
@@ -238,4 +291,4 @@
     <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
 </body>
-</html>
+</html>https://www.orthomedia.org.uk/page/surgical-techniques-and-training-videos?utm_source=SocialMedia&utm_medium=linkedin&utm_term=the+bone+%26+joint+journal+&utm_content=&utm_campaign=
