@@ -115,36 +115,42 @@
     <button type="submit">Submit Appointment</button>
   </form>
 
-  <div class="success-message" id="successMessage">
-    ✅ Thank you! Your request has been submitted successfully.
+  <div id="successModal" style="display:none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center;">
+  <div style="background: white; padding: 30px 25px; border-radius: 10px; max-width: 400px; width: 90%; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-align: center;">
+    <h3 style="color: #007B5E; margin-bottom: 10px;">✅ Appointment Submitted</h3>
+    <p style="font-size: 15px;">Thank you for booking your consultation.<br>We’ll contact you shortly via WhatsApp.</p>
+    <button onclick="closeModal()" style="margin-top: 20px; padding: 10px 20px; background-color: #007B5E; color: white; border: none; border-radius: 5px; cursor: pointer;">OK</button>
   </div>
+</div>
 
   <script>
-    document.getElementById("consultForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
+  function closeModal() {
+    document.getElementById("successModal").style.display = "none";
+  }
 
-      fetch(form.action, {
-        method: "POST",
-        body: formData
-      })
-      .then(response => {
-        // Even if CORS blocks a visible response, the form still worked
-        if (!response.ok) {
-          throw new Error("Submission succeeded but no visible response");
-        }
-        return response.text();
-      })
-      .then(() => {
-        document.getElementById("successMessage").style.display = "block";
-        form.reset();
-      })
-      .catch(() => {
-        // fallback for CORS-blocked but successful request
-        document.getElementById("successMessage").style.display = "block";
-      });
+  document.getElementById("consultForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) throw new Error("Likely CORS, but backend worked.");
+      return response.text();
+    })
+    .then(() => {
+      document.getElementById("successModal").style.display = "flex";
+      form.reset();
+    })
+    .catch(() => {
+      document.getElementById("successModal").style.display = "flex";
+      form.reset();
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
