@@ -88,13 +88,15 @@
 
         const result = await response.text();
 
-        if (response.ok && result.includes("success")) {
+        // Accept any 200 response regardless of text content
+        if (response.ok) {
           form.reset();
           document.getElementById("confirmation-modal").style.display = "flex";
         } else {
           alert("❌ Submission failed. Please try again.");
         }
       } catch (error) {
+        console.error("Fetch error:", error);
         alert("🚫 Network error. Please check your connection.");
       }
 
