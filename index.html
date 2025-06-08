@@ -1,139 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OrthoCure Clinic | Start Healing. Stay Moving.</title>
-  <meta name="description" content="OrthoCure Bone & Joint Speciality Clinic – Chennai's trusted orthopaedic care center led by Dr. Sumesh Subramanian. Book online consultations today.">
-  <meta name="keywords" content="OrthoCure, Dr. Sumesh Subramanian, orthopaedic clinic Chennai, bone joint pain doctor, online ortho consult">
+  <title>OrthoCure Bone & Joint Speciality Clinic</title>
+  <meta name="description" content="Welcome to OrthoCure Clinic, Chennai. Book appointments, read expert blogs, and consult Dr. Sumesh Subramanian online.">
+  <meta name="keywords" content="Orthopaedic Chennai, Dr. Sumesh Subramanian, Bone and Joint Specialist, OrthoCure Clinic">
   <meta name="author" content="Dr. Sumesh Subramanian">
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fcfc; color: #2c3e50; }
-    header { background: #013440; color: white; display: flex; align-items: center; padding: 10px 20px; }
-    .logo {
-      height: 60px;
-      margin-right: 15px;
-    }
-    .clinic-title h1 { margin: 0; font-size: 1.4rem; }
-    .clinic-title p { margin: 0; font-size: 0.85rem; font-style: italic; color: #ccc; }
-    nav { background: #009688; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9fcfc; color: #2c3e50; }
+    header { background: #013440; color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; font-style: italic; }
+    nav { background: #009688; display: flex; justify-content: center; gap: 20px; padding: 12px; position: sticky; top: 0; z-index: 999; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #FFC107; }
-    .hero {
-      background: linear-gradient(to bottom right, #009688, #004d40);
+    nav a:hover { color: #ffc107; }
+    section.hero {
+      background: url('/assets/hero-bg.jpg') no-repeat center center/cover;
+      padding: 80px 20px;
+      text-align: center;
       color: white;
-      padding: 100px 20px;
-      text-align: center;
-      animation: fadeIn 1s ease-in-out;
+      position: relative;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
     }
-    .hero h1 { font-size: 2.8em; margin-bottom: 10px; }
-    .hero p { font-size: 1.2em; font-style: italic; }
-    .cta-button {
-      display: inline-block;
-      background: white;
-      color: #007B5E;
-      font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 6px;
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content h2 { font-size: 2rem; margin-bottom: 10px; }
+    .hero-content p { font-size: 1.1rem; }
+    .cta { margin-top: 30px; }
+    .cta a {
+      background: #ffc107;
+      padding: 14px 28px;
+      border-radius: 8px;
       text-decoration: none;
-      margin-top: 20px;
-    }
-    .cta-button:hover {
-      background: #e0f2f1;
-    }
-    section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
-    .trustbar {
-      background: #e6f4f1;
-      padding: 15px;
-      text-align: center;
+      color: #013440;
       font-weight: bold;
+    }
+    .trust-badges { text-align: center; margin: 40px 0; }
+    .trust-badges img { height: 60px; margin: 0 10px; filter: grayscale(100%); }
+    .dont-miss { background: #e3f2f1; padding: 40px 20px; text-align: center; }
+    .dont-miss h3 { font-size: 1.6rem; margin-bottom: 15px; color: #00695c; }
+    .dont-miss p { font-size: 1rem; margin-bottom: 20px; }
+    .dont-miss a {
+      background: #007B5E;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
       border-radius: 6px;
-      color: #00695c;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-weight: bold;
     }
-    .affiliations {
-      background: #fff;
-      padding: 40px 20px;
-      text-align: center;
+    footer {
+      background: #013440; color: white; text-align: center;
+      padding: 20px 10px; font-size: 0.9rem;
     }
-    .affiliations h3 {
-      color: #004d40;
-      margin-bottom: 20px;
-    }
-    .affiliations-logos {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .affiliations-logos a {
-      transition: transform 0.3s ease;
-    }
-    .affiliations-logos a:hover {
-      transform: scale(1.1);
-    }
-    .affiliations p {
-      font-size: 14px;
-      color: #555;
-      margin-top: 10px;
-    }
-    footer { background: #013440; color: white; padding: 20px; text-align: center; }
-    footer p { font-size: 14px; margin: 5px 0; }
-    footer a { color: #80deea; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <a href="/">
-      <img src="/assets/logo.png" alt="OrthoCure Logo" class="logo">
-    </a>
-    <div class="clinic-title">
-      <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
-      <p>Start Healing. Stay Moving.</p>
-    </div>
+    <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+    <p>Start Healing. Stay Moving.</p>
   </header>
-
   <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
-    <a href="/consult.html">Consult</a>
+    <a href="/consult/index.html">Consult</a>
     <a href="/blog.html">Blog</a>
     <a href="/contact.html">Contact</a>
   </nav>
-
   <section class="hero">
-    <h1>Expert Orthopaedic Care coming soon at Thirumullaivoyal</h1>
-    <p>Led by Dr. Sumesh Subramanian, MS Ortho, Fellowship in Arthroplasty</p>
-    <a href="/consult.html" class="cta-button">🩺 Book Online Consultation</a>
-  </section>
-
-  <section class="trustbar">
-    Trusted by patients | TNMC Registered | Secure Online Booking | Digital X-ray Enabled
-  </section>
-
-  <section class="affiliations">
-    <h3>Professional Affiliations</h3>
-    <div class="affiliations-logos">
-      <a href="https://www.ioaindia.org/" target="_blank" rel="noopener">
-        <img src="/assets/ioa-badge.png" alt="IOA Badge" style="height: 60px;">
-      </a>
-      <a href="https://tnortho.org//" target="_blank" rel="noopener">
-        <img src="/assets/tnoa-badge.png" alt="TNOA Badge" style="height: 60px;">
-      </a>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Expert Orthopaedic Care in Chennai</h2>
+      <p>Online and in-person consultations with Dr. Sumesh Subramanian</p>
+      <div class="cta">
+        <a href="/consult/index.html">Book Online Consultation</a>
+      </div>
     </div>
-    <p>Member – Indian Orthopaedic Association (IOA) & Tamil Nadu Orthopaedic Association (TNOA)</p>
+  </section>
+
+  <section class="trust-badges">
+    <p>Trusted by IOA & TNOA certified professionals</p>
+    <img src="/assets/ioa-badge.png" alt="IOA Certified">
+    <img src="/assets/tnoa-badge.png" alt="TNOA Member">
+  </section>
+
+  <section class="dont-miss">
+    <h3>Don't Miss Out</h3>
+    <p>Get expert insights on bone and joint health, tips for faster recovery, and advice you can trust – straight from the clinic.</p>
+    <a href="/blog.html">Read the Latest Blog</a>
   </section>
 
   <footer>
-    <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
-    <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
-    <p><small>Website built for impact by Dr. Sumesh</small></p>
+    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com" style="color:#ffc107">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
   </footer>
 </body>
 </html>
