@@ -71,33 +71,42 @@
     }
     .note { font-size: 0.9rem; color: #555; font-style: italic; }
   </style>
-  <script>
-    async function handleSubmit(event) {
-      event.preventDefault();
-      const form = event.target;
-      const formData = new FormData(form);
-      const encoded = new URLSearchParams(formData).toString();
-      const submitButton = form.querySelector('input[type="submit"]');
-      submitButton.value = 'Submitting...';
-      submitButton.disabled = true;
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encoded
-      });
-      if (response.ok) {
-        form.reset();
-        document.getElementById("confirmation-modal").style.display = "flex";
-      } else {
-        submitButton.value = 'Submit';
-        submitButton.disabled = false;
-        alert("Something went wrong. Please try again later.");
-      }
+ <script>
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const jsonObject = {};
+    formData.forEach((value, key) => {
+      jsonObject[key] = value;
+    });
+
+    const submitButton = form.querySelector('input[type="submit"]');
+    submitButton.value = 'Submitting...';
+    submitButton.disabled = true;
+
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(jsonObject)
+    });
+
+    if (response.ok) {
+      form.reset();
+      document.getElementById("confirmation-modal").style.display = "flex";
+    } else {
+      alert("Something went wrong. Please try again later.");
     }
-    function closeModal() {
-      document.getElementById("confirmation-modal").style.display = "none";
-    }
-  </script>
+
+    submitButton.value = 'Submit';
+    submitButton.disabled = false;
+  }
+
+  function closeModal() {
+    document.getElementById("confirmation-modal").style.display = "none";
+  }
+</script>
+
 </head>
 <body>
   <header>
