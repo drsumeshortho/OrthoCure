@@ -1,50 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TJH4M7N7');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <title>Home | OrthoCure Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to OrthoCure Bone & Joint Speciality Clinic in Chennai – Trusted orthopaedic care by Dr. Sumesh Subramanian. Book consultations online.">
   <meta name="keywords" content="Orthopaedic Clinic Chennai, Dr. Sumesh Subramanian, OrthoCure, Bone and Joint Care, Ortho Specialist Thirumullaivoyal">
   <meta name="author" content="Dr. Sumesh Subramanian">
-  <title>Home | OrthoCure Clinic</title>
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f9f8; color: #2c3e50; }
-    header, footer { background: #002B36; color: white; text-align: center; padding: 20px; }
-    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; flex-wrap: wrap; }
-    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
-    nav a:hover { color: #FFE082; }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #007B5E; }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f9f8;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #002B36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #007B5E;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #FFE082;
+    }
     .hero {
       background: url('/assets/hero-bg.jpg') center/cover no-repeat;
-      color: white; text-align: center; padding: 100px 20px;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
       background-color: #007B5E;
     }
-    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
-    .hero p { font-size: 1.2em; }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
     .cta {
-      background: #007B5E; color: white; padding: 20px; text-align: center; border-radius: 8px;
+      background: #007B5E;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
       margin-top: 30px;
     }
-    .cta a { background: white; color: #007B5E; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
-    .cta a:hover { background: #e0f2f1; }
+    .cta a {
+      background: white;
+      color: #007B5E;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .cta a:hover {
+      background: #e0f2f1;
+    }
     .floating-whatsapp {
-      position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white;
-      padding: 12px 14px; border-radius: 50%; font-size: 24px; text-align: center; z-index: 10000;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 14px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      z-index: 10000;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    .floating-whatsapp:hover { background: #1ebe5d; }
-    footer p { font-size: 14px; margin: 5px 0; }
-    footer a { color: #66d9ef; text-decoration: none; }
+    .floating-whatsapp:hover {
+      background: #1ebe5d;
+    }
+    footer p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    footer a {
+      color: #66d9ef;
+      text-decoration: none;
+    }
     .affiliation-badges {
       margin-top: 10px;
     }
@@ -53,20 +118,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 0 10px;
       vertical-align: middle;
     }
-    @media (max-width: 600px) {
-      nav { flex-direction: column; align-items: center; }
-      section { padding: 0 15px; }
-      header h1, footer p { font-size: 1.2em; }
-      .floating-whatsapp { font-size: 20px; padding: 10px; }
-      .affiliation-badges img { height: 32px; margin: 0 6px; }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.8em;
+      }
+      .hero p {
+        font-size: 1em;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta h3 {
+        font-size: 1.2em;
+      }
+      .cta a {
+        font-size: 0.9em;
+        padding: 8px 16px;
+      }
+      section {
+        padding: 0 15px;
+      }
+      .affiliation-badges img {
+        height: 30px;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
   <header>
     <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
     <p><em>Start Healing. Stay Moving.</em></p>
@@ -113,6 +192,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>📍 Thirumullaivoyal, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
     <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
   </footer>
-
 </body>
 </html>
