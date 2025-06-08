@@ -89,7 +89,9 @@
           body: formData
         });
 
-        if (response.ok) {
+        const text = await response.text();
+
+        if (text.trim().toLowerCase() === "success" || response.ok) {
           form.reset();
           document.getElementById("confirmation-modal").style.display = "flex";
         } else {
@@ -100,7 +102,7 @@
         alert("🚫 Network error. Please check your connection.");
       }
 
-      submitButton.value = 'Submit';
+      submitButton.value = 'Submit Appointment Request';
       submitButton.disabled = false;
     }
 
