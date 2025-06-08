@@ -8,8 +8,6 @@
   <meta name="keywords" content="OrthoCure online consult, Dr. Sumesh Subramanian appointment, Chennai ortho consultation, bone joint specialist online">
   <meta name="author" content="Dr. Sumesh Subramanian">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
-  <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/favicon.png">
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fcfc; color: #2c3e50; }
     header, footer { background: #013440; color: white; padding: 20px; text-align: center; }
@@ -83,20 +81,11 @@
     .modal-content button:hover { background: #00695c; }
   </style>
   <script>
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
-      const xhr = new XMLHttpRequest();
-      xhr.open("POST", form.action);
-      xhr.onload = function() {
-        document.getElementById("successModal").style.display = "flex";
-        form.reset();
-      };
-      xhr.send(formData);
-    }
-    function closeModal() {
-      document.getElementById("successModal").style.display = "none";
+    function showModal() {
+      document.getElementById("successModal").style.display = "flex";
+      setTimeout(() => {
+        document.querySelector("form").reset();
+      }, 500);
     }
   </script>
 </head>
@@ -116,7 +105,7 @@
 
   <section>
     <h2>Book Your Online Appointment</h2>
-    <form action="https://script.google.com/macros/s/AKfycbxzZ64J3TUM32j-Un7hf1PTeTf4lnc3PCAO65KQjpmXLPm_5YPhUdvR6Aoabzp6XG0/exec" method="POST" onsubmit="handleFormSubmit(event)">
+    <form action="https://script.google.com/macros/s/AKfycbxzZ64J3TUM32j-Un7hf1PTeTf4lnc3PCAO65KQjpmXLPm_5YPhUdvR6Aoabzp6XG0/exec" method="POST" target="hiddenFrame" onsubmit="showModal()">
       <input type="text" name="name" placeholder="Full Name" required>
       <input type="number" name="age" placeholder="Age" required>
       <select name="gender" required>
@@ -147,6 +136,7 @@
       <input type="hidden" name="consent" value="Yes">
       <input type="submit" value="Submit Appointment Request">
     </form>
+    <iframe name="hiddenFrame" style="display:none;"></iframe>
     <p class="note">We strictly follow Govt. of India Telemedicine Practice Guidelines – 2020. All your information is confidential and secure.</p>
   </section>
 
@@ -155,7 +145,7 @@
       <h3>✅ Appointment Request Received!</h3>
       <p>Your form was successfully submitted. Our team at OrthoCure will contact you via WhatsApp shortly to confirm your consultation timing.<br><br>
       Thank you for choosing <strong>Dr. Sumesh Subramanian</strong> and OrthoCure – where trust meets care.</p>
-      <button onclick="closeModal()">Close</button>
+      <button onclick="document.getElementById('successModal').style.display='none'">Close</button>
     </div>
   </div>
 
