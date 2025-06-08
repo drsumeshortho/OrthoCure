@@ -10,14 +10,13 @@
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9fcfc; color: #2c3e50; }
-    header { background: #013440; color: white; padding: 20px; text-align: center; position: relative; }
-    header::before {
-      content: url('/assets/logo.png');
-      position: absolute;
-      top: 10px;
-      left: 15px;
-      transform: scale(1.8);
+    header { background: #013440; color: white; display: flex; align-items: center; padding: 10px 20px; }
+    .logo {
+      height: 60px;
+      margin-right: 15px;
     }
+    .clinic-title h1 { margin: 0; font-size: 1.4rem; }
+    .clinic-title p { margin: 0; font-size: 0.85rem; font-style: italic; color: #ccc; }
     nav { background: #009688; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #FFC107; }
@@ -59,8 +58,11 @@
 </head>
 <body>
   <header>
-    <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
-    <p><em>Start Healing. Stay Moving.</em></p>
+    <img src="/assets/logo.png" alt="OrthoCure Logo" class="logo">
+    <div class="clinic-title">
+      <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+      <p>Start Healing. Stay Moving.</p>
+    </div>
   </header>
 
   <nav>
@@ -85,7 +87,7 @@
   <footer>
     <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
-    <p><small>Website built for impact by Dr. Sumesh & D</small></p>
+    <p><small>Website built for impact by Dr. Sumesh</small></p>
   </footer>
 </body>
 </html>
