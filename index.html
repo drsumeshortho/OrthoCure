@@ -56,6 +56,33 @@
       color: #00695c;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+    .affiliations {
+      background: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .affiliations h3 {
+      color: #004d40;
+      margin-bottom: 20px;
+    }
+    .affiliations-logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .affiliations-logos a {
+      transition: transform 0.3s ease;
+    }
+    .affiliations-logos a:hover {
+      transform: scale(1.1);
+    }
+    .affiliations p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
     footer { background: #013440; color: white; padding: 20px; text-align: center; }
     footer p { font-size: 14px; margin: 5px 0; }
     footer a { color: #80deea; text-decoration: none; }
@@ -90,26 +117,23 @@
     Trusted by patients | TNMC Registered | Secure Online Booking | Digital X-ray Enabled
   </section>
 
+  <section class="affiliations">
+    <h3>Professional Affiliations</h3>
+    <div class="affiliations-logos">
+      <a href="https://www.ioaindia.org/" target="_blank" rel="noopener">
+        <img src="/assets/ioa-badge.png" alt="IOA Badge" style="height: 60px;">
+      </a>
+      <a href="https://www.tnoa.in/" target="_blank" rel="noopener">
+        <img src="/assets/tnoa-badge.png" alt="TNOA Badge" style="height: 60px;">
+      </a>
+    </div>
+    <p>Member – Indian Orthopaedic Association (IOA) & Tamil Nadu Orthopaedic Association (TNOA)</p>
+  </section>
+
   <footer>
     <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
     <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
     <p><small>Website built for impact by Dr. Sumesh</small></p>
-    <section style="background: #fff; padding: 40px 20px; text-align: center;">
-  <h3 style="color: #004d40; margin-bottom: 20px;">Professional Affiliations</h3>
-  <div style="display: flex; justify-content: center; gap: 40px; align-items: center; flex-wrap: wrap;">
-    <a href="https://www.ioaindia.org/" target="_blank" rel="noopener" style="transition: transform 0.3s;">
-      <img src="/assets/ioa-logo.png" alt="IOA Logo" style="height: 60px;" onmouseover="this.parentElement.style.transform='scale(1.1)'" onmouseout="this.parentElement.style.transform='scale(1)'">
-    </a>
-    <a href="https://www.tnoa.in/" target="_blank" rel="noopener" style="transition: transform 0.3s;">
-      <img src="/assets/tnoa-logo.png" alt="TNOA Logo" style="height: 60px;" onmouseover="this.parentElement.style.transform='scale(1.1)'" onmouseout="this.parentElement.style.transform='scale(1)'">
-    </a>
-  </div>
-  <p style="font-size: 14px; color: #555; margin-top: 10px;">
-    Member – Indian Orthopaedic Association (IOA) & Tamil Nadu Orthopaedic Association (TNOA)
-  </p>
-</section>
-
   </footer>
 </body>
 </html>
-
