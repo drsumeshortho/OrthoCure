@@ -67,11 +67,10 @@
       color: #FFE082;
     }
     .hero {
-      background: url('/assets/hero-bg.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/hero-bg.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 100px 20px;
-      background-color: #007B5E;
     }
     .hero h1 {
       font-size: 2.5em;
@@ -106,18 +105,33 @@
     .cta a:hover {
       background: #e0f2f1;
     }
+    .map-preview {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .map-preview iframe {
+      width: 100%;
+      max-width: 1000px;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
     .floating-whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background: #25D366;
       color: white;
-      padding: 12px 14px;
-      border-radius: 50%;
-      font-size: 24px;
+      padding: 10px 16px;
+      border-radius: 50px;
+      font-size: 16px;
       text-align: center;
       z-index: 10000;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
     }
     .floating-whatsapp:hover {
       background: #1ebe5d;
@@ -187,7 +201,7 @@
   </nav>
 
   <section class="hero">
-    <h1>Expert Orthopaedic Care coming soon in Thirumullaivoyal</h1>
+    <h1>Expert Orthopaedic Care coming soon at Thirumullaivoyal</h1>
     <p>Led by Dr. Sumesh Subramanian, MS Ortho, Fellowship in Arthroplasty</p>
   </section>
 
@@ -205,8 +219,12 @@
     </div>
   </section>
 
-  <a class="floating-whatsapp" href="https://wa.me/919677253746" title="Chat on WhatsApp" target="_blank">
-    <i class="fab fa-whatsapp"></i>
+  <section class="map-preview">
+    <iframe src="https://maps.google.com/maps?q=13.130566178794025,80.13042623858249&hl=en&z=16&amp;output=embed"></iframe>
+  </section>
+
+  <a class="floating-whatsapp" href="https://wa.me/919677253746?text=Hi%20Dr.%20Sumesh%2C%20I%20would%20like%20to%20book%20an%20appointment" title="Chat on WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i><span>Chat</span>
   </a>
 
   <footer>
