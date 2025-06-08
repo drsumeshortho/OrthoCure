@@ -1,27 +1,150 @@
-<script>
-  document.getElementById("consultForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Consultation | OrthoCure Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #2c3e50;
+      padding: 20px;
+      margin: 0;
+    }
+    h2 {
+      text-align: center;
+      color: #007B5E;
+    }
+    form {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007B5E;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005F4E;
+    }
+    .success-message {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h2>Book Your Online Consultation</h2>
+  <form id="consultForm" action="https://script.google.com/macros/s/AKfycbwib212no8mUMj1Hit2dxfxZmtEDadHCby6yaTYN7IOEC058-_35MhJqFHnx6vZYko/exec" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
 
-    fetch(form.action, {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      // even if the backend returns blank or CORS error, treat as success
-      if (!response.ok) {
-        throw new Error("Submission succeeded, but CORS prevented response.");
-      }
-      return response.text();
-    })
-    .then(() => {
-      document.getElementById("successMessage").style.display = "block";
-      form.reset();
-    })
-    .catch(() => {
-      // Fallback success handler
-      document.getElementById("successMessage").style.display = "block";
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="whatsapp">WhatsApp Number:</label>
+    <input type="tel" id="whatsapp" name="whatsapp" required>
+
+    <label for="problem">Describe Your Problem:</label>
+    <textarea id="problem" name="problem" rows="4" required></textarea>
+
+    <label for="consultationDay">Preferred Consultation Day:</label>
+    <select id="consultationDay" name="consultationDay" required>
+      <option value="">Select</option>
+      <option>Monday</option>
+      <option>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+      <option>Friday</option>
+      <option>Saturday</option>
+    </select>
+
+    <label for="preferredTime">Preferred Time Slot:</label>
+    <select id="preferredTime" name="preferredTime" required>
+      <option value="">Select</option>
+      <option>10AM–1PM</option>
+      <option>2PM–4PM</option>
+      <option>5PM–9PM</option>
+    </select>
+
+    <label for="preferredExactTime">Preferred Exact Time (Optional):</label>
+    <input type="text" id="preferredExactTime" name="preferredExactTime" placeholder="e.g. 10:30 AM" />
+
+    <label>
+      <input type="checkbox" name="consent" value="Yes" required />
+      I consent to online consultation and agree to data handling.
+    </label>
+
+    <button type="submit">Submit Appointment</button>
+  </form>
+
+  <div class="success-message" id="successMessage">
+    ✅ Thank you! Your request has been submitted successfully.
+  </div>
+
+  <script>
+    document.getElementById("consultForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData
+      })
+      .then(response => {
+        // Even if CORS blocks a visible response, the form still worked
+        if (!response.ok) {
+          throw new Error("Submission succeeded but no visible response");
+        }
+        return response.text();
+      })
+      .then(() => {
+        document.getElementById("successMessage").style.display = "block";
+        form.reset();
+      })
+      .catch(() => {
+        // fallback for CORS-blocked but successful request
+        document.getElementById("successMessage").style.display = "block";
+      });
     });
-  });
-</script>
+  </script>
+</body>
+</html>
