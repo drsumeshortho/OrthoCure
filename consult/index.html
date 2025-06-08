@@ -1,0 +1,30 @@
+<script>
+  document.getElementById("consultForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      age: form.age.value,
+      gender: form.gender.value,
+      email: form.email.value,
+      consultationDay: form.consultationDay.value,
+      preferredTime: form.preferredTime.value,
+      preferredExactTime: form.preferredExactTime.value,
+      whatsapp: form.whatsapp.value,
+      problem: form.problem.value,
+      consent: form.consent.checked ? "Yes" : "No"
+    };
+
+    fetch(form.action, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    })
+    .then(() => {
+      document.getElementById("successMessage").style.display = "block";
+      form.reset();
+    })
+    .catch(() => alert("Something went wrong. Please try again."));
+  });
+</script>
