@@ -16,11 +16,37 @@
     nav a:hover { color: #ffc107; }
     main { max-width: 900px; margin: 2rem auto; padding: 1rem; }
     h1 { color: #e65100; text-align: center; }
-    .post-preview { background: #fff3e0; margin-bottom: 2rem; padding: 1.5rem; border-radius: 10px; border-left: 6px solid #e65100; }
-    .post-preview h2 { margin-top: 0; color: #d84315; }
-    .post-preview p { margin: 0.5rem 0; }
-    .post-preview a { color: #e65100; font-weight: bold; text-decoration: none; }
-    .post-preview a:hover { text-decoration: underline; }
+    .post-preview {
+      display: flex;
+      gap: 1.5rem;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+    .post-preview img {
+      width: 160px;
+      height: auto;
+      object-fit: cover;
+    }
+    .post-content {
+      padding: 1rem;
+    }
+    .post-content h2 {
+      margin: 0 0 0.5rem;
+      color: #d84315;
+    }
+    .post-content p {
+      margin: 0.5rem 0;
+    }
+    .post-content a {
+      color: #e65100;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .post-content a:hover { text-decoration: underline; }
     footer a { color: #ffc107; text-decoration: none; }
     .whatsapp-button {
       position: fixed;
@@ -52,9 +78,12 @@
   </nav>
   <main>
     <div class="post-preview">
-      <h2>🦴 Do I Have Early Arthritis?</h2>
-      <p>Learn how to detect early arthritis signs before they progress. Based on clinical expertise and backed by scientific evidence.</p>
-      <p><a href="/blog/early-arthritis-signs.html">Read Full Post →</a></p>
+      <img src="/blog/early-arthritis-hero.jpg" alt="Early Arthritis Thumbnail">
+      <div class="post-content">
+        <h2>Do I Have Early Arthritis?</h2>
+        <p>Learn how to detect early arthritis signs before they progress. Based on clinical expertise and backed by scientific evidence.</p>
+        <p><a href="/blog/early-arthritis-signs.html">Read Full Post →</a></p>
+      </div>
     </div>
     <!-- Future blog previews can be inserted here following the same format -->
   </main>
