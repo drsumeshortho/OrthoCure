@@ -28,8 +28,19 @@
     a:hover { text-decoration: underline; }
     ul, ol { padding-left: 1.5rem; }
     .image-block { text-align: center; margin: 2rem 0; }
-    .image-block img { max-width: 600px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .image-block img { max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     .caption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; }
+    blockquote { background: #fff3e0; padding: 1rem; border-left: 5px solid #e65100; border-radius: 5px; font-style: italic; }
+    details { margin-bottom: 1rem; }
+    .sidebar-box { background: #f3f4f6; padding: 1rem; border-left: 5px solid #0288d1; margin: 2rem 0; border-radius: 6px; }
+
+    @media screen and (max-width: 600px) {
+      body { font-size: 16px; }
+      main { padding: 1rem; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.25rem; }
+      h3 { font-size: 1.1rem; }
+    }
   </style>
 </head>
 
@@ -45,50 +56,46 @@
   </header>
 
   <main>
-    <div class="image-block">
-      <img src="/blog/early-arthritis-hero.jpg" alt="Man experiencing joint pain">
+    <!-- Symptom Checklist Section -->
+    <div class="sidebar-box" style="background:#fffde7; border-left: 5px solid #ff9800;">
+      <h3>✔️ Early Arthritis Symptom Checklist</h3>
+      <ul>
+        <li>Stiffness lasting over 30 minutes in the morning?</li>
+        <li>Unexplained joint swelling?</li>
+        <li>Fatigue without exertion?</li>
+        <li>Clicking, popping joints?</li>
+        <li>Family history of arthritis?</li>
+      </ul>
+      <p><strong>If you checked 2 or more, it's time to get evaluated.</strong></p>
+      <p><a href="/consult" style="color:#d84315; font-weight:bold;">🩺 Book a Consultation</a></p>
     </div>
 
-    <p><strong>“Doctor, my knees hurt… but only in the mornings. Is that normal?”</strong></p>
-    <p>This is a common question we hear at OrthoCure Bone & Joint Speciality Clinic. Arthritis can disguise itself in subtle ways. Let’s decode what those early whispers from your joints really mean.</p>
-
-    <h2>What is Early Arthritis?</h2>
-    <p>Arthritis is not a single disease. It’s an umbrella term for over 100 different joint-related conditions. Among the most common are osteoarthritis (OA) and rheumatoid arthritis (RA). Early arthritis refers to the stage where inflammation and joint wear begin subtly, often without dramatic symptoms.</p>
-
-    <div class="image-block">
-      <img src="/blog/normal-vs-arthritic-knee.jpg" alt="Normal vs Arthritic Knee">
-      <div class="caption">Image: Visual comparison of a healthy knee vs arthritic degeneration</div>
+    <!-- Differential Diagnosis Sidebar -->
+    <div class="sidebar-box" style="background:#fce4ec; border-left: 5px solid #c2185b;">
+      <h3>🔍 Differential Diagnosis</h3>
+      <ul>
+        <li>Tendinitis / Bursitis</li>
+        <li>Fibromyalgia</li>
+        <li>Chondromalacia Patella</li>
+        <li>Vitamin D Deficiency</li>
+        <li>Post-viral Arthralgia</li>
+      </ul>
+      <p><em>Each has different treatments—only a proper clinical exam can distinguish them.</em></p>
     </div>
 
-    <h2>7 Early Signs You Shouldn’t Ignore</h2>
-    <ol>
-      <li><strong>Morning Stiffness:</strong> More than 30 minutes of joint stiffness after waking up could indicate inflammation.</li>
-      <li><strong>Joint Swelling:</strong> Subtle puffiness without trauma is suspicious for inflammatory arthritis.</li>
-      <li><strong>Pain at Rest:</strong> Discomfort even during inactivity can mean synovial irritation.</li>
-      <li><strong>Clicking or Grinding:</strong> Known as crepitus, may suggest cartilage thinning.</li>
-      <li><strong>Persistent Fatigue:</strong> Especially in autoimmune types like RA, it’s a red flag.</li>
-      <li><strong>Reduced Motion:</strong> Loss of ease in squatting, climbing stairs or rotating joints.</li>
-      <li><strong>Family History:</strong> Genetic predisposition is strong in many types of arthritis.</li>
-    </ol>
-
-    <div class="image-block">
-      <img src="/blog/early-arthritis-warning-signs.png" alt="Warning Signs of Early Arthritis">
-      <div class="caption">Infographic: Early arthritis signs and affected areas</div>
+    <!-- Mid-post CTA -->
+    <div class="sidebar-box" style="background:#fffde7; border-left: 5px solid #ff9800;">
+      <h3>Concerned About Joint Pain?</h3>
+      <p>Don't ignore the signs—early diagnosis can make all the difference.</p>
+      <p><a href="/consult" style="color:#d84315; font-weight: bold;">🩺 Book Your Consultation at OrthoCure &rarr;</a></p>
     </div>
 
-    <h2>Why Acting Early Matters</h2>
-    <p>Studies show that early treatment of inflammatory arthritis within 12 weeks of symptom onset (also known as the "window of opportunity") significantly slows disease progression and joint damage (Van der Linden et al., 2010; Emery et al., 2002).</p>
-
-    <h2>What You Can Do</h2>
-    <ul>
-      <li>Track symptoms and how they change over time</li>
-      <li>Don’t delay consultation beyond 4-6 weeks of symptom onset</li>
-      <li>Book an early orthopaedic evaluation, especially if there’s family history</li>
-    </ul>
-
-    <p>At <strong>OrthoCure Bone & Joint Speciality Clinic</strong>, I specialize in early arthritis detection and minimally invasive treatments. Don’t wait for pain to dictate your day. Intervene early, move freely.</p>
-
-    <p><a href="/consult">🩺 Book Your Consultation Now</a></p>
+    <!-- Bottom CTA -->
+    <div class="sidebar-box" style="background:#e1f5fe; border-left: 5px solid #0288d1;">
+      <h3>Take the Next Step</h3>
+      <p>Schedule a visit with Dr. Sumesh Subramanian at OrthoCure for personalized arthritis evaluation.</p>
+      <p><a href="/consult" style="color:#0277bd; font-weight: bold;">Book Your Appointment Now &rarr;</a></p>
+    </div>
   </main>
 
   <footer>
