@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id=GTM-TJH4M7N7'+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TJH4M7N7');
-  </script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OrthoCure Bone & Joint Speciality Clinic – Chennai's Trusted Ortho Experts</title>
@@ -23,103 +13,182 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/favicon.png">
   <link rel="preload" as="image" href="/assets/hero-bg.jpg">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="OrthoCure Clinic – Expert Bone & Joint Care in Chennai">
-  <meta property="og:description" content="Orthopaedic excellence by Dr. Sumesh Subramanian. Schedule your consultation at OrthoCure today.">
-  <meta property="og:image" content="https://myorthocure.com/assets/og-index-banner.jpg">
-  <meta property="og:url" content="https://myorthocure.com/">
-  <meta property="og:site_name" content="OrthoCure Clinic">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OrthoCure Clinic – Expert Bone & Joint Care in Chennai">
-  <meta name="twitter:description" content="Orthopaedic excellence by Dr. Sumesh Subramanian. Schedule your consultation at OrthoCure today.">
-  <meta name="twitter:image" content="https://myorthocure.com/assets/og-index-banner.jpg">
-
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "OrthoCure Bone & Joint Speciality Clinic",
-    "image": "https://myorthocure.com/assets/logo.png",
-    "url": "https://myorthocure.com",
-    "telephone": "+91-9360431278",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Thirumullaivoyal",
-      "addressLocality": "Chennai",
-      "postalCode": "600062",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 13.130566,
-      "longitude": 80.130426
-    },
-    "openingHours": "Mo-Sa 09:00-21:00",
-    "sameAs": [
-      "https://www.instagram.com/myorthocure",
-      "https://www.facebook.com/myorthocure"
-    ]
-  }
-  </script>
   <link rel="stylesheet" href="/assets/styles.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fcfc;
+      color: #2c3e50;
+    }
+    header {
+      background: #013440;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    nav {
+      background: #009688;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffc107;
+    }
+    section.hero {
+      background: url('/assets/hero-bg.jpg') no-repeat center center/cover;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+    .cta {
+      margin-top: 30px;
+    }
+    .cta a {
+      background: #ffc107;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #013440;
+      font-weight: bold;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #00695c;
+    }
+    .section p, .section ul {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    footer {
+      background: #013440;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 14px 16px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+      z-index: 1000;
+    }
+    .whatsapp-button:hover {
+      background-color: #128C7E;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Welcome to OrthoCure</h1>
     <p>Expert Bone & Joint Care – Where Healing Begins with Trust</p>
   </header>
-  <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h2>Expert Orthopaedic Care in Chennai</h2>
-        <p>Consult with Dr. Sumesh Subramanian – evidence-based, personalized, compassionate care</p>
-        <a class="cta-button" href="/consult/index.html">Book Online Consultation</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/index.html">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Expert Orthopaedic Care in Chennai</h2>
+      <p>Consult with Dr. Sumesh Subramanian – evidence-based, personalized, compassionate care</p>
+      <div class="cta">
+        <a href="/consult/index.html">Book Online Consultation</a>
       </div>
-    </section>
-
-    <section>
-      <h2>What We Treat</h2>
-      <p>From joint pain and arthritis to fractures and sports injuries, our clinic provides personalized orthopaedic care backed by the latest evidence and compassionate service.</p>
-    </section>
-    <section>
-      <h2>Why Choose Dr. Sumesh?</h2>
-      <ul>
-        <li>MS Orthopaedics | Fellowship in Arthroplasty</li>
-        <li>TNMC Registered Consultant</li>
-        <li>IOA & TNOA Accredited</li>
-        <li>Expert in conservative & surgical treatments</li>
-      </ul>
-      <div class="badges">
-        <img src="/assets/ioa-badge.png" alt="IOA Certified">
-        <img src="/assets/tnoa-badge.png" alt="TNOA Member">
-      </div>
-    </section>
-    <section>
-      <h2>Book Your Consultation</h2>
-      <p><a href="/consult/index.html">Schedule an appointment online</a> or <a href="https://wa.me/919360431278" target="_blank">chat with us on WhatsApp</a>.</p>
-      <p><strong>Limited slots daily – Secure yours now!</strong></p>
-    </section>
-    <section class="lead-magnet">
-      <h2>Free Guide: 5 Early Signs of Arthritis</h2>
-      <p>Download our expert-written guide to catch symptoms early and take control of your joint health.</p>
-      <a href="/blog/early-arthritis-signs.html" class="download-btn">📘 Read the Blog</a>
-    </section>
-    <section class="social">
-      <h2>Stay Connected</h2>
-      <p>Follow us for health tips, videos & patient stories</p>
-      <a href="https://instagram.com/myorthocure" target="_blank">Instagram</a> | <a href="https://facebook.com/myorthocure" target="_blank">Facebook</a>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 OrthoCure Clinic | Dr. Sumesh Subramanian | All Rights Reserved.</p>
-    <p>📍 Thirumullaivoyal, Chennai | 📞 <a href="tel:+919360431278">+91 93604 31278</a> | ✉️ <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a></p>
-  </footer>
+    </div>
+  </section>
+  <section class="section">
+    <h2>What We Treat</h2>
+    <p>From joint pain and arthritis to fractures and sports injuries, our clinic provides personalized orthopaedic care backed by the latest evidence and compassionate service.</p>
+  </section>
+  <section class="section">
+    <h2>Why Choose Dr. Sumesh?</h2>
+    <ul>
+      <li>MS Orthopaedics | Fellowship in Arthroplasty</li>
+      <li>TNMC Registered Consultant</li>
+      <li>IOA & TNOA Accredited</li>
+      <li>Expert in conservative & surgical treatments</li>
+    </ul>
+    <div class="badges">
+      <img src="/assets/ioa-badge.png" alt="IOA Certified">
+      <img src="/assets/tnoa-badge.png" alt="TNOA Member">
+    </div>
+  </section>
+  <section class="section">
+    <h2>Book Your Consultation</h2>
+    <p><a href="/consult/index.html">Schedule an appointment online</a> or <a href="https://wa.me/919360431278" target="_blank">chat with us on WhatsApp</a>.</p>
+  </section>
+  <section class="section">
+    <h2>Stay Connected</h2>
+    <p>Follow us for health tips, videos & patient stories:</p>
+    <a href="https://instagram.com/drsumeshortho" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com/profile.php?id=61560018916736" target="_blank">Facebook</a>
+  </section>
   <a href="https://wa.me/919360431278" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">💬</a>
+  <footer>
+    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 Thirumullaivoyal, Chennai | <a href="mailto:drsumesh.ortho@gmail.com" style="color:#ffc107">drsumesh.ortho@gmail.com</a> | TNMC Reg No: 119811</p>
+  </footer>
 </body>
 </html>
+
