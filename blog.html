@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | OrthoCure Clinic</title>
-  <meta name="description" content="Read expert-written blogs on joint care, arthritis, injuries, and orthopaedic wellness by Dr. Sumesh Subramanian.">
-  <meta name="keywords" content="orthopaedic blog, arthritis symptoms, joint pain relief, bone specialist Chennai">
+  <title>OrthoCure Blog | Expert Orthopaedic Insights</title>
+  <meta name="description" content="Read expert-written blogs on joint care, arthritis, sports injuries, and more from Dr. Sumesh Subramanian of OrthoCure, Chennai.">
+  <meta name="keywords" content="orthopaedic blog, arthritis symptoms, joint pain, bone specialist, Dr Sumesh Subramanian, Chennai">
   <meta name="author" content="Dr. Sumesh Subramanian">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <style>
@@ -14,10 +14,11 @@
     nav { background: #009688; display: flex; justify-content: center; gap: 1.5rem; padding: 1rem; position: sticky; top: 0; z-index: 1000; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #ffc107; }
-    main { max-width: 900px; margin: 2rem auto; padding: 1rem; }
-    h1 { color: #e65100; text-align: center; }
+    main { max-width: 960px; margin: 2rem auto; padding: 1rem; }
+    h1 { color: #e65100; text-align: center; margin-bottom: 2rem; }
     .post-preview {
       display: flex;
+      flex-direction: row;
       gap: 1.5rem;
       background: #ffffff;
       border: 1px solid #ddd;
@@ -25,21 +26,30 @@
       overflow: hidden;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .post-preview:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     }
     .post-preview img {
-      width: 160px;
-      height: auto;
+      width: 180px;
+      height: 130px;
       object-fit: cover;
+      border-right: 1px solid #eee;
     }
     .post-content {
       padding: 1rem;
+      flex: 1;
     }
     .post-content h2 {
       margin: 0 0 0.5rem;
       color: #d84315;
+      font-size: 1.5rem;
     }
     .post-content p {
       margin: 0.5rem 0;
+      color: #555;
     }
     .post-content a {
       color: #e65100;
@@ -66,8 +76,8 @@
 </head>
 <body>
   <header>
-    <h1>OrthoCure Blog</h1>
-    <p>Trusted insights from Dr. Sumesh Subramanian</p>
+    <h1>Latest from OrthoCure</h1>
+    <p>Insights & Updates from Dr. Sumesh Subramanian — Evidence-Based Orthopaedic Expertise</p>
   </header>
   <nav>
     <a href="/">Home</a>
@@ -78,14 +88,14 @@
   </nav>
   <main>
     <div class="post-preview">
-      <img src="/blog/early-arthritis-hero.jpg" alt="Early Arthritis Thumbnail">
+      <img src="/blog/early-arthritis-hero.jpg" alt="Early Arthritis Symptoms">
       <div class="post-content">
         <h2>Do I Have Early Arthritis?</h2>
-        <p>Learn how to detect early arthritis signs before they progress. Based on clinical expertise and backed by scientific evidence.</p>
-        <p><a href="/blog/early-arthritis-signs.html">Read Full Post →</a></p>
+        <p>Recognize subtle signs of arthritis before it disrupts your life. Backed by clinical research and designed to empower you with clarity and next steps.</p>
+        <p><a href="/blog/early-arthritis-signs.html">Read Full Article &rarr;</a></p>
       </div>
     </div>
-    <!-- Future blog previews can be inserted here following the same format -->
+    <!-- Additional blog posts can follow the same structure -->
   </main>
   <a href="https://wa.me/919360431278" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">💬</a>
   <footer>
@@ -93,3 +103,4 @@
   </footer>
 </body>
 </html>
+
