@@ -227,8 +227,46 @@
   }
 </style>
 
+<!-- Synovia | OrthoCure Joint Health Assistant -->
+<style>
+  #synovia-widget {
+    position: fixed;
+    bottom: 100px; /* Lifted above WhatsApp */
+    right: 24px;
+    z-index: 9999;
+  }
+
+  #synovia-btn {
+    background-color: #00334e; /* Navy */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #synovia-frame {
+    display: none;
+    position: fixed;
+    bottom: 170px;
+    right: 24px;
+    width: 370px;
+    height: 550px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    z-index: 9998;
+  }
+</style>
+
 <div id="synovia-widget">
-  <button id="synovia-btn">💬</button>
+  <button id="synovia-btn" title="Ask Synovia – Your Joint Health Assistant">☰</button>
   <iframe id="synovia-frame" src="https://chat.openai.com/gpts/editor/g-Oh3Ap6WkT" title="Synovia Assistant"></iframe>
 </div>
 
