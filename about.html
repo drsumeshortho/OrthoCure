@@ -10,7 +10,9 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4fdfd; color: #2c3e50; }
-    header, footer { background: #013440; color: white; text-align: center; padding: 24px; }
+    header, footer { background: #013440; color: white; text-align: center; padding: 40px 20px; }
+    header h1 { font-size: 2.4rem; margin-bottom: 10px; }
+    header .tagline { font-style: italic; font-size: 1.1rem; margin-top: 0; color: #cdeff0; }
     nav { background: #009688; display: flex; justify-content: center; gap: 20px; padding: 12px; position: sticky; top: 0; z-index: 999; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #FFC107; }
@@ -21,50 +23,11 @@
     .org-logos a img { height: 60px; transition: transform 0.3s ease; }
     .org-logos a:hover img { transform: scale(1.1); }
   </style>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "OrthoCure Bone & Joint Speciality Clinic",
-  "image": "https://myorthocure.com/assets/og-image.jpg",
-  "url": "https://myorthocure.com/",
-  "logo": "https://myorthocure.com/assets/favicon.png",
-  "description": "Orthopaedic care by Dr. Sumesh Subramanian. Specializing in arthritis, joint pain, fractures, digital X-ray, and physiotherapy in Thirumullaivoyal, Chennai.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "No. 2, 2nd Street, Santhipuram",
-    "addressLocality": "Thirumullaivoyal",
-    "addressRegion": "TN",
-    "postalCode": "600062",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 13.1201,
-    "longitude": 80.1406
-  },
-  "openingHours": "Mo-Sa 17:00-21:00, Su 11:00-13:00",
-  "telephone": "+919342700212",
-  "priceRange": "₹₹",
-  "medicalSpecialty": "Orthopedic",
-  "founder": {
-    "@type": "Physician",
-    "name": "Dr. Sumesh Subramanian",
-    "medicalSpecialty": "Orthopaedic Surgery",
-    "memberOf": ["Indian Orthopaedic Association", "Tamil Nadu Orthopaedic Association"]
-  },
-  "sameAs": [
-    "https://instagram.com/drsumeshortho",
-    "https://facebook.com/profile.php?id=61560018916736"
-  ]
-}
-</script>
-
 </head>
 <body>
   <header>
     <h1>About OrthoCure</h1>
-    <p><em>Start Healing. Stay Moving.</em></p>
+    <p class="tagline">Start Healing. Stay Moving.</p>
   </header>
 
   <nav>
@@ -100,3 +63,4 @@
   </footer>
 </body>
 </html>
+
