@@ -9,11 +9,19 @@
   <meta name="author" content="Dr. Sumesh Subramanian">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#002B36">
+  <meta property="og:title" content="OrthoCure Blog | Trusted Orthopaedic Articles">
+  <meta property="og:description" content="Evidence-based bone and joint care insights curated by Dr. Sumesh Subramanian.">
+  <meta property="og:image" content="https://www.myorthocure.com/assets/logo.png">
+  <meta property="og:url" content="https://www.myorthocure.com/blog.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f5f5f5; color: #2c3e50; }
-    header, footer { background: #002B36; color: white; text-align: center; padding: 1.5rem 1rem; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f5f5f5; color: #2c3e50; scroll-behavior: smooth; }
+    header, footer { background: #002B36; color: white; text-align: center; padding: 20px 10px; }
+    nav { background: #009688; display: flex; justify-content: center; gap: 20px; padding: 12px; position: sticky; top: 0; z-index: 999; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s ease; }
+    nav a:hover { color: #ffc107; text-decoration: underline; }
     h1 { margin: 0 0 0.5rem; font-size: 2rem; }
     main { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
     .blog-card {
@@ -49,9 +57,7 @@
       display: inline-block;
       margin-top: 1rem;
     }
-    .cta-banner a:hover {
-      background: #bf360c;
-    }
+    .cta-banner a:hover { background: #bf360c; }
     @media (min-width: 700px) {
       .blog-card { flex-direction: row; align-items: center; }
       .blog-card img { width: 240px; height: 160px; flex-shrink: 0; }
@@ -61,9 +67,21 @@
 </head>
 <body>
   <header>
-    <h1>OrthoCure Blog</h1>
-    <p>Curated by Dr. Sumesh Subramanian | Evidence-Based Orthopaedic Insights</p>
+    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 16px;">
+      <img src="/assets/logo.png" alt="OrthoCure Logo" style="height: 80px;">
+      <div style="text-align: left;">
+        <h1 style="margin: 0; font-size: 1.9rem; color: white;">OrthoCure Blog</h1>
+        <p style="font-style: italic; font-size: 1rem; color: #cdeff0;">Evidence-Based Orthopaedic Insights</p>
+      </div>
+    </div>
   </header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/index.html">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
   <main>
     <article class="blog-card">
       <img src="/blog/cracking-knuckles.png" alt="Cracking Knuckles">
@@ -73,7 +91,6 @@
         <p class="blog-snippet">Think cracking your knuckles causes arthritis? Discover the truth with insights from Dr. Sumesh Subramanian. Based on medical evidence, not myths.</p>
       </div>
     </article>
-
     <article class="blog-card">
       <img src="/blog/early-arthritis-hero.jpg" alt="Early Arthritis">
       <div class="blog-content">
@@ -82,7 +99,6 @@
         <p class="blog-snippet">Learn how to identify early arthritis before it progresses. Understand red flags, differential diagnoses, and what science says about early treatment.</p>
       </div>
     </article>
-
     <section class="cta-banner">
       <h2>Need Expert Orthopaedic Advice?</h2>
       <p>Book an online or in-person consultation with Dr. Sumesh Subramanian at OrthoCure Bone & Joint Speciality Clinic.</p>
@@ -90,7 +106,9 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 OrthoCure Bone & Joint Speciality Clinic | <a href="https://myorthocure.com" style="color: #ffa726;">myorthocure.com</a></p>
+    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic | <a href="https://myorthocure.com" style="color: #ffa726;">myorthocure.com</a></p>
+    <p style="font-size:0.85rem;">📍 No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
   </footer>
 </body>
 </html>
+
