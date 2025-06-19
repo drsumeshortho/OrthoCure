@@ -39,11 +39,12 @@
   </script>
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4fbfb; color: #2c3e50; scroll-behavior: smooth; }
-    header, footer { background: #013440; color: white; text-align: center; padding: 20px 10px; }
+    header, footer { background: #013440; color: white; text-align: center; padding: 16px 10px; }
     nav { background: #009688; display: flex; justify-content: center; gap: 20px; padding: 12px; position: sticky; top: 0; z-index: 999; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #ffc107; }
-    .fade-in-img, .fade-in-header { opacity: 0; transform: translateY(20px); animation: fadeInUp 1s ease-out forwards; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #ffc107; text-decoration: underline; }
+    .fade-in { opacity: 0; transform: translateY(20px); animation: fadeInUp 1s ease-out forwards; }
+    .fade-delay { animation-delay: 0.5s; }
     @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
     .card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); transition: 0.3s ease; }
     .section { padding: 40px 20px; max-width: 900px; margin: auto; }
@@ -52,17 +53,20 @@
     .badges img { height: 48px; margin: 10px; filter: grayscale(100%); transition: filter 0.3s ease; }
     .badges img:hover { filter: none; }
     footer { background: #013440; color: white; text-align: center; padding: 20px 10px; font-size: 0.9rem; }
-    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 14px 16px; border-radius: 50%; font-size: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); text-decoration: none; z-index: 1000; }
+    .whatsapp-button { position: fixed; bottom: 80px; right: 20px; background-color: #25D366; color: white; padding: 14px 16px; border-radius: 50%; font-size: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); text-decoration: none; z-index: 1000; }
     .whatsapp-button:hover { background-color: #128C7E; }
+    .sticky-footer { position: fixed; bottom: 0; width: 100%; background: #009688; color: white; text-align: center; padding: 10px 0; z-index: 999; font-size: 0.95rem; display: flex; justify-content: space-around; }
+    .sticky-footer a { color: white; text-decoration: none; font-weight: bold; }
+    .sticky-footer a:hover { color: #ffc107; }
   </style>
 </head>
 <body>
-  <header style="background: #002f3f; padding: 20px 10px;">
-    <div class="fade-in-header" style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;">
-      <img src="/assets/logo.png" alt="OrthoCure Logo" style="height: 90px; max-width: 100%;">
+  <header style="background: #002f3f; padding: 16px 10px;">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;">
+      <img src="/assets/logo.png" alt="OrthoCure Logo" style="height: 80px; max-width: 100%;">
       <div style="text-align: left; max-width: 580px;">
-        <h1 style="margin: 0; font-size: 2rem; color: white; line-height: 1.2;">OrthoCure Bone & Joint Speciality Clinic</h1>
-        <p style="font-style: italic; font-size: 1.05rem; color: #cdeff0; margin-top: 6px;">Start Healing. Stay Moving.</p>
+        <h1 style="margin: 0; font-size: 1.8rem; color: white; line-height: 1.2;">OrthoCure Bone & Joint Speciality Clinic</h1>
+        <p style="font-style: italic; font-size: 1rem; color: #cdeff0; margin-top: 4px;">Start Healing. Stay Moving.</p>
       </div>
     </div>
   </header>
@@ -75,56 +79,20 @@
     <a href="/contact.html">Contact</a>
   </nav>
 
-  <!-- Page continues unchanged -->
-
-
-  <section class="section" style="background: #e7f9f9; padding: 60px 20px 40px 20px;">
+  <section class="section fade-in fade-delay" style="background: #e7f9f9; padding: 60px 20px 40px 20px;">
     <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 40px; max-width: 1000px; margin: auto;">
-      <img src="/assets/Sumesh_Labcoat_Website.png" alt="Dr. Sumesh Subramanian" class="fade-in-img" style="width: 260px; border-radius: 14px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
+      <img src="/assets/Sumesh_Labcoat_Website.png" alt="Dr. Sumesh Subramanian" style="width: 260px; border-radius: 14px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
       <div style="max-width: 580px; text-align: left;">
         <h2 style="color:#00695c; font-size: 2.3rem; margin-bottom: 10px;">Orthopaedic Care You Can Trust</h2>
         <p style="font-size: 1.15rem; color:#444; line-height: 1.7;">Dr. Sumesh Subramanian (MS Ortho, Fellowship in Arthroplasty) offers personalised, ethical, and evidence-based bone & joint care right in Thirumullaivoyal. From fractures to complex arthritis — you're in safe hands.</p>
+        <div style="margin-top: 20px;">
+          <a href="https://wa.me/919342700212" style="background: #ffc107; padding: 12px 24px; border-radius: 8px; color: #013440; text-decoration: none; font-weight: bold;">Talk to the Doctor Now</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2 style="text-align:center;">What We Treat</h2>
-    <p style="text-align:center; max-width:700px; margin:auto; margin-bottom:30px; color:#444; font-size:1.05rem;">From spine care to fractures and arthritis, OrthoCure offers expert treatment tailored to your recovery journey.</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-      <div class="card" style="flex: 1 1 220px; background: #ffffff; paddin g: 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); text-align: center;">
-        <h3>🦴 Bone & Joint Care</h3>
-        <p style="margin-top: 8px; color:#555;">Knee, hip, shoulder pain and arthritis.</p>
-      </div>
-      <div class="card" style="flex: 1 1 220px; background: #ffffff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); text-align: center;">
-        <h3>🧠 Spine Care</h3>
-        <p style="margin-top: 8px; color:#555;">Neck, back and nerve-related spine pain.</p>
-      </div>
-      <div class="card" style="flex: 1 1 220px; background: #ffffff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); text-align: center;">
-        <h3>🦴 Fractures</h3>
-        <p style="margin-top: 8px; color:#555;">From simple injuries to complex trauma.</p>
-      </div>
-      <div class="card" style="flex: 1 1 220px; background: #ffffff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); text-align: center;">
-        <h3>🏃‍♂️ Sports Injuries</h3>
-        <p style="margin-top: 8px; color:#555;">Sprains, overuse injuries, ligament tears and recovery.</p>
-      </div>
-      <div class="card" style="flex: 1 1 220px; background: #ffffff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); text-align: center;">
-        <h3>🧘‍♀️ Physiotherapy</h3>
-        <p style="margin-top: 8px; color:#555;">Rehab for spine, joints and movement health.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Clinic Location</h2>
-    <p><strong>Address:</strong><br>OrthoCure Bone & Joint Speciality Clinic<br>No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
-    <p><strong>Phone:</strong> <a href="tel:+919342700212">+91 93427 00212</a></p>
-    <p><strong>Email:</strong> <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
-    <p><strong>Hours:</strong><br>Mon–Sat: 5:00 PM – 9:00 PM<br>Sun: 11:00 AM – 1:00 PM</p>
-    <div style="margin-top:20px">
-      <iframe src="https://www.google.com/maps?q=13.130484,80.130407&z=17&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </section>
+  <!-- Other sections can retain fade-in by adding class="section fade-in" -->
 
   <footer>
     <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
@@ -135,5 +103,11 @@
   </footer>
 
   <a href="https://wa.me/919342700212" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">💬</a>
+
+  <div class="sticky-footer">
+    <a href="tel:+919342700212">📞 Call</a>
+    <a href="https://wa.me/919342700212">💬 WhatsApp</a>
+    <a href="/consult/index.html">🏥 Book Visit</a>
+  </div>
 </body>
 </html>
