@@ -24,9 +24,9 @@
     .org-logos a:hover img { transform: scale(1.1); filter: none; }
     .cta-bar { text-align: center; background: #fff3cd; color: #856404; padding: 20px; border-top: 1px solid #ffeeba; border-bottom: 1px solid #ffeeba; margin-top: 40px; }
     .cta-bar strong { display: block; margin-bottom: 8px; }
-    .ot-section { margin-top: 60px; text-align: center; }
-    .ot-section img { width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .ot-section p { margin-top: 10px; color: #555; font-size: 0.95rem; }
+    .profile-block { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: center; margin-bottom: 40px; }
+    .profile-block img { width: 280px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .profile-block .bio { flex: 1 1 400px; text-align: justify; }
   </style>
 </head>
 <body>
@@ -45,7 +45,12 @@
 
   <main>
     <h2>Meet Dr. Sumesh Subramanian</h2>
-    <p>Dr. Sumesh Subramanian (MBBS, MS Ortho, Fellowship in Arthroplasty) is a trusted orthopaedic surgeon known for blending medical excellence with compassionate care. With years of experience in joint preservation, trauma, and arthritis management, he founded OrthoCure to bring city-grade orthopaedic expertise to the heart of Thirumullaivoyal.</p>
+    <div class="profile-block">
+      <img src="/assets/surgery1.jpg" alt="Dr. Sumesh Subramanian in OT">
+      <div class="bio">
+        <p>Dr. Sumesh Subramanian (MBBS, MS Ortho, Fellowship in Arthroplasty) is a trusted orthopaedic surgeon known for blending medical excellence with compassionate care. With years of experience in joint preservation, trauma, and arthritis management, he founded OrthoCure to bring city-grade orthopaedic expertise to the heart of Thirumullaivoyal.</p>
+      </div>
+    </div>
 
     <h2>What Makes OrthoCure Different?</h2>
     <p>We’re not just another clinic. OrthoCure is a purpose-built healing space offering a premium patient experience — from advanced physiotherapy to on-site digital X-ray. We focus on clarity, comfort, and outcomes. Whether you’re 25 or 75, your recovery begins here — guided by science and delivered with sincerity.</p>
@@ -61,12 +66,6 @@
 
     <p>Dr. Sumesh is a proud member of the <strong>Indian Orthopaedic Association (IOA)</strong> and <strong>Tamil Nadu Orthopaedic Association (TNOA)</strong>, upholding the highest standards of ethics, safety, and lifelong learning in orthopaedic practice.</p>
 
-    <div class="ot-section">
-      <h2>Inside the OT</h2>
-      <img src="/assets/surgery1.jpg" alt="Dr. Sumesh Subramanian performing surgery">
-      <p>Performing joint replacement with focus and finesse. Every case handled with global precision, right here in Chennai.</p>
-    </div>
-
     <div class="cta-bar">
       <strong>Your joints deserve clarity, not confusion.</strong>
       Visit OrthoCure today and experience personalised care from a trusted orthopaedic expert.
@@ -79,3 +78,4 @@
   </footer>
 </body>
 </html>
+
