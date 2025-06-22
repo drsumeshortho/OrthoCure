@@ -1,54 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id=GTM-TJH4M7N7'+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TJH4M7N7');
-  </script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | OrthoCure Clinic</title>
-  <meta name="description" content="Meet Dr. Sumesh Subramanian, trusted orthopaedic surgeon in Thirumullaivoyal, and discover how OrthoCure delivers premium care for bones, joints, and pain-free movement.">
-  <meta name="keywords" content="About Dr Sumesh, OrthoCure Clinic, Orthopaedic Doctor Bio, Joint Pain Specialist Chennai">
+  <title>About Dr. Sumesh Subramanian | OrthoCure Clinic</title>
+  <meta name="description" content="Learn more about Dr. Sumesh Subramanian, orthopaedic specialist at OrthoCure Bone & Joint Speciality Clinic, Chennai.">
+  <meta name="keywords" content="Orthopaedic Doctor Chennai, About Dr. Sumesh, OrthoCure Clinic, Bone Specialist Thirumullaivoyal">
   <meta name="author" content="Dr. Sumesh Subramanian">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#013440">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/favicon.png">
-  <meta property="og:title" content="About Dr. Sumesh – OrthoCure Clinic Chennai">
-  <meta property="og:description" content="Orthopaedic care with compassion. Learn about Dr. Sumesh Subramanian and the OrthoCure philosophy.">
-  <meta property="og:image" content="https://www.myorthocure.com/assets/logo.png">
-  <meta property="og:url" content="https://www.myorthocure.com/about.html">
-  <meta property="og:type" content="profile">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dr. Sumesh Subramanian",
-    "affiliation": {
-      "@type": "MedicalClinic",
-      "name": "OrthoCure Bone & Joint Speciality Clinic",
-      "url": "https://www.myorthocure.com"
-    },
-    "jobTitle": "Orthopaedic Surgeon",
-    "alumniOf": "MS Ortho, Fellowship in Arthroplasty",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal",
-      "addressLocality": "Chennai",
-      "addressRegion": "TN",
-      "postalCode": "600062",
-      "addressCountry": "IN"
-    }
-  }
-  </script>
+  <link rel="canonical" href="https://myorthocure.com/about.html">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -57,13 +17,11 @@
       color: #2c3e50;
       scroll-behavior: smooth;
     }
-
     header, footer {
       background: #013440;
       color: white;
       text-align: center;
     }
-
     nav {
       background: #009688;
       display: flex;
@@ -75,7 +33,6 @@
       top: 0;
       z-index: 999;
     }
-
     nav a {
       color: white;
       text-decoration: none;
@@ -83,131 +40,68 @@
       transition: 0.3s;
       padding: 8px;
     }
-
     nav a:hover {
       color: #ffc107;
       text-decoration: underline;
     }
-
     .section {
       padding: 32px 16px;
       max-width: 900px;
       margin: auto;
     }
-
     .section h2 {
       font-size: 1.8rem;
       margin-bottom: 15px;
       color: #00695c;
       text-align: center;
     }
-
     .section p, .section ul {
       font-size: 1rem;
       line-height: 1.6;
     }
-
-    .card {
-      background: #ffffff;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    .bio-block {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .bio-block img {
+      width: 180px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .bio-text {
+      max-width: 580px;
+      text-align: left;
+    }
+    .badges {
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 20px;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-    }
-
     .badges img {
       height: 48px;
       margin: 10px;
       filter: grayscale(100%);
       transition: filter 0.3s ease;
     }
-
     .badges img:hover {
       filter: none;
     }
-
-    .whatsapp-button {
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      padding: 14px 16px;
-      border-radius: 50%;
-      font-size: 24px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      text-decoration: none;
-      z-index: 1000;
+    .facility-list {
+      margin-top: 24px;
+      background: #e0f2f1;
+      padding: 24px;
+      border-radius: 10px;
     }
-
-    .whatsapp-button:hover {
-      background-color: #128C7E;
+    .facility-list ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
-
-    .sticky-footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background: #009688;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      z-index: 999;
-      font-size: 0.95rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+    footer {
+      padding: 20px 10px;
+      font-size: 0.9rem;
     }
-
-    .sticky-footer a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .sticky-footer a:hover {
-      color: #ffc107;
-    }
-
-    .scroll-cue {
-      display: block;
-      text-align: center;
-      margin-top: -20px;
-      animation: bounce 2s infinite;
-      font-size: 24px;
-      color: #009688;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(10px); }
-    }
-
-    iframe[data-defer] {
-      opacity: 0;
-      transition: opacity 0.6s ease-in;
-    }
-
-    iframe[data-loaded="true"] {
-      opacity: 1;
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      padding: 32px;
-      background-color: #013440;
-      flex-wrap: wrap;
-    }
-
     @media (max-width: 768px) {
       .header {
         flex-direction: column;
@@ -229,23 +123,20 @@
       .section {
         padding: 28px 16px;
       }
-      nav {
+      .bio-block {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
       }
-      .sticky-footer {
-        flex-direction: column;
-        font-size: 0.85rem;
-        gap: 4px;
-        padding: 12px;
+      .bio-text {
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
-   <header>
-    <div class="header">
-      <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" style="height: 90px; width: auto;" />
+  <header>
+    <div class="header" style="display: flex; align-items: center; justify-content: center; gap: 24px; padding: 32px; background-color: #013440; flex-wrap: wrap;">
+      <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" style="height: 110px; width: auto;" />
       <div style="color: white; text-align: center;">
         <h1 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700;">
           OrthoCure Bone & Joint Speciality Clinic
@@ -256,41 +147,42 @@
       </div>
     </div>
   </header>
-
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/index.html">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
   <section class="section">
     <h2>Meet Dr. Sumesh Subramanian</h2>
     <div class="bio-block">
-      <img src="/assets/surgery1.jpg" alt="Dr. Sumesh Subramanian in OT" />
+      <img src="/assets/surgery1.jpg" alt="Dr. Sumesh Subramanian in PPE" />
       <div class="bio-text">
-        <p>Dr. Sumesh Subramanian (MBBS, MS Ortho, Fellowship in Arthroplasty) is a trusted orthopaedic surgeon known for his dedication to ethical, evidence-based care. With expertise in joint replacement, fracture management, arthritis care, and sports injuries, he combines surgical precision with a compassionate, patient-first approach. He currently serves as Assistant Professor in Orthopaedics and runs OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal.</p>
+        <p>Dr. Sumesh Subramanian (MBBS, MS Ortho, Fellowship in Arthroplasty) is a respected orthopaedic surgeon known for his commitment to ethical, evidence-based care. His core areas of expertise include joint replacement, sports injury management, arthritis care, trauma, and non-surgical innovations. He runs OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal, Chennai – a center built on trust, clinical excellence, and compassionate healing.</p>
+        <p>Dr. Sumesh is also recognized for his patient-friendly approach and believes in empowering people through clear explanations and conservative-first treatment planning. His motto remains: treat the person, not just the X-ray.</p>
       </div>
     </div>
+    <div class="facility-list">
+      <h3 style="text-align:center; color:#00695c;">Our Facilities</h3>
+      <ul>
+        <li>Digital X-ray Suite (300 mA)</li>
+        <li>Physiotherapy Unit (modalities + exercise rehab)</li>
+        <li>Minor Procedure Room</li>
+        <li>Wheelchair Accessible Entrance</li>
+        <li>Pharmacy for Ortho Medicines</li>
+        <li>On-site Consultation and Injection Therapy</li>
+        <li>Advanced Pain Management Solutions</li>
+      </ul>
+    </div>
+    <div class="badges">
+      <img src="/assets/ioa-badge.png" alt="Indian Orthopaedic Association Badge">
+      <img src="/assets/tnoa-badge.png" alt="Tamil Nadu Orthopaedic Association Badge">
+    </div>
   </section>
-
-
-    <h2>What Makes OrthoCure Different?</h2>
-    <p>We’re not just another clinic. OrthoCure is a purpose-driven healing space offering a premium patient experience — from advanced physiotherapy to on-site digital X-ray. We focus on clarity, comfort, and outcomes. Whether you’re 25 or 75, your recovery begins here — guided by science and delivered with sincerity.</p>
-
-    <div class="org-logos">
-      <a href="https://ioaindia.org" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/ioa-badge.png" alt="Indian Orthopaedic Association">
-      </a>
-      <a href="https://tnortho.org" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/tnoa-badge.png" alt="Tamil Nadu Orthopaedic Association">
-      </a>
-    </div>
-
-    <p>Dr. Sumesh is a proud member of the <strong>Indian Orthopaedic Association (IOA)</strong> and <strong>Tamil Nadu Orthopaedic Association (TNOA)</strong>, upholding the highest standards of ethics, safety, and lifelong learning in orthopaedic practice.</p>
-
-    <div class="cta-bar">
-      <strong>Your joints deserve clarity, not confusion.</strong>
-      Visit OrthoCure today and experience personalised care from a trusted orthopaedic expert.
-    </div>
-  </main>
-
   <footer>
-    <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
-    <p>📍 No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062 | <a href="mailto:myorthocure@gmail.com" style="color:#ffc107">myorthocure@gmail.com</a> | TNMC Reg No: 119811</p>
+    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062 | <a href="mailto:myorthocure@gmail.com" style="color:#ffc107">myorthocure@gmail.com</a></p>
   </footer>
 </body>
 </html>
