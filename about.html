@@ -110,13 +110,153 @@
 
 
   <main>
-    <h2>Meet Dr. Sumesh Subramanian</h2>
-    <div class="profile-block">
-      <img src="/assets/surgery1.jpg" alt="Dr. Sumesh Subramanian in OT">
-      <div class="bio">
-        <p>Dr. Sumesh Subramanian (MBBS, MS Ortho, Fellowship in Arthroplasty) is a trusted orthopaedic surgeon known for blending medical excellence with compassionate care. With years of experience in joint preservation, trauma, and arthritis management, he founded OrthoCure to bring city-grade orthopaedic expertise to the heart of Thirumullaivoyal.</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ... head content remains unchanged ... -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4fbfb;
+      color: #2c3e50;
+      scroll-behavior: smooth;
+    }
+
+    header, footer {
+      background: #013440;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background: #009688;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      padding: 8px;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 32px 16px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #00695c;
+      text-align: center;
+    }
+
+    .section p, .section ul {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .section .bio-block {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .section .bio-block img {
+      width: 260px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .section .bio-block .bio-text {
+      max-width: 580px;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 16px;
+        gap: 16px;
+      }
+      .header img {
+        height: 90px;
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 1.35rem;
+        margin-bottom: 6px;
+      }
+      .header p {
+        font-size: 1rem;
+      }
+      .section {
+        padding: 28px 16px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .sticky-footer {
+        flex-direction: column;
+        font-size: 0.85rem;
+        gap: 4px;
+        padding: 12px;
+      }
+      .section .bio-block {
+        flex-direction: column;
+        align-items: center;
+      }
+      .section .bio-block .bio-text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" style="height: 110px; width: auto;" />
+      <div style="color: white; text-align: center;">
+        <h1 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700;">
+          OrthoCure Bone & Joint Speciality Clinic
+        </h1>
+        <p style="margin: 0; font-size: 1rem; color: #aad2d3;">
+          Start Healing. Stay Moving.
+        </p>
       </div>
     </div>
+  </header>
+
+  <section class="section">
+    <h2>Meet Dr. Sumesh Subramanian</h2>
+    <div class="bio-block">
+      <img src="/assets/surgery1.jpg" alt="Dr. Sumesh Subramanian in OT" />
+      <div class="bio-text">
+        <p>Dr. Sumesh Subramanian (MBBS, MS Ortho, Fellowship in Arthroplasty) is a trusted orthopaedic surgeon known for his dedication to ethical, evidence-based care. With expertise in joint replacement, fracture management, arthritis care, and sports injuries, he combines surgical precision with a compassionate, patient-first approach. He currently serves as Assistant Professor in Orthopaedics and runs OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal.</p>
+      </div>
+    </div>
+  </section>
+
 
     <h2>What Makes OrthoCure Different?</h2>
     <p>We’re not just another clinic. OrthoCure is a purpose-driven healing space offering a premium patient experience — from advanced physiotherapy to on-site digital X-ray. We focus on clarity, comfort, and outcomes. Whether you’re 25 or 75, your recovery begins here — guided by science and delivered with sincerity.</p>
