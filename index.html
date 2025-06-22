@@ -45,7 +45,7 @@
   }
   </script>
  <!-- ... head content remains unchanged ... -->
-  <style>
+   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -191,18 +191,30 @@
       opacity: 1;
     }
 
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 32px;
+      background-color: #013440;
+      flex-wrap: wrap;
+    }
+
     @media (max-width: 768px) {
       .header {
         flex-direction: column;
         text-align: center;
-        padding: 20px;
+        padding: 24px 16px;
+        gap: 16px;
       }
       .header img {
-        height: 80px;
-        margin-bottom: 12px;
+        height: 72px;
+        margin-bottom: 8px;
       }
       .header h1 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        margin-bottom: 6px;
       }
       .header p {
         font-size: 0.95rem;
@@ -216,8 +228,8 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <header>
-    <div class="header" style="display: flex; align-items: center; justify-content: center; gap: 24px; padding: 32px; background-color: #013440;">
+ <header>
+    <div class="header">
       <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" style="height: 90px; width: auto;" />
       <div style="color: white; text-align: center;">
         <h1 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700;">
