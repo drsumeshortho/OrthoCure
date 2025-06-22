@@ -8,7 +8,7 @@
   <meta name="keywords" content="orthopaedic blog, joint health, arthritis, cracking knuckles, Dr Sumesh Subramanian">
   <meta name="author" content="Dr. Sumesh Subramanian">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#002B36">
+  <meta name="theme-color" content="#013440">
   <meta property="og:title" content="OrthoCure Blog | Trusted Orthopaedic Articles">
   <meta property="og:description" content="Evidence-based bone and joint care insights curated by Dr. Sumesh Subramanian.">
   <meta property="og:image" content="https://www.myorthocure.com/assets/logo.png">
@@ -16,53 +16,95 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/favicon.png">
- <style>
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 32px;
-    background-color: #013440;
-    flex-wrap: wrap;
-  }
-
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4fbfb;
+      color: #2c3e50;
+      scroll-behavior: smooth;
+    }
+    header, footer {
+      background: #013440;
+      color: white;
       text-align: center;
-      padding: 24px 16px;
+    }
+    nav {
+      background: #009688;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 16px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      padding: 8px;
+    }
+    nav a:hover {
+      color: #ffc107;
+      text-decoration: underline;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 32px;
+      background-color: #013440;
+      flex-wrap: wrap;
     }
     .header img {
-      height: 90px;
-      margin-bottom: 10px;
+      height: 110px;
+      width: auto;
     }
     .header h1 {
-      font-size: 1.35rem;
-      margin-bottom: 6px;
+      margin: 0 0 8px 0;
+      font-size: 1.6rem;
+      font-weight: 700;
     }
     .header p {
+      margin: 0;
       font-size: 1rem;
+      color: #aad2d3;
     }
-  }
-</style>
-
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 16px;
+        gap: 16px;
+      }
+      .header img {
+        height: 90px;
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 1.35rem;
+        margin-bottom: 6px;
+      }
+      .header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
  <header>
-  <div class="header">
-    <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" style="height: 110px; width: auto;" />
-    <div style="color: white; text-align: center;">
-      <h1 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700;">
-        OrthoCure Bone & Joint Speciality Clinic
-      </h1>
-      <p style="margin: 0; font-size: 1rem; color: #aad2d3;">
-        Start Healing. Stay Moving.
-      </p>
+    <div class="header">
+      <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" />
+      <div style="color: white; text-align: center;">
+        <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+        <p>Start Healing. Stay Moving.</p>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <nav>
     <a href="/">Home</a>
