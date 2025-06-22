@@ -16,65 +16,54 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/favicon.png">
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f5f5f5; color: #2c3e50; scroll-behavior: smooth; }
-    header, footer { background: #002B36; color: white; text-align: center; padding: 20px 10px; }
-    nav { background: #009688; display: flex; justify-content: center; gap: 20px; padding: 12px; position: sticky; top: 0; z-index: 999; }
-    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s ease; }
-    nav a:hover { color: #ffc107; text-decoration: underline; }
-    h1 { margin: 0 0 0.5rem; font-size: 2rem; }
-    main { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
-    .blog-card {
-      background: white; margin: 1.5rem 0; padding: 1.5rem; border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 1rem;
-      transition: box-shadow 0.3s ease;
-    }
-    .blog-card:hover { box-shadow: 0 6px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
-    .blog-card img {
-      width: 100%; border-radius: 8px; object-fit: cover;
-      max-height: 220px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;
-    }
-    .blog-card:hover img { transform: scale(1.02); }
-    .blog-title { font-size: 1.5rem; color: #e65100; text-decoration: none; font-weight: bold; }
-    .blog-title:hover { text-decoration: underline; }
-    .blog-snippet { color: #555; font-size: 1rem; margin-top: 0.5rem; }
-    .post-date { font-size: 0.85rem; color: #888; }
-    .cta-banner {
+ <style>
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    background-color: #013440;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
       text-align: center;
-      margin-top: 3rem;
-      background: #fff3e0;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+      padding: 24px 16px;
+      gap: 16px;
     }
-    .cta-banner a {
-      background: #e65100;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 1rem;
+    .header img {
+      height: 90px;
+      margin-bottom: 10px;
     }
-    .cta-banner a:hover { background: #bf360c; }
-    @media (min-width: 700px) {
-      .blog-card { flex-direction: row; align-items: center; }
-      .blog-card img { width: 240px; height: 160px; flex-shrink: 0; }
-      .blog-content { padding-left: 1.5rem; }
+    .header h1 {
+      font-size: 1.35rem;
+      margin-bottom: 6px;
     }
-  </style>
+    .header p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
 </head>
 <body>
-  <header>
-    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 16px;">
-      <img src="/assets/logo.png" alt="OrthoCure Logo" style="height: 80px;">
-      <div style="text-align: left;">
-        <h1 style="margin: 0; font-size: 1.9rem; color: white;">OrthoCure Blog</h1>
-        <p style="font-style: italic; font-size: 1rem; color: #cdeff0;">Evidence-Based Orthopaedic Insights</p>
-      </div>
+ <header>
+  <div class="header">
+    <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" style="height: 110px; width: auto;" />
+    <div style="color: white; text-align: center;">
+      <h1 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700;">
+        OrthoCure Bone & Joint Speciality Clinic
+      </h1>
+      <p style="margin: 0; font-size: 1rem; color: #aad2d3;">
+        Start Healing. Stay Moving.
+      </p>
     </div>
-  </header>
+  </div>
+</header>
+
   <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
