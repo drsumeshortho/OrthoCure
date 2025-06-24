@@ -1,0 +1,125 @@
+/* OrthoCure Global Style Sheet */
+/* Brand colors: coral-orange #e0524f, navy blue #001f3f, clean white #ffffff */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+a {
+  color: #e0524f;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #c8413c;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+.btn {
+  background: #e0524f;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+}
+.btn:hover {
+  background: #c8413c;
+}
+
+/* Header */
+header {
+  background-color: #001f3f;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+header p {
+  font-size: 1rem;
+  margin: 0.5rem 0 0 0;
+}
+
+/* Blog Cards */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.blog-card {
+  width: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+.blog-card:hover {
+  transform: scale(1.015);
+}
+.blog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.blog-content {
+  padding: 1rem;
+}
+.blog-content h2 {
+  font-size: 1.2rem;
+  color: #e0524f;
+  margin: 0 0 0.5rem;
+}
+.blog-content p {
+  font-size: 0.95rem;
+  color: #333;
+}
+.blog-content a {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 3rem 1rem;
+}
+.cta-section h2 {
+  margin-bottom: 0.5rem;
+}
+.cta-section p {
+  font-size: 1rem;
+}
+.cta-section a {
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  background-color: #f1f1f1;
+}
