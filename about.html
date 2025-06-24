@@ -3,68 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Sumesh | Orthopaedic Surgeon in Thirumullaivoyal | About Us</title>
-  <meta name="description" content="Learn more about Dr. Sumesh Subramanian — a trusted orthopaedic surgeon in Chennai. Patients searching for 'Dr Sumesh ortho' or 'ortho doctor near me' find expert, compassionate care at OrthoCure Clinic in Thirumullaivoyal." />
-  <meta name="keywords" content="Dr Sumesh, Dr Sumesh ortho, Dr Sumesh Subramanian, ortho doctor near me, orthopaedic clinic Thirumullaivoyal, joint specialist Chennai, OrthoCure" />
-  <link rel="canonical" href="https://www.myorthocure.com/about.html" />
+  <title>Dr. Sumesh Ortho | OrthoCure Clinic, Thirumullaivoyal</title>
+  <meta name="description" content="OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal, led by Dr. Sumesh Subramanian, offers advanced orthopaedic care with digital X-ray, physiotherapy, and compassionate treatment." />
+  <meta name="keywords" content="Dr Sumesh, ortho doctor Thirumullaivoyal, OrthoCure, orthopaedic surgeon Chennai, ortho clinic near me, joint pain clinic" />
+  <link rel="canonical" href="https://www.myorthocure.com/" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id=GTM-TJH4M7N7'+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TJH4M7N7');
-  </script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TJH4M7N7"></script>
   <!-- End Google Tag Manager -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "OrthoCure Bone & Joint Speciality Clinic",
-    "image": "https://www.myorthocure.com/assets/logo-transparent.png",
-    "url": "https://www.myorthocure.com/about.html",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "No. 2, 2nd Street, Santhipuram",
-      "addressLocality": "Thirumullaivoyal",
-      "addressRegion": "Chennai",
-      "postalCode": "600062",
-      "addressCountry": "IN"
-    },
-    "medicalSpecialty": "Orthopaedic",
-    "availableService": "X-ray, Physiotherapy, Consultation",
-    "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "IOA"
-      },
-      {
-        "@type": "Organization",
-        "name": "TNOA"
-      }
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Dr. Sumesh Subramanian",
-      "jobTitle": "Orthopaedic Surgeon"
-    },
-    "openingHours": "Mo-Su 10:30-13:30",
-    "telephone": "+919342700212"
-  }
-  </script>
   <style>
-    /* existing CSS remains unchanged */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #1a1a1a;
+    }
+    header, footer, main {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+    .top-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      background-color: #102542;
+      color: #fff;
+      flex-wrap: wrap;
+    }
+    .top-header img.logo {
+      height: 110px;
+      width: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .top-header .clinic-title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .top-header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .top-header p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .quick-links {
+      background: #f4f4f4;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .quick-links a {
+      margin: 0 1rem;
+      color: #102542;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .quick-links a:hover {
+      text-decoration: underline;
+      color: #ff5c5c;
+    }
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 2rem;
+    }
+    @media(min-width: 768px) {
+      .profile-section {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+    .profile-photo {
+      max-width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    .bio-text {
+      flex: 1;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background-color: #102542;
+      color: #fff;
+    }
+    footer small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #bbb;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #128c7e;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
+
+  <header class="top-header">
+    <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" class="logo" />
+    <div class="clinic-title">
+      <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+      <p>Start Healing. Stay Moving. Trusted Orthopaedic Care in Thirumullaivoyal</p>
+    </div>
+  </header>
+
+  <div class="quick-links">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult.html">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </div>
 
   <div style="display:none; visibility:hidden;">
     Searching for Dr Sumesh ortho or best ortho doctor in Chennai? OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal is led by Dr. Sumesh Subramanian, known for honest second opinions, knee and joint care, and advanced ortho treatment.
   </div>
 
-  <!-- rest of body remains unchanged -->
+  <main class="container">
+    <section class="profile-section">
+      <img src="/assets/surgery1.png" alt="Dr Sumesh Subramanian in surgery" class="profile-photo" />
+      <div class="bio-text">
+        <h2>About Dr. Sumesh Subramanian</h2>
+        <p>Dr. Sumesh is a passionate orthopaedic surgeon known for combining global medical knowledge with deeply local patient care. With an MS in Orthopaedics and a Fellowship in Arthroplasty, he brings cutting-edge skills in joint replacement, sports injuries, and bone health — delivered with unmatched clarity and empathy.</p>
+        <p>What makes him stand out isn’t just surgical precision. It’s his ability to make patients feel understood. Every treatment starts with honest conversation, patient education, and a strategy that suits each individual’s lifestyle, age, and goals.</p>
+        <p>Through OrthoCure, Dr. Sumesh aims to redefine how musculoskeletal care is delivered in Thirumullaivoyal — blending science, technology, and compassion under one trusted roof.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 OrthoCure Bone & Joint Speciality Clinic | Chennai | <a href="/contact.html" style="color: #fff; text-decoration: underline;">Book Now</a></p>
+    <small>Udyam MSME Reg. No: UDYAM-TN-24-0146713</small>
+  </footer>
+</body>
+</html>
+
