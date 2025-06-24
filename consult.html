@@ -11,43 +11,140 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png" />
   <link rel="stylesheet" href="/assets/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    "name": "OrthoCure Bone & Joint Speciality Clinic",
-    "url": "https://www.myorthocure.com",
-    "logo": "https://www.myorthocure.com/assets/logo-transparent.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "No. 2, 2nd Street, Santhipuram, Thirumullaivoyal",
-      "addressLocality": "Chennai",
-      "addressRegion": "TN",
-      "postalCode": "600062",
-      "addressCountry": "IN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-9342700212",
-      "contactType": "Customer Service",
-      "availableLanguage": ["English", "Tamil"]
-    },
-    "medicalSpecialty": "Orthopedic"
-  }
-  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f4fbfb;
+      color: #2c3e50;
+    }
+    header {
+      background: #013440;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header img.logo {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header .tagline {
+      font-size: 1rem;
+      font-style: italic;
+      color: #cdeff0;
+    }
+    nav {
+      background: #009688;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover,
+    nav a.active {
+      color: #ffc107;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #00695c;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    input[type="submit"] {
+      background: #ffc107;
+      color: #013440;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #ffb300;
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+    }
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #013440;
+      color: white;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" class="logo" />
-      <div class="title-block">
-        <h1>OrthoCure Clinic</h1>
-        <p class="tagline">Start Healing. Stay Moving.</p>
-      </div>
-    </div>
+  <header>
+    <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" class="logo" />
+    <h1>OrthoCure Clinic</h1>
+    <p class="tagline">Start Healing. Stay Moving.</p>
   </header>
 
-  <nav class="quick-nav">
+  <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
     <a href="/consult/index.html" class="active">Consult</a>
@@ -55,43 +152,41 @@
     <a href="/contact.html">Contact</a>
   </nav>
 
-  <main class="main-content">
-    <section class="card">
-      <h2>Book Your Online Appointment</h2>
-      <form action="https://script.google.com/macros/s/AKfycbxzZ64J3TUM32j-Un7hf1PTeTf4lnc3PCAO65KQjpmXLPm_5YPhUdvR6Aoabzp6XG0/exec" method="POST" target="hiddenFrame" onsubmit="showModal()">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="number" name="age" placeholder="Age" required />
-        <select name="gender" required>
-          <option value="">Select Gender</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Other">Other</option>
-        </select>
-        <input type="email" name="email" placeholder="Email Address" required />
-        <select name="consultationDay" required>
-          <option value="">Select Day</option>
-          <option>Monday</option>
-          <option>Tuesday</option>
-          <option>Wednesday</option>
-          <option>Thursday</option>
-          <option>Friday</option>
-          <option>Saturday</option>
-        </select>
-        <select name="preferredTime" required>
-          <option value="">Preferred Time Slot</option>
-          <option>10AM–1PM</option>
-          <option>2PM–4PM</option>
-          <option>5PM–9PM</option>
-        </select>
-        <input type="text" name="preferredExactTime" placeholder="Exact time within selected slot (optional)" />
-        <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required />
-        <textarea name="problem" rows="4" placeholder="Describe your problem briefly" required></textarea>
-        <input type="hidden" name="consent" value="Yes" />
-        <input type="submit" value="Submit Appointment Request" />
-      </form>
-      <iframe name="hiddenFrame" style="display: none;"></iframe>
-      <p class="note">Your data is secure. We follow India's Telemedicine Practice Guidelines – 2020.</p>
-    </section>
+  <main>
+    <h2>Book Your Online Appointment</h2>
+    <form action="https://script.google.com/macros/s/AKfycbxzZ64J3TUM32j-Un7hf1PTeTf4lnc3PCAO65KQjpmXLPm_5YPhUdvR6Aoabzp6XG0/exec" method="POST" target="hiddenFrame" onsubmit="showModal()">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="number" name="age" placeholder="Age" required />
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="email" name="email" placeholder="Email Address" required />
+      <select name="consultationDay" required>
+        <option value="">Select Day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+      </select>
+      <select name="preferredTime" required>
+        <option value="">Preferred Time Slot</option>
+        <option>10AM–1PM</option>
+        <option>2PM–4PM</option>
+        <option>5PM–9PM</option>
+      </select>
+      <input type="text" name="preferredExactTime" placeholder="Exact time within selected slot (optional)" />
+      <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required />
+      <textarea name="problem" rows="4" placeholder="Describe your problem briefly" required></textarea>
+      <input type="hidden" name="consent" value="Yes" />
+      <input type="submit" value="Submit Appointment Request" />
+    </form>
+    <iframe name="hiddenFrame" style="display: none;"></iframe>
+    <p class="note">Your data is secure. We follow India's Telemedicine Practice Guidelines – 2020.</p>
 
     <div class="modal" id="successModal">
       <div class="modal-content">
@@ -106,7 +201,7 @@
 
   <footer>
     <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
-    <p>📍 No. 2, 2nd Street, Ground Floor, Santhipuram, Thirumullaivoyal, Chennai – 600062 | <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
+    <p>📍 No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062 | <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
     <p><small>Form compliant with India's Telemedicine Practice Guidelines.</small></p>
   </footer>
 
@@ -118,3 +213,4 @@
   </script>
 </body>
 </html>
+
