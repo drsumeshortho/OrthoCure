@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-   <!-- Google Tag Manager -->
-  <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id=GTM-TJH4M7N7'+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TJH4M7N7');
-  </script>
-  <!-- End Google Tag Manager -->
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OrthoCure Bone & Joint Speciality Clinic | Thirumullaivoyal, Chennai</title>
   <meta name="description" content="OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal offers expert orthopaedic care, digital X-ray, physiotherapy, and patient-first healing with advanced technology." />
   <link rel="canonical" href="https://www.myorthocure.com/" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX"></script>
+  <!-- End Google Tag Manager -->
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -35,19 +27,45 @@
       margin: auto;
       padding: 1.5rem;
     }
-    header {
+    .top-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
       background-color: #102542;
       color: #fff;
-      padding: 2rem 1.5rem;
+      flex-wrap: wrap;
+    }
+    .top-header img.logo {
+      height: 60px;
+      width: auto;
+    }
+    .top-header .clinic-title {
+      display: flex;
+      flex-direction: column;
+    }
+    .top-header h1 {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+    .top-header p {
+      font-size: 1rem;
+      margin: 0;
+    }
+    .quick-links {
+      background: #f4f4f4;
+      padding: 0.6rem 1rem;
       text-align: center;
+      font-size: 0.95rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 400;
+    .quick-links a {
+      margin: 0 1rem;
+      color: #102542;
+      text-decoration: none;
+      font-weight: 500;
     }
     .cta-button {
       background-color: #ff5c5c;
@@ -58,6 +76,18 @@
       font-weight: 600;
       display: inline-block;
       margin-top: 1.2rem;
+    }
+    .doctor-photo {
+      max-width: 160px;
+      margin: 1.5rem auto 0 auto;
+      border-radius: 50%;
+      display: block;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+    .doctor-caption {
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
     }
     section {
       margin: 3rem 0;
@@ -78,13 +108,33 @@
       border-radius: 12px;
       margin-bottom: 2rem;
     }
-    .xray-banner {
-      background-color: #eafbf2;
-      border-left: 6px solid #00a878;
-      padding: 1.2rem 1.5rem;
+    .tip-box {
+      background-color: #fff8e1;
+      border-left: 6px solid #ffc107;
+      padding: 1rem;
       margin-bottom: 2rem;
+      font-size: 0.95rem;
       border-radius: 8px;
-      font-size: 1.1rem;
+    }
+    .map-embed {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
     }
     footer {
       text-align: center;
@@ -92,20 +142,41 @@
       background-color: #102542;
       color: #fff;
     }
+    nav {
+      display: none;
+    }
     @media (min-width: 768px) {
-      header h1 { font-size: 3rem; }
-      header p { font-size: 1.3rem; }
+      .top-header h1 { font-size: 2rem; }
+      .top-header p { font-size: 1.1rem; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
+  <a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
+
+  <header class="top-header">
+    <img src="/assets/orthocure-logo.png" alt="OrthoCure Logo" class="logo" />
+    <div class="clinic-title">
       <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
       <p>Start Healing. Stay Moving. Trusted Orthopaedic Care in Thirumullaivoyal</p>
-      <a href="/contact.html" class="cta-button">Book Consultation</a>
     </div>
   </header>
+
+  <div class="quick-links">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult.html">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+
+  <div class="container">
+    <a href="/contact.html" class="cta-button">Book Consultation</a>
+    <img src="/assets/Sumesh_Labcoat_Website.png" alt="Dr. Sumesh Subramanian, Orthopaedic Surgeon" class="doctor-photo" />
+    <div class="doctor-caption">
+      Dr. Sumesh Subramanian, MS Ortho<br><small>Fellowship in Arthroplasty</small>
+    </div>
+  </div>
 
   <main class="container">
     <section class="trust-box">
@@ -116,18 +187,20 @@
         <li>On-site physiotherapy and recovery guidance</li>
         <li>Modern, evidence-based care tailored for every age</li>
         <li>Trusted member of <strong>IOA</strong> and <strong>TNOA</strong></li>
+        <li><strong>Udyam MSME Reg. No:</strong> UDYAM-TN-24-0146713</li>
       </ul>
     </section>
 
-    <section class="xray-banner">
-      ✅ <strong>Digital 300 mA X-Ray Now Available:</strong> Get your scans done instantly during your visit — no need for external labs or long waits.
+    <section class="tip-box">
+      🧠 <strong>Patient Tip:</strong> Early treatment = faster healing. Don’t wait for joint pain to worsen. Visit us as soon as symptoms begin.
     </section>
 
     <section>
       <h2>Location & Timings</h2>
-      <p><strong>Address:</strong> No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600 062</p>
+      <p><strong>Address:</strong> No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600 062</p>
       <p><strong>Open:</strong> All days including Sundays<br />
          <strong>Sunday timing:</strong> 10:30 AM – 1:30 PM</p>
+      <iframe class="map-embed" src="https://www.google.com/maps?q=OrthoCure+Bone+%26+Joint+Speciality+Clinic,+Thirumullaivoyal,+Chennai&output=embed"></iframe>
     </section>
 
     <section>
