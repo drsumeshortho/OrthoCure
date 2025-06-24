@@ -30,6 +30,7 @@
     .top-header {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 1rem;
       padding: 1rem 1.5rem;
       background-color: #102542;
@@ -37,19 +38,25 @@
       flex-wrap: wrap;
     }
     .top-header img.logo {
-      height: 60px;
+      height: 110px;
       width: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .top-header .clinic-title {
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
     .top-header h1 {
-      font-size: 1.6rem;
+      font-size: 2rem;
       margin: 0;
     }
     .top-header p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       margin: 0;
     }
     .quick-links {
@@ -65,42 +72,46 @@
       margin: 0 1rem;
       color: #102542;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
+    }
+    .quick-links a:hover {
+      text-decoration: underline;
+      color: #ff5c5c;
+    }
+    .doctor-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    @media(min-width: 768px) {
+      .doctor-section {
+        flex-direction: row;
+        align-items: flex-start;
+      }
     }
     .doctor-photo {
       max-width: 160px;
-      margin: 1.5rem auto 0 auto;
       border-radius: 50%;
-      display: block;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     }
+    .doctor-info {
+      flex: 1;
+    }
     .doctor-caption {
-      text-align: center;
-      margin-top: 0.5rem;
       font-size: 0.95rem;
-    }
-    section {
-      margin: 3rem 0;
-    }
-    h2 {
-      color: #102542;
-      margin-bottom: 1rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.6rem;
+      margin-top: 0.5rem;
+      text-align: center;
     }
     .trust-box {
-      background-color: #f2f7fc;
+      background-color: #e6f0f7;
       padding: 1.5rem;
       border-radius: 12px;
       margin-bottom: 2rem;
     }
     .tip-box {
-      background-color: #fff8e1;
-      border-left: 6px solid #ffc107;
+      background-color: #fff3e0;
+      border-left: 6px solid #ffa726;
       padding: 1rem;
       margin-bottom: 2rem;
       font-size: 0.95rem;
@@ -117,7 +128,7 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25d366;
+      background-color: #128c7e;
       color: white;
       border-radius: 50%;
       padding: 15px;
@@ -132,12 +143,24 @@
       background-color: #102542;
       color: #fff;
     }
+    footer small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #bbb;
+    }
     nav {
       display: none;
     }
-    @media (min-width: 768px) {
-      .top-header h1 { font-size: 2rem; }
-      .top-header p { font-size: 1.1rem; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+           only screen and (min--moz-device-pixel-ratio: 2),
+           only screen and (-o-min-device-pixel-ratio: 2/1),
+           only screen and (min-device-pixel-ratio: 2),
+           only screen and (min-resolution: 192dpi),
+           only screen and (min-resolution: 2dppx) {
+      .top-header img.logo {
+        content: url('/assets/logo-transparent@2x.png');
+      }
     }
   </style>
 </head>
@@ -160,10 +183,11 @@
     <a href="/contact.html">Contact</a>
   </div>
 
-  <div class="container">
+  <div class="container doctor-section">
     <img src="/assets/Sumesh_Labcoat_Website.png" alt="Dr. Sumesh Subramanian, Orthopaedic Surgeon" class="doctor-photo" />
-    <div class="doctor-caption">
-      Dr. Sumesh Subramanian, MS Ortho<br><small>Fellowship in Arthroplasty</small>
+    <div class="doctor-info">
+      <h2>Meet Your Orthopaedic Expert</h2>
+      <p>Dr. Sumesh Subramanian, MS Ortho, Fellowship in Arthroplasty, brings advanced surgical expertise and a commitment to patient-first care. With a strong academic background and deep clinical insight, he leads OrthoCure to deliver trusted, evidence-based solutions for every joint and bone concern.</p>
     </div>
   </div>
 
@@ -175,8 +199,7 @@
         <li>Fully equipped outpatient clinic with <strong>300 mA digital X-ray machine</strong> for precise diagnosis</li>
         <li>On-site physiotherapy and recovery guidance</li>
         <li>Modern, evidence-based care tailored for every age</li>
-        <li>Trusted member of <strong>IOA</strong> and <strong>TNOA</strong></li>
-        <li><strong>Udyam MSME Reg. No:</strong> UDYAM-TN-24-0146713</li>
+        <li>Trusted member of <strong><a href="https://ioaindia.org/" target="_blank" rel="noopener"><img src="/assets/ioa-logo.png" alt="IOA Logo" style="height:20px; vertical-align:middle; margin-right:4px;" />IOA</a></strong> and <strong><a href="https://www.tnoa.info/" target="_blank" rel="noopener"><img src="/assets/tnoa-logo.png" alt="TNOA Logo" style="height:20px; vertical-align:middle; margin-right:4px;" />TNOA</a></strong></li>
       </ul>
     </section>
 
@@ -211,6 +234,7 @@
 
   <footer>
     <p>&copy; 2025 OrthoCure Bone & Joint Speciality Clinic | Chennai | <a href="/contact.html" style="color: #fff; text-decoration: underline;">Book Now</a></p>
+    <small>Udyam MSME Reg. No: UDYAM-TN-24-0146713</small>
   </footer>
 </body>
 </html>
