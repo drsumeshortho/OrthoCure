@@ -1,38 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id=GTM-TJH4M7N7'+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TJH4M7N7');
-</script>
-<!-- End Google
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | OrthoCure Clinic</title>
   <meta name="description" content="Reach OrthoCure Bone & Joint Speciality Clinic – Chennai’s trusted centre for bones, joints and movement. Call, email or visit us in Thirumullaivoyal." />
-  <meta name="keywords" content="Contact OrthoCure, Dr. Sumesh Ortho Clinic, Bone Specialist Chennai, Ortho Clinic Thirumullaivoyal">
+  <meta name="keywords" content="Contact OrthoCure, Dr. Sumesh Ortho Clinic, Bone Specialist Chennai, Ortho Clinic Thirumullaivoyal" />
   <meta name="author" content="Dr. Sumesh Subramanian">
-  <link rel="stylesheet" href="/assets/style.css" type="text/css" media="all">
-  <link rel="icon" href="/assets/favicon.png" type="image/png" />
+  <link rel="canonical" href="https://www.myorthocure.com/contact.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4fbfb; color: #2c3e50; }
-    header, footer { background: #013440; color: white; text-align: center; padding: 40px 20px; }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header .tagline { font-style: italic; font-size: 1.1rem; color: #cdeff0; }
-    nav { background: #009688; display: flex; justify-content: center; gap: 20px; padding: 12px; position: sticky; top: 0; z-index: 999; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #ffc107; }
-    main { max-width: 800px; margin: 50px auto; padding: 0 20px; }
-    h2 { color: #00695c; text-align: center; margin-bottom: 20px; }
-    .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    .info p { margin: 8px 0; line-height: 1.6; font-size: 1.05rem; }
-    .map { width: 100%; height: 300px; border-radius: 10px; margin-top: 30px; }
-    .highlight { font-weight: bold; color: #007B5E; }
-    .cta-btn { margin-top: 20px; display: inline-block; background: #ffc107; color: #013440; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; }
-    .cta-btn:hover { background: #ffb300; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
+    header, footer {
+      background: #102542;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header .tagline {
+      font-style: italic;
+      font-size: 1rem;
+      color: #cfdde7;
+      margin-top: 0.5rem;
+    }
+    .quick-links {
+      background: #f4f4f4;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .quick-links a {
+      margin: 0 1rem;
+      color: #102542;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .quick-links a:hover {
+      text-decoration: underline;
+      color: #ff5c5c;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card h2 {
+      text-align: center;
+      color: #102542;
+      margin-bottom: 1.5rem;
+    }
+    .info p {
+      margin: 0.8rem 0;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .info a {
+      color: #00695c;
+      text-decoration: none;
+    }
+    .info a:hover {
+      text-decoration: underline;
+    }
+    .map {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #25d366;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .cta-btn:hover {
+      background: #20b858;
+    }
+    footer small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #cfdde7;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .info p {
+        font-size: 0.95rem;
+      }
+      .cta-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -41,33 +126,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <p class="tagline">Start Healing. Stay Moving.</p>
   </header>
 
-  <nav>
+  <div class="quick-links">
     <a href="/">Home</a>
     <a href="/about.html">About</a>
-    <a href="/consult/index.html">Consult</a>
+    <a href="/consult.html">Consult</a>
     <a href="/blog.html">Blog</a>
     <a href="/contact.html">Contact</a>
-  </nav>
+  </div>
 
   <main>
     <section class="card">
       <h2>Visit or Reach Us</h2>
       <div class="info">
-        <p><span class="highlight">Dr. Sumesh Subramanian</span><br>MS Orthopaedics, Fellowship in Arthroplasty<br>TNMC Reg No: 119811</p>
-        <p><span class="highlight">Clinic:</span> OrthoCure Bone & Joint Speciality Clinic</p>
-        <p><span class="highlight">Address:</span> No. 2, 2nd Street, Ground Floor, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
-        <p><span class="highlight">Call / WhatsApp:</span> <a href="tel:+919342700212">+91 93427 00212</a></p>
-        <p><span class="highlight">Email:</span> <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
-        <p><span class="highlight">Timings:</span><br>Mon–Sat: 5:00 PM – 9:00 PM<br>Sun: 11:00 AM – 1:00 PM</p>
+        <p><strong>Dr. Sumesh Subramanian</strong><br>MS Orthopaedics, Fellowship in Arthroplasty<br>TNMC Reg No: 119811</p>
+        <p><strong>Clinic:</strong> OrthoCure Bone & Joint Speciality Clinic</p>
+        <p><strong>Address:</strong> No. 2, Ground Floor, 2nd Street, Ground Floor, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
+        <p><strong>Call / WhatsApp:</strong> <a href="tel:+919342700212">+91 93427 00212</a></p>
+        <p><strong>Email:</strong> <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
+        <p><strong>Timings:</strong><br>Mon–Sat: 5:00 PM – 9:00 PM<br>Sun: 11:00 AM – 1:00 PM</p>
         <a class="cta-btn" href="https://wa.me/919342700212">💬 Message on WhatsApp</a>
       </div>
-      <iframe src="https://www.google.com/maps?q=13.130484,80.130407&z=17&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="map" src="https://www.google.com/maps?q=13.130484,80.130407&z=17&output=embed" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 <strong>Dr. Sumesh Subramanian</strong> | OrthoCure Bone & Joint Speciality Clinic</p>
-    <p>📍 No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062 | <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
+    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <small>📍 No. 2, 2nd Street, Ground Floor, Santhipuram, Thirumullaivoyal, Chennai – 600062 | <a href="mailto:myorthocure@gmail.com" style="color:#cfdde7;">myorthocure@gmail.com</a></small>
   </footer>
 </body>
 </html>
