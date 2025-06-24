@@ -1,16 +1,11 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OrthoCure Blog | Trusted Orthopaedic Articles</title>
-  <meta name="description" content="Explore articles by Dr. Sumesh Subramanian on bone and joint care, debunking myths, and early warning signs.">
-  <meta name="keywords" content="orthopaedic blog, joint health, arthritis, cracking knuckles, Dr Sumesh Subramanian">
-  <meta name="author" content="Dr. Sumesh Subramanian">
+  <meta name="description" content="Explore expert articles on bone and joint care, injury recovery, arthritis myths, and more—by Dr. Sumesh Subramanian at OrthoCure.">
+<meta name="author" content="Dr. Sumesh Subramanian">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#013440">
   <meta property="og:title" content="OrthoCure Blog | Trusted Orthopaedic Articles">
@@ -19,188 +14,155 @@
   <meta property="og:url" content="https://www.myorthocure.com/blog.html">
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">  
+<link rel="stylesheet" href="/assets/style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f4fbfb;
-      color: #2c3e50;
-      scroll-behavior: smooth;
+      margin: 0; padding: 0;
+      background-color: #ffffff;
+      color: #1a1a1a;
     }
-    header, footer {
-      background: #013440;
+    header {
+      background-color: #001f3f;
       color: white;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    nav {
-      background: #009688;
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin-top: 0.5rem; font-size: 1rem; }
+
+    .blog-container {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 16px;
-      padding: 12px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-      padding: 8px;
-    }
-    nav a:hover {
-      color: #ffc107;
-      text-decoration: underline;
-    }
-    .header {
-      display: flex;
-      align-items: center;
       justify-content: center;
-      gap: 24px;
-      padding: 32px;
-      background-color: #013440;
-      flex-wrap: wrap;
-    }
-    .header img {
-      height: 110px;
-      width: auto;
-    }
-    .header h1 {
-      margin: 0 0 8px 0;
-      font-size: 1.6rem;
-      font-weight: 700;
-    }
-    .header p {
-      margin: 0;
-      font-size: 1rem;
-      color: #aad2d3;
+      padding: 2rem 1rem;
+      gap: 2rem;
     }
     .blog-card {
-      max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      display: flex;
-      flex-direction: column;
+      width: 300px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 12px;
       overflow: hidden;
-      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .blog-card:hover {
+      transform: scale(1.015);
     }
     .blog-card img {
       width: 100%;
-      max-height: 160px;
-      object-fit: cover;
+      height: auto;
+      display: block;
     }
     .blog-content {
-      padding: 20px;
+      padding: 1rem;
     }
-    .blog-title {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: #00695c;
+    .blog-content h2 {
+      font-size: 1.2rem;
+      color: #e0524f; /* coral-orange */
+      margin: 0 0 0.5rem 0;
+    }
+    .blog-content p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .blog-content a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #001f3f;
       text-decoration: none;
+      font-weight: bold;
     }
-    .blog-title:hover {
-      text-decoration: underline;
+    .cta-section {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #001f3f;
+      color: white;
     }
-    .post-date {
+    .cta-section a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #e0524f;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
       font-size: 0.85rem;
-      color: #777;
-      margin-top: 6px;
-    }
-    .blog-snippet {
-      margin-top: 12px;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-    @media (max-width: 768px) {
-      .header {
-        flex-direction: column;
-        text-align: center;
-        padding: 24px 16px;
-        gap: 16px;
-      }
-      .header img {
-        height: 90px;
-        margin-bottom: 10px;
-      }
-      .header h1 {
-        font-size: 1.35rem;
-        margin-bottom: 6px;
-      }
-      .header p {
-        font-size: 1rem;
-      }
-      .blog-card img {
-        max-height: 120px;
-      }
+      color: #666;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="header">
-      <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" />
-      <div style="color: white; text-align: center;">
-        <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
-        <p>Start Healing. Stay Moving.</p>
+    <h1>Trusted Orthopaedic Insights</h1>
+    <p>Curated by Dr. Sumesh Subramanian | Start Healing. Stay Moving.</p>
+  </header>
+
+  <section class="blog-container">
+    <!-- Blog Post 3 -->
+<div class="blog-card">
+      <img src="/blog/PnL.png" alt="PEACE & LOVE Injury Protocol" loading="lazy" />
+      <div class="blog-content">
+        <h2>Move Over RICE: The New Science of Injury Healing</h2>
+        <p>Why ‘PEACE & LOVE’ is the modern approach to recover from sprains, injuries, and joint pain.</p>
+        <a href="/blog/peace-love-injury.html">Read Article →</a>
       </div>
     </div>
-  </header>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about.html">About</a>
-    <a href="/consult/index.html">Consult</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/contact.html">Contact</a>
-  </nav>
-</body>
-</html>
+    
 
-  <main>
-    <li>
-    <article class="blog-card">
-  <img src="/blog/PnL.png" alt="PEACE and LOVE Injury Recovery">
-  <div class="blog-content">
-    <a href="/blog/peace-love-injury.html" class="blog-title">
-      Why PEACE & LOVE Is Replacing RICE for Injury Recovery
-    </a>
-    <p class="post-date">Published on June 20, 2025</p>
-    <p class="blog-snippet">
-      RICE was the go-to for injuries. But science has moved on. Discover how the PEACE & LOVE protocol is transforming recovery for sprains, strains, and more.
-    </p>
-  </div>
-</article>
+    <!-- Blog Post 2 -->
+    <div class="blog-card">
+      <img src="/blog/early-arthritis-hero.jpg" alt="Early Arthritis" loading="lazy" />
+      <div class="blog-content">
+        <h2>Early Signs of Arthritis You Shouldn't Ignore</h2>
+        <p>Learn how to catch joint wear-and-tear early before it progresses to long-term damage.</p>
+        <a href="/blog/early-arthritis-signs.html">Read Article →</a>
+      </div>
+    </div>
 
-    </article>
-    <article class="blog-card">
-      <img src="/blog/early-arthritis-hero.jpg" alt="Early Arthritis">
+    <!-- Blog Post 1 -->
+    <div class="blog-card">
+      <img src="/blog/cracking-knuckles.png" alt="Cracking Knuckles" loading="lazy" />
       <div class="blog-content">
-        <a href="/blog/early-arthritis-signs.html" class="blog-title">Do I Have Early Arthritis? 7 Warning Signs to Know</a>
-        <p class="post-date">Published on June 9, 2025</p>
-        <p class="blog-snippet">Learn how to identify early arthritis before it progresses. Understand red flags, differential diagnoses, and what science says about early treatment.</p>
+        <h2>Does Cracking Your Knuckles Cause Arthritis?</h2>
+        <p>Get the truth behind this popular myth and understand what that ‘pop’ really means for your joints.</p>
+        <a href="/blog/cracking-knuckles.html">Read Article →</a>
       </div>
-    </article>
-      <article class="blog-card">
-      <img src="/blog/cracking-knuckles.png" alt="Cracking Knuckles">
-      <div class="blog-content">
-        <a href="/blog/cracking-knuckles.html" class="blog-title">Cracking Your Knuckles – Harmful or Harmless?</a>
-        <p class="post-date">Published on May 19, 2025</p>
-        <p class="blog-snippet">Think cracking your knuckles causes arthritis? Discover the truth with insights from Dr. Sumesh Subramanian. Based on medical evidence, not myths.</p>
-      </div>
-    </article>
-    <section class="cta-banner">
-      <h2>Need Expert Orthopaedic Advice?</h2>
-      <p>Book an online or in-person consultation with Dr. Sumesh Subramanian at OrthoCure Bone & Joint Speciality Clinic.</p>
-      <a href="/consult/index.html">Book Your Appointment</a>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Need expert advice for joint pain or injury?</h2>
+    <p>Book a consultation with Dr. Sumesh today and start your healing journey.</p>
+    <a href="/contact.html">Book Now</a>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic | <a href="https://myorthocure.com" style="color: #ffa726;">myorthocure.com</a></p>
-    <p style="font-size:0.85rem;">📍 No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
+    © 2025 OrthoCure Bone & Joint Speciality Clinic | Dr. Sumesh Subramanian| <a href="https://myorthocure.com" style="color: #ffa726;">myorthocure.com</a></p>
+    <p style="font-size:0.85rem;">📍 No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>  
   </footer>
+
+  <!-- SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "OrthoCure Blog",
+    "description": "Evidence-based orthopaedic content by Dr. Sumesh Subramanian",
+    "url": "https://www.myorthocure.com/blog.html",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Sumesh Subramanian"
+    }
+  }
+  </script>
 </body>
 </html>
-
