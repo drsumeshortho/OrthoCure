@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TJH4M7N7');
-</script>
-<!-- End Google Tag Manager -->
-
-  
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr. Sumesh Ortho | OrthoCure Clinic, Thirumullaivoyal</title>
   <meta name="description" content="OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal, led by Dr. Sumesh Subramanian, offers advanced orthopaedic care with digital X-ray, physiotherapy, and compassionate treatment." />
@@ -29,77 +18,139 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script>
   <!-- End Google Tag Manager -->
   <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background-color: #fff; color: #1a1a1a; line-height: 1.6; }
-    header, footer, main { width: 100%; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #1a1a1a;
+    }
+    header, footer, main {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1.5rem;
+    }
     .top-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
       background-color: #102542;
       color: #fff;
-      display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 1rem 1.5rem;
-      gap: 1rem;
     }
     .top-header img.logo {
-      height: 60px;
+      height: 110px;
       width: auto;
+      animation: fadeIn 1s ease-in;
     }
-    .clinic-text {
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .top-header .clinic-title {
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
-    .clinic-text h1 {
+    .top-header h1 {
+      font-size: 2rem;
       margin: 0;
-      font-size: 1.8rem;
     }
-    .clinic-text p {
-      margin: 0.3rem 0;
-      font-size: 1rem;
+    .top-header p {
+      font-size: 1.1rem;
+      margin: 0;
     }
-    .nav-container { background-color: #f4f4f4; padding: 0.6rem 1rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 999; }
-    .nav-container a.logo { font-weight: 800; color: #102542; text-decoration: none; font-size: 1.2rem; }
-    .nav-links { list-style: none; display: flex; gap: 1.2rem; margin: 0; padding: 0; }
-    .nav-links li a { color: #102542; text-decoration: none; font-weight: 600; }
-    .nav-links li a:hover { color: #ff5c5c; text-decoration: underline; }
-    .menu-toggle { display: none; background: none; font-size: 1.6rem; border: none; color: #102542; }
-    @media (max-width: 768px) {
-      .nav-links { display: none; flex-direction: column; background-color: #f4f4f4; width: 100%; padding: 1rem; }
-      .nav-links.open { display: flex; }
-      .menu-toggle { display: block; }
-      .top-header { justify-content: center; text-align: center; }
-      .clinic-text h1 { font-size: 1.4rem; }
+    .quick-links {
+      background: #f4f4f4;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-    .hero-section { background-color: #eaf3f9; text-align: center; padding: 2rem 1rem; }
-    .hero-section img { width: 100px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 1rem; }
-    .hero-section h2 { font-size: 2rem; margin-bottom: 0.5rem; }
-    .section-block { padding: 2rem 1rem; background-color: #f9f9f9; margin: 1.5rem auto; border-radius: 10px; text-align: center; }
-    .section-block h3 { color: #102542; font-size: 1.4rem; }
-    .cta-section { background-color: #ff5c5c; color: white; padding: 2rem 1rem; text-align: center; border-radius: 10px; margin: 2rem auto; }
-    .cta-section a { color: #fff; background-color: #102542; padding: 0.8rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
-    .faq { max-width: 800px; margin: auto; text-align: left; }
-    .faq h4 { color: #102542; margin-top: 1.2rem; }
-    .map-embed { width: 100%; height: 300px; border: 0; border-radius: 12px; margin-top: 1rem; }
-    footer { text-align: center; padding: 2rem 1.5rem; background-color: #102542; color: #fff; }
-    footer small { display: block; margin-top: 0.5rem; font-size: 0.85rem; color: #bbb; }
+    .quick-links a {
+      margin: 0 1rem;
+      color: #102542;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .quick-links a:hover {
+      text-decoration: underline;
+      color: #ff5c5c;
+    }
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @media(min-width: 768px) {
+      .profile-section {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+    .profile-photo {
+      max-width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    .bio-text {
+      flex: 1;
+    }
+    .info-section {
+      background-color: #e6f0f7;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 12px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background-color: #102542;
+      color: #fff;
+    }
+    footer small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #bbb;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #128c7e;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-<header class="top-header" style="flex-direction: column; align-items: center; text-align: center;">
-  <img src="/assets/logo.png" alt="OrthoCure Tree of Andry Logo" class="logo" style="height: 90px; width: auto; margin-bottom: 0.8rem;" />
-  <div class="clinic-text">
-    <h1 style="font-size: 2.2rem;">OrthoCure Bone & Joint Speciality Clinic</h1>
-    <p style="font-size: 1.2rem;">Start Healing. Stay Moving.</p>
-    <p style="font-size: 1.1rem;">Trusted Orthopaedic Care in Thirumullaivoyal</p>
-  </div>
-</header>
+  <a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
+  <header class="top-header">
+    <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" class="logo" />
+    <div class="clinic-title">
+      <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+      <p>Start Healing. Stay Moving.</p>
+      <p>Trusted Orthopaedic Care in Thirumullaivoyal</p>
+    </div>
+  </header>
 <nav class="nav-container">
   <a href="/" class="logo">OrthoCure</a>
   <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
