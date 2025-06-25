@@ -53,11 +53,11 @@
       text-align: center;
     }
     .top-header h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin: 0;
     }
     .top-header p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 0;
     }
     .nav-container {
@@ -86,6 +86,10 @@
       color: #102542;
       text-decoration: none;
       font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-links li a:hover {
+      color: #ff5c5c;
     }
     .menu-toggle {
       display: none;
@@ -178,8 +182,7 @@
   </style>
 </head>
 <body>
-<a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
-
+<a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp" aria-label="Chat with OrthoCure on WhatsApp">💬</a>
 <header class="top-header">
   <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" class="logo" />
   <div class="clinic-title">
@@ -187,10 +190,9 @@
     <p>Start Healing. Stay Moving. Trusted Orthopaedic Care in Thirumullaivoyal</p>
   </div>
 </header>
-
 <nav class="navbar">
   <div class="nav-container">
-    <a href="/" class="logo">OrthoCure</a>
+    <a href="/" class="logo" aria-label="Go to homepage">OrthoCure</a>
     <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
@@ -200,7 +202,6 @@
     </ul>
   </div>
 </nav>
-
 <script>
   document.querySelector('.menu-toggle').addEventListener('click', () => {
     document.querySelector('.nav-links').classList.toggle('open');
@@ -236,7 +237,7 @@
 
 
     <section>
-      <h2>Location & Timings</h2>
+      <h2>Location</h2>
       <p><strong>Address:</strong> No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600 062</p>
       <iframe class="map-embed" src="https://www.google.com/maps?q=OrthoCure+Bone+%26+Joint+Speciality+Clinic,+Thirumullaivoyal,+Chennai&output=embed"></iframe>
     </section>
@@ -257,7 +258,10 @@
       <p>We blend technology, compassion, and local expertise to give every patient a smooth, trusted healing experience. Whether it’s pain relief or post-op care, OrthoCure is your neighbourhood specialist.</p>
     </section>
   </main>
-
+<section class="container">
+  <h2>Location Map</h2>
+  <iframe class="map-embed" src="https://maps.google.com/maps?q=13.130476,80.130412&amp;z=17&amp;output=embed" allowfullscreen title="Clinic Location Map"></iframe>
+</section>
   <footer>
     <p>&copy; 2025 OrthoCure Bone & Joint Speciality Clinic | Chennai | <a href="/contact.html" style="color: #fff; text-decoration: underline;">Book Now</a></p>
     <small>Udyam MSME Reg. No: UDYAM-TN-24-0146713</small>
