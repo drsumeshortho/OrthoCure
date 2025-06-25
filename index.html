@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +40,7 @@
       flex-wrap: wrap;
     }
     .top-header img.logo {
-      height: 110px;
+      height: 90px;
       width: auto;
       animation: fadeIn 1s ease-in;
     }
@@ -53,7 +54,7 @@
       text-align: center;
     }
     .top-header h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin: 0;
     }
     .top-header p {
@@ -74,11 +75,12 @@
       font-weight: bold;
       color: #102542;
       text-decoration: none;
+      font-size: 1.1rem;
     }
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 1rem;
+      gap: 1.2rem;
       margin: 0;
       padding: 0;
     }
@@ -94,7 +96,7 @@
     .menu-toggle {
       display: none;
       background: none;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       border: none;
       color: #102542;
     }
@@ -112,40 +114,6 @@
       .menu-toggle {
         display: block;
       }
-    }
-    .doctor-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-    }
-    @media(min-width: 768px) {
-      .doctor-section {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-    }
-    .doctor-photo {
-      max-width: 160px;
-      border-radius: 50%;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    }
-    .doctor-info {
-      flex: 1;
-    }
-    .trust-box {
-      background-color: #e6f0f7;
-      padding: 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-    }
-    .tip-box {
-      background-color: #fff3e0;
-      border-left: 6px solid #ffa726;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      font-size: 0.95rem;
-      border-radius: 8px;
     }
     .map-embed {
       width: 100%;
@@ -237,12 +205,6 @@
 
 
     <section>
-      <h2>Location</h2>
-      <p><strong>Address:</strong> No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600 062</p>
-      <iframe class="map-embed" src="https://www.google.com/maps?q=OrthoCure+Bone+%26+Joint+Speciality+Clinic,+Thirumullaivoyal,+Chennai&output=embed"></iframe>
-    </section>
-
-    <section>
       <h2>What We Treat</h2>
       <ul>
         <li>Knee pain, arthritis, ligament injuries</li>
@@ -259,9 +221,11 @@
     </section>
   </main>
 <section class="container">
+ <section class="container">
   <h2>Location Map</h2>
   <iframe class="map-embed" src="https://maps.google.com/maps?q=13.130476,80.130412&amp;z=17&amp;output=embed" allowfullscreen title="Clinic Location Map"></iframe>
 </section>
+
   <footer>
     <p>&copy; 2025 OrthoCure Bone & Joint Speciality Clinic | Chennai | <a href="/contact.html" style="color: #fff; text-decoration: underline;">Book Now</a></p>
     <small>Udyam MSME Reg. No: UDYAM-TN-24-0146713</small>
