@@ -54,119 +54,191 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/assets/blog-post-upgrade.css" />
   <style>
-    .blog-body img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #1a1a1a;
+      line-height: 1.6;
     }
-
-    @media (min-width: 768px) {
-      .blog-body img {
-        max-width: 40%;
-        display: block;
-        margin: 1.5rem auto;
-      }
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+    .hero {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .responsive-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .blog-body {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .blog-body h2, .blog-body h3 {
+      color: #e0524f;
+    }
+    .blog-body h4 {
+      color: #001f3f;
+    }
+    .faq-section {
+      background: #f9f9f9;
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      border-radius: 8px;
+    }
+    .faq-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .faq {
+      margin-bottom: 1.5rem;
+    }
+    .faq strong {
+      display: block;
+      color: #e0524f;
+      margin-bottom: 0.5rem;
+    }
+    .cta-section {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f5f5f5;
+      margin-top: 3rem;
+    }
+    .cta-section a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #e0524f;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 2rem 1rem;
     }
   </style>
 </head>
 <body>
-<!-- Head and style updated to include responsive image resizing -->
+<!-- Body content will go here using the .responsive-img class for images -->
 
-  <header class="blog-header">
+<body>
+  <header>
     <h1>Why PEACE & LOVE Is Replacing RICE in Injury Recovery</h1>
     <p>Expert advice from Dr. Sumesh Subramanian | OrthoCure Blog</p>
   </header>
 
-  <section class="hero-image">
-    <img src="/blog/PnL.png" alt="PEACE & LOVE vs RICE protocol">
+  <section class="hero">
+    <img src="/blog/PnL.png" alt="PEACE and LOVE protocol illustration" class="responsive-img">
   </section>
 
-  <main class="blog-content">
-    <section class="intro">
-      <p>For decades, RICE (Rest, Ice, Compression, Elevation) has been the go-to method for managing soft tissue injuries. However, updated guidelines published by Dubois and Esculier in the <em>British Journal of Sports Medicine (2020)</em> suggest a more holistic, evidence-based approach: PEACE & LOVE.</p>
-    </section>
+  <section class="blog-body">
+    <h2>Why RICE Is No Longer Enough</h2>
+    <p>For years, RICE (Rest, Ice, Compression, Elevation) was the go-to for injury care. But modern science has moved forward — and so has injury recovery.</p>
+    <ul>
+      <li><strong>Ice</strong> may delay healing by reducing inflammation too much.</li>
+      <li><strong>Resting too long</strong> leads to stiffness and weakness.</li>
+      <li><strong>Painkillers</strong> can interfere with the natural recovery process.</li>
+    </ul>
 
-    <section class="side-by-side">
-      <div class="text">
-        <h2>🚫 Why RICE Is Now Considered Outdated</h2>
+    <h2>Meet PEACE & LOVE: The Modern Recovery Method</h2>
+    <p>This protocol combines protection, education, and movement to support faster, safer healing.</p>
+    <img src="/blog/PL2.png" alt="PEACE & LOVE infographic" class="responsive-img">
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+      <div style="flex: 1 1 300px;">
+        <h3>🕊 PEACE (For the First Few Days)</h3>
         <ul>
-          <li><strong>Ice:</strong> May reduce pain, but can impair local circulation and delay healing.</li>
-          <li><strong>Rest:</strong> Prolonged immobility leads to joint stiffness and muscle atrophy.</li>
-          <li><strong>Anti-inflammatories:</strong> Suppress the body’s natural healing cascade.</li>
-        </ul>
-        <p><em>Modern recovery focuses on active participation and cellular healing — not just symptom suppression.</em></p>
-      </div>
-      <div class="image">
-        <img src="/blog/old-rice.jpg" alt="Limitations of RICE" />
-      </div>
-    </section>
-
-    <section class="section-centered">
-      <h2>✅ PEACE & LOVE: The New Gold Standard</h2>
-      <img src="/blog/PL2.png" alt="PEACE & LOVE Injury Protocol Infographic" />
-      <p class="caption">Source: Dubois B, Esculier JF. Br J Sports Med. 2020</p>
-    </section>
-
-    <section class="dual-columns">
-      <div>
-        <h3>🕊 PEACE (Immediate Care)</h3>
-        <ul>
-          <li><strong>P – Protect:</strong> Minimize movement and avoid pain triggers in the first 1–3 days.</li>
-          <li><strong>E – Elevate:</strong> Elevate injured limb above heart level to reduce edema.</li>
-          <li><strong>A – Avoid Anti-inflammatories:</strong> NSAIDs may interfere with tissue repair.</li>
-          <li><strong>C – Compress:</strong> Use elastic bandages or sleeves to support and reduce swelling.</li>
-          <li><strong>E – Educate:</strong> Patients should understand their injury, recovery process, and realistic timelines.</li>
+          <li><strong>P – Protect:</strong> Avoid activities that worsen the injury.</li>
+          <li><strong>E – Elevate:</strong> Raise the injured limb above heart level.</li>
+          <li><strong>A – Avoid Anti-inflammatories:</strong> Let your body heal naturally.</li>
+          <li><strong>C – Compress:</strong> Use gentle pressure to reduce swelling.</li>
+          <li><strong>E – Educate:</strong> Learn what helps and what hinders healing.</li>
         </ul>
       </div>
-      <div>
-        <h3>❤️ LOVE (Subacute to Chronic Phase)</h3>
+      <div style="flex: 1 1 300px;">
+        <h3>❤️ LOVE (For Ongoing Recovery)</h3>
         <ul>
-          <li><strong>L – Load:</strong> Initiate gradual loading and movement early to promote tissue remodeling.</li>
-          <li><strong>O – Optimism:</strong> Patient mindset plays a measurable role in pain and outcome.</li>
-          <li><strong>V – Vascularisation:</strong> Introduce pain-free aerobic activities like walking, cycling.</li>
-          <li><strong>E – Exercise:</strong> Targeted rehab plans restore strength, balance, and function.</li>
+          <li><strong>L – Load:</strong> Reintroduce movement with guidance.</li>
+          <li><strong>O – Optimism:</strong> Positive mindset accelerates recovery.</li>
+          <li><strong>V – Vascularisation:</strong> Gentle activity improves blood flow.</li>
+          <li><strong>E – Exercise:</strong> Rehab exercises restore function and strength.</li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <section class="recovery-tips">
-      <h2>🧠 Practical Tips If You’re Injured</h2>
-      <ul>
-        <li>Avoid overusing ice and painkillers.</li>
-        <li>Don’t rest too long — controlled activity is better.</li>
-        <li>Seek orthopaedic advice early to guide healing.</li>
-        <li>Start physiotherapy when safe, ideally within a week.</li>
-      </ul>
-    </section>
+    <h2>Who Should Follow PEACE & LOVE?</h2>
+    <p>This approach is ideal for:</p>
+    <ul>
+      <li>Sprains, strains, and ligament injuries</li>
+      <li>Sports injuries and minor trauma</li>
+      <li>Post-injury rehab with physiotherapy</li>
+    </ul>
 
-    <section class="faq-section">
-      <h2>📌 Common Questions</h2>
-      <div class="faq">
-        <strong>Does PEACE & LOVE apply to fractures?</strong>
-        <p>No — it’s designed for soft tissue injuries. Fractures need immobilization, realignment, or surgery.</p>
-      </div>
-      <div class="faq">
-        <strong>How soon can I begin rehab?</strong>
-        <p>As early as 48–72 hours post-injury, under supervision. Early loading improves long-term results.</p>
-      </div>
-      <div class="faq">
-        <strong>Can children follow this protocol?</strong>
-        <p>Yes, with modified supervision. It encourages safe movement without medication overuse.</p>
-      </div>
-    </section>
+    <h2>Quick Tips If You’re Injured</h2>
+    <ul>
+      <li>Avoid total rest — gentle motion is medicine.</li>
+      <li>Don’t over-rely on painkillers or icing.</li>
+      <li>Seek an orthopaedic consultation early.</li>
+      <li>Start structured physiotherapy ASAP.</li>
+    </ul>
 
-    <section class="cta-section">
-      <h3>Injury Needs Attention? Dr. Sumesh Can Help.</h3>
-      <p>Book a consult at OrthoCure for personalized, science-backed healing.</p>
-      <a href="/contact.html">Book Consultation</a>
-    </section>
-  </main>
+    <h2>Trust OrthoCure for Evidence-Based Injury Management</h2>
+    <p><strong>Dr. Sumesh Subramanian, MS Ortho</strong><br>
+    Fellowship in Joint Replacement<br>
+    🏥 OrthoCure Clinic, Thirumullaivoyal, Chennai<br>
+    🌐 <a href="https://www.myorthocure.com">www.myorthocure.com</a><br>
+    📞 <a href="https://wa.me/919342700212" target="_blank">9342700212 (WhatsApp)</a></p>
+
+    <p>We guide your healing with movement, not just medicines.</p>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <strong>🧠 Does PEACE & LOVE apply to all injuries?</strong>
+      <p>This protocol is best for soft tissue injuries like ankle sprains, ligament strains, or muscle pulls. Major trauma may need a different approach — consult a specialist.</p>
+    </div>
+    <div class="faq">
+      <strong>❄️ Should I avoid ice completely?</strong>
+      <p>No — a little ice early on can help with pain. But don’t rely on it beyond the first few hours post-injury. Movement and elevation matter more.</p>
+    </div>
+    <div class="faq">
+      <strong>🏃 When can I start moving again?</strong>
+      <p>Movement should begin as early as safely possible. Our approach is to start guided motion within the first 24–72 hours depending on injury type.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Injured? Let’s Start Your Healing Today</h2>
+    <p>Get expert diagnosis and a personalized plan that gets you moving again.</p>
+    <a href="/contact.html">Book Consultation</a>
+  </section>
 
   <footer>
-    <p>© 2025 OrthoCure Bone & Joint Speciality Clinic | Dr. Sumesh Subramanian | <a href="https://www.myorthocure.com">myorthocure.com</a></p>
-    <p style="font-size:0.85rem;">📍 No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
+    &copy; 2025 OrthoCure Bone & Joint Speciality Clinic. All rights reserved.
   </footer>
 </body>
