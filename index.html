@@ -60,24 +60,54 @@
       font-size: 1.1rem;
       margin: 0;
     }
-    .quick-links {
-      background: #f4f4f4;
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f4f4f4;
       padding: 0.6rem 1rem;
-      text-align: center;
-      font-size: 0.95rem;
       position: sticky;
       top: 0;
       z-index: 999;
     }
-    .quick-links a {
-      margin: 0 1rem;
+    .nav-container .logo {
+      font-weight: bold;
+      color: #102542;
+      text-decoration: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li a {
       color: #102542;
       text-decoration: none;
       font-weight: 600;
     }
-    .quick-links a:hover {
-      text-decoration: underline;
-      color: #ff5c5c;
+    .menu-toggle {
+      display: none;
+      background: none;
+      font-size: 1.5rem;
+      border: none;
+      color: #102542;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 1rem;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
     }
     .doctor-section {
       display: flex;
@@ -98,11 +128,6 @@
     }
     .doctor-info {
       flex: 1;
-    }
-    .doctor-caption {
-      font-size: 0.95rem;
-      margin-top: 0.5rem;
-      text-align: center;
     }
     .trust-box {
       background-color: #e6f0f7;
@@ -150,48 +175,18 @@
       font-size: 0.85rem;
       color: #bbb;
     }
-    nav {
-      display: none;
-    }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-           only screen and (min--moz-device-pixel-ratio: 2),
-           only screen and (-o-min-device-pixel-ratio: 2/1),
-           only screen and (min-device-pixel-ratio: 2),
-           only screen and (min-resolution: 192dpi),
-           only screen and (min-resolution: 2dppx) {
-      .top-header img.logo {
-        content: url('/assets/logo-transparent@2x.png');
-      }
-    }
-  </style>
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Sumesh Ortho | OrthoCure Clinic, Thirumullaivoyal</title>
-  <meta name="description" content="OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal, led by Dr. Sumesh Subramanian, offers advanced orthopaedic care with digital X-ray, physiotherapy, and compassionate treatment." />
-  <meta name="keywords" content="Dr Sumesh, ortho doctor Thirumullaivoyal, OrthoCure, orthopaedic surgeon Chennai, ortho clinic near me, joint pain clinic" />
-  <link rel="canonical" href="https://www.myorthocure.com/" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <!-- Google Tag Manager -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TJH4M7N7"></script>
-  <!-- End Google Tag Manager -->
-  <style>
-    /* Styles remain same as user input, omitted here for brevity */
   </style>
 </head>
 <body>
-  <a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
+<a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
 
-  <header class="top-header">
-    <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" class="logo" />
-    <div class="clinic-title">
-      <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
-      <p>Start Healing. Stay Moving. Trusted Orthopaedic Care in Thirumullaivoyal</p>
-    </div>
-  </header>
+<header class="top-header">
+  <img src="/assets/logo-transparent.png" alt="OrthoCure Logo" class="logo" />
+  <div class="clinic-title">
+    <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+    <p>Start Healing. Stay Moving. Trusted Orthopaedic Care in Thirumullaivoyal</p>
+  </div>
+</header>
 
 <nav class="navbar">
   <div class="nav-container">
@@ -206,11 +201,18 @@
   </div>
 </nav>
 
-  <div style="display:none; visibility:hidden;">
-    Searching for Dr Sumesh ortho or best ortho doctor in Chennai? OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal is led by Dr. Sumesh Subramanian, known for honest second opinions, knee and joint care, and advanced ortho treatment.
-  </div>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
 
-  <!-- Content from user remains unchanged from here -->
+<div style="display:none; visibility:hidden;">
+  Searching for Dr Sumesh ortho or best ortho doctor in Chennai? OrthoCure Bone & Joint Speciality Clinic in Thirumullaivoyal is led by Dr. Sumesh Subramanian, known for honest second opinions, knee and joint care, and advanced ortho treatment.
+</div>
+
+<!-- rest of the page unchanged -->
+
 
   <div class="container doctor-section">
     <img src="/assets/Sumesh_Labcoat_Website.png" alt="Dr. Sumesh Subramanian, Orthopaedic Surgeon" class="doctor-photo" />
