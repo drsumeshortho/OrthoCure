@@ -23,37 +23,89 @@
   <style>
     :root{
       --navy:#0b2a4a; --coral:#ff6b4a; --ink:#1b1f23; --muted:#6b7280;
-      --bg:#ffffff; --card:#f7f9fc;
+      --bg:#ffffff; --card:#f7f9fc; --border:#e9eef5;
     }
     html{scroll-behavior:smooth}
     body{
       margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
       color:var(--ink); background:var(--bg); line-height:1.6;
     }
+
+    /* HERO */
     header.hero{
-      background:linear-gradient(135deg, rgba(11,42,74,.9), rgba(11,42,74,.7)), url('/assets/schoolbag-hero.png') center/cover no-repeat;
-      color:#fff; padding:72px 20px;
+      background:#0b2a4a;
+      color:#fff; padding:0;
     }
+    .hero-image{
+      width:100%; max-height:420px; overflow:hidden; position:relative;
+      background:linear-gradient(0deg, rgba(11,42,74,.5), rgba(11,42,74,.5));
+    }
+    .hero-image img{
+      width:100%; height:420px; object-fit:cover; display:block; opacity:.85;
+    }
+    .hero-overlay{
+      position:absolute; inset:0; display:flex; align-items:flex-end;
+      background:linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,.45) 100%);
+      padding:24px 20px;
+    }
+    .hero-meta{
+      max-width:920px; margin:0 auto; width:100%; padding:0 20px; color:#fff;
+    }
+
+    /* LAYOUT */
     .wrap{max-width:920px;margin:0 auto;padding:0 20px}
+    .blog-content{max-width:920px;margin:24px auto 0;padding:0 20px}
+
     h1{font-size:clamp(1.8rem,2.5vw,2.4rem);margin:.2rem 0 .5rem}
-    .byline{opacity:.85;margin:.25rem 0 .5rem}
-    .tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:.2rem .55rem;border-radius:.5rem;margin-right:.35rem;font-size:.85rem}
-    .card{background:var(--card); border:1px solid #e6ecf3; border-radius:14px; padding:18px 18px;}
-    .grid{display:grid; gap:16px}
-    @media(min-width:840px){ .grid-2{grid-template-columns:1.1fr .9fr} }
     h2{margin:1.2rem 0 .5rem; color:var(--navy)}
     h3{margin:1rem 0 .4rem; color:var(--navy)}
-    .fact{background:#fff;border-left:4px solid var(--coral);padding:14px 16px;border-radius:10px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
-    .kpis{display:flex;gap:10px;flex-wrap:wrap}
-    .kpi{flex:1 1 160px;background:#fff;border:1px solid #eef3f8;border-radius:12px;padding:12px;text-align:center}
-    .kpi strong{display:block;font-size:1.3rem;color:var(--navy)}
-    .tips li{margin:.4rem 0}
-    .img-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .img-row img{width:100%;height:auto;border-radius:12px;border:1px solid #e9eef5; background:#fff}
-    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e9eef5;border-radius:12px;overflow:hidden}
+    .byline{opacity:.9;margin:.35rem 0 .6rem}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);
+      padding:.2rem .55rem;border-radius:.5rem;margin-right:.35rem;font-size:.85rem}
+
+    /* CARDS / TABLE */
+    .card{background:var(--card); border:1px solid #e6ecf3; border-radius:14px; padding:18px}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden}
     th,td{padding:10px 12px;border-bottom:1px solid #eef3f8;text-align:left}
     th{background:#f3f7fb;color:#1f2937}
     tr:last-child td{border-bottom:none}
+
+    /* GRIDS */
+    .grid{display:grid; gap:16px}
+    @media(min-width:840px){ .grid-2{grid-template-columns:1.1fr .9fr} }
+
+    /* IMAGES – DESKTOP-OPTIMIZED */
+    .blog-content img{
+      max-width:70%;
+      height:auto;
+      display:block;
+      margin:18px auto;
+      border-radius:12px;
+      background:#fff;
+      border:1px solid var(--border);
+    }
+    /* Image rows */
+    .img-row{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:840px){ .img-row{grid-template-columns:1fr 1fr} }
+
+    /* Side-by-side posture comparison */
+    .side-by-side{
+      display:flex; gap:20px; justify-content:center; align-items:flex-start; margin:18px 0;
+      flex-wrap:wrap;
+    }
+    .side-by-side img{max-width:45%; min-width:280px}
+    @media(max-width:768px){ .side-by-side img{max-width:90%} }
+
+    /* KPI + FACT */
+    .kpis{display:flex;gap:10px;flex-wrap:wrap;margin-top:.5rem}
+    .kpi{flex:1 1 160px;background:#fff;border:1px solid #eef3f8;border-radius:12px;padding:12px;text-align:center}
+    .kpi strong{display:block;font-size:1.2rem;color:var(--navy)}
+    .fact{background:#fff;border-left:4px solid var(--coral);padding:14px 16px;border-radius:10px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+    .tips li{margin:.4rem 0}
+    .chip{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:20px;padding:.25rem .6rem;margin:.2rem .25rem;font-size:.85rem}
+
+    /* CTAs */
     .cta{
       margin:20px 0; background:linear-gradient(135deg,#0b2a4a,#10385d);
       color:#fff; border-radius:14px; padding:18px 20px; display:flex; gap:14px; align-items:center; flex-wrap:wrap
@@ -64,11 +116,9 @@
       display:flex;gap:10px;align-items:center; padding:.6rem .8rem; z-index:9999
     }
     .sticky-cta a{margin-left:auto;background:var(--coral);color:#fff;text-decoration:none;padding:.5rem .8rem;border-radius:.5rem}
+
     footer{color:#475569;font-size:.9rem;padding:80px 20px 120px}
     .refs li{margin:.35rem 0}
-    .muted{color:var(--muted)}
-    .chip{display:inline-block;background:#fff;border:1px solid #e9eef5;border-radius:20px;padding:.25rem .6rem;margin:.2rem .25rem;font-size:.85rem}
-    .video{border-radius:14px;overflow:hidden;border:1px solid #e6ecf3;background:#000}
     sup a{color:inherit;text-decoration:none;border-bottom:1px dotted #cbd5e1}
   </style>
 
@@ -120,20 +170,26 @@
 
 <body>
   <header class="hero">
-    <div class="wrap">
-      <span class="tag">Back-to-School</span>
-      <span class="tag">Pediatric Spine</span>
-      <h1>School Bag Safety: The 10% Rule Parents Can Trust</h1>
-      <p class="byline">By <strong>Dr. Sumesh</strong> (MS Ortho, Fellowship in Arthroplasty) · Updated 12 Aug 2025 · Thirumullaivoyal, Chennai</p>
-      <div class="kpis">
-        <div class="kpi"><strong>≤ 10%</strong><span class="muted">of body weight</span></div>
-        <div class="kpi"><strong>2 straps</strong><span class="muted">worn snug & high</span></div>
-        <div class="kpi"><strong>Pack smart</strong><span class="muted">heavy books near back</span></div>
+    <div class="hero-image">
+      <!-- Use your existing hero path -->
+      <img src="/assets/schoolbag-hero.png" alt="Child with schoolbag; OrthoCure School Bag Safety guide">
+      <div class="hero-overlay">
+        <div class="hero-meta">
+          <span class="tag">Back-to-School</span>
+          <span class="tag">Pediatric Spine</span>
+          <h1>School Bag Safety: The 10% Rule Parents Can Trust</h1>
+          <p class="byline">By <strong>Dr. Sumesh</strong> (MS Ortho, Fellowship in Arthroplasty) · Updated 12 Aug 2025 · Thirumullaivoyal, Chennai</p>
+          <div class="kpis">
+            <div class="kpi"><strong>≤ 10%</strong><span class="muted">of body weight</span></div>
+            <div class="kpi"><strong>2 straps</strong><span class="muted">worn snug & high</span></div>
+            <div class="kpi"><strong>Pack smart</strong><span class="muted">heavy books near back</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="blog-content">
     <!-- Quick Fact -->
     <section class="card" aria-labelledby="quick-fact">
       <h2 id="quick-fact">Quick Fact</h2>
@@ -153,9 +209,9 @@
           <li>Adjust so the bag sits <strong>high & close</strong> to the back; not below the waist <sup><a href="#ref-3">[3]</a></sup>.</li>
           <li>Optional chest/waist strap for better weight distribution <sup><a href="#ref-3">[3]</a></sup>.</li>
         </ul>
-        <div class="img-row"  aria-label="Correct wear visuals">
-          <img src="/assets/correct-wear-1.png" width="740" height="1000" alt="South Indian schoolchild wearing a properly fitted backpack with both straps, bag sitting high" loading="lazy" />
-          
+        <div class="img-row" role="group" aria-label="Correct wear visuals">
+          <img src="/assets/correct-wear-1.png" width="640" height="800" alt="South Indian schoolchild wearing a properly fitted backpack with both straps, bag sitting high" loading="lazy" />
+          <img src="/assets/correct-wear-2.png" width="640" height="800" alt="Close-up of padded straps and snug fit of school backpack" loading="lazy" />
         </div>
       </div>
       <div>
@@ -166,7 +222,7 @@
           <li><strong>Side pocket</strong> for water bottle; reflective strips for road safety.</li>
           <li>Backpack height: not taller than your child’s torso.</li>
         </ul>
-        <img src="/assets/ideal-bag.png" width="320" height="400" alt="Ideal school bag with padded straps, back padding, compartments, and reflective strip" loading="lazy" style="border-radius:12px;border:1px solid #e9eef5;background:#fff" />
+        <img src="/assets/ideal-bag.png" width="400" height="400" alt="Ideal school bag with padded straps, back padding, compartments, and reflective strip" loading="lazy" />
       </div>
     </section>
 
@@ -204,8 +260,8 @@
           <li>Carry only essentials; <strong>clean out weekly</strong>.</li>
         </ul>
         <div class="img-row" role="group" aria-label="Packing visuals">
-          <img src="/assets/packing-1.png" width="730" height="930" alt="Child placing heavy textbook near the back panel of the backpack" loading="lazy" />
-          <img src="/assets/packing-2.png" width="730" height="930" alt="Balanced compartments inside a school backpack" loading="lazy" />
+          <img src="/assets/packing-1.png" width="640" height="800" alt="Child placing heavy textbook near the back panel of the backpack" loading="lazy" />
+          <img src="/assets/packing-2.png" width="640" height="800" alt="Balanced compartments inside a school backpack" loading="lazy" />
         </div>
       </div>
       <div>
@@ -221,11 +277,18 @@
     <!-- NEW: Poor Posture & Harmful Effects -->
     <section aria-labelledby="posture-risks">
       <h2 id="posture-risks">How Heavy Bags Harm Posture & Spine</h2>
+      <!-- If you have both poor and good posture images, use side-by-side -->
+      <!--
+      <div class="side-by-side">
+        <img src="/assets/schoolbag-poor-posture.jpg" alt="Child leaning forward with a low-hanging heavy backpack causing spinal and shoulder strain" width="900" height="600" loading="lazy">
+        <img src="/assets/schoolbag-good-posture.jpg" alt="Child wearing backpack high and close with two straps, neutral spine" width="900" height="600" loading="lazy">
+      </div>
+      -->
+      <!-- If you have only one image, use figure -->
       <figure>
-        <img src="/assets/schoolbag-poor-posture.png"
+        <img src="/assets/schoolbag-poor-posture.jpg"
              alt="Child leaning forward with a low-hanging heavy backpack causing spinal and shoulder strain"
-             width="620" height="800" loading="lazy"
-             style="max-width:100%;height:auto;border-radius:12px;border:1px solid #e9eef5;background:#fff;">
+             width="1200" height="800" loading="lazy">
         <figcaption class="muted">Forward lean and low-hanging bags increase spinal load and shoulder strain.</figcaption>
       </figure>
       <p>Overweight schoolbags shift a child’s centre of gravity forward, increasing spinal compression and muscle fatigue. Repeated daily, this can contribute to back/neck pain and rounded shoulders in growing children
@@ -271,11 +334,11 @@
       <h2 id="refs">References</h2>
       <ol class="refs">
         <li id="ref-1">American Academy of Pediatrics (AAP). <a href="https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Backpack-Safety.aspx" target="_blank" rel="noopener">Backpack Safety</a>. Accessed 2024.</li>
-        <li id="ref-2">Brackley HM, Stevenson JM. Are children’s backpack weight limits enough? <em>Spine</em>. 2004;29(19):2184–2190..</li>
-        <li id="ref-3">Mackenzie WG, Sampath JS, Kruse RW, Sheir-Neiss GJ. Backpacks in children. <em>Clin Orthop Relat Res</em>. 2003;(409):78–84..</li>
-        <li id="ref-4">Dianat I, Javadivala Z, Asghari Jafarabadi M. Factors associated with backpack use and musculoskeletal symptoms among schoolchildren. <em>Health Promot Perspect</em>. 2014;4(1):36–46..</li>
-        <li id="ref-5">Negrini S, Carabalona R. Backpacks on schoolchildren’s back: A universal necessity? <em>Eur Spine J</em>. 2002;11(6):500–507.</li>
-        <li id="ref-6">Ministry of Education, Government of India. <em>School Bag Policy</em>. 2020. </li>
+        <li id="ref-2">Brackley HM, Stevenson JM. Are children’s backpack weight limits enough? <em>Spine</em>. 2004;29(19):2184–2190. <a href="https://pubmed.ncbi.nlm.nih.gov/15480140/" target="_blank" rel="noopener">PMID:15480140</a>.</li>
+        <li id="ref-3">Mackenzie WG, Sampath JS, Kruse RW, Sheir-Neiss GJ. Backpacks in children. <em>Clin Orthop Relat Res</em>. 2003;(409):78–84. <a href="https://pubmed.ncbi.nlm.nih.gov/12616054/" target="_blank" rel="noopener">PMID:12616054</a>.</li>
+        <li id="ref-4">Dianat I, Javadivala Z, Asghari Jafarabadi M. Factors associated with backpack use and musculoskeletal symptoms among schoolchildren. <em>Health Promot Perspect</em>. 2014;4(1):36–46. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3930832/" target="_blank" rel="noopener">PMCID:PMC3930832</a>.</li>
+        <li id="ref-5">Negrini S, Carabalona R. Backpacks on schoolchildren’s back: A universal necessity? <em>Eur Spine J</em>. 2002;11(6):500–507. <a href="https://pubmed.ncbi.nlm.nih.gov/12522712/" target="_blank" rel="noopener">PMID:12522712</a>.</li>
+        <li id="ref-6">Ministry of Education, Government of India. <em>School Bag Policy</em>. 2020. PDF: <a href="https://www.education.gov.in/sites/upload_files/mhrd/files/upload_document/Bag_Policy_2020.pdf" target="_blank" rel="noopener">education.gov.in</a>.</li>
       </ol>
       <p class="muted">Educational content; not a substitute for personalized medical advice.</p>
     </section>
@@ -288,7 +351,7 @@
 
   <!-- Sticky Mobile CTA -->
   <div class="sticky-cta" role="region" aria-label="Quick booking">
-    <span><strong>For Appointments</strong> · OrthoCure, Thirumullaivoyal</span>
+    <span><strong>Free School Bag Check</strong> · OrthoCure, Thirumullaivoyal</span>
     <a href="https://wa.me/919342700212?text=School%20bag%20safety%20check%20booking">WhatsApp Book</a>
   </div>
 </body>
