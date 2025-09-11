@@ -6,7 +6,7 @@ categories: ortho tips
 author: Dr. Sumesh Subramanian
 description: "Is walking harmful for knee arthritis? Let’s bust the myth."
 ---
-![Walking for Knee Health – OrthoCure Bone & Joint Clinic, Thirumullaivoyal, Ambattur, Avadi, Annanur, Ayapakkam](/assets/images/orthocure-walking-knee-health-thirumullaivoyal-ambattur-avadi-annanur-ayapakkam.png)
+![Walking for Knee Health – OrthoCure Bone & Joint Clinic, Thirumullaivoyal, Ambattur, Avadi, Annanur, Ayapakkam](/assets/orthocure-walking-knee-health-thirumullaivoyal-ambattur-avadi-annanur-ayapakkam.png)
 
 🚶‍♂️ **Walking and Knee Arthritis — Harmful or Helpful?**
 
