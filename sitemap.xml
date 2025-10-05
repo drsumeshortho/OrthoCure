@@ -1,50 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://www.myorthocure.com/</loc>
-    <priority>1.0</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
-
   <url>
     <loc>https://www.myorthocure.com/about.html</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
-
   <url>
     <loc>https://www.myorthocure.com/consult.html</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
-
+  <url>
+    <loc>https://www.myorthocure.com/fracture-treatment-thirumullaivoyal.html</loc>
+    <lastmod>2025-10-05</lastmod>
+  </url>
   <url>
     <loc>https://www.myorthocure.com/contact.html</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
-
   <url>
     <loc>https://www.myorthocure.com/blog.html</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
 
-  <!-- Individual blog posts -->
+  <!-- Blog posts (only include if live) -->
+    <loc>https://https://www.myorthocure.com/blog/walkingwitharthritis.html</loc>
+    <lastmod>2025-10-05</lastmod>
   <url>
-    <loc>https://www.myorthocure.com/blog/elderly-joint-pain-mistakes.html</loc>
-    <priority>0.7</priority>
-  </url>
-
+    <loc>https://https://www.myorthocure.com/blog/monsoon-joint-pain.html</loc>
+    <lastmod>2025-10-05</lastmod>
+  <url>
+    <loc>https://https://www.myorthocure.com/blog/techneck.html</loc>
+    <lastmod>2025-10-05</lastmod>
+  <url>
+    <loc>https://https://www.myorthocure.com/blog/schoolbag-safety.html</loc>
+    <lastmod>2025-10-05</lastmod>
+  <url>
+    <loc>https://https://www.myorthocure.com/blog/bone-health-tips.html</loc>
+    <lastmod>2025-10-05</lastmod>
+  <url>
+    <loc>https://https://www.myorthocure.com/blog/fall-prevention-after-60.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <url>
+    <loc>https://https://www.myorthocure.com/blog/elderly-joint-pain-mistakes.html</loc>
+    <lastmod>2025-10-05</lastmod>
   <url>
     <loc>https://www.myorthocure.com/blog/peace-love-injury.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
-
   <url>
     <loc>https://www.myorthocure.com/blog/early-arthritis-signs.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
-
   <url>
     <loc>https://www.myorthocure.com/blog/cracking-knuckles.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-10-05</lastmod>
   </url>
-
+  <!-- Add/remove posts below as you publish -->
+  <!--
+  <url>
+    <loc>https://www.myorthocure.com/blog/footwear-standing-long-hours.html</loc>
+    <lastmod>2025-10-05</lastmod>
+  </url>
+  -->
 </urlset>
