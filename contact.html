@@ -1,158 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Core -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | OrthoCure Clinic</title>
-  <meta name="description" content="Reach OrthoCure Bone & Joint Speciality Clinic – Chennai’s trusted centre for bones, joints and movement. Call, email or visit us in Thirumullaivoyal." />
-  <meta name="keywords" content="Contact OrthoCure, Dr. Sumesh Ortho Clinic, Bone Specialist Chennai, Ortho Clinic Thirumullaivoyal" />
-  <meta name="author" content="Dr. Sumesh Subramanian">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#102542" />
+
+  <!-- Title & Canonical -->
+  <title>Contact OrthoCure Clinic | Thirumullaivoyal (Ambattur • Avadi)</title>
   <link rel="canonical" href="https://www.myorthocure.com/contact.html" />
+
+  <!-- Meta description -->
+  <meta name="description" content="Address, phone, WhatsApp, email, timings, and directions for OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal (serving Ambattur & Avadi)." />
+
+  <!-- Social (OG/Twitter) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact OrthoCure Clinic" />
+  <meta property="og:description" content="Call, WhatsApp, or get directions to OrthoCure Bone & Joint Speciality Clinic. Evening clinic Mon–Sat 5–9 PM • Sun 11–1 PM." />
+  <meta property="og:url" content="https://www.myorthocure.com/contact.html" />
+  <meta property="og:image" content="https://www.myorthocure.com/assets/og-home.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Google Tag Manager (same container) -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TJH4M7N7');
+  </script>
+
+  <!-- Styles (kept consistent with index) -->
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #1a1a1a;
+    :root{ --navy:#102542; --ink:#1a1a1a; --coral:#ff5c5c; --line:#e7edf5; --mist:#f6f8fb }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+    a{color:var(--navy)}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;color:#000;padding:8px 12px;border-radius:8px;z-index:10000}
+
+    header{background:var(--navy);color:#fff;padding:20px 16px}
+    header .wrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px}
+    header img{height:48px;width:auto;border-radius:8px}
+    header h1{font-size:1.1rem;margin:0}
+
+    /* Nav (matches index responsive hamburger) */
+    .nav-container{position:sticky;top:0;z-index:120;display:flex;gap:22px;align-items:center;justify-content:center;background:#f4f4f4;padding:10px 12px;font-weight:700}
+    .nav-container a{color:var(--navy);text-decoration:none;position:relative;padding:2px 0}
+    .nav-container a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--coral);transition:width .25s}
+    .nav-container a:hover::after{width:100%}
+    .nav-links{display:flex;gap:22px;align-items:center}
+    .nav-toggle{display:none;cursor:pointer}
+    .nav-toggle .bar{display:block;width:18px;height:2px;background:#fff;margin:3px 0;border-radius:2px}
+    @media (max-width: 768px){
+      .nav-container{justify-content:space-between;padding:8px 12px}
+      .nav-links{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 10px 24px rgba(16,37,66,.08);display:none;flex-direction:column;gap:8px;padding:10px 16px}
+      .nav-container.open .nav-links{display:flex}
+      .nav-toggle{display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-weight:700}
+      .nav-container a{padding:10px 4px}
     }
-    header, footer {
-      background: #102542;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header .tagline {
-      font-style: italic;
-      font-size: 1rem;
-      color: #cfdde7;
-      margin-top: 0.5rem;
-    }
-    .quick-links {
-      background: #f4f4f4;
-      padding: 0.6rem 1rem;
-      text-align: center;
-      font-size: 0.95rem;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    .quick-links a {
-      margin: 0 1rem;
-      color: #102542;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .quick-links a:hover {
-      text-decoration: underline;
-      color: #ff5c5c;
-    }
-    main {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem 1.5rem;
-    }
-    .card {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .card h2 {
-      text-align: center;
-      color: #102542;
-      margin-bottom: 1.5rem;
-    }
-    .info p {
-      margin: 0.8rem 0;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-    .info a {
-      color: #00695c;
-      text-decoration: none;
-    }
-    .info a:hover {
-      text-decoration: underline;
-    }
-    .map {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 12px;
-      margin-top: 2rem;
-    }
-    .cta-btn {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background: #25d366;
-      color: white;
-      padding: 0.8rem 1.2rem;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .cta-btn:hover {
-      background: #20b858;
-    }
-    footer small {
-      display: block;
-      margin-top: 0.5rem;
-      font-size: 0.85rem;
-      color: #cfdde7;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      .info p {
-        font-size: 0.95rem;
-      }
-      .cta-btn {
-        width: 100%;
-        text-align: center;
-      }
-    }
+
+    .hero{background:var(--mist);border-bottom:1px solid var(--line)}
+    .hero .wrap{max-width:1100px;margin:0 auto;padding:22px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:center}
+    .eyebrow{color:#556b8a;font-weight:700;letter-spacing:.02em;text-transform:uppercase;font-size:.8rem}
+    .hero h2{margin:.2rem 0 .4rem;color:var(--navy)}
+    .status{font-weight:700}
+
+    main{max-width:1100px;margin:0 auto;padding:22px 16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 8px 24px rgba(16,37,66,.05)}
+    .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:.7rem 1rem;border-radius:8px;font-weight:700}
+    .btn.alt{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+
+    .map-embed{width:100%;height:320px;border:0;border-radius:12px}
+
+    footer{background:#0f2238;color:#cbd6ea;padding:28px 16px;text-align:center;margin-top:26px}
+    footer a{color:#fff;text-decoration:underline}
+
+    /* Mobile sticky CTA (global) */
+    .mobile-cta{position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;background:#0f2238;padding:10px 12px;z-index:9999;box-shadow:0 -6px 18px rgba(0,0,0,.2)}
+    .mobile-cta .cta-btn{flex:1;text-align:center;color:#fff;font-weight:700;text-decoration:none;padding:12px 10px;border-radius:10px}
+    .mobile-cta .cta-btn.call{background:#1b5e20}
+    .mobile-cta .cta-btn.wa{background:#128c7e}
+    .mobile-cta .cta-btn.book{background:#ff5c5c}
+    @media (max-width: 768px){ .mobile-cta{display:flex} }
   </style>
+
+  <!-- JSON-LD: ContactPage referencing the clinic entity -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact OrthoCure Clinic",
+    "mainEntity": { "@id": "https://www.myorthocure.com/#clinic" },
+    "url": "https://www.myorthocure.com/contact.html",
+    "inLanguage": "en-IN",
+    "about": {
+      "@type": "MedicalClinic",
+      "name": "OrthoCure Bone & Joint Speciality Clinic",
+      "telephone": "+91-9342700212",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. 2, 2nd Street, Santhipuram",
+        "addressLocality": "Thirumullaivoyal",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600062",
+        "addressCountry": "IN"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 13.130476, "longitude": 80.130412 },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:00", "closes": "21:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "13:00" }
+      ],
+      "contactPoint": { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+91-9342700212", "areaServed": "IN", "availableLanguage": ["en","ta"] }
+    }
+  }
+  </script>
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- GTM noscript -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
   <header>
-    <h1>Contact OrthoCure</h1>
-    <p class="tagline">Start Healing. Stay Moving.</p>
+    <div class="wrap">
+      <img src="/assets/logo-transparent.png" alt="OrthoCure logo" width="48" height="48" />
+      <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+    </div>
   </header>
 
-  <div class="quick-links">
-    <a href="/">Home</a>
-    <a href="/about.html">About</a>
-    <a href="/consult.html">Consult</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/contact.html">Contact</a>
-  </div>
+  <!-- Nav -->
+  <nav class="nav-container" aria-label="Primary">
+    <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
+      <span class="nav-toggle-box" aria-hidden="true">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </span>
+      Menu
+    </button>
+    <div class="nav-links" id="primary-menu" role="menu">
+      <a role="menuitem" href="/">Home</a>
+      <a role="menuitem" href="/about.html">About</a>
+      <a role="menuitem" href="/consult.html">Consult</a>
+      <a role="menuitem" href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a>
+      <a role="menuitem" href="/blog.html">Blog</a>
+      <a role="menuitem" href="/contact.html" aria-current="page">Contact</a>
+    </div>
+  </nav>
 
-  <main>
-    <section class="card">
-      <h2>Visit or Reach Us</h2>
-      <div class="info">
-        <p><strong>Dr. Sumesh Subramanian</strong><br>MS Orthopaedics, Fellowship in Arthroplasty<br>TNMC Reg No: 119811</p>
-        <p><strong>Clinic:</strong> OrthoCure Bone & Joint Speciality Clinic</p>
-        <p><strong>Address:</strong> No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
-        <p><strong>Call / WhatsApp:</strong> <a href="tel:+919342700212">+91 93427 00212</a></p>
-        <p><strong>Email:</strong> <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
-        <p><strong>Timings:</strong><br>Mon–Sat: 5:00 PM – 9:00 PM<br>Sun: 11:00 AM – 1:00 PM</p>
-        <a class="cta-btn" href="https://wa.me/919342700212">💬 Message on WhatsApp</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Visit or Reach Us</h2>
+        <p class="status" id="open-status">Checking hours…</p>
+        <p>Evening clinic Mon–Sat 5–9 PM • Sun 11–1 PM</p>
+        <p style="opacity:.85"><small>Not an emergency department. For emergencies in India, call 108.</small></p>
       </div>
-      <iframe class="map" src="https://www.google.com/maps?q=13.130484,80.130407&z=17&output=embed" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+      <div class="card">
+        <p style="margin:0 0 8px"><strong>Address</strong><br>No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
+        <p style="margin:0 0 8px"><strong>Call</strong>: <a href="tel:+919342700212">+91 93427 00212</a></p>
+        <p style="margin:0 0 8px"><strong>WhatsApp</strong>: <a href="https://wa.me/919342700212" target="_blank" rel="noopener">Message us</a></p>
+        <p style="margin:0"><strong>Email</strong>: <a href="mailto:myorthocure@gmail.com">myorthocure@gmail.com</a></p>
+        <p style="margin:10px 0 0"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Directions</a> <a class="btn alt" href="/assets/orthocure-contact.vcf" download style="margin-left:8px">Save to Contacts</a></p>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <div class="grid">
+      <div class="card">
+        <h3>Map</h3>
+        <iframe class="map-embed" src="https://maps.google.com/maps?q=13.130476,80.130412&z=17&output=embed" loading="lazy" allowfullscreen title="Clinic Location Map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="card">
+        <h3>Timings</h3>
+        <p>Mon–Sat: 5:00 PM – 9:00 PM<br>Sun: 11:00 AM – 1:00 PM</p>
+        <h3 style="margin-top:14px">Doctor</h3>
+        <p>Dr. Sumesh Subramanian<br>MS Orthopaedics, Fellowship in Arthroplasty<br>TNMC Reg No: 119811</p>
+      </div>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
-    
+    <p style="margin:8px 0 0">
+      <a href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a> •
+      <a href="/consult.html">Book Online</a> •
+      <a href="https://wa.me/919342700212" target="_blank" rel="noopener">WhatsApp</a> •
+      <a href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Directions</a>
+    </p>
+    <div>© 2025 OrthoCure Bone & Joint Speciality Clinic • Thirumullaivoyal, Chennai</div>
   </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta" role="region" aria-label="Quick actions">
+    <a class="cta-btn call" href="tel:+919342700212" aria-label="Call clinic now">Call</a>
+    <a class="cta-btn wa" href="https://wa.me/919342700212" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+    <a class="cta-btn book" href="/consult.html" aria-label="Book online">Book</a>
+  </div>
+
+  <!-- Minimal JS: nav toggle + open/closed status (IST aware) -->
+  <script>
+    (function(){
+      // Nav toggle
+      var nav = document.querySelector('.nav-container');
+      var btn = nav.querySelector('.nav-toggle');
+      var links = nav.querySelector('.nav-links');
+      function closeMenu(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+      function toggleMenu(){ var isOpen = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', String(isOpen)); }
+      btn.addEventListener('click', toggleMenu);
+      links.addEventListener('click', function(e){ if(e.target.tagName === 'A') closeMenu(); });
+      document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeMenu(); });
+
+      // Open/Closed indicator – Asia/Kolkata
+      const tz = 'Asia/Kolkata';
+      function nowInIST(){ return new Date(new Date().toLocaleString('en-US', { timeZone: tz })); }
+      function minutes(d){ return d.getHours()*60 + d.getMinutes(); }
+      function computeStatus(){
+        const d = nowInIST();
+        const day = d.getDay(); // 0=Sun
+        const m = minutes(d);
+        let open = false, next = '';
+        if(day>=1 && day<=6){ open = (m >= 17*60 && m < 21*60); if(m < 17*60) next='Opens 5:00 PM today'; else if(m >= 21*60) next='Opens 5:00 PM tomorrow'; }
+        if(day===0){ open = (m >= 11*60 && m < 13*60); if(m < 11*60) next='Opens 11:00 AM today'; else if(m >= 13*60) next='Opens 5:00 PM Monday'; }
+        var el = document.getElementById('open-status');
+        el.textContent = open ? 'Open now' : ('Closed • ' + next);
+        el.style.color = open ? '#1b5e20' : '#b23b3b';
+      }
+      computeStatus();
+      setInterval(computeStatus, 60*1000);
+    })();
+  </script>
 </body>
 </html>
+
