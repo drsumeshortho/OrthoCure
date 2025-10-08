@@ -107,31 +107,41 @@
     footer a{color:#fff;text-decoration:underline}
   
     /* Responsive nav */
-    .nav-links{display:flex;gap:22px;align-items:center}
-    .nav-toggle{display:none;cursor:pointer}
+/* Responsive nav */
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-toggle{display:none;cursor:pointer}
 
-    @media (max-width: 768px){
-      .nav-container{justify-content:space-between;padding:8px 12px;z-index:120}
-      .nav-links{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #eef2f7;box-shadow:0 10px 24px rgba(16,37,66,.08);display:none;flex-direction:column;gap:8px;padding:10px 16px}
-      .nav-container.open .nav-links{display:flex}
-      .nav-toggle{display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-weight:700}
-      .nav-toggle .bar{display:block;width:18px;height:2px;background:#fff;margin:3px 0;border-radius:2px}
-      .nav-container a{padding:10px 4px}
-
-    /* Mobile sticky CTA */
-.mobile-cta{position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;
-  background:#0f2238;padding:10px 12px;z-index:9999;box-shadow:0 -6px 18px rgba(0,0,0,.2)}
-.mobile-cta .cta-btn{flex:1;text-align:center;color:#fff;font-weight:700;
-  text-decoration:none;padding:12px 10px;border-radius:10px}
-.mobile-cta .cta-btn.call{background:#1b5e20}        /* deep green */
-.mobile-cta .cta-btn.wa{background:#128c7e}          /* WhatsApp */
-.mobile-cta .cta-btn.book{background:#ff5c5c}        /* coral */
 @media (max-width: 768px){
-  .mobile-cta{display:flex}
-  .whatsapp-btn{display:none} /* hide floating bubble on small screens */
-  body{padding-bottom:68px}   /* prevent overlap with content */
+  .nav-container{justify-content:space-between;padding:8px 12px;z-index:120}
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;background:#fff;
+    border-bottom:1px solid #eef2f7;box-shadow:0 10px 24px rgba(16,37,66,.08);
+    display:none;flex-direction:column;gap:8px;padding:10px 16px
+  }
+  .nav-container.open .nav-links{display:flex}
+  .nav-toggle{display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-weight:700}
+  .nav-toggle .bar{display:block;width:18px;height:2px;background:#fff;margin:3px 0;border-radius:2px}
+  .nav-container a{padding:10px 4px}
 }
 
+/* Mobile sticky CTA */
+.mobile-cta{
+  position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;
+  background:#0f2238;padding:10px 12px;z-index:9999;box-shadow:0 -6px 18px rgba(0,0,0,.2)
+}
+.mobile-cta .cta-btn{
+  flex:1;text-align:center;color:#fff;font-weight:700;
+  text-decoration:none;padding:12px 10px;border-radius:10px
+}
+.mobile-cta .cta-btn.call{background:#1b5e20}
+.mobile-cta .cta-btn.wa{background:#128c7e}
+.mobile-cta .cta-btn.book{background:#ff5c5c}
+
+@media (max-width: 768px){
+  .mobile-cta{display:flex}
+  .whatsapp-btn{display:none}
+  body{padding-bottom:68px}
+}
   </style>
 
   <!-- JSON-LD: MedicalClinic (enriched) -->
@@ -211,6 +221,14 @@
       "serviceUrl": "https://www.myorthocure.com/consult.html",
       "availableLanguage": ["en","ta"]
     },
+    ,
+"subjectOf": {
+  "@type": "NewsArticle",
+  "headline": "Be curious, but be careful — Interview with Dr. Sumesh Subramanian",
+  "url": "https://www.thip.media/interview-health-india/be-curious-but-be-careful-dr-sumesh-subramanian/127583/",
+  "publisher": { "@type": "Organization", "name": "THIP Media" }
+},
+
     "serviceLocation": {
       "@type": "Place",
       "name": "OrthoCure Bone & Joint Speciality Clinic",
@@ -296,13 +314,15 @@
       Menu
     </button>
     <div class="nav-links" id="primary-menu" role="menu">
-      <a role="menuitem" href="/">Home</a>
-      <a role="menuitem" href="/about.html">About</a>
-      <a role="menuitem" href="/consult.html">Consult</a>
-      <a role="menuitem" href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a>
-      <a role="menuitem" href="/blog.html">Blog</a>
-      <a role="menuitem" href="/contact.html">Contact</a>
-    </div>
+  <a role="menuitem" href="/">Home</a>
+  <a role="menuitem" href="/about.html">About</a>
+  <a role="menuitem" href="/consult.html">Consult</a>
+  <a role="menuitem" href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a>
+  <a role="menuitem" href="/blog.html">Blog</a>
+  <a role="menuitem" href="/media/">Media</a>
+  <a role="menuitem" href="/contact.html">Contact</a>
+</div>
+
   </nav>
 
   <!-- Hero -->
@@ -311,6 +331,10 @@
     <h2>Meet Dr. Sumesh Subramanian</h2>
     <p><strong>MS Ortho, Fellowship in Arthroplasty</strong> — Evidence‑based care for fractures, knee/shoulder pain, spine issues, and rehab.</p>
   </section>
+  <p class="small" style="max-width:720px;margin:8px auto 0;color:#475569">
+  Featured in <a href="/media/">THIP Media</a> — practical doctor–patient communication from real clinic experience.
+</p>
+
 
   <main class="wrap" id="main">
     <!-- Why choose -->
@@ -402,6 +426,7 @@
     <p style="margin:8px 0 0">
       <a href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a> •
       <a href="/consult.html">Book Online</a> •
+      <a href="/media/">Media &amp; Press</a> •
       <a href="https://wa.me/919342700212" target="_blank" rel="noopener">WhatsApp</a> •
       <a href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Directions</a>
     </p>
