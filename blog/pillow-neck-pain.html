@@ -155,6 +155,23 @@ article{ max-width:1000px !important; margin:0 auto !important; }
 
 /* 5) Remove any sticky/side layout remnants */
 aside, .toc{ display:none !important; }
+    /* === WIDTH TUNE (narrower column, tighter video) === */
+:root{
+  /* change these numbers until it feels right */
+  --content-width: 860px;   /* was 1000 */
+  --video-width:   540px;   /* was 720 */
+}
+
+article{ max-width: var(--content-width) !important; }
+.card{ width: 100% !important; max-width: none !important; }
+
+.yt-vert{
+  width: min(var(--video-width), 100%) !important;
+  aspect-ratio: 9 / 16 !important;
+  height: auto !important;
+  margin: 16px auto !important;
+}
+
 
 
   </style>
