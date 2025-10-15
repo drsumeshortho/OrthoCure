@@ -16,13 +16,17 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.myorthocure.com/blog/pillow-neck-pain.html" />
   <meta property="og:image" content="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pillow and Neck Pain. The Right Height For You" />
   <meta name="twitter:description" content="Side and back tips that keep your neck in a neutral line. Chennai humidity notes inside." />
   <meta name="twitter:image" content="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
 
-  <!-- Preload OG for faster social scrape -->
+  <!-- Preload / Preconnect for faster social scrape + video -->
   <link rel="preload" as="image" href="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
+  <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin>
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
 
   <style>
     :root{
@@ -35,8 +39,17 @@
     header.band{background:linear-gradient(180deg,#142a46 0%,#0a2342 100%);color:#fff;padding:28px 0 24px;margin-bottom:20px;border-bottom:4px solid rgba(255,255,255,.08)}
     .band h1{margin:0 0 6px;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:.2px}
     .band p{margin:6px 0 0;color:#d9e4f3}
+
+    /* --- Layout --- */
     main{display:grid;grid-template-columns:280px 1fr;gap:20px}
-    @media(max-width:900px){ main{grid-template-columns:1fr} aside{order:2} }
+    /* Switch to single-column earlier so the article isn't squeezed */
+    @media (max-width:1200px){ 
+      main{grid-template-columns:1fr}
+      aside{order:2}
+      article{order:1}
+      article .card{max-width:760px;margin:0 auto 20px}
+    }
+
     aside .card{position:sticky;top:16px}
     .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 10px 24px rgba(20,42,70,.08);margin-bottom:18px}
     h2{color:var(--navy);font-size:1.25rem;margin:0 0 10px}
@@ -50,9 +63,22 @@
     .cta .btn{display:inline-block;background:var(--coral);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
     .cta a{color:#fff;text-decoration:underline}
     .small{color:var(--muted);font-size:.95rem}
-    .yt-vert{position:relative;padding-bottom:177.78%;height:0;overflow:hidden;max-width:320px;margin:16px auto;border-radius:12px;box-shadow:0 10px 24px rgba(20,42,70,.08)}
-    @media(max-width:900px){ .yt-vert{max-width:420px} }
+
+    /* --- YouTube Shorts scaling (wider so it doesn't look cramped) --- */
+    .yt-vert{
+      position:relative;
+      padding-bottom:177.78%;
+      height:0;overflow:hidden;
+      max-width:500px;
+      margin:16px auto;
+      border-radius:12px;
+      box-shadow:0 10px 24px rgba(20,42,70,.08)
+    }
+    @media(max-width:900px){ .yt-vert{max-width:520px;padding-bottom:170%} }
+    @media(max-width:600px){ .yt-vert{max-width:92%;padding-bottom:180%} }
     .yt-vert iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+
+    /* Figures */
     figure{margin:22px 0;text-align:center}
     figure img{max-width:100%;height:auto;border-radius:12px}
     figcaption{font-size:13px;color:#4f5b6b;margin-top:6px}
@@ -81,7 +107,7 @@
   }
   </script>
 
-  <!-- JSON LD. VideoObject for the Short -->
+  <!-- JSON LD. VideoObject -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -96,42 +122,22 @@
   }
   </script>
 
-  <!-- JSON LD. FAQ for AI snippets -->
+  <!-- JSON LD. FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Which pillow height is best for side sleepers",
-        "acceptedAnswer":{"@type":"Answer","text":"Choose a medium loft pillow that fills the gap from ear to outer shoulder so the neck stays level. Broad shoulders may need a little more height."}
-      },
-      {
-        "@type":"Question",
-        "name":"Which pillow height is best for back sleepers",
-        "acceptedAnswer":{"@type":"Answer","text":"Use a low or medium low pillow that supports the neck curve without pushing the chin toward the chest."}
-      },
-      {
-        "@type":"Question",
-        "name":"Is stomach sleeping bad for the neck",
-        "acceptedAnswer":{"@type":"Answer","text":"It forces long neck rotation. If you cannot change, use the thinnest pillow or shift to a three quarter side position."}
-      },
-      {
-        "@type":"Question",
-        "name":"Which material works in Chennai humidity",
-        "acceptedAnswer":{"@type":"Answer","text":"Latex and open cell memory foam breathe better. Use a breathable cover and keep height matched to your position."}
-      },
-      {
-        "@type":"Question",
-        "name":"When should I see a doctor",
-        "acceptedAnswer":{"@type":"Answer","text":"If pain lasts more than two weeks, if there is arm pain or numbness, or if you cannot turn the neck. Get a quick exam."}
-      }
+      {"@type":"Question","name":"Which pillow height is best for side sleepers","acceptedAnswer":{"@type":"Answer","text":"Choose a medium loft pillow that fills the gap from ear to outer shoulder so the neck stays level. Broad shoulders may need a little more height."}},
+      {"@type":"Question","name":"Which pillow height is best for back sleepers","acceptedAnswer":{"@type":"Answer","text":"Use a low or medium low pillow that supports the neck curve without pushing the chin toward the chest."}},
+      {"@type":"Question","name":"Is stomach sleeping bad for the neck","acceptedAnswer":{"@type":"Answer","text":"It forces long neck rotation. If you cannot change, use the thinnest pillow or shift to a three quarter side position."}},
+      {"@type":"Question","name":"Which material works in Chennai humidity","acceptedAnswer":{"@type":"Answer","text":"Latex and open cell memory foam breathe better. Use a breathable cover and keep height matched to your position."}},
+      {"@type":"Question","name":"When should I see a doctor","acceptedAnswer":{"@type":"Answer","text":"If pain lasts more than two weeks, if there is arm pain or numbness, or if you cannot turn the neck. Get a quick exam."}}
     ]
   }
   </script>
 
-  <!-- JSON LD. LocalBusiness for geo signals -->
+  <!-- JSON LD. LocalBusiness (geo signals) -->
   <script type="application/ld+json">
   {
    "@context": "https://schema.org",
@@ -329,3 +335,4 @@
   </footer>
 </body>
 </html>
+
