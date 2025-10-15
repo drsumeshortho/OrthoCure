@@ -15,38 +15,55 @@
   <meta property="og:description" content="Wrong pillow height bends your neck all night. Fix alignment and wake with less pain. Clear local guide by Dr Sumesh Subramanian." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.myorthocure.com/blog/pillow-neck-pain.html" />
-  <meta property="og:image" content="https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg" />
+  <meta property="og:image" content="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pillow and Neck Pain. The Right Height For You" />
   <meta name="twitter:description" content="Side and back tips that keep your neck in a neutral line. Chennai humidity notes inside." />
-  <meta name="twitter:image" content="https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg" />
+  <meta name="twitter:image" content="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
 
   <!-- Preload / Preconnect -->
-  <link rel="preload" as="image" href="https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg" />
+  <link rel="preload" as="image" href="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin>
   <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
 
   <style>
+    /* ===== THEME ===== */
     :root{
-      --ink:#0e1a2c; --muted:#6b7a92; --navy:#0A2342; --coral:#FF6F61; --bg:#f7f9fc; --card:#ffffff;
+      --ink:#0e1a2c; --muted:#6b7a92; --navy:#0A2342; --coral:#FF6F61;
+      --bg:#f7f9fc; --card:#ffffff;
+      --content-width: 860px;   /* reading width */
+      --video-width:   540px;   /* vertical Short width */
     }
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.7}
     a{color:var(--navy)}
-    .container{max-width:980px;margin:0 auto;padding:0 18px}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
 
-    header.band{background:linear-gradient(180deg,#142a46 0%,#0a2342 100%);color:#fff;padding:28px 0 24px;margin-bottom:20px;border-bottom:4px solid rgba(255,255,255,.08)}
+    header.band{
+      background:linear-gradient(180deg,#142a46 0%,#0a2342 100%);
+      color:#fff;padding:28px 0 24px;margin-bottom:20px;
+      border-bottom:4px solid rgba(255,255,255,.08)
+    }
     .band h1{margin:0 0 6px;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:.2px}
     .band p{margin:6px 0 0;color:#d9e4f3}
 
-    /* Single-column layout */
+    /* ===== LAYOUT: single centered column ===== */
     main{display:block}
-    .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 10px 24px rgba(20,42,70,.08);margin:0 auto 18px;max-width:780px}
+    article{max-width:var(--content-width);margin:0 auto}
+    .card{
+      background:var(--card);border-radius:16px;padding:20px;
+      box-shadow:0 10px 24px rgba(20,42,70,.08);
+      margin:0 auto 18px;width:100%
+    }
+
+    /* Headings + helpers */
     h2{color:var(--navy);font-size:1.25rem;margin:0 0 10px}
     h3{color:var(--coral);font-size:1.05rem;margin:12px 0 6px}
-    .pull{background:linear-gradient(90deg, rgba(255,111,97,.12), transparent);padding:14px;border-left:4px solid var(--coral);border-radius:10px;margin:14px 0;font-weight:600}
+    .pull{background:linear-gradient(90deg, rgba(255,111,97,.12), transparent);
+      padding:14px;border-left:4px solid var(--coral);
+      border-radius:10px;margin:14px 0;font-weight:600}
     .list-check li{margin:.35rem 0}
     .note{background:#fff7f7;border:1px solid #ffd0d0;color:#7c2c2c;border-radius:12px;padding:12px;margin:10px 0}
     .cta{background:var(--navy);color:#fff;border-radius:16px;padding:22px}
@@ -54,126 +71,26 @@
     .cta a{color:#fff;text-decoration:underline}
     .small{color:var(--muted);font-size:.95rem}
 
-    /* Mobile TOC chip strip */
-    .toc-mobile {
-      position:sticky; top:0; z-index:20;
-      background:linear-gradient(180deg,#142a46 0%, #0a2342 100%);
-      margin: -10px -18px 10px; padding:10px 0 12px;
-    }
-    .toc-mobile .toc-track{
-      display:flex; gap:10px; overflow-x:auto; -webkit-overflow-scrolling:touch;
-      padding:0 18px 4px; scrollbar-width:thin;
-    }
-    .toc-mobile .toc-track::-webkit-scrollbar{height:6px}
-    .toc-mobile .toc-track::-webkit-scrollbar-thumb{background:rgba(255,255,255,.25);border-radius:999px}
-    .toc-mobile a{
-      flex:0 0 auto; white-space:nowrap; text-decoration:none; font-weight:600; font-size:14px;
-      color:#0A2342; background:#fff; border:1px solid #e6ebf2; border-radius:999px; padding:8px 12px;
-      box-shadow:0 4px 10px rgba(20,42,70,.08);
-    }
-    .toc-mobile a:focus-visible,.toc-mobile a:hover{border-color:#FF6F61; box-shadow:0 6px 14px rgba(20,42,70,.12)}
-
-    /* YouTube Short — wide enough, simple aspect-ratio */
+    /* ===== Vertical YouTube Short ===== */
     .yt-vert{
-      position:relative; width:min(640px, 90%); aspect-ratio:9/16; height:auto;
+      position:relative; width:min(var(--video-width),100%); aspect-ratio:9/16; height:auto;
       overflow:hidden; margin:16px auto; border-radius:12px; box-shadow:0 10px 24px rgba(20,42,70,.08)
     }
     .yt-vert iframe{position:absolute; inset:0; width:100%; height:100%}
 
-    /* Figures */
+    /* ===== Figures ===== */
     figure{margin:22px 0;text-align:center}
     figure img{max-width:100%;height:auto;border-radius:12px}
     figcaption{font-size:13px;color:#4f5b6b;margin-top:6px}
+
     .credit{font-size:12px;color:#666;text-align:center;margin:16px 0}
-    /* === SIMPLE LAYOUT OVERRIDES === */
 
-/* Make the page wider on desktop so gutters shrink */
-.container { 
-  max-width: 1200px !important;   /* was 980 */
-  padding: 0 24px !important;
-}
-
-/* Let content cards be wider too */
-.card { 
-  max-width: 960px !important;    /* was 780 */
-}
-
-/* On very large screens, open it up a bit more */
-@media (min-width: 1600px) {
-  .container { max-width: 1400px !important; }
-  .card { max-width: 1100px !important; }
-}
-
-/* YouTube Short sizing stays generous but not huge */
-.yt-vert { 
-  width: min(700px, 95%) !important;  /* a touch wider */
-  aspect-ratio: 9 / 16;
-}
-
-.toc-mobile { 
-  position: static !important;
-  background: transparent !important;
-  margin: 0 0 6px !important; 
-  padding: 0 !important;
-}
-.toc-mobile .toc-track { 
-  display: flex; flex-wrap: wrap; gap: 10px; 
-  overflow: visible !important; padding: 0 !important;
-}
-.toc-mobile a { 
-  background: transparent; border: 0; box-shadow: none; 
-  padding: 0; color: var(--navy); text-decoration: underline; 
-  font-weight: 600; font-size: 14px;
-}
-*/
-
-    /* ===== SIMPLE, RELIABLE LAYOUT RESET (wins cascade) ===== */
-
-/* 1) One centered column for everything */
-.container{ max-width:1280px !important; padding:0 24px !important; }
-main{ display:block !important; }
-article{ max-width:1000px !important; margin:0 auto !important; }
-
-/* 2) Cards should fill the article width (no tiny boxes) */
-.card{ width:100% !important; max-width:none !important; }
-
-/* 3) Kill the mobile chip nav if you don't like it */
-.toc-mobile{ display:none !important; }
-
-/* 4) YouTube Short: simple, wide, proportional */
-.yt-vert{
-  width:min(720px, 100%) !important;
-  aspect-ratio:9/16 !important;
-  height:auto !important;
-  margin:16px auto !important;
-  padding:0 !important;
-  position:relative !important;
-  overflow:hidden !important;
-  border-radius:12px; box-shadow:0 10px 24px rgba(20,42,70,.08);
-}
-.yt-vert iframe{ position:absolute; inset:0; width:100%; height:100%; }
-
-/* 5) Remove any sticky/side layout remnants */
-aside, .toc{ display:none !important; }
-    /* === WIDTH TUNE (narrower column, tighter video) === */
-:root{
-  /* change these numbers until it feels right */
-  --content-width: 860px;   /* was 1000 */
-  --video-width:   540px;   /* was 720 */
-}
-
-article{ max-width: var(--content-width) !important; }
-.card{ width: 100% !important; max-width: none !important; }
-
-.yt-vert{
-  width: min(var(--video-width), 100%) !important;
-  aspect-ratio: 9 / 16 !important;
-  height: auto !important;
-  margin: 16px auto !important;
-}
-
-
-
+    /* ===== Small-screen tweaks ===== */
+    @media (max-width: 520px){
+      :root{ --content-width: 92vw; --video-width: 92vw; }
+      .container{padding:0 16px}
+      .card{border-radius:12px}
+    }
   </style>
 
   <!-- JSON LD. BlogPosting -->
@@ -261,23 +178,6 @@ article{ max-width: var(--content-width) !important; }
 
   <div class="container">
     <main>
-
-      <!-- Mobile TOC chip strip -->
-      <nav class="toc-mobile" aria-label="Quick navigation">
-        <div class="toc-track">
-          <a href="#summary">TLDR</a>
-          <a href="#video">Watch</a>
-          <a href="#why">Why it matters</a>
-          <a href="#positions">Side & Back</a>
-          <a href="#choose">Choose height</a>
-          <a href="#fit">7-night test</a>
-          <a href="#care">Lifestyle</a>
-          <a href="#flags">Red flags</a>
-          <a href="#visit">Visit</a>
-          <a href="#refs">References</a>
-        </div>
-      </nav>
-
       <article>
         <!-- TLDR -->
         <div class="card small" id="summary">
