@@ -15,16 +15,16 @@
   <meta property="og:description" content="Wrong pillow height bends your neck all night. Fix alignment and wake with less pain. Clear local guide by Dr Sumesh Subramanian." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.myorthocure.com/blog/pillow-neck-pain.html" />
-  <meta property="og:image" content="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
+  <meta property="og:image" content="https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pillow and Neck Pain. The Right Height For You" />
   <meta name="twitter:description" content="Side and back tips that keep your neck in a neutral line. Chennai humidity notes inside." />
-  <meta name="twitter:image" content="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
+  <meta name="twitter:image" content="https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg" />
 
-  <!-- Preload / Preconnect for faster social scrape + video -->
-  <link rel="preload" as="image" href="https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg" />
+  <!-- Preload / Preconnect -->
+  <link rel="preload" as="image" href="https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg" />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin>
   <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
 
@@ -35,27 +35,17 @@
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.7}
     a{color:var(--navy)}
-    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    .container{max-width:980px;margin:0 auto;padding:0 18px}
+
     header.band{background:linear-gradient(180deg,#142a46 0%,#0a2342 100%);color:#fff;padding:28px 0 24px;margin-bottom:20px;border-bottom:4px solid rgba(255,255,255,.08)}
     .band h1{margin:0 0 6px;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:.2px}
     .band p{margin:6px 0 0;color:#d9e4f3}
 
-    /* --- Layout --- */
-    main{display:grid;grid-template-columns:280px 1fr;gap:20px}
-    /* Switch to single-column earlier so the article isn't squeezed */
-    @media (max-width:1200px){ 
-      main{grid-template-columns:1fr}
-      aside{order:2}
-      article{order:1}
-      article .card{max-width:760px;margin:0 auto 20px}
-    }
-
-    aside .card{position:sticky;top:16px}
-    .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 10px 24px rgba(20,42,70,.08);margin-bottom:18px}
+    /* Single-column layout */
+    main{display:block}
+    .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 10px 24px rgba(20,42,70,.08);margin:0 auto 18px;max-width:780px}
     h2{color:var(--navy);font-size:1.25rem;margin:0 0 10px}
     h3{color:var(--coral);font-size:1.05rem;margin:12px 0 6px}
-    .toc a{display:block;color:var(--navy);text-decoration:none;padding:6px 0}
-    .toc a:hover{text-decoration:underline}
     .pull{background:linear-gradient(90deg, rgba(255,111,97,.12), transparent);padding:14px;border-left:4px solid var(--coral);border-radius:10px;margin:14px 0;font-weight:600}
     .list-check li{margin:.35rem 0}
     .note{background:#fff7f7;border:1px solid #ffd0d0;color:#7c2c2c;border-radius:12px;padding:12px;margin:10px 0}
@@ -64,159 +54,37 @@
     .cta a{color:#fff;text-decoration:underline}
     .small{color:var(--muted);font-size:.95rem}
 
-    /* --- YouTube Shorts scaling (wider so it doesn't look cramped) --- */
-    .yt-vert{
-      position:relative;
-      padding-bottom:177.78%;
-      height:0;overflow:hidden;
-      max-width:500px;
-      margin:16px auto;
-      border-radius:12px;
-      box-shadow:0 10px 24px rgba(20,42,70,.08)
+    /* Mobile TOC chip strip */
+    .toc-mobile {
+      position:sticky; top:0; z-index:20;
+      background:linear-gradient(180deg,#142a46 0%, #0a2342 100%);
+      margin: -10px -18px 10px; padding:10px 0 12px;
     }
-    @media(max-width:900px){ .yt-vert{max-width:520px;padding-bottom:170%} }
-    @media(max-width:600px){ .yt-vert{max-width:92%;padding-bottom:180%} }
-    .yt-vert iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+    .toc-mobile .toc-track{
+      display:flex; gap:10px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+      padding:0 18px 4px; scrollbar-width:thin;
+    }
+    .toc-mobile .toc-track::-webkit-scrollbar{height:6px}
+    .toc-mobile .toc-track::-webkit-scrollbar-thumb{background:rgba(255,255,255,.25);border-radius:999px}
+    .toc-mobile a{
+      flex:0 0 auto; white-space:nowrap; text-decoration:none; font-weight:600; font-size:14px;
+      color:#0A2342; background:#fff; border:1px solid #e6ebf2; border-radius:999px; padding:8px 12px;
+      box-shadow:0 4px 10px rgba(20,42,70,.08);
+    }
+    .toc-mobile a:focus-visible,.toc-mobile a:hover{border-color:#FF6F61; box-shadow:0 6px 14px rgba(20,42,70,.12)}
+
+    /* YouTube Short — wide enough, simple aspect-ratio */
+    .yt-vert{
+      position:relative; width:min(640px, 90%); aspect-ratio:9/16; height:auto;
+      overflow:hidden; margin:16px auto; border-radius:12px; box-shadow:0 10px 24px rgba(20,42,70,.08)
+    }
+    .yt-vert iframe{position:absolute; inset:0; width:100%; height:100%}
 
     /* Figures */
     figure{margin:22px 0;text-align:center}
     figure img{max-width:100%;height:auto;border-radius:12px}
     figcaption{font-size:13px;color:#4f5b6b;margin-top:6px}
     .credit{font-size:12px;color:#666;text-align:center;margin:16px 0}
-
-    /* === Layout + Shorts FIX (override) === */
-
-/* Switch to single-column sooner so the article gets full width */
-@media (max-width: 1400px) {
-  main { grid-template-columns: 1fr; }
-  aside { order: 2; }
-  article { order: 1; }
-  /* Let cards breathe on desktop + laptop widths */
-  article .card { max-width: 900px; margin: 0 auto 20px; }
-}
-
-/* Make the YouTube Short wider and simpler using aspect-ratio */
-.yt-vert{
-  position: relative;
-  width: clamp(360px, 70vw, 620px);
-  aspect-ratio: 9 / 16;
-  height: auto;
-  overflow: hidden;
-  margin: 16px auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(20,42,70,.08);
-  padding: 0;              /* kill old padding-bottom hack */
-}
-.yt-vert iframe{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Optional: make the sidebar card less wide so it doesn't feel bulky on large screens */
-aside .card { max-width: 320px; }
-    /* ===== Mobile TOC chip strip ===== */
-
-/* Hidden by default (desktop) */
-.toc-mobile { display: none; }
-
-/* Show mobile strip and hide sidebar TOC on smaller viewports */
-@media (max-width: 1400px) {
-  aside .toc { display: none; }
-  .toc-mobile { 
-    display: block; 
-    position: sticky; 
-    top: 0; 
-    z-index: 20; 
-    background: linear-gradient(180deg,#142a46 0%, #0a2342 100%); /* matches header band */
-    padding: 10px 0 12px;
-    margin: -20px -18px 10px;       /* edge-to-edge in container */
-  }
-  .toc-mobile .toc-track {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 18px 4px;
-    scrollbar-width: thin;
-  }
-  .toc-mobile .toc-track::-webkit-scrollbar { height: 6px; }
-  .toc-mobile .toc-track::-webkit-scrollbar-thumb { background: rgba(255,255,255,.25); border-radius: 999px; }
-
-  .toc-mobile a {
-    flex: 0 0 auto;
-    white-space: nowrap;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    color: #0A2342;
-    background: #ffffff;
-    border: 1px solid #e6ebf2;
-    border-radius: 999px;
-    padding: 8px 12px;
-    box-shadow: 0 4px 10px rgba(20,42,70,.08);
-  }
-
-  /* When the site header is dark, give a subtle contrast ring on focus/hover */
-  .toc-mobile a:focus-visible, .toc-mobile a:hover {
-    outline: none;
-    border-color: #FF6F61;
-    box-shadow: 0 6px 14px rgba(20,42,70,.12);
-  }
-}
-
-/* Keep your earlier layout/video overrides (from last step) */
-    /* ===== FINAL LAYOUT FIX (mobile-first, wins cascade) ===== */
-
-/* 1) Container a bit wider so the article breathes */
-.container{ max-width:1200px !important; }
-
-/* 2) Default = single column (all screens) */
-main{
-  display:grid;
-  grid-template-columns: 1fr !important;  /* force one column */
-  gap:20px;
-}
-article{ order:1; }
-aside{ order:2; }
-
-/* Sidebar not sticky on small screens */
-aside .card{ position:static !important; }
-
-/* Let article cards center and have a healthy line length */
-article .card{ max-width:900px; margin:0 auto 20px; }
-
-/* 3) Only at LARGE viewports do we show the two-column layout */
-@media (min-width:1280px){
-  main{ grid-template-columns: 320px minmax(0,1fr) !important; }
-  article .card{ max-width:unset; margin:0 0 20px; }
-  aside .card{ position:sticky !important; top:16px; }
-}
-
-/* 4) YouTube Shorts: use aspect-ratio and wider clamp */
-.yt-vert{
-  position:relative;
-  width: clamp(420px, 60vw, 640px);
-  aspect-ratio: 9 / 16;
-  height: auto;
-  overflow:hidden;
-  margin:16px auto;
-  border-radius:12px;
-  box-shadow:0 10px 24px rgba(20,42,70,.08);
-  padding:0; /* kill old padding-bottom hack */
-}
-.yt-vert iframe{
-  position:absolute; inset:0; width:100%; height:100%;
-}
-
-/* 5) Sidebar TOC hides on small; your chip-strip CSS (if added) can show there */
-@media (max-width:1279.98px){
-  aside .toc{ display:none !important; }
-}
-
-
-
   </style>
 
   <!-- JSON LD. BlogPosting -->
@@ -227,7 +95,7 @@ article .card{ max-width:900px; margin:0 auto 20px; }
     "mainEntityOfPage": {"@type":"WebPage","@id":"https://www.myorthocure.com/blog/pillow-neck-pain.html"},
     "headline": "Pillow and Neck Pain. Find Your Right Height",
     "description": "How pillow height and sleep position change cervical alignment. Clear tips for side and back sleeping with Chennai humidity notes.",
-    "image": "https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg",
+    "image": "https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg",
     "author": { "@type": "Person", "name": "Dr Sumesh Subramanian", "url":"https://www.myorthocure.com/about.html" },
     "publisher": {
       "@type": "Organization",
@@ -304,46 +172,22 @@ article .card{ max-width:900px; margin:0 auto 20px; }
 
   <div class="container">
     <main>
-      <aside>
-        <div class="card toc">
-          <strong>Quick Navigation</strong>
-          <!-- Mobile TOC (shows only on small screens) -->
-<nav class="toc-mobile" aria-label="Quick navigation">
-  <div class="toc-track">
-    <a href="#summary">TLDR</a>
-    <a href="#video">Watch</a>
-    <a href="#why">Why it matters</a>
-    <a href="#positions">Side & Back</a>
-    <a href="#choose">Choose height</a>
-    <a href="#fit">7-night test</a>
-    <a href="#care">Lifestyle</a>
-    <a href="#flags">Red flags</a>
-    <a href="#visit">Visit</a>
-    <a href="#refs">References</a>
-  </div>
-</nav>
 
+      <!-- Mobile TOC chip strip -->
+      <nav class="toc-mobile" aria-label="Quick navigation">
+        <div class="toc-track">
           <a href="#summary">TLDR</a>
-          <a href="#video">Watch the short guide</a>
-          <a href="#why">Why pillow height matters</a>
-          <a href="#positions">Side and Back explained</a>
-          <a href="#choose">How to choose height and shape</a>
-          <a href="#fit">Seven night fit test</a>
-          <a href="#care">Lifestyle levers</a>
+          <a href="#video">Watch</a>
+          <a href="#why">Why it matters</a>
+          <a href="#positions">Side & Back</a>
+          <a href="#choose">Choose height</a>
+          <a href="#fit">7-night test</a>
+          <a href="#care">Lifestyle</a>
           <a href="#flags">Red flags</a>
-          <a href="#visit">Visit OrthoCure</a>
+          <a href="#visit">Visit</a>
           <a href="#refs">References</a>
         </div>
-
-        <div class="card">
-          <strong>Related guides</strong>
-          <ul style="margin:.6rem 0 0; padding-left:1rem">
-            <li><a href="/blog/footwear-standing-long-hours.html">Best footwear for long hour standing</a></li>
-            <li><a href="/blog/desk-posture-chennai.html">Desk posture. Simple fixes for neck and shoulder pain</a></li>
-            <li><a href="/blog/morning-stiffness-early-arthritis.html">Morning stiffness. Early arthritis or just posture</a></li>
-          </ul>
-        </div>
-      </aside>
+      </nav>
 
       <article>
         <!-- TLDR -->
@@ -356,7 +200,9 @@ article .card{ max-width:900px; margin:0 auto 20px; }
           <h2>Watch. The right pillow for your neck</h2>
           <div class="yt-vert">
             <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/kKZfsnG6Ct0"
-              title="Pillow height for neck pain. OrthoCure Chennai" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              title="Pillow height for neck pain. OrthoCure Chennai"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
             </iframe>
           </div>
           <div class="small">
@@ -485,4 +331,3 @@ article .card{ max-width:900px; margin:0 auto 20px; }
   </footer>
 </body>
 </html>
-
