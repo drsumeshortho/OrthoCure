@@ -167,6 +167,54 @@ aside .card { max-width: 320px; }
 }
 
 /* Keep your earlier layout/video overrides (from last step) */
+    /* ===== FINAL LAYOUT FIX (mobile-first, wins cascade) ===== */
+
+/* 1) Container a bit wider so the article breathes */
+.container{ max-width:1200px !important; }
+
+/* 2) Default = single column (all screens) */
+main{
+  display:grid;
+  grid-template-columns: 1fr !important;  /* force one column */
+  gap:20px;
+}
+article{ order:1; }
+aside{ order:2; }
+
+/* Sidebar not sticky on small screens */
+aside .card{ position:static !important; }
+
+/* Let article cards center and have a healthy line length */
+article .card{ max-width:900px; margin:0 auto 20px; }
+
+/* 3) Only at LARGE viewports do we show the two-column layout */
+@media (min-width:1280px){
+  main{ grid-template-columns: 320px minmax(0,1fr) !important; }
+  article .card{ max-width:unset; margin:0 0 20px; }
+  aside .card{ position:sticky !important; top:16px; }
+}
+
+/* 4) YouTube Shorts: use aspect-ratio and wider clamp */
+.yt-vert{
+  position:relative;
+  width: clamp(420px, 60vw, 640px);
+  aspect-ratio: 9 / 16;
+  height: auto;
+  overflow:hidden;
+  margin:16px auto;
+  border-radius:12px;
+  box-shadow:0 10px 24px rgba(20,42,70,.08);
+  padding:0; /* kill old padding-bottom hack */
+}
+.yt-vert iframe{
+  position:absolute; inset:0; width:100%; height:100%;
+}
+
+/* 5) Sidebar TOC hides on small; your chip-strip CSS (if added) can show there */
+@media (max-width:1279.98px){
+  aside .toc{ display:none !important; }
+}
+
 
 
   </style>
