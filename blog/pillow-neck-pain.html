@@ -83,6 +83,92 @@
     figure img{max-width:100%;height:auto;border-radius:12px}
     figcaption{font-size:13px;color:#4f5b6b;margin-top:6px}
     .credit{font-size:12px;color:#666;text-align:center;margin:16px 0}
+
+    /* === Layout + Shorts FIX (override) === */
+
+/* Switch to single-column sooner so the article gets full width */
+@media (max-width: 1400px) {
+  main { grid-template-columns: 1fr; }
+  aside { order: 2; }
+  article { order: 1; }
+  /* Let cards breathe on desktop + laptop widths */
+  article .card { max-width: 900px; margin: 0 auto 20px; }
+}
+
+/* Make the YouTube Short wider and simpler using aspect-ratio */
+.yt-vert{
+  position: relative;
+  width: clamp(360px, 70vw, 620px);
+  aspect-ratio: 9 / 16;
+  height: auto;
+  overflow: hidden;
+  margin: 16px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(20,42,70,.08);
+  padding: 0;              /* kill old padding-bottom hack */
+}
+.yt-vert iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Optional: make the sidebar card less wide so it doesn't feel bulky on large screens */
+aside .card { max-width: 320px; }
+    /* ===== Mobile TOC chip strip ===== */
+
+/* Hidden by default (desktop) */
+.toc-mobile { display: none; }
+
+/* Show mobile strip and hide sidebar TOC on smaller viewports */
+@media (max-width: 1400px) {
+  aside .toc { display: none; }
+  .toc-mobile { 
+    display: block; 
+    position: sticky; 
+    top: 0; 
+    z-index: 20; 
+    background: linear-gradient(180deg,#142a46 0%, #0a2342 100%); /* matches header band */
+    padding: 10px 0 12px;
+    margin: -20px -18px 10px;       /* edge-to-edge in container */
+  }
+  .toc-mobile .toc-track {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 18px 4px;
+    scrollbar-width: thin;
+  }
+  .toc-mobile .toc-track::-webkit-scrollbar { height: 6px; }
+  .toc-mobile .toc-track::-webkit-scrollbar-thumb { background: rgba(255,255,255,.25); border-radius: 999px; }
+
+  .toc-mobile a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0A2342;
+    background: #ffffff;
+    border: 1px solid #e6ebf2;
+    border-radius: 999px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 10px rgba(20,42,70,.08);
+  }
+
+  /* When the site header is dark, give a subtle contrast ring on focus/hover */
+  .toc-mobile a:focus-visible, .toc-mobile a:hover {
+    outline: none;
+    border-color: #FF6F61;
+    box-shadow: 0 6px 14px rgba(20,42,70,.12);
+  }
+}
+
+/* Keep your earlier layout/video overrides (from last step) */
+
+
   </style>
 
   <!-- JSON LD. BlogPosting -->
@@ -173,6 +259,22 @@
       <aside>
         <div class="card toc">
           <strong>Quick Navigation</strong>
+          <!-- Mobile TOC (shows only on small screens) -->
+<nav class="toc-mobile" aria-label="Quick navigation">
+  <div class="toc-track">
+    <a href="#summary">TLDR</a>
+    <a href="#video">Watch</a>
+    <a href="#why">Why it matters</a>
+    <a href="#positions">Side & Back</a>
+    <a href="#choose">Choose height</a>
+    <a href="#fit">7-night test</a>
+    <a href="#care">Lifestyle</a>
+    <a href="#flags">Red flags</a>
+    <a href="#visit">Visit</a>
+    <a href="#refs">References</a>
+  </div>
+</nav>
+
           <a href="#summary">TLDR</a>
           <a href="#video">Watch the short guide</a>
           <a href="#why">Why pillow height matters</a>
