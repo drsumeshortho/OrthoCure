@@ -7,8 +7,9 @@
   <title>Pillow and Neck Pain Guide Chennai | OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal</title>
   <meta name="description" content="Still waking with neck pain. Your pillow height and sleep position may be the reason. Evidence based guide from OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai." />
   <meta name="author" content="Dr Sumesh Subramanian, Orthopaedic Surgeon, OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai" />
-  <link rel="canonical" href="https://www.myorthocure.com/blog/pillow-neck-pain.html" />
   <meta name="keywords" content="pillow for neck pain, best pillow height, side sleeper pillow, back sleeper pillow, stomach sleeping neck pain, Chennai orthopaedic doctor, Thirumullaivoyal clinic" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://www.myorthocure.com/blog/pillow-neck-pain.html" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Pillow and Neck Pain. Find Your Right Height. Chennai Guide" />
@@ -31,65 +32,188 @@
   <style>
     /* ===== THEME ===== */
     :root{
-      --ink:#0e1a2c; --muted:#6b7a92; --navy:#0A2342; --coral:#FF6F61;
-      --bg:#f7f9fc; --card:#ffffff;
-      --content-width: 860px;   /* reading width */
-      --video-width:   540px;   /* vertical Short width */
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.7}
-    a{color:var(--navy)}
-    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+      --ink:#0e1a2c; 
+      --muted:#6b7a92; 
+      --navy:#0A2342; 
+      --coral:#FF6F61;
+      --bg:#f7f9fc; 
+      --card:#ffffff;
 
+      /* layout scales */
+      --site-max: 1120px;        /* hard page cap */
+      --content-max: 780px;      /* comfy reading width on desktop */
+      --video-width: 540px;      /* vertical Short width */
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --shadow: 0 8px 24px rgba(20,42,70,.08);
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      background:var(--bg);
+      color:var(--ink);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.7;
+      font-size:16px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Container and center line */
+    .container{
+      max-width:var(--site-max);
+      margin:0 auto;
+      padding:0 24px;
+    }
+
+    /* Band header trimmed for desktop */
     header.band{
       background:linear-gradient(180deg,#142a46 0%,#0a2342 100%);
-      color:#fff;padding:28px 0 24px;margin-bottom:20px;
-      border-bottom:4px solid rgba(255,255,255,.08)
+      color:#fff;
+      border-bottom:4px solid rgba(255,255,255,.08);
     }
-    .band h1{margin:0 0 6px;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:.2px}
-    .band p{margin:6px 0 0;color:#d9e4f3}
+    .band .container{
+      padding:28px 0 24px;
+    }
+    .band h1{
+      margin:0 0 6px;
+      letter-spacing:.2px;
+      font-weight:800;
+      font-size:clamp(1.6rem,2.5vw,2.2rem);
+      line-height:1.2;
+      max-width:var(--content-max);
+    }
+    .band p{
+      margin:6px 0 0;
+      color:#d9e4f3;
+      max-width:var(--content-max);
+    }
 
-    /* ===== LAYOUT: single centered column ===== */
+    /* Core page layout: a single center column */
     main{display:block}
-    article{max-width:var(--content-width);margin:0 auto}
+    article{
+      max-width:var(--content-max);
+      margin:0 auto;
+      padding:22px 0 0;
+    }
+
+    /* Cards and surface polish */
     .card{
-      background:var(--card);border-radius:16px;padding:20px;
-      box-shadow:0 10px 24px rgba(20,42,70,.08);
-      margin:0 auto 18px;width:100%
+      background:var(--card);
+      border-radius:var(--radius-lg);
+      padding:20px;
+      box-shadow:var(--shadow);
+      margin:0 auto 18px;
+      width:100%;
     }
 
-    /* Headings + helpers */
-    h2{color:var(--navy);font-size:1.25rem;margin:0 0 10px}
-    h3{color:var(--coral);font-size:1.05rem;margin:12px 0 6px}
-    .pull{background:linear-gradient(90deg, rgba(255,111,97,.12), transparent);
-      padding:14px;border-left:4px solid var(--coral);
-      border-radius:10px;margin:14px 0;font-weight:600}
-    .list-check li{margin:.35rem 0}
-    .note{background:#fff7f7;border:1px solid #ffd0d0;color:#7c2c2c;border-radius:12px;padding:12px;margin:10px 0}
-    .cta{background:var(--navy);color:#fff;border-radius:16px;padding:22px}
-    .cta .btn{display:inline-block;background:var(--coral);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
-    .cta a{color:#fff;text-decoration:underline}
+    /* Headings */
+    h2{
+      color:var(--navy);
+      margin:0 0 10px;
+      font-size:clamp(1.1rem,1.6vw,1.35rem);
+      line-height:1.3;
+      font-weight:800;
+    }
+    h3{
+      color:var(--coral);
+      margin:12px 0 6px;
+      font-size:clamp(1rem,1.3vw,1.1rem);
+      line-height:1.35;
+      font-weight:800;
+    }
+
+    /* Text helpers */
+    p{margin:10px 0 16px}
     .small{color:var(--muted);font-size:.95rem}
+    a{color:var(--navy);text-decoration:none}
+    a:hover{text-decoration:underline}
 
-    /* ===== Vertical YouTube Short ===== */
-    .yt-vert{
-      position:relative; width:min(var(--video-width),100%); aspect-ratio:9/16; height:auto;
-      overflow:hidden; margin:16px auto; border-radius:12px; box-shadow:0 10px 24px rgba(20,42,70,.08)
+    .pull{
+      background:linear-gradient(90deg, rgba(255,111,97,.12), transparent);
+      padding:14px;
+      border-left:4px solid var(--coral);
+      border-radius:10px;
+      margin:14px 0;
+      font-weight:600
     }
-    .yt-vert iframe{position:absolute; inset:0; width:100%; height:100%}
+    .list-check li{margin:.35rem 0}
 
-    /* ===== Figures ===== */
+    .note{
+      background:#fff7f7;
+      border:1px solid #ffd0d0;
+      color:#7c2c2c;
+      border-radius:12px;
+      padding:12px;
+      margin:10px 0
+    }
+
+    .cta{
+      background:var(--navy);
+      color:#fff;
+      border-radius:var(--radius-lg);
+      padding:22px
+    }
+    .cta .btn{
+      display:inline-block;
+      background:var(--coral);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:800
+    }
+    .cta a{color:#fff;text-decoration:underline}
+
+    /* Author box */
+    #author.card{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center}
+    #author img{border-radius:12px;display:block}
+
+    /* Vertical YouTube Short: cannot blow out */
+    .yt-vert{
+      position:relative; 
+      width:min(var(--video-width),100%); 
+      aspect-ratio:9/16; 
+      overflow:hidden; 
+      margin:16px auto;
+      border-radius:var(--radius-md); 
+      box-shadow:var(--shadow);
+      background:#000;
+    }
+    .yt-vert iframe{
+      position:absolute; inset:0; width:100%; height:100%; border:0;
+    }
+
+    /* Figures */
     figure{margin:22px 0;text-align:center}
     figure img{max-width:100%;height:auto;border-radius:12px}
     figcaption{font-size:13px;color:#4f5b6b;margin-top:6px}
 
-    .credit{font-size:12px;color:#666;text-align:center;margin:16px 0}
+    /* Lists */
+    ol{padding-left:22px}
+    ul{padding-left:22px}
+    li{margin:6px 0}
 
-    /* ===== Small-screen tweaks ===== */
+    .credit{
+      font-size:12px;
+      color:#666;
+      text-align:center;
+      margin:16px auto 28px;
+      max-width:var(--content-max);
+    }
+
+    /* Desktop refinements */
+    @media (min-width: 900px){
+      body{font-size:17px}
+      .card{padding:22px}
+    }
+
+    /* Small-screen tweaks untouched */
     @media (max-width: 520px){
-      :root{ --content-width: 92vw; --video-width: 92vw; }
       .container{padding:0 16px}
       .card{border-radius:12px}
+      #author.card{grid-template-columns:64px 1fr}
     }
   </style>
 
@@ -101,7 +225,7 @@
     "mainEntityOfPage": {"@type":"WebPage","@id":"https://www.myorthocure.com/blog/pillow-neck-pain.html"},
     "headline": "Pillow and Neck Pain. Find Your Right Height",
     "description": "How pillow height and sleep position change cervical alignment. Clear tips for side and back sleeping with Chennai humidity notes.",
-    "image": "https://www.myorthocure.com/assets/og/pillow-neck-pain-card.jpg",
+    "image": "https://www.myorthocure.com/assets/og-pillow-neck-pain-card.jpg",
     "author": { "@type": "Person", "name": "Dr Sumesh Subramanian", "url":"https://www.myorthocure.com/about.html" },
     "publisher": {
       "@type": "Organization",
@@ -109,7 +233,7 @@
       "logo": { "@type": "ImageObject", "url": "https://www.myorthocure.com/assets/logo.png" }
     },
     "datePublished": "2025-10-12",
-    "dateModified": "2025-10-13",
+    "dateModified": "2025-10-16",
     "articleSection": "Neck pain, sleep posture, pillows",
     "about": ["neck pain","sleep posture","pillow height","side sleeper","back sleeper","Chennai"]
   }
@@ -130,7 +254,7 @@
   }
   </script>
 
-  <!-- JSON LD. FAQ -->
+  <!-- JSON LD. FAQ (expanded) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -140,7 +264,8 @@
       {"@type":"Question","name":"Which pillow height is best for back sleepers","acceptedAnswer":{"@type":"Answer","text":"Use a low or medium low pillow that supports the neck curve without pushing the chin toward the chest."}},
       {"@type":"Question","name":"Is stomach sleeping bad for the neck","acceptedAnswer":{"@type":"Answer","text":"It forces long neck rotation. If you cannot change, use the thinnest pillow or shift to a three quarter side position."}},
       {"@type":"Question","name":"Which material works in Chennai humidity","acceptedAnswer":{"@type":"Answer","text":"Latex and open cell memory foam breathe better. Use a breathable cover and keep height matched to your position."}},
-      {"@type":"Question","name":"When should I see a doctor","acceptedAnswer":{"@type":"Answer","text":"If pain lasts more than two weeks, if there is arm pain or numbness, or if you cannot turn the neck. Get a quick exam."}}
+      {"@type":"Question","name":"When should I see a doctor","acceptedAnswer":{"@type":"Answer","text":"If pain lasts more than two weeks, if there is arm pain or numbness, or if you cannot turn the neck. Get a quick exam."}},
+      {"@type":"Question","name":"Can a travel pillow reduce neck pain","acceptedAnswer":{"@type":"Answer","text":"A travel pillow can support short naps but is not a night pillow. Use it for trips only and choose a home pillow that matches your position and shoulder width."}}
     ]
   }
   </script>
@@ -166,6 +291,50 @@
    "openingHours": ["Mo-Sa 17:00-21:00","Su 11:00-13:00"]
   }
   </script>
+
+  <!-- JSON LD. Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.myorthocure.com/blog.html"},
+      {"@type":"ListItem","position":3,"name":"Pillow and Neck Pain"}
+    ]
+  }
+  </script>
+
+  <!-- JSON LD. Speakable for voice and AI -->
+  <script type="application/ld+json">
+  {
+   "@context":"https://schema.org",
+   "@type":"WebPage",
+   "name":"Pillow and Neck Pain Guide Chennai",
+   "speakable":{
+     "@type":"SpeakableSpecification",
+     "xpath":[
+       "/html/body/header/div/h1",
+       "/html/body/div/main/article/div[@id='summary']"
+     ]
+   }
+  }
+  </script>
+
+  <!-- JSON LD. HowTo for the seven night fit test -->
+  <script type="application/ld+json">
+  {
+   "@context":"https://schema.org",
+   "@type":"HowTo",
+   "name":"Seven night pillow fit test",
+   "description":"Simple home titration to match pillow height to your sleep position.",
+   "step":[
+     {"@type":"HowToStep","position":1,"name":"Start at best guess","text":"Nights one to two. Use a height that matches your position."},
+     {"@type":"HowToStep","position":2,"name":"Adjust loft","text":"Nights three to four. Change height by one to two cm if you wake sore."},
+     {"@type":"HowToStep","position":3,"name":"Lock fit","text":"Nights five to seven. Keep the height that stops night adjustments."}
+   ]
+  }
+  </script>
 </head>
 
 <body>
@@ -179,9 +348,12 @@
   <div class="container">
     <main>
       <article>
+        <!-- Updated stamp for freshness -->
+        <p class="small">Updated October 16, 2025</p>
+
         <!-- TLDR -->
         <div class="card small" id="summary">
-          <strong>TLDR.</strong> Correct pillow height depends on your body width and your sleep style. Side sleeping needs medium height that fills the ear to shoulder gap. Back sleeping needs low height with gentle neck support. In Chennai humidity pick breathable materials like latex or open cell foam.
+          <strong>TLDR.</strong> Correct pillow height depends on your body width and your sleep style. Side sleeping needs medium height that fills the ear to shoulder gap. Back sleeping needs low height with gentle neck support. In Chennai humidity pick breathable materials like latex or open cell foam. Serving Thirumullaivoyal Ambattur and Avadi with spine aware sleep posture care.
         </div>
 
         <!-- VIDEO -->
@@ -213,7 +385,7 @@
           <h2>Side and Back. What happens to your neck</h2>
 
           <figure>
-            <img src="/assets/pillow-alignment-diagram-orthocure-thirumullaivoyal.jpg" width="1400" height="850" loading="lazy" alt="Side and back sleeper diagram with too low too high and correct pillow height" />
+            <img src="/assets/pillow-alignment-diagram-orthocure-thirumullaivoyal.jpg" width="1400" height="850" fetchpriority="high" loading="eager" alt="Side and back sleeper diagram with too low too high and correct pillow height Chennai" />
             <figcaption>Too low bends the neck down. Too high tilts it up. Correct height keeps the line level.</figcaption>
           </figure>
 
@@ -271,6 +443,7 @@
             <li><strong>Load.</strong> Keep bags light and screens at eye level. Avoid long phone flexion.</li>
             <li><strong>Sleep.</strong> Seven to eight hours. Cool dark room. Air the pillow in humid months.</li>
           </ul>
+          <p class="small">Learn more about <a href="/blog/tech-neck.html">Tech Neck</a> and our <a href="/#physiotherapy">Physiotherapy</a> services. For persistent symptoms see our <a href="/services/neck-pain.html">neck pain treatment</a> page.</p>
         </div>
 
         <div class="card" id="flags">
@@ -283,11 +456,29 @@
           <p class="small">Care is individual if you have cervical spondylosis, radiculopathy, migraine, osteoporosis, diabetes, pregnancy, or sleep apnea.</p>
         </div>
 
+        <!-- Author box with Person entity hints -->
+        <section id="author" class="card" itemscope itemtype="https://schema.org/Person">
+          <img src="/assets/dr-sumesh.jpg" alt="Dr Sumesh Subramanian Orthopaedic Surgeon Chennai" width="84" height="84" itemprop="image">
+          <div>
+            <h3 itemprop="name" style="margin:0 0 6px">Dr Sumesh Subramanian</h3>
+            <p class="small" itemprop="description" style="margin:0 0 8px">
+              Orthopaedic Surgeon at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai. Focus on sleep posture neck and shoulder care.
+            </p>
+            <ul class="small" style="margin:0; padding-left:18px">
+              <li><a href="/about.html" itemprop="url">About</a></li>
+              <li><a href="/#contact">Clinic contact</a></li>
+              <li><a href="https://scholar.google.com/" rel="noopener" target="_blank">Google Scholar</a></li>
+              <li><a href="https://www.myorthocure.com/blog.html">More articles</a></li>
+            </ul>
+          </div>
+        </section>
+
         <div class="card cta" id="visit">
           <h2 style="margin:0 0 8px">Still waking with neck pain</h2>
           <p style="margin:6px 0 12px">Get a fast sleep posture check and pillow fit guidance from a spine aware orthopaedic clinic.</p>
           <a class="btn" href="https://wa.me/919342700212" target="_blank" rel="noopener">Book at OrthoCure Thirumullaivoyal</a>
           <p class="small" style="margin-top:10px">Open all days. Mon to Sat 5 pm to 9 pm. Sunday 11 am to 1 pm.</p>
+          <p class="small">Find the clinic on <a href="https://www.google.com/maps?q=OrthoCure+Bone+and+Joint+Speciality+Clinic+Thirumullaivoyal" target="_blank" rel="noopener">Google Maps</a>. See our <a href="/#contact">map</a> and directions.</p>
           <p class="small">Related reading. <a href="/blog/tech-neck.html">Tech Neck</a>. See our <a href="/#physiotherapy">Physiotherapy</a> section. Find us on the <a href="/#contact">map</a>.</p>
         </div>
 
