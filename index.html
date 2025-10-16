@@ -15,6 +15,10 @@
   <!-- One (1) meta description only -->
   <meta name="description" content="Looking for an orthopaedic doctor near you in Thirumullaivoyal, Ambattur, or Avadi? Visit OrthoCure Bone & Joint Speciality Clinic, Chennai. Expert fracture care, arthritis treatment, joint pain and physiotherapy by Dr Sumesh Subramanian, Orthopaedic Surgeon." />
 
+  <!-- E-E-A-T nudges -->
+  <meta name="author" content="Dr. Sumesh Subramanian" />
+  <link rel="author" href="https://www.myorthocure.com/about.html" />
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="OrthoCure Bone & Joint Speciality Clinic" />
@@ -86,7 +90,7 @@
     .card h4{margin:6px 0 8px;color:var(--navy)}
 
     .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:.7rem 1rem;border-radius:8px;font-weight:700}
-    .btn.alt{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+    .btn.alt{background:#fff;color:#102542;border:2px solid #102542}
 
     .cta{background:var(--coral);color:#fff;padding:24px 16px;border-radius:14px;margin:18px auto;text-align:center}
     .cta a{background:#102542}
@@ -181,6 +185,7 @@
     ],
     "founder": {
       "@type": "Person",
+      "@id": "https://www.myorthocure.com/#dr-sumesh",
       "name": "Dr. Sumesh Subramanian",
       "jobTitle": "Orthopaedic Surgeon",
       "honorificSuffix": "MS Ortho, Fellowship in Arthroplasty"
@@ -272,7 +277,41 @@
         "@type": "Question",
         "name": "Can fractures be treated at the clinic?",
         "acceptedAnswer": { "@type": "Answer", "text": "Fractures are stabilised immediately with plaster/splint; surgery is arranged at partner hospitals under our care." }
-      ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Person (E-E-A-T) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.myorthocure.com/#dr-sumesh",
+    "name": "Dr. Sumesh Subramanian",
+    "jobTitle": "Orthopaedic Surgeon",
+    "medicalSpecialty": "OrthopedicSurgery",
+    "alumniOf": { "@type": "Organization", "name": "Your Medical College / University" },
+    "affiliation": { "@type": "MedicalClinic", "@id": "https://www.myorthocure.com/#clinic" },
+    "url": "https://www.myorthocure.com/about.html",
+    "sameAs": [
+      "https://www.facebook.com/drsumeshortho",
+      "https://www.instagram.com/drsumeshortho"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: AggregateRating extending clinic entity (no star snippet expected) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "@id": "https://www.myorthocure.com/#clinic",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "24"
+    }
   }
   </script>
 </head>
@@ -282,7 +321,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- GTM (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7" height="0" width="0" style="display:none;visibility:hidden" title="GTM"></iframe></noscript>
 
   <!-- Floating WhatsApp -->
   <a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat with OrthoCure on WhatsApp">💬</a>
@@ -300,9 +339,7 @@
   <nav class="nav-container" aria-label="Primary">
     <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
       <span class="nav-toggle-box" aria-hidden="true">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </span>
       Menu
     </button>
@@ -424,14 +461,16 @@
 
     <div>© 2025 OrthoCure Bone & Joint Speciality Clinic • “Start Healing. Stay Moving.”</div>
     <div style="margin-top:6px">MSME Reg. No: UDYAM-TN-24-0146713 • <a href="/contact.html">Contact</a></div>
-
-    <div class="mobile-cta" role="region" aria-label="Quick actions">
-      <a class="cta-btn call" href="tel:+919342700212" aria-label="Call clinic now">Call</a>
-      <a class="cta-btn wa" href="https://wa.me/919342700212" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
-      <a class="cta-btn book" href="/consult.html" aria-label="Book online">Book</a>
-    </div>
   </footer>
 
+  <!-- Mobile sticky CTA (outside footer for clarity) -->
+  <div class="mobile-cta" role="region" aria-label="Quick actions">
+    <a class="cta-btn call" href="tel:+919342700212" aria-label="Call clinic now">Call</a>
+    <a class="cta-btn wa" href="https://wa.me/919342700212" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+    <a class="cta-btn book" href="/consult.html" aria-label="Book online">Book</a>
+  </div>
+
+  <!-- Nav toggle JS -->
   <script>
     (function(){
       var nav = document.querySelector('.nav-container');
