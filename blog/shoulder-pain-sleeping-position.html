@@ -62,56 +62,107 @@
   }
   </script>
 
+  <!-- Clean Unified Blog CSS -->
   <style>
+    :root {
+      --brand-coral: #ff5c5c;
+      --brand-navy: #142a46;
+      --bg-light: #f6f8fa;
+    }
 
     body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-  color: #142a46;
-  margin: 0;
-  padding: 0;
-  background-color: #f6f8fa; /* soft gray backdrop */
-  display: flex;
-  justify-content: center;
-}
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--brand-navy);
+      display: flex;
+      justify-content: center;
+    }
 
-.container {
-  max-width: 850px;
-  width: 100%;
-  background-color: #fff;
-  padding: 40px 30px;
-  margin: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
+    main {
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      margin: 40px 20px;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
 
-    body {font-family: 'Inter', sans-serif; line-height: 1.7; color: #142a46; margin: 0; padding: 0; background-color: #fff;}
-    h1, h2, h3 {color: #ff5c5c;}
-    .container {max-width: 800px; margin: 0 auto; padding: 20px;}
-    a {color: #ff5c5c; text-decoration: none;}
-    a:hover {text-decoration: underline;}
-    .cta {background-color: #ff5c5c; color: #fff; padding: 16px; text-align: center; border-radius: 8px; margin-top: 30px;}
-    .cta a {color: #fff; font-weight: bold;}
-    .related {margin-top: 40px; background-color: #f9fafb; padding: 16px; border-radius: 8px;}
+    h1, h2, h3 {
+      color: var(--brand-coral);
+      line-height: 1.3;
+    }
+
+    p, li {
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px 0;
+      display: block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .cta {
+      background-color: var(--brand-coral);
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    .cta a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .related {
+      background-color: #f9fafb;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 40px;
+    }
+
+    .related a {
+      color: var(--brand-coral);
+      text-decoration: none;
+    }
+
+    .related a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 24px 18px; margin: 20px 10px; }
+      h1 { font-size: 1.5rem; }
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <main>
     <h1>Best Sleeping Position for Shoulder Pain</h1>
+
     <img src="/assets/pillow-alignment-diagram-orthocure-thirumullaivoyal.jpg" 
-     alt="Best sleeping position for shoulder pain Chennai OrthoCure Thirumullaivoyal" 
-     style="width:100%; border-radius:12px; margin:20px 0; box-shadow:0 2px 8px rgba(0,0,0,0.05);" />
+      alt="Best sleeping position for shoulder pain Chennai OrthoCure Thirumullaivoyal" />
 
     <p><em>Updated October 2025</em></p>
 
-    <p>Many Chennai residents who sleep on their side wake up with shoulder stiffness or dull pain. Recent global studies confirm what local orthopaedic experience has long observed—your <strong>sleeping position and pillow height</strong> directly affect shoulder joint pressure and recovery.</p>
+    <p>Many Chennai residents who sleep on their side wake up with shoulder stiffness or dull pain. Recent global studies confirm what local orthopaedic experience has long observed — your <strong>sleeping position and pillow height</strong> directly affect shoulder joint pressure and recovery.</p>
 
     <h2>What Research Shows</h2>
-    <p>Studies from the <em>Journal of Shoulder and Elbow Surgery (2024)</em> and <em>Applied Ergonomics (2021)</em> show that side-lying increases subacromial pressure and compresses the rotator cuff, while sleeping on your back (supine position) keeps the shoulder neutral and stress-free. Pillow height matters too—too high bends the neck sideways, too low increases shoulder load. The optimal pillow height is around <strong>8–12 cm</strong> for most adults, supporting both the neck and shoulder curve.</p>
+    <p>Studies from the <em>Journal of Shoulder and Elbow Surgery (2024)</em> and <em>Applied Ergonomics (2021)</em> show that side-lying increases subacromial pressure and compresses the rotator cuff, while sleeping on your back (supine position) keeps the shoulder neutral and stress-free. Pillow height matters too — too high bends the neck sideways, too low increases shoulder load. The optimal pillow height is around <strong>8–12 cm</strong> for most adults, supporting both the neck and shoulder curve.</p>
 
     <h2>Local Factors in Chennai</h2>
-    <p>In humid climates like Chennai, people often use thin pillows or sleep on coir mattresses, which can worsen shoulder and neck strain. Airflow from ceiling fans or AC units directly onto the shoulder may also cause overnight muscle cooling and stiffness. The good news—supine sleeping with light shoulder support works well even in warm weather.</p>
+    <p>In humid climates like Chennai, people often use thin pillows or sleep on coir mattresses, which can worsen shoulder and neck strain. Airflow from ceiling fans or AC units directly onto the shoulder may also cause overnight muscle cooling and stiffness. The good news — supine sleeping with light shoulder support works well even in warm weather.</p>
 
     <h2>Doctor’s Recommendation</h2>
     <ul>
@@ -134,6 +185,6 @@
     </div>
 
     <p style="font-size: 0.9em; color: #777;">References: Richards et al., J Shoulder Elbow Surg 2024; Aygün Bilecik et al., J Health Sci Med 2022; Lei et al., Appl Ergon 2021; ICMR & AIIMS Ergonomic Review 2023–24; Madras Medical College, Chennai Clinical Observations 2024.</p>
-  </div>
+  </main>
 </body>
 </html>
