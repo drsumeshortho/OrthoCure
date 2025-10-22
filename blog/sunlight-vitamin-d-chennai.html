@@ -120,6 +120,24 @@
     body.contrast{ background:#111 !important; color:#f2f4f8 !important; background-image:none !important; }
     body.contrast .card, body.contrast .toc, body.contrast .figure, body.contrast .faq details{ background:#1a1a1a; border-color:#333; color:#e8eef7; }
     body.contrast a{color:#9ecbff}
+
+    /* ===== Desktop visual balance fix ===== */
+@media (min-width: 1024px){
+  :root{ --maxw:940px; }
+  body{
+    background:linear-gradient(180deg,#0a2342 0%,#0a2342 180px,var(--muted) 181px);
+  }
+  .figure img{
+    max-width:90%;
+    margin:auto;
+    display:block;
+    border-radius:14px;
+  }
+  header.hero{
+    padding:40px 0 10px 0;
+  }
+}
+
   </style>
 
   <!-- JSON LD: Article with images -->
