@@ -34,7 +34,7 @@
       --paper:#ffffff;
       --muted:#f6f8fb;
       /* wider but capped for desktop, comfy on laptop screens */
-      --maxw:clamp(720px, 68vw, 1024px);
+      --maxw:min(94vw, 1040px);
     }
 
     html{scroll-behavior:smooth}
@@ -46,6 +46,8 @@
       line-height:1.7;
       font-size:18px;
     }
+    html,body{width:100%;overflow-x:hidden;margin:0 auto;}
+
 
     .wrap{max-width:var(--maxw); margin:0 auto; padding:14px}
 
