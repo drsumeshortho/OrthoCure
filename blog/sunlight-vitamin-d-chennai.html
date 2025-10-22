@@ -151,6 +151,39 @@
     .small{font-size:15px; color:#4d678a}
     .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:#eef3fb; color:#274262; font-size:14px; margin:4px 6px 0 0}
 
+    /* Chrome–Edge width normalization */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Force the blog wrapper to behave the same across browsers */
+.wrap {
+  width: 100%;
+  max-width: 940px;  /* wider than Edge's version but still centered */
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Make header block the same width as content */
+.hero-inner {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/* Keep consistent image sizing */
+.figure img {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
     /* Desktop polish */
     @media (min-width:1024px){
       body{font-size:19px}
