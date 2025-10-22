@@ -33,58 +33,135 @@
       --ink:#142a46;
       --paper:#ffffff;
       --muted:#f6f8fb;
-      --maxw:760px;
+      /* wider but capped for desktop, comfy on laptop screens */
+      --maxw:clamp(720px, 68vw, 1024px);
     }
+
     html{scroll-behavior:smooth}
     body{
       font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:linear-gradient(180deg, #0a2342 0%, #0a2342 240px, var(--muted) 241px);
+      background:var(--muted);
       color:#0e1a2b;
       margin:0;
-      line-height:1.65;
+      line-height:1.7;
       font-size:18px;
     }
-    .wrap{max-width:var(--maxw); margin:0 auto; padding:16px}
-    header.hero{color:#fff; padding:34px 0 18px 0;}
+
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:14px}
+
+    /* Slim, centered navy header (not full-width) */
+    header.hero{
+      background:transparent;
+      padding:14px 0 6px;
+    }
+    .hero-inner{
+      background:var(--navy);
+      color:#fff;
+      border-radius:14px;
+      padding:12px 16px;
+      box-shadow:0 6px 18px rgba(10,35,66,.20);
+    }
+
     .badge{display:inline-block; background:var(--coral); color:#fff; padding:6px 12px; border-radius:12px; font-weight:600; letter-spacing:.2px}
     h1{font-size:34px; margin:.35em 0 .15em}
-    h2{font-size:26px; margin:1.2em 0 .35em; color:var(--ink)}
+    h2{font-size:26px; margin:1.1em 0 .35em; color:var(--ink)}
     h3{font-size:20px; margin:1em 0 .25em; color:#1f344f}
     p{margin:.75em 0}
-    .card{background:var(--paper); border-radius:16px; box-shadow:0 8px 24px rgba(10,35,66,.08); padding:20px;}
-    .toc{background:#fff; border:1px solid #e7ecf4; border-radius:12px; padding:16px;}
+
+    .card{
+      background:var(--paper);
+      border-radius:16px;
+      box-shadow:0 8px 24px rgba(10,35,66,.08);
+      padding:20px;
+    }
+    .toc{
+      background:#fff;
+      border:1px solid #e7ecf4;
+      border-radius:12px;
+      padding:16px;
+    }
     .toc a{color:var(--navy); text-decoration:none}
     .toc a:hover{text-decoration:underline}
-    .note{background:#fff8f8; border:1px solid #ffd2d2; padding:14px; border-radius:12px;}
-    .cta{background:var(--navy); color:#fff; border-radius:16px; padding:22px; display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap;}
-    .cta .btn{background:var(--coral); color:#fff; padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:700; display:inline-block;}
-    .info-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
-    .figure{margin:14px 0; background:#fff; border:1px solid #e7ecf4; border-radius:12px; overflow:hidden;}
+    .note{
+      background:#fff8f8;
+      border:1px solid #ffd2d2;
+      padding:14px;
+      border-radius:12px;
+    }
+    .cta{
+      background:var(--navy);
+      color:#fff;
+      border-radius:16px;
+      padding:22px;
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .cta .btn{
+      background:var(--coral);
+      color:#fff;
+      padding:12px 16px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      display:inline-block;
+    }
+    .info-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+    .figure{
+      margin:14px 0;
+      background:#fff;
+      border:1px solid #e7ecf4;
+      border-radius:12px;
+      overflow:hidden;
+    }
     .figure img{width:100%; height:auto; display:block}
     .figure figcaption{padding:10px 14px; font-size:15px; color:#304762}
-    .faq details{background:#fff; border:1px solid #e7ecf4; border-radius:12px; padding:12px 14px; margin:10px 0;}
+
+    .faq details{
+      background:#fff;
+      border:1px solid #e7ecf4;
+      border-radius:12px;
+      padding:12px 14px;
+      margin:10px 0;
+    }
     .faq summary{font-weight:700; cursor:pointer; color:#1f344f}
+
     .meta{display:flex; gap:12px; flex-wrap:wrap; color:#3a5270; font-size:15px}
     .toolbar{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:10px}
     .toolbtn{background:#fff; border:1px solid #d8e1ef; padding:8px 10px; border-radius:10px; cursor:pointer; font-size:15px}
-    .crumbs{font-size:14px; margin:8px 0 0}
+    .crumbs{font-size:14px; margin:0 0 4px}
     .crumbs a{color:#cde2ff; text-decoration:none}
     .crumbs a:hover{text-decoration:underline}
+
     table{width:100%; border-collapse:separate; border-spacing:0; margin:12px 0; font-size:17px}
     th,td{padding:12px 10px; border-bottom:1px solid #e9eef5}
     th{background:#f0f5fb; text-align:left}
     .highlight{background:#fff3f3; border-left:4px solid var(--coral); padding:12px 14px; border-radius:8px}
+
     footer{background:#061a33; color:#cfe2ff; padding:28px 0; margin-top:36px}
     footer a{color:#fff; text-decoration:none}
     .small{font-size:15px; color:#4d678a}
     .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:#eef3fb; color:#274262; font-size:14px; margin:4px 6px 0 0}
-    @media (min-width:1200px){ :root{ --maxw:820px; } }
+
+    /* Desktop polish */
+    @media (min-width:1024px){
+      body{font-size:19px}
+      h1{font-size:36px}
+      h2{font-size:28px}
+      .card{padding:22px}
+      .figure:not(.hero-bleed) img{max-width:100%; border-radius:12px}
+    }
 
     /* Mobile polish overrides */
     @media (max-width: 480px){
       body{ font-size:16px; line-height:1.75; }
       .wrap{ padding:12px; }
-      header.hero{ padding:26px 0 14px 0; }
       h1{ font-size:26px; line-height:1.28; margin:.3em 0 .1em; }
       h2{ font-size:22px; line-height:1.32; margin:1.05em 0 .3em; }
       h3{ font-size:18px; line-height:1.35; }
@@ -100,6 +177,8 @@
       .info-grid{ grid-template-columns:1fr; gap:12px; }
       .cta{ padding:18px; gap:12px; }
       table{ font-size:16px; }
+
+      /* Stack-table pattern for phones */
       .stack-table, .stack-table table, .stack-table thead,
       .stack-table tbody, .stack-table th, .stack-table td, .stack-table tr{
         display:block; width:100%;
@@ -117,27 +196,9 @@
     }
 
     /* Contrast toggle */
-    body.contrast{ background:#111 !important; color:#f2f4f8 !important; background-image:none !important; }
+    body.contrast{ background:#111 !important; color:#f2f4f8 !important;}
     body.contrast .card, body.contrast .toc, body.contrast .figure, body.contrast .faq details{ background:#1a1a1a; border-color:#333; color:#e8eef7; }
     body.contrast a{color:#9ecbff}
-
-    /* ===== Desktop visual balance fix ===== */
-@media (min-width: 1024px){
-  :root{ --maxw:940px; }
-  body{
-    background:linear-gradient(180deg,#0a2342 0%,#0a2342 90px,var(--muted) 91px);
-  }
-  .figure img{
-    max-width:90%;
-    margin:auto;
-    display:block;
-    border-radius:14px;
-  }
-  header.hero{
-    padding:40px 0 10px 0;
-  }
-}
-
   </style>
 
   <!-- JSON LD: Article with images -->
@@ -190,23 +251,25 @@
 <body>
   <header class="hero" role="banner">
     <div class="wrap">
-      <div class="crumbs" aria-label="breadcrumb">
-        <a href="/">Home</a> › <a href="/blog.html">Blog</a> › Sunlight and Vitamin D
-      </div>
-      <span class="badge">Bone and Joint Education</span>
-      <h1>Sunlight and Vitamin D in Chennai</h1>
-      <p class="small">A clear guide for families, seniors and office workers in Thirumullaivoyal, Ambattur, Avadi, Annanur and Iyyapakkam.</p>
-      <div class="toolbar" aria-label="reading tools">
-        <button class="toolbtn" onclick="changeSize(1)">A+</button>
-        <button class="toolbtn" onclick="changeSize(-1)">A−</button>
-        <button class="toolbtn" onclick="toggleContrast()">Contrast</button>
-        <a class="toolbtn" href="#book" aria-label="Skip to booking">Book visit</a>
+      <div class="hero-inner">
+        <div class="crumbs" aria-label="breadcrumb">
+          <a href="/">Home</a> › <a href="/blog.html">Blog</a> › Sunlight and Vitamin D
+        </div>
+        <span class="badge">Bone and Joint Education</span>
+        <h1>Sunlight and Vitamin D in Chennai</h1>
+        <p class="small">A clear guide for families, seniors and office workers in Thirumullaivoyal, Ambattur, Avadi, Annanur and Iyyapakkam.</p>
+        <div class="toolbar" aria-label="reading tools">
+          <button class="toolbtn" onclick="changeSize(1)">A+</button>
+          <button class="toolbtn" onclick="changeSize(-1)">A−</button>
+          <button class="toolbtn" onclick="toggleContrast()">Contrast</button>
+          <a class="toolbtn" href="#book" aria-label="Skip to booking">Book visit</a>
+        </div>
       </div>
     </div>
   </header>
 
   <main class="wrap" id="content">
-    <!-- Hero image from assets -->
+    <!-- Hero image -->
     <figure class="figure card" role="group" aria-label="Vitamin D and sunlight image">
       <img src="/assets/sunlight-vitamin-d-1-midday-vitamin-d-chennai.jpg" alt="Midday sunlight equals natural vitamin D for bone health in Chennai" />
       <figcaption>Midday sunlight is the body’s natural source of vitamin D.</figcaption>
@@ -384,12 +447,9 @@
 
     <!-- SEO trace comment – images EXIF summary
       Files in /assets/:
-      1) sunlight-vitamin-d-1-midday-vitamin-d-chennai.jpg
-         Title: Sunlight and Vitamin D Chennai – OrthoCure Bone & Joint Speciality Clinic Thirumullaivoyal
-         GPS: 13.13064, 80.13036
-         Keywords: vitamin D Chennai, sunlight Ambattur, bone health Thirumullaivoyal, orthopaedic doctor Avadi, joint pain Annanur, Iyyapakkam
-      2) sunlight-vitamin-d-2-low-vitamin-d-effects.jpg – same GPS and clinic tags
-      3) sunlight-vitamin-d-3-best-time-sunlight-chennai.jpg – same GPS and clinic tags
+      1) sunlight-vitamin-d-1-midday-vitamin-d-chennai.jpg – GPS 13.13064,80.13036
+      2) sunlight-vitamin-d-2-low-vitamin-d-effects.jpg – GPS 13.13064,80.13036
+      3) sunlight-vitamin-d-3-best-time-sunlight-chennai.jpg – GPS 13.13064,80.13036
     -->
   </main>
 
@@ -430,4 +490,3 @@
   </script>
 </body>
 </html>
-
