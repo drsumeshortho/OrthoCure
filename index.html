@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Core -->
+  <!-- =============== Core =============== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F2238" />
   <meta name="google-site-verification" content="i1vtmXFAtIeJoH_iOwXYDS1qBXG7SjDkTfvQr2JkBW8" />
   <meta name="msvalidate.01" content="39CCFA904FDF55A9CE08AB3D75AC69D1" />
-  <meta name="theme-color" content="#102542" />
 
-  <!-- Title & Canonical (human-first, geo + intent) -->
-  <title>Orthopaedic Doctor Near Me in Thirumullaivoyal, Chennai | OrthoCure Bone & Joint Speciality Clinic</title>
+  <title>Orthopaedic Doctor Near Me in Thirumullaivoyal Chennai | OrthoCure Bone & Joint Speciality Clinic</title>
   <link rel="canonical" href="https://www.myorthocure.com/" />
+  <meta name="description" content="Looking for an orthopaedic doctor near you in Thirumullaivoyal Ambattur or Avadi. Visit OrthoCure Bone & Joint Speciality Clinic Chennai. Expert fracture care arthritis treatment joint pain and physiotherapy by Dr Sumesh Subramanian Orthopaedic Surgeon." />
+  <meta name="author" content="Dr Sumesh Subramanian" />
+  <link rel="author" href="/about.html" />
 
-  <!-- One (1) meta description only -->
-  <meta name="description" content="Looking for an orthopaedic doctor near you in Thirumullaivoyal, Ambattur, or Avadi? Visit OrthoCure Bone & Joint Speciality Clinic, Chennai. Expert fracture care, arthritis treatment, joint pain and physiotherapy by Dr Sumesh Subramanian, Orthopaedic Surgeon." />
-
-  <!-- E-E-A-T nudges -->
-  <meta name="author" content="Dr. Sumesh Subramanian" />
-  <link rel="author" href="https://www.myorthocure.com/about.html" />
-
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph + Twitter -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="OrthoCure Bone & Joint Speciality Clinic" />
+  <meta property="og:site_name" content="OrthoCure Bone & Joint Speciality Clinic Thirumullaivoyal" />
   <meta property="og:locale" content="en_IN" />
-  <meta property="og:title" content="OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal" />
-  <meta property="og:description" content="Immediate fracture care (plaster, digital X-ray), joint & shoulder treatment, and physiotherapy. Near Ambattur & Avadi." />
+  <meta property="og:title" content="OrthoCure Bone & Joint Speciality Clinic Thirumullaivoyal" />
+  <meta property="og:description" content="Immediate fracture care digital X ray joint and shoulder treatment and physiotherapy near Ambattur and Avadi." />
   <meta property="og:url" content="https://www.myorthocure.com/" />
   <meta property="og:image" content="https://www.myorthocure.com/assets/og-home.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Performance nudges -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" href="/assets/Sumesh_Labcoat_Website.png" />
-  <link rel="prefetch" href="/fracture-treatment-thirumullaivoyal.html" />
-  <link rel="prefetch" href="/consult.html" />
-
-  <!-- Favicon & Fonts -->
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/Sumesh_Labcoat_Website.png" />
+  <link rel="prefetch" href="/consult.html" />
+  <link rel="prefetch" href="/fracture-treatment-thirumullaivoyal.html" />
+
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 
   <!-- Google Tag Manager -->
   <script>
@@ -51,394 +43,347 @@
   </script>
   <!-- End GTM -->
 
-  <!-- Styles -->
+  <!-- =============== Styles =============== -->
   <style>
     :root{
-      --navy:#102542;
+      /* Dark cyan theme */
+      --navy:#0F2238;
+      --navy-2:#102542;
       --ink:#1a1a1a;
-      --coral:#ff5c5c;
-      --snow:#f9f9f9;
-      --sky:#eaf3f9;
+      --muted:#475569;
+      --cyan:#0d99a5;
+      --sky:#e6f3f5;
+      --card:#ffffff;
+      --accent:#ff5c5c;
+      --border:#e8eef3;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
-    header,main,footer{width:100%}
-    a{color:inherit}
-    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;color:#000;padding:8px 12px;border-radius:8px;z-index:10000}
+    html,body{margin:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
 
-    .top-header{display:flex;align-items:center;justify-content:center;gap:18px;background:var(--navy);color:#fff;padding:28px 16px;flex-wrap:wrap;text-align:center}
-    .top-header img.logo{height:120px;width:auto;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.12)}
-    .clinic-title h1{margin:.2rem 0;font-size:1.9rem}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:22px 16px}
+
+    /* Top header */
+    .top-header{display:flex;align-items:center;justify-content:center;gap:18px;background:var(--navy);color:#fff;padding:26px 16px;text-align:center;flex-wrap:wrap}
+    .top-header img.logo{height:112px;width:auto;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+    .clinic-title h1{margin:.2rem 0 .1rem;font-size:1.9rem}
     .clinic-title p{margin:.2rem 0;opacity:.9}
 
-    .nav-container{position:sticky;top:0;z-index:50;display:flex;gap:22px;justify-content:center;align-items:center;background:#f4f4f4;padding:10px 12px;font-weight:700}
-    .nav-container a{color:var(--navy);text-decoration:none;position:relative;padding:2px 0}
-    .nav-container a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--coral);transition:width .25s}
-    .nav-container a:hover::after{width:100%}
+    /* Nav */
+    .nav-container{position:sticky;top:0;z-index:60;background:#f7fafc;border-bottom:1px solid var(--border)}
+    .nav-inner{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+    .brand-mini{font-weight:700;color:var(--navy)}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .nav-links a{padding:8px 2px;border-bottom:2px solid transparent}
+    .nav-links a:hover{border-bottom-color:var(--cyan)}
+    .nav-toggle{display:none;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-weight:700}
 
+    /* Hero */
     .hero{background:var(--sky);text-align:center;padding:28px 16px}
     .hero img{width:220px;height:220px;object-fit:cover;border-radius:80%;box-shadow:0 6px 24px rgba(0,0,0,.12);margin-bottom:12px}
     .hero h2{margin:6px 0 8px;font-size:2rem}
+    .hero .cta-row{margin-top:10px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 
-    .wrap{max-width:1100px;margin:0 auto;padding:22px 16px}
-    .section{background:#fff;border:1px solid #eef2f7;border-radius:14px;box-shadow:0 6px 24px rgba(16,37,66,.05);padding:18px;margin:16px 0;text-align:center}
+    /* Sections and cards */
+    .section{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:0 6px 24px rgba(16,37,66,.06);padding:18px;margin:16px 0;text-align:center}
     .section h3{color:var(--navy);margin:6px 0 8px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:left}
+    .card h4{color:var(--navy);margin:6px 0 8px}
 
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-    .card{background:#fff;border:1px solid #eef2f7;border-radius:14px;box-shadow:0 6px 24px rgba(16,37,66,.06);padding:16px;text-align:left}
-    .card h4{margin:6px 0 8px;color:var(--navy)}
+    /* Buttons */
+    .btn{display:inline-block;background:var(--navy);color:#fff;padding:.9rem 1.2rem;border-radius:12px;font-weight:700}
+    .btn.alt{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+    .btn.cyan{background:var(--cyan);border-color:var(--cyan)}
 
-    .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:.7rem 1rem;border-radius:8px;font-weight:700}
-    .btn.alt{background:#fff;color:#102542;border:2px solid #102542}
+    /* CTA band */
+    .cta{background:var(--navy-2);color:#fff;padding:24px 16px;border-radius:14px;margin:18px auto;text-align:center}
+    .cta small{display:block;margin-top:10px;opacity:.9}
 
-    .cta{background:var(--coral);color:#fff;padding:24px 16px;border-radius:14px;margin:18px auto;text-align:center}
-    .cta a{background:#102542}
+    /* Quick actions desktop */
+    .desktop-cta{position:sticky;top:0;background:#eaf6f7;padding:10px;text-align:center;border-bottom:1px solid var(--border);display:none;z-index:40}
+    @media(min-width:1024px){ .desktop-cta{display:block} }
 
+    /* Map */
     .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-    .map-embed{width:100%;height:300px;border:0;border-radius:14px}
+    .map-embed{width:100%;height:320px;border:0;border-radius:14px}
 
-    .whatsapp-btn{position:fixed;right:20px;bottom:20px;background:#128c7e;color:#fff;border-radius:50%;padding:15px;font-size:24px;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.2);z-index:9999}
+    /* Mobile sticky actions */
+    .mobile-cta{position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;background:var(--navy);padding:10px 12px;z-index:99;box-shadow:0 -6px 18px rgba(0,0,0,.2)}
+    .mobile-cta a{flex:1;text-align:center;color:#fff;font-weight:700;padding:12px 10px;border-radius:10px}
+    .mobile-cta .book{background:var(--accent)}
+    .mobile-cta .wa{background:#128c7e}
+    @media(max-width:768px){ .mobile-cta{display:flex} body{padding-bottom:68px} }
 
-    footer{background:#0f2238;color:#cbd6ea;padding:28px 16px;text-align:center;margin-top:18px}
-    footer a{color:#fff;text-decoration:underline}
+    /* Footer */
+    footer{background:#0f213a;color:#cbd6ea;padding:28px 16px;text-align:center;margin-top:18px}
+    footer a{text-decoration:underline}
 
-    /* Responsive nav */
-    .nav-links{display:flex;gap:22px;align-items:center}
-    .nav-toggle{display:none;cursor:pointer}
-
-    @media (max-width: 768px){
-      .nav-container{justify-content:space-between;padding:8px 12px;z-index:120}
-      .nav-links{
-        position:absolute;top:100%;left:0;right:0;background:#fff;
-        border-bottom:1px solid #eef2f7;box-shadow:0 10px 24px rgba(16,37,66,.08);
-        display:none;flex-direction:column;gap:8px;padding:10px 16px
-      }
+    /* Mobile nav */
+    @media(max-width:768px){
+      .nav-toggle{display:block}
+      .nav-links{position:absolute;left:0;right:0;top:56px;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 10px 24px rgba(16,37,66,.08);display:none;flex-direction:column;padding:12px}
       .nav-container.open .nav-links{display:flex}
-      .nav-toggle{display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-weight:700}
-      .nav-toggle .bar{display:block;width:18px;height:2px;background:#fff;margin:3px 0;border-radius:2px}
-      .nav-container a{padding:10px 4px}
+      .nav-inner{position:relative}
+      .nav-links a{padding:10px 4px}
     }
 
-    /* Mobile sticky CTA */
-    .mobile-cta{
-      position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;
-      background:#0f2238;padding:10px 12px;z-index:9999;box-shadow:0 -6px 18px rgba(0,0,0,.2)
-    }
-    .mobile-cta .cta-btn{flex:1;text-align:center;color:#fff;font-weight:700;text-decoration:none;padding:12px 10px;border-radius:10px}
-    .mobile-cta .cta-btn.call{background:#1b5e20}
-    .mobile-cta .cta-btn.wa{background:#128c7e}
-    .mobile-cta .cta-btn.book{background:#ff5c5c}
-
-    @media (max-width: 768px){
-      .mobile-cta{display:flex}
-      .whatsapp-btn{display:none}
-      body{padding-bottom:68px}
-    }
+    /* Helper text */
+    .small{font-size:.95rem;color:var(--muted)}
+    .hidden-keywords{display:none}
   </style>
 
-  <!-- JSON-LD: MedicalClinic (primary entity) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "medicalSpecialty": "Orthopedic",
-    "@id": "https://www.myorthocure.com/#clinic",
-    "name": "OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal",
-    "url": "https://www.myorthocure.com/",
-    "logo": "https://www.myorthocure.com/assets/logo.png",
-    "image": "https://www.myorthocure.com/assets/clinic-front.jpg",
-    "telephone": "+91-9342700212",
-    "priceRange": "₹₹",
-    "description": "Orthopaedic clinic in Thirumullaivoyal near Ambattur & Avadi. Immediate fracture care (plaster, digital X-ray), joint treatment and physiotherapy.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "No. 2, 2nd Street, Santhipuram",
-      "addressLocality": "Thirumullaivoyal",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "600062",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 13.130476,
-      "longitude": 80.130412
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Thirumullaivoyal" },
-      { "@type": "City", "name": "Ambattur" },
-      { "@type": "City", "name": "Avadi" }
-    ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "17:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "11:00",
-        "closes": "13:00"
-      }
-    ],
-    "founder": {
-      "@type": "Person",
-      "@id": "https://www.myorthocure.com/#dr-sumesh",
-      "name": "Dr. Sumesh Subramanian",
-      "jobTitle": "Orthopaedic Surgeon",
-      "honorificSuffix": "MS Ortho, Fellowship in Arthroplasty"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "telephone": "+91-9342700212",
-      "areaServed": "IN",
-      "availableLanguage": ["en","ta"]
-    },
-    "sameAs": [
-      "https://www.instagram.com/orthocure_thirumullaivoyal/",
-      "https://www.facebook.com/people/OrthoCure-Bone-Joint-Speciality-Clinic/61564061608427/",
-      "https://www.youtube.com/@drsumeshortho",
-      "https://www.practo.com/chennai/clinic/orthocure-bone-joint-speciality-clinic-thirumullaivoyal"
-    ]
-  }
-  </script>
+  <!-- =============== JSON LD =============== -->
 
-  <!-- JSON-LD: Service (Fracture Treatment) -->
+  <!-- WebSite with Sitelinks Search -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://www.myorthocure.com/#fracture-service",
-    "name": "Fracture Treatment",
-    "serviceType": "Orthopaedic Fracture Care",
-    "description": "Immediate fracture care: assessment, digital X-ray, plaster/splint, pain control, and surgical planning at partner hospitals under Dr. Sumesh’s personal care.",
-    "provider": { "@id": "https://www.myorthocure.com/#clinic" },
-    "areaServed": ["Avadi","Ambattur","Thirumullaivoyal","Annanur","Iyyapakkam"],
-    "audience": { "@type": "Audience", "audienceType": ["Adults","Children"] },
-    "availableChannel": {
-      "@type": "ServiceChannel",
-      "serviceUrl": "https://www.myorthocure.com/consult.html",
-      "availableLanguage": ["en","ta"]
-    },
-    "subjectOf": {
-      "@type": "NewsArticle",
-      "headline": "Be curious, but be careful — Interview with Dr. Sumesh Subramanian",
-      "url": "https://www.thip.media/interview-health-india/be-curious-but-be-careful-dr-sumesh-subramanian/127583/",
-      "publisher": { "@type": "Organization", "name": "THIP Media" }
-    },
-    "serviceLocation": {
-      "@type": "Place",
-      "name": "OrthoCure Bone & Joint Speciality Clinic",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "No. 2, 2nd Street, Santhipuram",
-        "addressLocality": "Thirumullaivoyal",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "600062",
-        "addressCountry": "IN"
-      },
-      "geo": { "@type": "GeoCoordinates", "latitude": 13.130476, "longitude": 80.130412 }
-    },
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "INR",
-      "price": "300",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.myorthocure.com/consult.html"
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"OrthoCure Bone & Joint Speciality Clinic Thirumullaivoyal",
+    "url":"https://www.myorthocure.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://www.myorthocure.com/search?q={query}",
+      "query-input":"required name=query"
     }
   }
   </script>
 
-  <!-- JSON-LD: FAQPage (matches FAQ content below) -->
+  <!-- Primary entity: MedicalClinic -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do I need a referral?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. You can call or WhatsApp directly. Walk-ins are welcome." }
-      },
-      {
-        "@type": "Question",
-        "name": "Are digital X-rays on-site?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Quick imaging helps us diagnose and treat faster." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is surgery always required?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. We prioritise conservative, evidence-based care. Surgery only when indicated." }
-      },
-      {
-        "@type": "Question",
-        "name": "Can fractures be treated at the clinic?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Fractures are stabilised immediately with plaster/splint; surgery is arranged at partner hospitals under our care." }
-      }
+    "@context":"https://schema.org",
+    "@type":"MedicalClinic",
+    "medicalSpecialty":"Orthopedic",
+    "@id":"https://www.myorthocure.com/#clinic",
+    "name":"OrthoCure Bone & Joint Speciality Clinic Thirumullaivoyal",
+    "url":"https://www.myorthocure.com/",
+    "logo":"https://www.myorthocure.com/assets/logo.png",
+    "image":"https://www.myorthocure.com/assets/clinic-front.jpg",
+    "telephone":"+91-9342700212",
+    "priceRange":"₹₹",
+    "description":"Orthopaedic clinic in Thirumullaivoyal near Ambattur and Avadi. Immediate fracture care digital X ray joint treatment and physiotherapy.",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"No. 2 2nd Street Santhipuram",
+      "addressLocality":"Thirumullaivoyal",
+      "addressRegion":"Tamil Nadu",
+      "postalCode":"600062",
+      "addressCountry":"IN"
+    },
+    "geo":{"@type":"GeoCoordinates","latitude":13.130476,"longitude":80.130412},
+    "areaServed":[{"@type":"City","name":"Thirumullaivoyal"},{"@type":"City","name":"Ambattur"},{"@type":"City","name":"Avadi"}],
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"17:00","closes":"21:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:00","closes":"13:00"}
+    ],
+    "contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+91-9342700212","areaServed":"IN","availableLanguage":["en","ta"]}
+  }
+  </script>
+
+  <!-- Person E E A T -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "@id":"https://www.myorthocure.com/#dr-sumesh",
+    "name":"Dr Sumesh Subramanian",
+    "jobTitle":"Orthopaedic Surgeon",
+    "affiliation":{"@type":"MedicalClinic","@id":"https://www.myorthocure.com/#clinic"},
+    "url":"https://www.myorthocure.com/about.html",
+    "sameAs":["https://www.facebook.com/drsumeshortho","https://www.instagram.com/drsumeshortho"]
+  }
+  </script>
+
+  <!-- Key Services for AI retrieval -->
+  <script type="application/ld+json">
+  [{
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "@id":"https://www.myorthocure.com/#fracture-service",
+    "name":"Fracture Treatment",
+    "serviceType":"Orthopaedic fracture care",
+    "description":"Immediate plaster or splint digital X ray pain control and surgical planning at partner hospitals.",
+    "provider":{"@id":"https://www.myorthocure.com/#clinic"},
+    "areaServed":["Thirumullaivoyal","Ambattur","Avadi"],
+    "availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://www.myorthocure.com/consult.html","availableLanguage":["en","ta"]},
+    "serviceLocation":{"@type":"Place","name":"OrthoCure Bone & Joint Speciality Clinic","address":{"@type":"PostalAddress","streetAddress":"No. 2 2nd Street Santhipuram","addressLocality":"Thirumullaivoyal","addressRegion":"Tamil Nadu","postalCode":"600062","addressCountry":"IN"}}
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "@id":"https://www.myorthocure.com/#prp-service",
+    "name":"PRP Injection Therapy",
+    "serviceType":"Platelet rich plasma for knee and shoulder",
+    "description":"Image guided PRP injections for early knee arthritis and shoulder tendinopathy with step wise rehab.",
+    "provider":{"@id":"https://www.myorthocure.com/#clinic"},
+    "areaServed":["Thirumullaivoyal","Ambattur","Avadi"],
+    "availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://www.myorthocure.com/services/prp-injection-therapy.html"}
+  }]
+  </script>
+
+  <!-- FAQ schema matching content -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Do I need a referral","acceptedAnswer":{"@type":"Answer","text":"No. You can call or WhatsApp directly. Walk ins are welcome."}},
+      {"@type":"Question","name":"Are digital X rays on site","acceptedAnswer":{"@type":"Answer","text":"Yes. Quick imaging helps us diagnose and treat faster."}},
+      {"@type":"Question","name":"Is surgery always required","acceptedAnswer":{"@type":"Answer","text":"No. We prioritise conservative evidence based care. Surgery only when indicated."}},
+      {"@type":"Question","name":"Can fractures be treated at the clinic","acceptedAnswer":{"@type":"Answer","text":"Fractures are stabilised immediately with plaster or splint and surgery is arranged at partner hospitals under our care."}}
     ]
   }
   </script>
 
-  <!-- JSON-LD: Person (E-E-A-T) -->
+  <!-- Speakable helper for voice and AI -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://www.myorthocure.com/#dr-sumesh",
-    "name": "Dr. Sumesh Subramanian",
-    "jobTitle": "Orthopaedic Surgeon",
-    "medicalSpecialty": "OrthopedicSurgery",
-    "alumniOf": { "@type": "Organization", "name": "Your Medical College / University" },
-    "affiliation": { "@type": "MedicalClinic", "@id": "https://www.myorthocure.com/#clinic" },
-    "url": "https://www.myorthocure.com/about.html",
-    "sameAs": [
-      "https://www.facebook.com/drsumeshortho",
-      "https://www.instagram.com/drsumeshortho"
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD: AggregateRating extending clinic entity (no star snippet expected) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "@id": "https://www.myorthocure.com/#clinic",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "24"
-    }
+  { "@context":"https://schema.org", "@type":"WebPage",
+    "speakable":{"@type":"SpeakableSpecification","cssSelector":[".speakable-intro",".faq-pair"]},
+    "url":"https://www.myorthocure.com/"
   }
   </script>
 </head>
 
 <body>
-  <!-- Skip link -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- GTM (noscript) -->
+  <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7" height="0" width="0" style="display:none;visibility:hidden" title="GTM"></iframe></noscript>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/919342700212" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat with OrthoCure on WhatsApp">💬</a>
+  <!-- Quick actions for desktop -->
+  <div class="desktop-cta" role="region" aria-label="Quick actions">
+    <a class="btn cyan" href="/consult.html">Book online</a>
+    <a class="btn alt" href="tel:+919342700212" style="margin-left:8px">Call clinic</a>
+  </div>
 
   <!-- Top header -->
   <header class="top-header">
-    <img src="/assets/logo-transparent.png" width="120" height="120" alt="OrthoCure Tree of Andry Logo" class="logo" loading="eager" decoding="async" />
+    <img src="/assets/logo-transparent.png" width="112" height="112" alt="OrthoCure Tree of Andry Logo" class="logo" loading="eager" decoding="async" />
     <div class="clinic-title">
       <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
-      <p>Trusted Orthopaedic Care in Thirumullaivoyal (near Ambattur & Avadi)</p>
+      <p>Trusted orthopaedic care in Thirumullaivoyal near Ambattur and Avadi</p>
     </div>
   </header>
 
   <!-- Nav -->
   <nav class="nav-container" aria-label="Primary">
-    <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
-      <span class="nav-toggle-box" aria-hidden="true">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </span>
-      Menu
-    </button>
-    <div class="nav-links" id="primary-menu" role="menu">
-      <a role="menuitem" href="/">Home</a>
-      <a role="menuitem" href="/about.html">About</a>
-      <a role="menuitem" href="/consult.html">Consult</a>
-      <a role="menuitem" href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a>
-      <a role="menuitem" href="/blog.html">Blog</a>
-      <a role="menuitem" href="/media.html">Media</a>
-      <a role="menuitem" href="/contact.html">Contact</a>
+    <div class="nav-inner">
+      <div class="brand-mini">OrthoCure Thirumullaivoyal</div>
+      <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="primary-menu" role="menu">
+        <a role="menuitem" href="/">Home</a>
+        <a role="menuitem" href="/about.html">About</a>
+        <a role="menuitem" href="/services/index.html">Services</a>
+        <a role="menuitem" href="/consult.html">Consult</a>
+        <a role="menuitem" href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a>
+        <a role="menuitem" href="/blog.html">Blog</a>
+        <a role="menuitem" href="/media.html">Media</a>
+        <a role="menuitem" href="/contact.html">Contact</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <img src="/assets/Sumesh_Labcoat_Website.png" width="220" height="220" alt="Dr. Sumesh Subramanian, Orthopaedic Surgeon" loading="eager" fetchpriority="high" decoding="async" />
-    <h2>Meet Dr. Sumesh Subramanian</h2>
-    <p><strong>MS Ortho, Fellowship in Arthroplasty</strong> — Evidence-based care for fractures, knee/shoulder pain, spine issues, and rehab.</p>
+    <img src="/assets/Sumesh_Labcoat_Website.png" width="220" height="220" alt="Dr Sumesh Subramanian Orthopaedic Surgeon" loading="eager" fetchpriority="high" decoding="async" />
+    <h2 class="speakable-intro">Orthopaedic care that puts recovery first</h2>
+    <p>Fractures knee and shoulder pain spine issues and rehab</p>
+    <div class="cta-row">
+      <a class="btn" href="/consult.html">Book online</a>
+      <a class="btn alt" href="/services/index.html">All services</a>
+    </div>
   </section>
-  <p class="small" style="max-width:720px;margin:8px auto 0;color:#475569">
-    Featured in <a href="/media.html">THIP Media</a> — practical doctor–patient communication from real clinic experience.
+  <p class="small" style="max-width:720px;margin:8px auto 0;text-align:center;color:#475569">
+    Featured in <a href="/media.html">THIP Media</a> for clear patient communication and practical care.
   </p>
 
   <main class="wrap" id="main">
     <!-- Why choose -->
     <section class="section">
-      <h3>Why Choose OrthoCure?</h3>
-      <p>✔ Expert Diagnosis & Care &nbsp;  &nbsp; ✔ Digital X-ray On-Site &nbsp;  &nbsp; ✔ Personalised Physiotherapy &nbsp;  &nbsp; ✔ Ethical, Non-Surgical-First Approach</p>
+      <h3>Why choose OrthoCure</h3>
+      <p>Expert diagnosis. Digital X ray on site. Personalised physiotherapy. Ethical non surgical first approach.</p>
     </section>
 
-    <!-- Services grid -->
-    <section class="services" aria-label="Core services">
-      <div class="card">
-        <h4>Fracture Treatment</h4>
-        <p>Immediate plaster, digital X-ray, pain relief & surgical planning at partner hospitals under Dr. Sumesh’s care.</p>
-        <p><a class="btn" href="/fracture-treatment-thirumullaivoyal.html">Learn more →</a></p>
+    <!-- Services -->
+    <section class="section" aria-label="Core services">
+      <h3>Services</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Fracture treatment</h4>
+          <p>Immediate plaster digital X ray pain relief and surgical planning at partner hospitals under direct care.</p>
+          <p><a class="btn" href="/fracture-treatment-thirumullaivoyal.html">Learn more</a></p>
+        </div>
+        <div class="card">
+          <h4>PRP injection therapy</h4>
+          <p>Platelet rich plasma for early knee arthritis and shoulder tendinopathy with image guidance and step wise rehab.</p>
+          <p><a class="btn alt" href="/services/prp-injection-therapy.html">PRP details</a></p>
+        </div>
+        <div class="card">
+          <h4>Joint pain and arthritis</h4>
+          <p>Conservative plans injections when indicated and lifestyle guidance tailored to you.</p>
+          <p><a class="btn alt" href="/consult.html">Book consult</a></p>
+        </div>
+        <div class="card">
+          <h4>Spine and neck care</h4>
+          <p>Disc sciatica and posture related pain handled with precise diagnosis and targeted rehab.</p>
+          <p><a class="btn alt" href="/consult.html">Book consult</a></p>
+        </div>
+        <div class="card">
+          <h4>Physiotherapy</h4>
+          <p>In house rehab focused on strength mobility and safe return to daily life.</p>
+          <p><a class="btn alt" href="/consult.html">Book consult</a></p>
+        </div>
       </div>
-      <div class="card">
-        <h4>Joint Pain & Arthritis</h4>
-        <p>Conservative management, injections when indicated, and step-wise plans tailored to your lifestyle.</p>
-        <p><a class="btn alt" href="/consult.html">Book consult</a></p>
-      </div>
-      <div class="card">
-        <h4>Spine & Neck Care</h4>
-        <p>Disc, sciatica, and posture-related pain handled with precise diagnosis and targeted rehab.</p>
-        <p><a class="btn alt" href="/consult.html">Book consult</a></p>
-      </div>
-      <div class="card">
-        <h4>Physiotherapy</h4>
-        <p>In-house rehab plans focused on strength, mobility, and returning you to daily life—safely.</p>
-        <p><a class="btn alt" href="/consult.html">Book consult</a></p>
-      </div>
+      <p style="margin-top:12px"><a class="btn cyan" href="/services/index.html">View all services</a></p>
     </section>
 
     <!-- Primary CTA -->
     <section class="cta" aria-label="Book an appointment">
-      <h3>Take the First Step Toward Pain-Free Movement</h3>
-      <p style="margin:6px 0 14px">Evening clinic Mon–Sat 5–9 PM • Sun 11 AM–1 PM</p>
+      <h3>Take the first step toward pain free movement</h3>
+      <p style="margin:6px 0 14px">Evening clinic Mon to Sat 5 to 9 PM. Sun 11 AM to 1 PM.</p>
       <p>
-        <a class="btn" href="/consult.html">Book Online</a>
-        <a class="btn alt" href="/fracture-treatment-thirumullaivoyal.html" style="margin-left:8px">Fracture Care</a>
+        <a class="btn" href="/consult.html">Book online</a>
+        <a class="btn alt" href="/fracture-treatment-thirumullaivoyal.html" style="margin-left:8px">Fracture care</a>
       </p>
-      <small style="display:block;margin-top:10px;opacity:.9">Not an emergency department. For emergencies in India, call 108.</small>
+      <small>Not an emergency department. For emergencies in India call 108.</small>
     </section>
 
-    <!-- FAQs (content mirrors FAQPage JSON-LD) -->
-    <section class="section" aria-label="Frequently Asked Questions">
-      <h3>Frequently Asked Questions</h3>
-      <div class="grid-2">
-        <div class="card">
-          <strong>Do I need a referral?</strong>
-          <p>No. You can call or WhatsApp directly. Walk-ins are welcome.</p>
+    <!-- FAQ -->
+    <section class="section" aria-label="Frequently asked questions">
+      <h3>Frequently asked questions</h3>
+      <div class="grid">
+        <div class="card faq-pair">
+          <strong>Do I need a referral</strong>
+          <p>No. You can call or WhatsApp directly. Walk ins are welcome.</p>
         </div>
-        <div class="card">
-          <strong>Are digital X-rays on-site?</strong>
+        <div class="card faq-pair">
+          <strong>Are digital X rays on site</strong>
           <p>Yes. Quick imaging helps us diagnose and treat faster.</p>
         </div>
-        <div class="card">
-          <strong>Is surgery always required?</strong>
-          <p>No. We prioritise conservative, evidence-based care. Surgery only when indicated.</p>
+        <div class="card faq-pair">
+          <strong>Is surgery always required</strong>
+          <p>No. We prioritise conservative evidence based care. Surgery only when indicated.</p>
         </div>
-        <div class="card">
-          <strong>Fractures at the clinic?</strong>
-          <p>Stabilised immediately with plaster/splint; surgery arranged at partner hospitals under our care.</p>
+        <div class="card faq-pair">
+          <strong>Can fractures be treated at the clinic</strong>
+          <p>Stabilised immediately with plaster or splint and surgery arranged at partner hospitals under our care.</p>
         </div>
       </div>
     </section>
 
     <!-- Location -->
     <section class="section" aria-label="Clinic location">
-      <h3>Clinic Location</h3>
-      <p><strong>OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal</strong><br/>No. 2, Ground Floor, 2nd Street, Santhipuram, Chennai – 600062</p>
+      <h3>Clinic location</h3>
+      <p><strong>OrthoCure Bone & Joint Speciality Clinic Thirumullaivoyal</strong><br/>No. 2 Ground Floor 2nd Street Santhipuram Chennai 600062</p>
       <div class="grid-2" style="margin-top:8px">
         <div class="card">
-          <p>Phone: <a href="tel:+919342700212">+91 93427 00212</a><br/>
-             WhatsApp: <a href="https://wa.me/919342700212" target="_blank" rel="noopener">Message us</a></p>
+          <p>Phone <a href="tel:+919342700212">+91 93427 00212</a><br/>
+             WhatsApp <a href="https://wa.me/919342700212" target="_blank" rel="noopener">Message us</a></p>
           <p>
-            <a class="btn" href="/consult.html">Book Online</a>
+            <a class="btn" href="/consult.html">Book online</a>
             <a class="btn alt" style="margin-left:8px" href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Directions</a>
           </p>
         </div>
@@ -447,30 +392,35 @@
         </div>
       </div>
     </section>
+
+    <!-- Quiet helper text for AI retrieval -->
+    <div class="hidden-keywords">
+      OrthoCure Thirumullaivoyal Ambattur Avadi orthopaedic clinic fracture plaster digital X ray PRP injection knee arthritis shoulder tendinopathy physiotherapy spine neck pain conservative care
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
     <p style="margin:8px 0 0">
-      <a href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a> •
-      <a href="/consult.html">Book Online</a> •
-      <a href="/media.html">Media &amp; Press</a> •
+      <a href="/services/index.html">Services</a> •
+      <a href="/fracture-treatment-thirumullaivoyal.html">Fracture care</a> •
+      <a href="/consult.html">Book online</a> •
+      <a href="/media.html">Media and press</a> •
       <a href="https://wa.me/919342700212" target="_blank" rel="noopener">WhatsApp</a> •
       <a href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Directions</a>
     </p>
-
-    <div>© 2025 OrthoCure Bone & Joint Speciality Clinic • “Start Healing. Stay Moving.”</div>
-    <div style="margin-top:6px">MSME Reg. No: UDYAM-TN-24-0146713 • <a href="/contact.html">Contact</a></div>
+    <div>© 2025 OrthoCure Bone & Joint Speciality Clinic Start Healing. Stay Moving.</div>
+    <div style="margin-top:6px">MSME Reg No UDYAM TN 24 0146713 • <a href="/contact.html">Contact</a></div>
   </footer>
 
-  <!-- Mobile sticky CTA (outside footer for clarity) -->
+  <!-- Mobile sticky CTA -->
   <div class="mobile-cta" role="region" aria-label="Quick actions">
-    <a class="cta-btn call" href="tel:+919342700212" aria-label="Call clinic now">Call</a>
-    <a class="cta-btn wa" href="https://wa.me/919342700212" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
-    <a class="cta-btn book" href="/consult.html" aria-label="Book online">Book</a>
+    <a class="book" href="/consult.html">Book</a>
+    <a class="wa" href="https://wa.me/919342700212" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="" href="tel:+919342700212" style="background:#1b5e20">Call</a>
   </div>
 
-  <!-- Nav toggle JS -->
+  <!-- Nav toggle -->
   <script>
     (function(){
       var nav = document.querySelector('.nav-container');
