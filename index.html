@@ -95,6 +95,85 @@
       .clinic-main-title{font-size:1.28rem}
       .services-section h1{font-size:1.24rem}
     }
+.testimonial-section {
+  max-width:820px;
+  margin:60px auto 35px;
+  background:rgba(255,255,255,.92);
+  border-radius:19px;
+  padding:38px 0 24px 0;
+  box-shadow:0 7px 34px rgba(2,132,199,.10);
+  overflow:hidden;
+  position:relative;
+  z-index:2;
+}
+.testimonial-title {
+  text-align:center;
+  font-size:1.54rem;
+  letter-spacing:.02em;
+  color:var(--dark-cyan);
+  font-weight:800;
+  margin-bottom:24px;
+}
+.testimonial-slider {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  max-width:92vw;
+  margin:0 auto;
+}
+.slider-arrow {
+  background:linear-gradient(90deg,var(--cyan) 50%,var(--cyan-light) 100%);
+  color:#fff;
+  border:none;
+  border-radius:50%;
+  font-size:1.6rem;
+  width:42px;height:42px;
+  box-shadow:0 2px 15px rgba(2,132,199,.09);
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  z-index:10;transition:background .16s;
+}
+.slider-arrow:hover{background:var(--dark-cyan);}
+.slider-arrow.left{margin-right:10px;}
+.slider-arrow.right{margin-left:10px;}
+.testimonial-track {
+  display:flex; gap:0; transition:transform .36s cubic-bezier(.48,.8,.3,1.18);
+  width:520px; overflow:hidden;
+}
+@media (max-width:730px){.testimonial-track{width:90vw;}}
+.testimonial {
+  min-width:520px; max-width:520px;
+  background:rgba(245,253,255,0.98);
+  border-radius:13px;
+  margin:0 11px;
+  padding:26px 23px 18px;
+  box-shadow:0 2px 11px rgba(13,144,199,0.07);
+  display:flex;flex-direction:column;align-items:center;
+}
+@media (max-width:600px){
+  .testimonial{min-width:92vw;max-width:92vw;padding:19px 8px;}
+}
+.quote {
+  color:#173d46;
+  font-size:1.08rem;
+  line-height:1.54;
+  margin-bottom:12px;
+  text-align:center;
+}
+.person {
+  font-size:.97rem;
+  color:var(--dark-cyan);
+  font-weight:700;
+  display:flex;align-items:center;gap:9px;
+}
+.avatar {
+  display:inline-flex;align-items:center;justify-content:center;
+  width:30px;height:30px;
+  background:linear-gradient(140deg,var(--accent),var(--cyan) 95%);
+  color:#fff;font-weight:800;border-radius:99px;
+  font-size:1.13rem;box-shadow:0 1.6px 7px #aedeee75;
+}
   </style>
 
   <!-- Schema: Breadcrumbs and ItemList of Service -->
@@ -599,6 +678,31 @@
     </div>
   </div>
 
+<section class="testimonial-section">
+  <h2 class="testimonial-title">What Patients Say</h2>
+  <div class="testimonial-slider" id="testimonial-slider">
+    <button class="slider-arrow left" aria-label="Previous testimonial">&#8678;</button>
+    <div class="testimonial-track">
+      <div class="testimonial">
+        <div class="quote">“Dr. Sumesh listened carefully and explained everything in simple words. My father is able to walk pain-free now. Highly recommended!”</div>
+        <div class="person"><span class="avatar">A</span> Arul, Age 52, Avadi</div>
+      </div>
+      <div class="testimonial">
+        <div class="quote">“Prompt digital X-ray, gentle care for my wrist fracture, and clear plaster instructions. Thank you for genuine help even at night!”</div>
+        <div class="person"><span class="avatar">S</span> Swetha, Teacher, Ambattur</div>
+      </div>
+      <div class="testimonial">
+        <div class="quote">“After my PRP injections, knee pain is much less. The exercise chart and WhatsApp follow-up were very useful.”</div>
+        <div class="person"><span class="avatar">N</span> Natarajan, Retired, Red Hills</div>
+      </div>
+      <div class="testimonial">
+        <div class="quote">“I trust their advice—for my mother’s arthritis and now my son’s sports injury too. No unnecessary scans or meds.”</div>
+        <div class="person"><span class="avatar">P</span> Priya, Avadi</div>
+      </div>
+    </div>
+    <button class="slider-arrow right" aria-label="Next testimonial">&#8680;</button>
+  </div>
+</section>
   <footer>
     <div class="footer-links">
       <a href="/services/index.html">Services</a> &bull;
@@ -626,6 +730,35 @@
       window.addEventListener('scroll',showCard,{passive:true});
       showCard();
     });
+<script>
+const slider = document.getElementById("testimonial-slider");
+const track = slider.querySelector('.testimonial-track');
+const cards = track.querySelectorAll('.testimonial');
+const leftBtn = slider.querySelector('.slider-arrow.left');
+const rightBtn = slider.querySelector('.slider-arrow.right');
+let idx = 0;
+function updateSlider(){
+  const cardW = cards[0].offsetWidth;
+  track.style.transform = `translateX(${-idx * cardW}px)`;
+}
+rightBtn.onclick = () => {
+  idx = (idx + 1) % cards.length; updateSlider();
+}
+leftBtn.onclick = () => {
+  idx = (idx - 1 + cards.length) % cards.length; updateSlider();
+}
+let startX = 0, curX = 0;
+track.addEventListener('touchstart',e=>startX=e.touches[0].clientX,{passive:true});
+track.addEventListener('touchmove',e=>curX=e.touches[0].clientX,{passive:true});
+track.addEventListener('touchend',()=>{
+  let diff = (curX - startX);
+  if(Math.abs(diff)>60){
+    if(diff<0) rightBtn.onclick();
+    else leftBtn.onclick();
+  }
+  startX=curX=0;
+});
+window.addEventListener('resize',updateSlider); updateSlider();
   </script>
 </body>
 </html>
