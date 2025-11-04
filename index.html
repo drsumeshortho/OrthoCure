@@ -1,4 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services | OrthoCure Bone and Joint Clinic Thirumullaivoyal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.myorthocure.com/services/index.html" />
+  <meta name="description" content="Explore services at OrthoCure Bone and Joint Clinic Thirumullaivoyal. Fracture care, PRP, joint pain, spine, physiotherapy, digital X ray, and knee replacement. Each service has a dedicated page for booking in Ambattur, Avadi and nearby areas." />
+  <meta name="theme-color" content="#053849" />
+  <link rel="icon" href="/assets/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"></noscript>
 
+  <style>
+    :root{
+      --dark-cyan:#053849;
+      --cyan:#0ea5e9;
+      --cyan-light:#e7f6fc;
+      --card:rgba(255,255,255,0.96);
+      --accent:#ffd454;
+      --ink:#132127;
+      --line:#e3eef7;
+      --focus:#94d9ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,sans-serif;
+      background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);
+      color:var(--ink);
+    }
+    a{color:var(--cyan);text-decoration:none;transition:color .18s}
+    a:hover{color:#0284c7}
+    :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+
+    .header-bar{
+      background:linear-gradient(90deg,var(--dark-cyan) 78%,var(--cyan) 100%);
+      color:#fff;padding:34px 10px 26px 10px;text-align:center;
+      border-radius:0 0 29px 29px;
+      box-shadow:0 7px 32px rgba(16,37,66,.13);
+      position:relative;overflow:hidden;
+    }
+    .header-bar::after{
+      content:"";
+      position:absolute;right:0;top:-36px;width:340px;height:220px;opacity:.13;
+      background:radial-gradient(circle at 90% 12%,var(--accent) 7%,var(--cyan) 60%,transparent 100%);
+      pointer-events:none;
+    }
+    .clinic-main-title{font-size:2.1rem;font-weight:700;margin:0 0 8px;letter-spacing:.018em}
+    .clinic-tagline{font-size:1.07rem;opacity:.97}
+    .main-nav{margin:22px 0 0;display:flex;gap:31px;justify-content:center;flex-wrap:wrap}
+    .main-nav a{color:#e2ecf7;font-weight:700;font-size:1.09rem;position:relative;padding-bottom:5px}
+    .main-nav a:after{content:'';display:block;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--cyan));border-radius:2px;transition:width .24s}
+    .main-nav a.active:after,.main-nav a:hover:after{width:100%}
+
+    .crumbs{max-width:1160px;margin:14px auto 0;padding:0 15px;color:#4a6a80;font-size:.95rem}
+    .crumbs a{text-decoration:underline}
+
+    .services-section{max-width:1160px;margin:18px auto 0;padding:0 15px}
+    .services-section h1{text-align:center;color:var(--dark-cyan);font-size:2.0rem;margin:18px 0 18px;font-weight:800;letter-spacing:.02em}
+
+    .services-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:32px;
+      margin-bottom:24px;
+    }
+    .service-card{
+      background:var(--card);
+      border-radius:22px;
+      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
+      padding:26px 22px 24px 22px;
+      border:1.2px solid var(--line);
+      position:relative;text-align:left;transition:box-shadow .25s,transform .18s,background .18s;
+    }
+    .service-card:hover{box-shadow:0 19px 60px rgba(2,132,199,.18);transform:translateY(-4px)}
+    .tag{
+      display:inline-block;background:linear-gradient(90deg,var(--accent) 50%,var(--cyan) 100%);
+      color:#1a3560;font-weight:700;font-size:.86rem;border-radius:999px;padding:6px 12px;margin-bottom:10px
+    }
+    .tag.special{background:linear-gradient(90deg,#ffe09e 49%,#ffd1e2 100%);color:#7a3a12}
+    .service-card h2{font-size:1.2rem;margin:6px 0 10px;color:var(--dark-cyan);letter-spacing:.015em}
+    .service-card p{font-size:1.04rem;color:#3a5669;min-height:42px;margin:0 0 12px}
+    .btn{
+      display:inline-block;margin-top:6px;padding:12px 22px;font-weight:700;font-size:1.02rem;border-radius:18px;
+      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);color:#fff;border:none;box-shadow:0 1px 14px rgba(2,132,199,.08);
+      transition:background .17s,transform .14s
+    }
+    .btn:hover{background:linear-gradient(90deg,#035372 82%,#0ea5e9 100%);transform:scale(1.03)}
+
+    .note{max-width:1150px;margin:14px auto 34px;padding:0 16px;color:#4c7ca1;font-size:1.01rem;text-align:center}
+    @media (max-width:900px){.service-card{padding:22px 14px}}
+    @media (max-width:700px){
+      .services-list{gap:16px}
+      .clinic-main-title{font-size:1.28rem}
+      .services-section h1{font-size:1.24rem}
+    }
+  </style>
+
+  <!-- Schema: Breadcrumbs and ItemList of Service -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
+        {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Orthopaedic services at OrthoCure Thirumullaivoyal",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"item":{"@type":"Service","name":"Fracture treatment","areaServed":["Thirumullaivoyal","Ambattur","Avadi"],"url":"https://www.myorthocure.com/fracture-treatment-thirumullaivoyal.html"}},
+        {"@type":"ListItem","position":2,"item":{"@type":"Service","name":"PRP injections","areaServed":["Thirumullaivoyal","Ambattur","Avadi"],"url":"https://www.myorthocure.com/services/prp-treatment-thirumullaivoyal.html"}},
+        {"@type":"ListItem","position":3,"item":{"@type":"Service","name":"Physiotherapy","areaServed":["Thirumullaivoyal","Ambattur","Avadi"],"url":"https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html"}},
+        {"@type":"ListItem","position":4,"item":{"@type":"Service","name":"Joint pain and arthritis","areaServed":["Thirumullaivoyal","Ambattur","Avadi"],"url":"https://www.myorthocure.com/services/joint-pain-treatment-thirumullaivoyal.html"}},
+        {"@type":"ListItem","position":5,"item":{"@type":"Service","name":"Total knee replacement","areaServed":["Thirumullaivoyal","Ambattur","Avadi"],"url":"https://www.myorthocure.com/services/total-knee-replacement-thirumullaivoyal.html"}},
+        {"@type":"ListItem","position":6,"item":{"@type":"Service","name":"Spine and neck care","areaServed":["Thirumullaivoyal","Ambattur","Avadi"],"url":"https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html"}},
+        {"@type":"ListItem","position":7,"item":{"@type":"Service","name":"Digital X ray","areaServed":["Thirumullaivoyal","Ambattur","Avadi"],"url":"https://www.myorthocure.com/services/digital-xray-thirumullaivoyal.html"}}
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <header class="header-bar">
+    <div class="clinic-main-title">OrthoCure<br>Thirumullaivoyal</div>
+    <div class="clinic-tagline">Evidence based orthopaedic care in Ambattur, Avadi and North Chennai</div>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/services/index.html" class="active" aria-current="page">Services</a>
+      <a href="/consult.html">Consult</a>
+      <a href="/fracture-treatment-thirumullaivoyal.html">Fracture Care</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › Services
+  </nav>
+
+  <main class="services-section" id="main">
+    <h1>All Orthopaedic Services</h1>
+
+    <section class="services-list" aria-label="Service cards">
+      <article class="service-card">
+        <span class="tag">Fracture care</span>
+        <h2>Fracture Treatment</h2>
+        <p>Plaster or splint, digital X ray and pain control with fast diagnosis and follow up under one roof.</p>
+        <a href="/fracture-treatment-thirumullaivoyal.html" class="btn" aria-label="View details for Fracture Treatment">View details</a>
+      </article>
+
+      <article class="service-card">
+        <span class="tag">PRP</span>
+        <h2>PRP Injections</h2>
+        <p>Platelet rich plasma for early knee arthritis and shoulder pain with image guidance and stepwise rehab.</p>
+        <a href="/services/prp-treatment-thirumullaivoyal.html" class="btn" aria-label="View details for PRP Injections">View details</a>
+      </article>
+
+      <article class="service-card">
+        <span class="tag">Physiotherapy</span>
+        <h2>Physiotherapy</h2>
+        <p>In house rehab with clear goals for strength mobility and safe return to daily life.</p>
+        <a href="/services/physiotherapy-thirumullaivoyal.html" class="btn" aria-label="View details for Physiotherapy">View details</a>
+      </article>
+
+      <article class="service-card">
+        <span class="tag">Joints</span>
+        <h2>Joint Pain and Arthritis</h2>
+        <p>Modern non surgical plans with guided exercise pain control and precision injections when needed.</p>
+        <a href="/services/joint-pain-treatment-thirumullaivoyal.html" class="btn" aria-label="View details for Joint Pain and Arthritis">View details</a>
+      </article>
+
+      <article class="service-card">
+        <span class="tag special">Knee Replacement</span>
+        <h2>Total Knee Replacement</h2>
+        <p>Expert TKR by fellowship trained orthopaedic surgeon with honest opinion detailed plan and advanced recovery.</p>
+        <a href="/services/total-knee-replacement-thirumullaivoyal.html" class="btn" aria-label="View details for Total Knee Replacement">View details</a>
+      </article>
+
+      <article class="service-card">
+        <span class="tag">Spine</span>
+        <h2>Spine and Neck Care</h2>
+        <p>Disc sciatica and posture pain managed with accurate assessment and targeted rehabilitation.</p>
+        <a href="/services/spine-neck-pain-thirumullaivoyal.html" class="btn" aria-label="View details for Spine and Neck Care">View details</a>
+      </article>
+
+      <article class="service-card">
+        <span class="tag">Imaging</span>
+        <h2>Digital X ray</h2>
+        <p>On site high quality digital imaging for instant decisions and faster care.</p>
+        <a href="/services/digital-xray-thirumullaivoyal.html" class="btn" aria-label="View details for Digital X ray">View details</a>
+      </article>
+    </section>
+
+    <p class="note">Looking for something else? <a href="/consult.html">Book a consult</a> and we will guide you to the right plan.</p>
+  </main>
+
+  <!-- Quiet AI retrieval helper -->
+  <div style="display:none">
+    OrthoCure services Thirumullaivoyal Ambattur Avadi fracture plaster digital X ray PRP injection knee arthritis shoulder tendinopathy physiotherapy spine neck pain conservative care
+  </div>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -283,7 +491,7 @@
 
   <section class="hero">
     <img class="hero-img" src="/assets/Sumesh_Labcoat_Website.png" alt="Dr Sumesh Subramanian Orthopaedic Surgeon" />
-    <div class="hero-title">Expert Orthopaedic Care.<br>Personal. Trusted. Local.</div>
+    <div class="hero-title">Expert Orthopaedic Care<br>Personal. Trusted. Local.</div>
     <div class="hero-lead">
       Fracture treatment, joint pain relief, PRP, arthritis care and rehabilitation—all in a calm, supportive environment. Immediate digital X-ray. Evening & Sunday consults.<br> Clear stepwise plans.
     </div>
