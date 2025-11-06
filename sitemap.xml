@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Core pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.myorthocure.com/</loc>
     <lastmod>2025-11-06</lastmod>
@@ -12,40 +9,19 @@
     <lastmod>2025-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.myorthocure.com/consult.html</loc>
+    <loc>https://www.myorthocure.com/contact.html</loc>
     <lastmod>2025-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.myorthocure.com/contact.html</loc>
+    <loc>https://www.myorthocure.com/consult.html</loc>
     <lastmod>2025-11-06</lastmod>
   </url>
   <url>
     <loc>https://www.myorthocure.com/blog.html</loc>
     <lastmod>2025-11-06</lastmod>
   </url>
-
-  <!-- Services hub -->
   <url>
     <loc>https://www.myorthocure.com/services/index.html</loc>
-    <lastmod>2025-11-06</lastmod>
-  </url>
-
-  <!-- Services detail pages -->
-  <url>
-  <loc>https://www.myorthocure.com/services/arthritis-treatment-iyappakkam.html</loc>
-  <lastmod>2025-11-06</lastmod>
-</url>
-
-  <url>
-    <loc>https://www.myorthocure.com/fracture-treatment-thirumullaivoyal.html</loc>
-    <lastmod>2025-11-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.myorthocure.com/services/prp-treatment-thirumullaivoyal.html</loc>
-    <lastmod>2025-11-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html</loc>
     <lastmod>2025-11-06</lastmod>
   </url>
   <url>
@@ -61,54 +37,69 @@
     <lastmod>2025-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.myorthocure.com/services/digital-xray-thirumullaivoyal.html</loc>
+    <loc>https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html</loc>
     <lastmod>2025-11-06</lastmod>
   </url>
-
-  <!-- Blog posts (remove any that 404) -->
   <url>
-    <loc>https://www.myorthocure.com/blog/peace-love-injury.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <loc>https://www.myorthocure.com/services/prp-treatment-thirumullaivoyal.html</loc>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.myorthocure.com/blog/footwear-standing-long-hours.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <loc>https://www.myorthocure.com/fracture-treatment-thirumullaivoyal.html</loc>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.myorthocure.com/blog/early-arthritis-signs.html</loc>
-    <lastmod>2025-10-05</lastmod>
-  </url>
-  <url>
-    <loc>https://www.myorthocure.com/blog/walkingwitharthritis.html</loc>
-    <lastmod>2025-10-05</lastmod>
+    <loc>https://www.myorthocure.com/blog.html</loc>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
     <loc>https://www.myorthocure.com/blog/monsoon-joint-pain.html</loc>
-    <lastmod>2025-10-05</lastmod>
-  </url>
-  <url>
-    <loc>https://www.myorthocure.com/blog/techneck.html</loc>
-    <lastmod>2025-10-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
     <loc>https://www.myorthocure.com/blog/schoolbag-safety.html</loc>
-    <lastmod>2025-10-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
     <loc>https://www.myorthocure.com/blog/bone-health-tips.html</loc>
-    <lastmod>2025-10-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.myorthocure.com/blog/fall-prevention-after-60.html</loc>
-    <lastmod>2025-10-05</lastmod>
+    <loc>https://www.myorthocure.com/blog/footwear-standing-long-hours.html</loc>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
     <loc>https://www.myorthocure.com/blog/elderly-joint-pain-mistakes.html</loc>
-    <lastmod>2025-10-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.myorthocure.com/blog/walkingwitharthritis.html</loc>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.myorthocure.com/blog/peace-love-injury.html</loc>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.myorthocure.com/blog/fall-prevention-after-60.html</loc>
+    <lastmod>2025-11-06</lastmod>
   </url>
   <url>
     <loc>https://www.myorthocure.com/blog/cracking-knuckles.html</loc>
-    <lastmod>2025-10-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <!-- If/when techneck.html and early-arthritis-signs.html go live, add below -->
+  <url>
+    <loc>https://www.myorthocure.com/blog/techneck.html</loc>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.myorthocure.com/blog/early-arthritis-signs.html</loc>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+   <url>
+    <loc>https://www.myorthocure.com/media.html</loc>
+    <lastmod>2025-11-06</lastmod>
   </url>
 </urlset>
 
