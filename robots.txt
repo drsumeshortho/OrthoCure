@@ -1,3 +1,18 @@
 User-agent: *
 Allow: /
+
+# Block system and asset directories
+Disallow: /assets/
+Disallow: /blog-drafts/
+Disallow: /temp/
+Disallow: /old/
+
+# Sitemap
 Sitemap: https://www.myorthocure.com/sitemap.xml
+# AI visibility preferences
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: GPTBot
+Allow: /
