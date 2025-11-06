@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sports Injury Treatment in Thirumullaivoyal and Ambattur | OrthoCure Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sprain, strain, ligament or muscle injury. Fast sports injury care with accurate diagnosis, rehab and safe return to play at OrthoCure Thirumullaivoyal serving Ambattur and Avadi." />
+  <meta name="theme-color" content="#053849" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="icon" href="/assets/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --dark-cyan:#053849; --cyan:#0ea5e9; --cyan-light:#e7f6fc; --card:rgba(255,255,255,0.96); --accent:#ffd454; }
+    *{box-sizing:border-box}
+    body { background: var(--cyan-light); margin:0; font-family:Inter,system-ui,sans-serif; color:#143444; }
+    a{ color:var(--cyan); text-decoration:none; transition:color .16s; }
+    a:hover{ color:#0284c7; }
+
+    /* header */
+    .header-bar{ background:linear-gradient(90deg,var(--dark-cyan) 80%,var(--cyan) 100%); color:#fff; padding:28px 14px 18px; text-align:center; }
+    .header-title{ font-size:1.65rem; font-weight:700; margin:0 0 5px; }
+    .main-nav{ margin:16px 0 0; display:flex; gap:27px; justify-content:center; flex-wrap:wrap; }
+    .main-nav a{ color:#e5fcff; font-weight:700; font-size:1.05rem; position:relative; padding-bottom:4px; }
+    .main-nav a.active:after,.main-nav a:hover:after{ content:''; display:block; height:3px; width:100%; background:linear-gradient(90deg,var(--accent),var(--cyan)); border-radius:2px; }
+
+    /* breadcrumb */
+    .crumbs{ max-width:900px; margin:12px auto 0; padding:0 18px; font-size:.95rem; color:#32506a; }
+    .crumbs a{ color:#2b7ca7; }
+
+    /* hero and sections */
+    .hero { background:#f2fbff; border-radius:13px; margin:22px auto 0; max-width:900px; text-align:center; padding:36px 20px 16px; box-shadow:0 6px 22px rgba(2,132,199,.08); }
+    .hero h1 { font-size:2rem; color:var(--dark-cyan); margin-bottom:10px; }
+    .hero p { color:#305068; font-size:1.12rem; line-height:1.6; }
+
+    .section { max-width:900px; margin:24px auto 0; background:var(--card); border-radius:17px; box-shadow:0 6px 26px rgba(2,132,199,.08); padding:28px 18px; }
+    .section h2 { font-size:1.23rem; margin-bottom:14px; color:var(--dark-cyan); }
+    ul,ol{ margin-left:1.1em; }
+    .pill { display:inline-block; background:#fff5cf; color:#6a4a00; padding:6px 10px; border-radius:999px; font-weight:700; font-size:.9rem; margin:8px 6px 0 0; }
+
+    /* ctas */
+    .cta,.micro-cta{ display:flex; flex-wrap:wrap; gap:13px; margin-top:18px; }
+    .btn{ display:inline-block; padding:13px 32px; border-radius:21px; font-weight:700; background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%); color:#fff; box-shadow:0 2px 11px rgba(2,132,199,.13); font-size:1.05rem; border:none; text-decoration:none; transition:background .2s; }
+    .btn.alt{ background:#fff; color:var(--dark-cyan); border:2px solid var(--cyan); }
+    .btn:hover{ background:linear-gradient(90deg,#035372 82%,#0ea5e9 100%); }
+    .btn.alt:hover{ background:#e8f7ff; color:#035372; border-color:#0284c7; }
+
+    /* faq */
+    .faq details{ margin-bottom:12px; }
+    .faq summary{ font-weight:700; cursor:pointer; }
+
+    /* related */
+    .related ul{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px; padding-left:0; list-style:none; }
+    .related a{ display:block; background:#f1fbff; border:1px solid #dff1fb; padding:12px 14px; border-radius:12px; font-weight:700; color:#12506e; }
+
+    /* map */
+    .map-loc{ margin-top:28px; }
+    .map-loc iframe { width:100%; height:220px; border-radius:12px; }
+
+    @media (max-width:700px){
+      .header-bar,.section,.hero{ padding:12px 3vw; }
+      .main-nav{ gap:13px; }
+      .hero{ margin-top:14px; }
+    }
+  </style>
+
+  <!-- Schema for clinic and page context -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MedicalBusiness",
+    "name":"OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal",
+    "image":"https://www.myorthocure.com/assets/logo.png",
+    "url":"https://www.myorthocure.com/",
+    "telephone":"+91-9342700212",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"No. 2, 2nd Street, Santhipuram",
+      "addressLocality":"Thirumullaivoyal",
+      "addressRegion":"Chennai",
+      "postalCode":"600062",
+      "addressCountry":"IN"
+    },
+    "department":{ "@type":"MedicalSpecialty", "name":"Sports Medicine" },
+    "areaServed":[ "Thirumullaivoyal", "Ambattur", "Avadi", "Chennai North" ],
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Sports Injury Care",
+      "itemListElement":[
+        { "@type":"Offer", "itemOffered":{ "@type":"MedicalProcedure", "name":"Ankle sprain care" }},
+        { "@type":"Offer", "itemOffered":{ "@type":"MedicalProcedure", "name":"Knee ligament evaluation" }},
+        { "@type":"Offer", "itemOffered":{ "@type":"MedicalTherapy", "name":"Rehabilitation and return to sport" }}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="header-bar">
+    <div class="header-title">OrthoCure Thirumullaivoyal</div>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/services/index.html" class="active">Services</a>
+      <a href="/consult.html">Consult</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/services/index.html">Services</a> › <span>Sports Injury Treatment</span>
+  </nav>
+
+  <section class="hero">
+    <h1>Sports Injury Treatment</h1>
+    <section class="hero">
+  <h1>Sports Injury Treatment</h1>
+  <img 
+    src="/assets/sports-injury-thirumullaivoyal.jpg" 
+    alt="Sports injury treatment clinic OrthoCure Thirumullaivoyal" 
+    style="max-width:350px; width:100%; height:auto; border-radius:12px; margin:18px auto 0; display:block; box-shadow:0 4px 16px rgba(2,132,199,0.10);" 
+    loading="lazy" 
+  />
+  <p>
+    Fast care for sprain, strain, ligament injury and muscle pain. Accurate diagnosis, protection of healing tissue, and a clear plan to return to daily activity and sport. Serving Ambattur, Avadi and Chennai North from Thirumullaivoyal.
+  </p>
+  <div class="micro-cta">
+    <a href="/consult.html" class="btn">Book a sports injury consult</a>
+    <a href="https://wa.me/919342700212" class="btn alt" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+</section>
+
+    <p>
+      Fast care for sprain, strain, ligament injury and muscle pain. Accurate diagnosis, protection of healing tissue, and a clear plan to return to daily activity and sport. Serving Ambattur, Avadi and Chennai North from Thirumullaivoyal.
+    </p>
+    <div class="micro-cta">
+      <a href="/consult.html" class="btn">Book a sports injury consult</a>
+      <a href="https://wa.me/919342700212" class="btn alt" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="section">
+    <h2>What we treat</h2>
+    <p class="pill">Ankle sprain</p>
+    <p class="pill">Knee ligament strain</p>
+    <p class="pill">Hamstring or calf strain</p>
+    <p class="pill">Shoulder strain</p>
+    <p class="pill">Shin pain</p>
+    <p class="pill">Tendon pain</p>
+    <p class="pill">Overuse injury</p>
+    <ul>
+      <li>Clinic evaluation by an orthopaedic surgeon with digital X ray on site when needed</li>
+      <li>Clear protection and loading plan to reduce pain and swelling</li>
+      <li>Rehab that builds strength, balance and confidence</li>
+      <li>Return to play guidance that fits your sport and schedule</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>How care works at OrthoCure</h2>
+    <ol>
+      <li><strong>Assessment</strong> pain history, movement check and special tests. X ray only if useful. MRI only when it changes the plan.</li>
+      <li><strong>Plan</strong> pain control, support, early movement and a safe loading path.</li>
+      <li><strong>Rehab</strong> guided physiotherapy with home plan and weekly goals.</li>
+      <li><strong>Return to sport</strong> graded steps with simple pass or hold checks.</li>
+    </ol>
+    <div class="micro-cta">
+      <a href="/services/physiotherapy-thirumullaivoyal.html" class="btn alt">See physiotherapy and rehab</a>
+      <a href="/services/prp-treatment-thirumullaivoyal.html" class="btn alt">Learn about PRP for stubborn pain</a>
+    </div>
+  </div>
+
+  <div class="section faq">
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>Do I need rest</summary>
+      <div>Short rest can help, but early guided movement protects healing and speeds recovery. Full bed rest is rarely needed.</div>
+    </details>
+    <details>
+      <summary>When do I need a scan</summary>
+      <div>Scan is useful only if the result changes treatment. Many sprains recover well with a good plan and rehab.</div>
+    </details>
+    <details>
+      <summary>How soon can I return to sport</summary>
+      <div>Most people resume light activity in one to two weeks and sport in four to eight weeks based on strength and control tests.</div>
+    </details>
+  </div>
+
+  <div class="section related">
+    <h2>Related services and guides</h2>
+    <ul>
+      <li><a href="/services/joint-pain-treatment-thirumullaivoyal.html">Joint pain and arthritis care</a></li>
+      <li><a href="/services/spine-neck-pain-thirumullaivoyal.html">Spine and neck care</a></li>
+      <li><a href="/blog/peace-love-injury.html">PEACE and LOVE for acute injury</a></li>
+      <li><a href="/blog/bone-health-tips.html">Bone health tips you can use</a></li>
+    </ul>
+  </div>
+
+  <div class="section cta">
+    <a href="/consult.html" class="btn">Book sports injury consult</a>
+    <a href="https://wa.me/919342700212" class="btn alt" target="_blank" rel="noopener">WhatsApp for quick guidance</a>
+  </div>
+
+  <div class="section map-loc">
+    <h2>Visit our clinic</h2>
+    <p>OrthoCure Bone and Joint Speciality Clinic<br>No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai 600062</p>
+    <iframe src="https://maps.google.com/maps?q=13.130476,80.130412&z=17&output=embed" aria-label="OrthoCure location"></iframe>
+  </div>
+
+  <!-- GEO and entity hints for AI retrievers -->
+  <div style="display:none">
+    sports injury clinic Thirumullaivoyal Ambattur Avadi ankle sprain knee ligament strain hamstring strain physiotherapy PRP return to sport orthopaedic doctor near me digital X ray Chennai North
+  </div>
+</body>
+</html>
