@@ -243,6 +243,36 @@
     footer {
       margin:32px 0 18px; text-align:center; color:#42576b; font-size:1rem;
     }
+    .info-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(2,132,199,.12);
+  padding: 22px 18px 18px;
+  min-width: 220px;
+}
+.card-title {
+  font-size: 1.15rem;
+  color: var(--dark-cyan);
+  margin-bottom: 13px;
+}
+.info-card ul {
+  list-style-type: disc;
+  margin-left: 1.18em;
+}
+.info-card a {
+  color: var(--cyan);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.16s;
+}
+.info-card a:hover {
+  color: var(--dark-cyan);
+}
+.info-card .cta .btn, .info-card .cta .btn.alt {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 1.11rem;
+}
   </style>
 </head>
 <body>
@@ -348,24 +378,32 @@
       <div>Yes. You’ll receive a progressive plan tailored to your stage and fitness, with check-ins to keep you on track.</div>
     </details>
   </div>
-  <div class="section grid cols-3">
-    <div>
-      <h2>Related services</h2>
-      <ul>
-        <li><a href="/services/knee-replacement-surgeon-ambattur.html">Knee Replacement – Ambattur</a></li>
-        <li><a href="/services/spine-neck-pain-relief-avadi.html">Spine & Neck Pain Relief – Avadi</a></li>
-        <li><a href="/services/fracture-care-ambattur.html">Fracture Care – Ambattur</a></li>
-      </ul>
+  <div class="section grid cols-3" style="gap:24px;">
+  <div class="info-card">
+    <h2 class="card-title">Related services</h2>
+    <ul>
+      <li><a href="/services/knee-replacement-surgeon-ambattur.html">Knee Replacement – Ambattur</a></li>
+      <li><a href="/services/spine-neck-pain-relief-avadi.html">Spine & Neck Pain Relief – Avadi</a></li>
+      <li><a href="/services/fracture-care-ambattur.html">Fracture Care – Ambattur</a></li>
+    </ul>
+  </div>
+  <div class="info-card">
+    <h2 class="card-title">Helpful reads</h2>
+    <ul>
+      <li><a href="/blog.html">Is walking harmful for knee arthritis?</a></li>
+      <li><a href="https://www.nhs.uk/conditions/arthritis/" target="_blank" rel="noopener">NHS guide to arthritis (external)</a></li>
+      <li><a href="/blog.html">Arthritis injections: when do they help?</a></li>
+    </ul>
+  </div>
+  <div class="info-card">
+    <h2 class="card-title">Ready to move easier?</h2>
+    <p>Book a consult or message us on WhatsApp. We’ll map the shortest path to relief.</p>
+    <div class="cta" style="flex-direction:column;gap:12px;">
+      <a class="btn" href="/consult.html">Book Now</a>
+      <a class="btn alt" href="https://wa.me/919342700212?text=Arthritis%20appointment&utm_source=site&utm_medium=faq_cta&utm_campaign=arthritis-iyappakkam">Message on WhatsApp</a>
     </div>
-    <div>
-      <h2>Helpful reads</h2>
-      <ul>
-        <li><a href="/blog.html">Is walking harmful for knee arthritis?</a></li>
-        <li><a href="https://www.nhs.uk/conditions/arthritis/" target="_blank" rel="noopener">NHS guide to arthritis (external)</a></li>
-        <li><a href="/blog.html">Arthritis injections: when do they help?</a></li>
-      </ul>
-    </div>
-    <div>
+  </div>
+</div>
       <h2>Ready to move easier?</h2>
       <p>Book a consult or message us on WhatsApp. We’ll map the shortest path to relief.</p>
       <a class="btn" href="/consult.html">Book Now</a>
