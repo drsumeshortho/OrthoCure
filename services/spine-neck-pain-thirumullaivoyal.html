@@ -2,51 +2,230 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Spine and Neck Pain Treatment in Thirumullaivoyal and Ambattur | OrthoCure Clinic</title>
+  <title>Spine and Neck Pain Treatment in Thirumullaivoyal Ambattur Avadi | OrthoCure Bone and Joint Speciality Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html" />
-  <meta name="description" content="Specialist care for back pain, neck pain, sciatica, slip disc and spondylosis in Thirumullaivoyal Ambattur and Avadi. Clear diagnosis and targeted rehab with safe escalation only when needed." />
+  <meta name="description" content="Conservative first treatment for spine and neck pain in Thirumullaivoyal, Ambattur and Avadi. Assessment for acute low back pain, disc prolapse, sciatica, cervical spondylosis and posture related neck strain with clear plans and surgery only when really needed." />
   <meta name="theme-color" content="#053849" />
   <link rel="icon" href="/assets/logo.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        rel="preload" as="style"
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
 
   <style>
-    :root { --dark-cyan:#053849; --cyan:#0ea5e9; --cyan-light:#e7f6fc; --card:rgba(255,255,255,0.96); --accent:#ffd454; --ink:#143444; --line:#e3eef7; }
+    :root{
+      --dark-cyan:#053849;
+      --cyan:#0ea5e9;
+      --cyan-light:#e7f6fc;
+      --card:rgba(255,255,255,0.96);
+      --accent:#ffd454;
+      --ink:#132127;
+      --line:#e3eef7;
+      --focus:#94d9ff;
+    }
+
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);color:var(--ink)}
-    a{color:var(--cyan);text-decoration:none;transition:color .18s} a:hover{color:#0284c7}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,sans-serif;
+      background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);
+      color:var(--ink);
+    }
+    a{color:var(--cyan);text-decoration:none;transition:color .18s}
+    a:hover{color:#0284c7}
+    :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
-    .header-bar{background:linear-gradient(90deg,var(--dark-cyan) 80%,var(--cyan) 100%);color:#fff;padding:32px 14px 24px;text-align:center;border-radius:0 0 24px 24px;box-shadow:0 8px 34px rgba(7,98,138,.16)}
-    .header-title{font-size:1.8rem;font-weight:700;margin:0 0 6px}
-    .main-nav{margin-top:14px;display:flex;gap:26px;justify-content:center;flex-wrap:wrap}
-    .main-nav a{color:#e9f7ff;font-weight:700;position:relative;padding-bottom:4px}
-    .main-nav a:after{content:'';display:block;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--cyan));border-radius:2px;transition:width .24s}
-    .main-nav a.active:after,.main-nav a:hover:after{width:100%}
+    .header-bar{
+      background:linear-gradient(90deg,var(--dark-cyan) 78%,var(--cyan) 100%);
+      color:#fff;
+      padding:34px 10px 26px 10px;
+      text-align:center;
+      border-radius:0 0 29px 29px;
+      box-shadow:0 7px 32px rgba(16,37,66,.13);
+      position:relative;
+      overflow:hidden;
+    }
+    .header-bar::after{
+      content:"";
+      position:absolute;
+      right:0;
+      top:-36px;
+      width:340px;
+      height:220px;
+      opacity:.13;
+      background:radial-gradient(circle at 90% 12%,var(--accent) 7%,var(--cyan) 60%,transparent 100%);
+      pointer-events:none;
+    }
+    .clinic-main-title{
+      font-size:2.1rem;
+      font-weight:700;
+      margin:0 0 8px;
+      letter-spacing:.018em;
+    }
+    .clinic-tagline{
+      font-size:1.07rem;
+      opacity:.97;
+    }
+    .main-nav{
+      margin:22px 0 0;
+      display:flex;
+      gap:31px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .main-nav a{
+      color:#e2ecf7;
+      font-weight:700;
+      font-size:1.09rem;
+      position:relative;
+      padding-bottom:5px;
+    }
+    .main-nav a:after{
+      content:'';
+      display:block;
+      height:3px;
+      width:0;
+      background:linear-gradient(90deg,var(--accent),var(--cyan));
+      border-radius:2px;
+      transition:width .24s;
+    }
+    .main-nav a.active:after,
+    .main-nav a:hover:after{
+      width:100%;
+    }
 
-    .crumbs{max-width:920px;margin:18px auto 0;padding:0 16px;color:#47617a;font-size:.95rem}
-    .crumbs a{color:#3c86b8;text-decoration:underline}
+    .crumbs{
+      max-width:1160px;
+      margin:14px auto 0;
+      padding:0 15px;
+      color:#4a6a80;
+      font-size:.95rem;
+    }
+    .crumbs a{text-decoration:underline}
 
-    .hero{background:var(--cyan-light);border-radius:16px;max-width:920px;margin:14px auto 0;padding:36px 18px 18px;text-align:center;box-shadow:0 6px 24px rgba(2,132,199,.10)}
-    .hero h1{font-size:2rem;color:var(--dark-cyan);margin:0 0 10px}
-    .hero p{font-size:1.12rem;color:#305068;margin:0}
+    .services-section{
+      max-width:1160px;
+      margin:18px auto 0;
+      padding:0 15px;
+    }
+    .services-section h1{
+      color:var(--dark-cyan);
+      font-size:1.9rem;
+      margin:18px 0 10px;
+      font-weight:800;
+      letter-spacing:.02em;
+    }
 
-    .section{max-width:920px;margin:22px auto;background:var(--card);border-radius:18px;box-shadow:0 6px 28px rgba(2,132,199,.08);padding:24px 18px;border:1px solid var(--line)}
-    .section h2{font-size:1.25rem;color:var(--dark-cyan);margin:0 0 12px}
-    ul,ol{margin-left:1.1em}
-    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
-    .note{background:#fef9e7;border:1px solid #f6e492;border-radius:10px;padding:12px;margin-top:10px;color:#5c4a00}
+    .lead{
+      font-size:1.06rem;
+      color:#3a5669;
+      max-width:960px;
+      margin:0 0 20px;
+    }
 
-    .btn{display:inline-block;padding:12px 28px;border-radius:20px;font-weight:700;background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);color:#fff;border:none;box-shadow:0 2px 12px rgba(2,132,199,.13);font-size:1.05rem}
-    .btn.alt{background:#fff;color:var(--dark-cyan);border:2px solid var(--cyan);box-shadow:none}
-    .btn:hover{background:linear-gradient(90deg,#035372 82%,#0ea5e9 100%)} .btn.alt:hover{background:#e8f7ff;color:#035372;border-color:#0284c7}
+    .card-block{
+      background:var(--card);
+      border-radius:22px;
+      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
+      padding:22px 20px 20px;
+      border:1.2px solid var(--line);
+      margin-bottom:22px;
+    }
 
-    .faq details{margin-bottom:12px} .faq summary{font-weight:700;cursor:pointer}
-    .map-loc iframe{width:100%;height:220px;border-radius:12px;border:0}
+    .content-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:22px;
+      margin-bottom:22px;
+    }
 
-    @media (max-width:720px){.header-bar,.section,.hero{padding:12px 3vw}.hero{margin-top:10px}}
+    ul.check{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    ul.check li{
+      padding-left:26px;
+      position:relative;
+      margin:6px 0;
+    }
+    ul.check li::before{
+      content:"✔";
+      position:absolute;
+      left:0;
+      top:0;
+      color:#059669;
+    }
+
+    .cta-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .btn{
+      display:inline-block;
+      padding:11px 20px;
+      font-weight:700;
+      font-size:1rem;
+      border-radius:18px;
+      border:none;
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .btn-primary{
+      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);
+      color:#fff;
+      box-shadow:0 1px 14px rgba(2,132,199,.1);
+    }
+    .btn-primary:hover{
+      background:linear-gradient(90deg,#035372 80%,#0ea5e9 100%);
+    }
+    .btn-outline{
+      background:#e7f6fc;
+      color:var(--dark-cyan);
+      border:1px solid var(--line);
+    }
+
+    .section-title{
+      font-size:1.25rem;
+      margin:0 0 10px;
+      color:var(--dark-cyan);
+    }
+
+    .faq-block details{
+      background:var(--card);
+      border-radius:18px;
+      border:1.2px solid var(--line);
+      padding:14px 16px;
+      margin-bottom:10px;
+      box-shadow:0 4px 16px rgba(15,23,42,.06);
+    }
+    .faq-block summary{
+      cursor:pointer;
+      font-weight:600;
+      color:var(--dark-cyan);
+    }
+
+    footer{
+      max-width:1160px;
+      margin:20px auto 18px;
+      padding:0 15px;
+      color:#49647a;
+      font-size:.92rem;
+    }
+
+    @media (max-width:700px){
+      .services-section h1{font-size:1.5rem}
+      .clinic-main-title{font-size:1.4rem}
+    }
   </style>
 
-  <!-- Schema: breadcrumb, medical webpage, and FAQ -->
+  <!-- Breadcrumb and Service schema -->
   <script type="application/ld+json">
   [
     {
@@ -60,107 +239,310 @@
     },
     {
       "@context":"https://schema.org",
-      "@type":"MedicalWebPage",
+      "@type":"Service",
       "name":"Spine and neck pain treatment",
-      "about":["Back pain","Neck pain","Sciatica","Disc bulge","Spondylosis","Posture pain"],
-      "audience":{"@type":"MedicalAudience","audienceType":"Patient"},
+      "description":"Conservative first care for acute low back pain, disc prolapse, sciatica, cervical spondylosis and posture related spine and neck pain at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal for patients from Ambattur and Avadi.",
+      "medicalSpecialty":"Orthopedics",
+      "areaServed":[
+        {"@type":"City","name":"Thirumullaivoyal"},
+        {"@type":"City","name":"Ambattur"},
+        {"@type":"City","name":"Avadi"}
+      ],
+      "provider":{
+        "@type":"MedicalClinic",
+        "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
+        "telephone":"+919342700212",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"No. 2 Second Street Santhipuram Thirumullaivoyal",
+          "addressLocality":"Chennai",
+          "addressRegion":"TN",
+          "postalCode":"600062",
+          "addressCountry":"IN"
+        }
+      },
       "url":"https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html",
-      "provider":{"@type":"MedicalClinic","name":"OrthoCure Bone and Joint Speciality Clinic","url":"https://www.myorthocure.com/"},
-      "specialty":"Orthopedic"
-    },
-    {
-      "@context":"https://schema.org",
-      "@type":"FAQPage",
-      "mainEntity":[
-        {"@type":"Question","name":"What causes back or neck pain","acceptedAnswer":{"@type":"Answer","text":"Disc bulge spondylosis muscle spasm posture strain and nerve compression are common causes. Rarely trauma or other illness may be responsible."}},
-        {"@type":"Question","name":"Do I need bed rest or surgery","acceptedAnswer":{"@type":"Answer","text":"Most patients recover better with early gentle movement and targeted rehab. Bed rest is rarely needed and surgery is reserved for severe or unresponsive cases."}},
-        {"@type":"Question","name":"How soon will I feel better","acceptedAnswer":{"@type":"Answer","text":"Many improve within days once the plan is in place. Full recovery can take one to eight weeks depending on severity and past episodes."}},
-        {"@type":"Question","name":"Are exercises important","acceptedAnswer":{"@type":"Answer","text":"Yes. Guided rehab and daily habits like posture and sleep support long term comfort and prevent recurrence."}}
-      ]
+      "isRelatedTo":{
+        "@type":"Person",
+        "name":"Dr Sumesh Subramanian",
+        "jobTitle":"Orthopaedic Surgeon"
+      }
     }
   ]
   </script>
 </head>
+
 <body>
-  <div class="header-bar">
-    <div class="header-title">OrthoCure Thirumullaivoyal</div>
+  <header class="header-bar">
+    <div class="clinic-main-title">OrthoCure<br>Thirumullaivoyal</div>
+    <div class="clinic-tagline">
+      Evidence based orthopaedic care in Ambattur Avadi and North Chennai
+    </div>
     <nav class="main-nav" aria-label="Primary">
       <a href="/">Home</a>
       <a href="/about.html">About</a>
-      <a href="/services/index.html" class="active">Services</a>
+      <a href="/services/index.html" aria-current="page">Services</a>
       <a href="/consult.html">Consult</a>
+      <a href="/services/fracture-care.html">Fracture Care</a>
       <a href="/blog.html">Blog</a>
       <a href="/contact.html">Contact</a>
     </nav>
-  </div>
+  </header>
 
-  <div class="crumbs" aria-label="Breadcrumb">
+  <nav class="crumbs" aria-label="Breadcrumb">
     <a href="/">Home</a> › <a href="/services/index.html">Services</a> › Spine and neck pain
-  </div>
+  </nav>
 
-  <section class="hero">
-    <h1>Spine and neck pain treatment</h1>
-    <p>Specialist care for back pain neck pain sciatica disc bulge and spondylosis at OrthoCure Bone and Joint Clinic in Thirumullaivoyal. We serve Ambattur Avadi and nearby areas with clear diagnosis and targeted rehab, and we escalate care only when it is truly needed.</p>
-  </section>
+  <main class="services-section" id="main">
+    <h1>Spine and Neck Pain Clinic</h1>
 
-  <div class="section">
-    <h2>Why choose OrthoCure</h2>
-    <ul>
-      <li>Care by a fellowship trained orthopaedic surgeon who focuses on the root cause, not just pain relief</li>
-      <li>Function first approach that restores movement strength and confidence</li>
-      <li>Stepwise plan that includes medication exercise physiotherapy posture training and injections only if required</li>
-      <li>Digital X ray on site and MRI guidance when the picture is complex or slow to improve</li>
-      <li>Plain language education with simple office and home changes to prevent future flares</li>
-    </ul>
-    <div class="cta-row">
-      <a href="/consult.html" class="btn">Book spine and neck evaluation</a>
-      <a href="/services/physiotherapy-thirumullaivoyal.html" class="btn alt">See physiotherapy rehab</a>
+    <p class="lead">
+      At OrthoCure Bone and Joint Speciality Clinic spine and neck problems are treated with a conservative first plan. The focus is on finding the real source of pain, explaining it in simple language and building a safe programme of posture change, exercise and physiotherapy. Surgery is discussed only when there is clear evidence that it is needed.
+    </p>
+
+    <!-- Top CTA -->
+    <div class="card-block">
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+919342700212">Call for spine and neck assessment</a>
+        <a class="btn btn-outline" href="https://wa.me/919342700212?text=Spine%20or%20neck%20pain%20consultation&utm_source=site&utm_campaign=spine-neck">
+          WhatsApp 93427 00212
+        </a>
+        <a class="btn btn-outline" href="/consult.html">Book clinic visit</a>
+      </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Treatment approach</h2>
-    <ol>
-      <li>Comprehensive assessment that reviews daily activity sleep posture and red flags</li>
-      <li>Imaging when required with X ray first and MRI for nerve or disc suspicion</li>
-      <li>Plan with pain control early movement targeted rehab and simple work and sleep changes</li>
-      <li>Interventional options such as trigger point and nerve block injections in select cases</li>
-      <li>Follow up with progress tracking and timely escalation or de escalation</li>
-    </ol>
-    <div class="note">If your pain is mainly mechanical read our <a href="/blog/tech-neck.html">tech neck guide</a> and <a href="/blog/peace-love-injury.html">PEACE and LOVE recovery article</a> for safe action steps.</div>
-  </div>
+    <!-- Common conditions and when to see doctor -->
+    <section class="content-grid" aria-label="Common spine and neck problems and when to seek help">
+      <article class="card-block">
+        <h2 class="section-title">Common spine and neck problems we see</h2>
+        <ul class="check">
+          <li>Acute low back pain after lifting, travel or sudden movements.</li>
+          <li>Disc prolapse with pain going down the leg or arm.</li>
+          <li>Sciatica with shooting pain from back to buttock and leg.</li>
+          <li>Cervical spondylosis with neck pain and stiffness.</li>
+          <li>Mechanical posture pain from long sitting and poor ergonomics.</li>
+          <li>Neck strain from mobile use, laptop work and long screen time.</li>
+        </ul>
+        <p style="font-size:.96rem;color:#3a5669;margin-top:6px">
+          Many of these conditions can be managed well with clear advice, exercise and time. The challenge is to pick who needs only rest and who needs further tests.
+        </p>
+      </article>
 
-  <div class="section faq">
-    <h2>Frequently asked questions</h2>
-    <details><summary>What are the most common causes of back or neck pain</summary><div>Disc bulge spondylosis muscle spasm posture strain and nerve compression are most common. Trauma and other illness are less common but important to rule out.</div></details>
-    <details><summary>Do I need bed rest or surgery</summary><div>No. Most people get better faster with guided activity and good habits. Surgery is for severe weakness loss of control or pain that does not respond to careful care.</div></details>
-    <details><summary>Will I feel better quickly</summary><div>Many patients feel better within a few days. Full recovery often needs one to eight weeks based on the condition and prior episodes.</div></details>
-    <details><summary>Are exercises and rehab important</summary><div>They are vital. Strength mobility and posture training reduce pain and prevent future flares.</div></details>
-  </div>
+      <article class="card-block">
+        <h2 class="section-title">When spine or neck pain needs a check</h2>
+        <ul class="check">
+          <li>Pain that lasts more than one to two weeks or keeps returning.</li>
+          <li>Pain that is severe at night or disturbs sleep.</li>
+          <li>Pain going below the knee or into the arm with tingling or numbness.</li>
+          <li>Weakness in foot or hand grip, difficulty walking straight.</li>
+          <li>History of serious trauma, weight loss or fever along with pain.</li>
+        </ul>
+        <p style="font-size:.96rem;color:#3a5669;margin-top:6px">
+          Sudden loss of bladder or bowel control, rapidly worsening weakness or trauma with inability to move are emergencies and need hospital care without delay.
+        </p>
+      </article>
+    </section>
 
-  <div class="section">
-    <h2>Related services and resources</h2>
-    <ul>
-      <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy and rehabilitation</a></li>
-      <li><a href="/services/joint-pain-treatment-thirumullaivoyal.html">Joint pain and arthritis care</a></li>
-      <li><a href="/services/digital-xray-thirumullaivoyal.html">Digital X ray on site</a></li>
-      <li><a href="/blog/early-arthritis-signs.html">Early arthritis signs</a></li>
-    </ul>
-  </div>
+    <!-- Assessment and stepwise plan -->
+    <section class="content-grid" aria-label="Assessment and treatment plan">
+      <article class="card-block">
+        <h2 class="section-title">How we assess spine and neck pain</h2>
+        <ul class="check">
+          <li>Detailed history of work pattern, posture, travel and previous episodes.</li>
+          <li>Examination of spine movement, nerve tension and muscle strength.</li>
+          <li>Simple tests such as X ray when needed to rule out serious causes.</li>
+          <li>MRI and advanced imaging only when results will change the plan.</li>
+          <li>Review of other medical problems such as diabetes and osteoporosis.</li>
+        </ul>
+        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+          The main aim is to separate simple mechanical pain from disc related nerve problems and rare serious causes.
+        </p>
+      </article>
 
-  <div class="section map-loc">
-    <h2>Visit our clinic</h2>
-    <p>OrthoCure Bone and Joint Speciality Clinic<br>No. 2 Second Street Santhipuram Thirumullaivoyal Chennai 600062</p>
-    <div class="cta-row">
-      <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Get directions</a>
-      <a class="btn alt" href="tel:+919342700212">Call clinic</a>
-    </div>
-    <iframe src="https://maps.google.com/maps?q=13.130476,80.130412&z=17&output=embed" aria-label="OrthoCure location map"></iframe>
-  </div>
+      <article class="card-block">
+        <h2 class="section-title">Stepwise treatment plan</h2>
+        <ul class="check">
+          <li>Advice on short rest, correct positions for lying, sitting and turning.</li>
+          <li>Gentle early movement to prevent stiffness and fear of activity.</li>
+          <li>Medicines for pain and nerve symptoms in short controlled courses.</li>
+          <li>Physiotherapy with targeted exercises once acute pain is under control.</li>
+          <li>Referral for injections or surgery only when there is clear benefit expected.</li>
+        </ul>
+        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+          Most patients in Ambattur, Avadi and Thirumullaivoyal improve with this stepwise approach without needing an operation.
+        </p>
+      </article>
+    </section>
+
+    <!-- Posture and lifestyle, physiotherapy role -->
+    <section class="content-grid" aria-label="Posture change and physiotherapy">
+      <article class="card-block">
+        <h2 class="section-title">Posture and daily routine changes</h2>
+        <ul class="check">
+          <li>Setting safe sitting times with planned standing and stretch breaks.</li>
+          <li>Guidance on chair height, desk level and screen position.</li>
+          <li>Advice on mobile use, neck angle and safe ways to read or watch content.</li>
+          <li>How to lift objects and bend from hips and knees instead of spine alone.</li>
+          <li>Simple routines to follow at home on busy days.</li>
+        </ul>
+        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+          Small consistent changes in posture often give more lasting relief than repeated tablets.
+        </p>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">Role of physiotherapy at OrthoCure</h2>
+        <p>
+          Physiotherapy is closely linked with spine and neck care at our clinic. The aim is to strengthen support muscles, improve flexibility and rebuild confidence in movement.
+        </p>
+        <ul class="check">
+          <li>Core strengthening for low back pain and disc related issues.</li>
+          <li>Neck and shoulder girdle training for cervical spondylosis and tech neck.</li>
+          <li>Stretching of tight muscle groups such as hamstrings and hip flexors.</li>
+          <li>Balance and gait work where nerve symptoms have caused weakness.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-outline" href="/services/physiotherapy-thirumullaivoyal.html">
+            Physiotherapy at OrthoCure
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- When surgery is considered -->
+    <section class="card-block" aria-label="When surgery enters the discussion">
+      <h2 class="section-title">When spine surgery is discussed</h2>
+      <ul class="check">
+        <li>Severe nerve compression with weakness or loss of control that is not improving.</li>
+        <li>Persistent leg or arm pain due to disc prolapse after a proper trial of conservative care.</li>
+        <li>Spinal canal narrowing with clear matching symptoms and walking limitation.</li>
+        <li>Structural problems such as significant slip or deformity with nerve involvement.</li>
+      </ul>
+      <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+        In such situations Dr Sumesh explains options in plain language and, when surgery is likely to help more than harm, guides patients to the right centre and timing. There is no pressure to rush decisions.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-block card-block" aria-label="Spine and neck pain questions">
+      <h2 class="section-title">Common questions about spine and neck pain</h2>
+
+      <details>
+        <summary>Do I need an MRI scan for every back or neck pain episode</summary>
+        <p>
+          No. Many simple episodes settle with rest, medicine and exercise. MRI is advised when pain is severe, persistent, associated with nerve symptoms or when the result will change the treatment plan.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is bed rest the best treatment for low back pain</summary>
+        <p>
+          Short periods of relative rest can help during very painful days. Prolonged bed rest often leads to more stiffness and fear of movement. Controlled return to gentle activity is usually better.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do all disc problems need surgery</summary>
+        <p>
+          No. Many disc prolapse cases improve with time, medicine, physiotherapy and posture correction. Surgery is reserved for cases with ongoing severe pain, progressive weakness or serious nerve signs.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can neck pain from mobiles and laptops be reversed</summary>
+        <p>
+          In many patients pain from posture and screen use improves once position, duration and exercise are corrected. Lasting change needs both habit change and strengthening, not medicine alone.
+        </p>
+      </details>
+    </section>
+
+    <!-- Bottom booking and related services -->
+    <section class="content-grid" aria-label="Visit and related services">
+      <article class="card-block">
+        <h2 class="section-title">Visit our clinic</h2>
+        <p>
+          <strong>OrthoCure Bone and Joint Speciality Clinic</strong><br>
+          No. 2 Second Street Santhipuram Thirumullaivoyal Chennai 600062
+        </p>
+        <p><strong>Clinic hours</strong> Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm.</p>
+        <p><strong>Phone and WhatsApp</strong> 93427 00212</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
+          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Spine%20or%20neck%20pain%20appointment&utm_source=site&utm_campaign=spine-neck">
+            Message on WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">
+            Open in Google Maps
+          </a>
+        </div>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">Related services and reading</h2>
+        <ul>
+          <li><a href="/services/joint-pain-treatment-thirumullaivoyal.html">Joint pain and arthritis hub</a></li>
+          <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy at OrthoCure</a></li>
+          <li><a href="/services/knee-arthritis.html">Knee arthritis care</a></li>
+          <li><a href="/blog/tech-neck.html">Tech neck and screen related neck pain</a></li>
+          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE for injury recovery</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="lead" style="font-size:.95rem;margin-top:4px">
+      This page is a general guide for adults with spine and neck pain in Ambattur, Avadi, Thirumullaivoyal and nearby areas. Your exact plan depends on examination, test results where needed and your work and family responsibilities.
+    </p>
+  </main>
+
+  <footer>
+    © OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal — Dr Sumesh Subramanian.
+  </footer>
+
+  <!-- FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Do I need an MRI scan for every back or neck pain episode",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Many simple episodes settle with rest, medicine and exercise. MRI is advised when pain is severe, persistent, associated with nerve symptoms or when the result will change the treatment plan."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Is bed rest the best treatment for low back pain",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Short periods of relative rest can help during very painful days. Prolonged bed rest often leads to more stiffness and fear of movement. Controlled return to gentle activity is usually better."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Do all disc problems need surgery",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Many disc prolapse cases improve with time, medicine, physiotherapy and posture correction. Surgery is reserved for cases with ongoing severe pain, progressive weakness or serious nerve signs."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can neck pain from mobiles and laptops be reversed",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"In many patients pain from posture and screen use improves once position, duration and exercise are corrected. Lasting change needs both habit change and strengthening, not medicine alone."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- Quiet AI retrieval helper -->
   <div style="display:none">
-    Spine pain neck pain back pain sciatica disc bulge spondylosis posture pain physiotherapy OrthoCure Thirumullaivoyal Ambattur Avadi digital X ray guided rehab non surgical first
+    Spine and neck pain clinic Thirumullaivoyal Ambattur Avadi acute low back pain disc prolapse sciatica cervical spondylosis posture related neck pain tech neck conservative first treatment physiotherapy surgery only when needed OrthoCure Bone and Joint Speciality Clinic Dr Sumesh Subramanian 9342700212
   </div>
 </body>
 </html>
