@@ -2,206 +2,540 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Physiotherapy in Thirumullaivoyal and Ambattur | OrthoCure Bone and Joint Clinic</title>
+  <title>Physiotherapy in Thirumullaivoyal Ambattur Avadi | OrthoCure Bone and Joint Speciality Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html" />
-  <meta name="description" content="Personalised physiotherapy and rehabilitation in Thirumullaivoyal, Ambattur and Avadi. Strength, mobility, pain relief, and safe recovery at OrthoCure Bone and Joint Clinic. Book a consult today." />
+  <meta name="description" content="In house physiotherapy at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal. Exercise first rehab for knee arthritis, shoulder pain, spine problems and post fracture recovery for patients from Ambattur, Avadi and nearby areas." />
   <meta name="theme-color" content="#053849" />
   <link rel="icon" href="/assets/logo.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="/assets/og-home.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Physiotherapy in Thirumullaivoyal and Ambattur | OrthoCure Clinic" />
-  <meta property="og:description" content="Evidence based physiotherapy for knee pain, back pain, sports injuries, and post surgery recovery. Evening and Sunday appointments." />
-  <meta property="og:url" content="https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html" />
-  <meta property="og:image" content="https://www.myorthocure.com/assets/og-home.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        rel="preload" as="style"
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
 
   <style>
-    :root{ --dark-cyan:#053849; --navy:#143444; --cyan:#0ea5e9; --cyan-light:#e7f6fc; --card:rgba(255,255,255,0.96); --accent:#ffd454; --ink:#16222f; }
-    *{ box-sizing:border-box; }
-    body{ margin:0; font-family:Inter,system-ui,sans-serif; color:var(--navy); background:linear-gradient(135deg,var(--cyan-light) 0%, #e8f2f8 85%); }
-    a{ color:var(--cyan); text-decoration:none; }
-    a:hover{ color:#0284c7; }
+    :root{
+      --dark-cyan:#053849;
+      --cyan:#0ea5e9;
+      --cyan-light:#e7f6fc;
+      --card:rgba(255,255,255,0.96);
+      --accent:#ffd454;
+      --ink:#132127;
+      --line:#e3eef7;
+      --focus:#94d9ff;
+    }
 
-    /* Header */
-    .header-bar{ background:linear-gradient(90deg,var(--dark-cyan) 80%, var(--cyan) 100%); color:#fff; padding:28px 14px 18px; text-align:center; border-radius:0 0 22px 22px; box-shadow:0 8px 32px rgba(16,37,66,.13); }
-    .header-title{ font-size:1.7rem; font-weight:700; margin:0; letter-spacing:.02em; }
-    .main-nav{ margin:14px 0 0; display:flex; gap:24px; justify-content:center; flex-wrap:wrap; }
-    .main-nav a{ color:#e5fcff; font-weight:700; font-size:1.05rem; position:relative; padding-bottom:4px; }
-    .main-nav a:after{ content:''; display:block; height:3px; width:0; background:linear-gradient(90deg,var(--accent),var(--cyan)); border-radius:2px; transition:width .25s; }
-    .main-nav a.active:after, .main-nav a:hover:after{ width:100%; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,sans-serif;
+      background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);
+      color:var(--ink);
+    }
+    a{color:var(--cyan);text-decoration:none;transition:color .18s}
+    a:hover{color:#0284c7}
+    :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
-    /* Hero */
-    .hero{ background:#fff; border:1px solid #e6f1f7; max-width:960px; margin:26px auto 0; border-radius:16px; box-shadow:0 8px 28px rgba(2,132,199,.08); padding:28px 20px; text-align:center; }
-    .hero h1{ font-size:2.05rem; color:var(--dark-cyan); margin:0 0 8px; }
-    .hero p{ color:#385a6f; font-size:1.12rem; margin:0; }
+    .header-bar{
+      background:linear-gradient(90deg,var(--dark-cyan) 78%,var(--cyan) 100%);
+      color:#fff;
+      padding:34px 10px 26px 10px;
+      text-align:center;
+      border-radius:0 0 29px 29px;
+      box-shadow:0 7px 32px rgba(16,37,66,.13);
+      position:relative;
+      overflow:hidden;
+    }
+    .header-bar::after{
+      content:"";
+      position:absolute;
+      right:0;
+      top:-36px;
+      width:340px;
+      height:220px;
+      opacity:.13;
+      background:radial-gradient(circle at 90% 12%,var(--accent) 7%,var(--cyan) 60%,transparent 100%);
+      pointer-events:none;
+    }
+    .clinic-main-title{
+      font-size:2.1rem;
+      font-weight:700;
+      margin:0 0 8px;
+      letter-spacing:.018em;
+    }
+    .clinic-tagline{
+      font-size:1.07rem;
+      opacity:.97;
+    }
+    .main-nav{
+      margin:22px 0 0;
+      display:flex;
+      gap:31px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .main-nav a{
+      color:#e2ecf7;
+      font-weight:700;
+      font-size:1.09rem;
+      position:relative;
+      padding-bottom:5px;
+    }
+    .main-nav a:after{
+      content:'';
+      display:block;
+      height:3px;
+      width:0;
+      background:linear-gradient(90deg,var(--accent),var(--cyan));
+      border-radius:2px;
+      transition:width .24s;
+    }
+    .main-nav a.active:after,
+    .main-nav a:hover:after{
+      width:100%;
+    }
 
-    /* Sections */
-    .section{ max-width:960px; margin:22px auto 0; background:var(--card); border-radius:16px; box-shadow:0 6px 26px rgba(2,132,199,.08); border:1px solid #eaf6fb; padding:22px 18px; }
-    .section h2{ margin:0 0 12px; font-size:1.32rem; color:var(--dark-cyan); }
-    .section p{ margin:6px 0 10px; color:#28485b; }
-    ul,ol{ margin:8px 0 0 1.2rem; }
+    .crumbs{
+      max-width:1160px;
+      margin:14px auto 0;
+      padding:0 15px;
+      color:#4a6a80;
+      font-size:.95rem;
+    }
+    .crumbs a{text-decoration:underline}
 
-    /* CTA */
-    .cta-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
-    .btn{ display:inline-block; padding:12px 28px; border-radius:21px; font-weight:700; background:linear-gradient(90deg,var(--dark-cyan), var(--cyan) 85%); color:#fff; border:none; box-shadow:0 2px 12px rgba(2,132,199,.13); font-size:1.05rem; }
-    .btn.alt{ background:#fff; color:var(--dark-cyan); border:2px solid var(--cyan); box-shadow:none; }
-    .btn:hover{ background:linear-gradient(90deg,#035372 75%, #0ea5e9 100%); }
-    .btn.alt:hover{ background:#e9f7ff; color:#035372; border-color:#0284c7; }
+    .services-section{
+      max-width:1160px;
+      margin:18px auto 0;
+      padding:0 15px;
+    }
+    .services-section h1{
+      color:var(--dark-cyan);
+      font-size:1.9rem;
+      margin:18px 0 10px;
+      font-weight:800;
+      letter-spacing:.02em;
+    }
 
-    /* FAQ */
-    .faq details{ margin-bottom:12px; border:1px solid #e7f4fb; border-radius:12px; padding:12px 14px; background:#fff; }
-    .faq summary{ cursor:pointer; font-weight:700; color:var(--navy); }
-    .faq details div{ margin-top:8px; color:#3a5669; }
+    .lead{
+      font-size:1.06rem;
+      color:#3a5669;
+      max-width:960px;
+      margin:0 0 20px;
+    }
 
-    /* Map */
-    .map-loc iframe{ width:100%; height:240px; border:0; border-radius:12px; }
+    .card-block{
+      background:var(--card);
+      border-radius:22px;
+      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
+      padding:22px 20px 20px;
+      border:1.2px solid var(--line);
+      margin-bottom:22px;
+    }
 
-    /* Footer note */
-    .subtle{ color:#6b7e91; font-size:.95rem; }
+    .content-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:22px;
+      margin-bottom:22px;
+    }
 
-    /* Responsive */
-    @media (max-width:720px){
-      .header-bar{ padding:18px 10px; }
-      .hero, .section{ margin:16px 10px 0; padding:16px 12px; }
-      .hero h1{ font-size:1.6rem; }
+    ul.check{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    ul.check li{
+      padding-left:26px;
+      position:relative;
+      margin:6px 0;
+    }
+    ul.check li::before{
+      content:"✔";
+      position:absolute;
+      left:0;
+      top:0;
+      color:#059669;
+    }
+
+    .cta-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .btn{
+      display:inline-block;
+      padding:11px 20px;
+      font-weight:700;
+      font-size:1rem;
+      border-radius:18px;
+      border:none;
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .btn-primary{
+      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);
+      color:#fff;
+      box-shadow:0 1px 14px rgba(2,132,199,.1);
+    }
+    .btn-primary:hover{
+      background:linear-gradient(90deg,#035372 80%,#0ea5e9 100%);
+    }
+    .btn-outline{
+      background:#e7f6fc;
+      color:var(--dark-cyan);
+      border:1px solid var(--line);
+    }
+
+    .section-title{
+      font-size:1.25rem;
+      margin:0 0 10px;
+      color:var(--dark-cyan);
+    }
+
+    .faq-block details{
+      background:var(--card);
+      border-radius:18px;
+      border:1.2px solid var(--line);
+      padding:14px 16px;
+      margin-bottom:10px;
+      box-shadow:0 4px 16px rgba(15,23,42,.06);
+    }
+    .faq-block summary{
+      cursor:pointer;
+      font-weight:600;
+      color:var(--dark-cyan);
+    }
+
+    footer{
+      max-width:1160px;
+      margin:20px auto 18px;
+      padding:0 15px;
+      color:#49647a;
+      font-size:.92rem;
+    }
+
+    @media (max-width:700px){
+      .services-section h1{font-size:1.5rem}
+      .clinic-main-title{font-size:1.4rem}
     }
   </style>
 
-  <!-- Schema: Breadcrumb + Service + FAQPage -->
+  <!-- Breadcrumb and Service schema -->
   <script type="application/ld+json">
   [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myorthocure.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.myorthocure.com/services/index.html" },
-        { "@type": "ListItem", "position": 3, "name": "Physiotherapy in Thirumullaivoyal", "item": "https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html" }
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
+        {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"},
+        {"@type":"ListItem","position":3,"name":"Physiotherapy","item":"https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html"}
       ]
     },
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "@id": "https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html#physio-service",
-      "name": "Physiotherapy and Rehabilitation",
-      "serviceType": "Physiotherapy",
-      "description": "Personalised physiotherapy for knee pain, back pain, sports injuries, arthritis, and post surgery recovery. Evidence based protocols with clear home guidance.",
-      "provider": {
-        "@type": "MedicalClinic",
-        "@id": "https://www.myorthocure.com/#clinic",
-        "name": "OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
-        "url": "https://www.myorthocure.com/"
+      "@context":"https://schema.org",
+      "@type":"Service",
+      "name":"Physiotherapy and rehabilitation",
+      "description":"In house physiotherapy service at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal with exercise first plans for knee arthritis, shoulder pain, spine problems, sports injury and post fracture recovery.",
+      "areaServed":[
+        {"@type":"City","name":"Thirumullaivoyal"},
+        {"@type":"City","name":"Ambattur"},
+        {"@type":"City","name":"Avadi"}
+      ],
+      "provider":{
+        "@type":"MedicalClinic",
+        "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
+        "telephone":"+919342700212",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"No. 2 Second Street Santhipuram Thirumullaivoyal",
+          "addressLocality":"Chennai",
+          "addressRegion":"TN",
+          "postalCode":"600062",
+          "addressCountry":"IN"
+        }
       },
-      "areaServed": ["Thirumullaivoyal","Ambattur","Avadi","Annanur","Iyyapakkam"],
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": "https://www.myorthocure.com/consult.html",
-        "availableLanguage": ["en","ta"]
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "price": "300",
-        "url": "https://www.myorthocure.com/consult.html",
-        "availability": "https://schema.org/InStock"
+      "url":"https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html",
+      "isRelatedTo":{
+        "@type":"Person",
+        "name":"Dr Sumesh Subramanian",
+        "jobTitle":"Orthopaedic Surgeon"
       }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Who needs physiotherapy", "acceptedAnswer": { "@type": "Answer", "text": "People with fractures, joint injuries, post surgery recovery, arthritis, back pain, neck pain, sports injuries, mobility and balance issues." } },
-        { "@type": "Question", "name": "Is a doctor referral needed", "acceptedAnswer": { "@type": "Answer", "text": "No. You can book directly or walk in. The clinic is led by an orthopaedic surgeon who can assess you on the same visit." } },
-        { "@type": "Question", "name": "Are sessions customised", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Plans are personalised after evaluation. All advice is explained in plain language and home guidance is given." } },
-        { "@type": "Question", "name": "What problems do you treat", "acceptedAnswer": { "@type": "Answer", "text": "Knee pain, back pain, shoulder pain, sports injuries, arthritis, post operative recovery, posture and balance problems." } }
-      ]
     }
   ]
   </script>
 </head>
+
 <body>
-  <div class="header-bar">
-    <div class="header-title">OrthoCure Thirumullaivoyal</div>
+  <header class="header-bar">
+    <div class="clinic-main-title">OrthoCure<br>Thirumullaivoyal</div>
+    <div class="clinic-tagline">
+      Evidence based orthopaedic care in Ambattur Avadi and North Chennai
+    </div>
     <nav class="main-nav" aria-label="Primary">
       <a href="/">Home</a>
       <a href="/about.html">About</a>
-      <a href="/services/index.html" class="active">Services</a>
+      <a href="/services/index.html" aria-current="page">Services</a>
       <a href="/consult.html">Consult</a>
+      <a href="/services/fracture-care.html">Fracture Care</a>
       <a href="/blog.html">Blog</a>
       <a href="/contact.html">Contact</a>
     </nav>
-  </div>
+  </header>
 
-  <section class="hero">
-    <h1>Physiotherapy and Rehabilitation</h1>
-    <p>Personalised physiotherapy at OrthoCure Bone and Joint Clinic in Thirumullaivoyal. We serve Ambattur, Avadi and nearby areas. Care is evidence based and goal focused for a safe and steady return to daily life.</p>
-    <div class="cta-row">
-      <a href="/consult.html" class="btn">Book physiotherapy consult</a>
-      <a href="/services/index.html" class="btn alt">Back to all services</a>
-    </div>
-  </section>
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/services/index.html">Services</a> › Physiotherapy
+  </nav>
 
-  <section class="section">
-    <h2>What makes our physiotherapy different</h2>
-    <ul>
-      <li>One to one assessment with an orthopaedic surgeon and a physiotherapist</li>
-      <li>Strength, mobility and balance programs tailored to your goals</li>
-      <li>Support for joint pain, post fracture care, post surgery care, spine care and sports injuries</li>
-      <li>Clear home exercises with progress tracking and simple milestones</li>
-      <li>Evening and Sunday slots for working families</li>
-    </ul>
+  <main class="services-section" id="main">
+    <h1>Physiotherapy at OrthoCure Thirumullaivoyal</h1>
 
-    <h2>How your plan is built</h2>
-    <ol>
-      <li>Visit us or book a consult for evaluation</li>
-      <li>We set a plan that covers exercise, pain control and daily activity advice</li>
-      <li>We review at regular intervals and progress step by step</li>
-      <li>We guide your return to work, school and sport with safety checks</li>
-    </ol>
-
-    <div class="cta-row">
-      <a href="/consult.html" class="btn">Start your plan</a>
-      <a href="/contact.html" class="btn alt">Ask a question</a>
-    </div>
-  </section>
-
-  <section class="section faq" aria-label="Frequently asked questions">
-    <h2>Frequently asked questions</h2>
-    <details>
-      <summary>Who needs physiotherapy</summary>
-      <div>People who are recovering from a fracture or surgery, people with knee pain, back pain, neck pain, arthritis, sports injuries, or mobility and balance issues.</div>
-    </details>
-    <details>
-      <summary>Is a doctor referral needed</summary>
-      <div>No. You can book directly or walk in. The clinic is led by an orthopaedic surgeon who can assess you on the same visit.</div>
-    </details>
-    <details>
-      <summary>Are sessions customised</summary>
-      <div>Yes. Plans are personalised after evaluation. We explain every step in simple language and give home guidance.</div>
-    </details>
-    <details>
-      <summary>What problems do you treat</summary>
-      <div>Knee pain, back pain, shoulder pain, sports injuries, arthritis, post operative recovery, posture and balance problems.</div>
-    </details>
-  </section>
-
-  <section class="section map-loc">
-    <h2>Visit our clinic</h2>
-    <p class="subtle">
-      OrthoCure Bone and Joint Speciality Clinic, No. 2, Ground Floor, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai 600062
+    <p class="lead">
+      Physiotherapy at OrthoCure Bone and Joint Speciality Clinic is built around one idea. The right exercise at the right time can do more for joints than any tablet. Plans are supervised, individual and closely linked to your orthopaedic diagnosis so that every visit moves you one step closer to comfortable movement.
     </p>
-    <iframe src="https://maps.google.com/maps?q=13.130476,80.130412&z=17&output=embed" aria-label="OrthoCure location"></iframe>
-    <div class="cta-row" style="margin-top:14px;">
-      <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Get directions</a>
-      <a class="btn alt" href="tel:+919342700212">Call clinic</a>
-    </div>
-  </section>
 
-  <!-- Quiet keywords for AI retrieval without visual clutter -->
+    <!-- Top CTA -->
+    <div class="card-block">
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+919342700212">Call for physiotherapy appointment</a>
+        <a class="btn btn-outline" href="https://wa.me/919342700212?text=Physiotherapy%20appointment&utm_source=site&utm_campaign=physiotherapy">
+          WhatsApp 93427 00212
+        </a>
+        <a class="btn btn-outline" href="/consult.html">Book doctor and physio visit</a>
+      </div>
+    </div>
+
+    <!-- Why choose physio at OrthoCure -->
+    <section class="content-grid" aria-label="Why choose physiotherapy at OrthoCure">
+      <article class="card-block">
+        <h2 class="section-title">Why physiotherapy is central to your plan</h2>
+        <ul class="check">
+          <li>Supports the conservative first approach used for knee arthritis, shoulder problems and spine pain.</li>
+          <li>Strengthens muscles that protect joints and reduce load on painful areas.</li>
+          <li>Improves balance, confidence and endurance in daily life.</li>
+          <li>Helps after fractures and surgery so that stiffness does not become permanent.</li>
+          <li>Reduces long term dependence on pain medicine where possible.</li>
+        </ul>
+        <p style="font-size:.96rem;color:#3a5669;margin-top:6px">
+          Every exercise is chosen to match your age, X ray findings and general health. No copy paste routines.
+        </p>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">Conditions we commonly support</h2>
+        <ul class="check">
+          <li>Knee arthritis and knee pain in walkers, homemakers and office workers.</li>
+          <li>Shoulder pain from rotator cuff problems, frozen shoulder and overuse.</li>
+          <li>Spine and neck pain related to posture and disc strain.</li>
+          <li>Post fracture and post plaster stiffness of wrist, elbow, knee and ankle.</li>
+          <li>After knee or hip replacement when guided rehab is essential.</li>
+        </ul>
+        <p style="font-size:.96rem;color:#3a5669;margin-top:6px">
+          Patients come from Thirumullaivoyal, Ambattur, Avadi, Iyyapakkam and nearby parts of North Chennai.
+        </p>
+      </article>
+    </section>
+
+    <!-- Assessment and session structure -->
+    <section class="content-grid" aria-label="How your plan is created">
+      <article class="card-block">
+        <h2 class="section-title">How we assess and plan</h2>
+        <ul class="check">
+          <li>Joint and muscle examination with review of X rays and reports.</li>
+          <li>Discussion of your work, home duties and what you want to return to.</li>
+          <li>Setting a clear goal such as climbing stairs, sitting on the floor or walking a set distance.</li>
+          <li>Designing a stepwise exercise plan with home and in clinic components.</li>
+          <li>Review at regular intervals to progress or modify based on response.</li>
+        </ul>
+        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+          Doctor and physiotherapist work together so that your plan stays medically safe and realistic.
+        </p>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">What a typical session looks like</h2>
+        <ul class="check">
+          <li>Brief check of pain level, stiffness and any new symptoms.</li>
+          <li>Warm up and gentle mobility for the involved joint.</li>
+          <li>Targeted strengthening and balance work using simple equipment.</li>
+          <li>Stretching and cool down with advice on pain control measures at home.</li>
+          <li>Written or video based home exercise instructions when needed.</li>
+        </ul>
+        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+          Most sessions last around thirty minutes with focused work rather than long passive treatments.
+        </p>
+      </article>
+    </section>
+
+    <!-- Equipment and modalities -->
+    <section class="content-grid" aria-label="Facilities and modalities">
+      <article class="card-block">
+        <h2 class="section-title">Facilities available in our physiotherapy room</h2>
+        <ul class="check">
+          <li>Exercise mats, step platforms and stationary supports for safe balance work.</li>
+          <li>Elastic bands and small weights for graded strengthening.</li>
+          <li>Parallel support and chairs for sit to stand and gait training.</li>
+          <li>Simple tools for hand, wrist and shoulder mobility.</li>
+        </ul>
+        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+          Equipment is kept minimal but effective so that most exercises can be copied at home with simple objects.
+        </p>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">Pain relief and adjunct modalities</h2>
+        <p>
+          Modalities can ease pain and stiffness so that you can exercise better. They are always secondary to active work.
+        </p>
+        <ul class="check">
+          <li>Interferential therapy and TENS for selected pain patterns.</li>
+          <li>Ultrasound therapy for certain tendon and soft tissue conditions.</li>
+          <li>Wax bath for hand and wrist stiffness where indicated.</li>
+          <li>Cold or warm packs with guidance on safe use at home.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- When physio is not advised -->
+    <section class="card-block" aria-label="When physiotherapy needs caution">
+      <h2 class="section-title">When physiotherapy must be modified or delayed</h2>
+      <ul class="check">
+        <li>Uncontrolled fever, infection or recent major illness.</li>
+        <li>Sudden increase in swelling, redness or severe night pain.</li>
+        <li>Suspected fresh fracture or ligament injury that has not yet been assessed.</li>
+        <li>Very high blood pressure, cardiac issues or breathlessness not yet evaluated.</li>
+        <li>New nerve symptoms such as loss of power or marked numbness.</li>
+      </ul>
+      <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+        In such cases the doctor review is done first and physiotherapy is started only when it is safe.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-block card-block" aria-label="Physiotherapy questions">
+      <h2 class="section-title">Common questions about physiotherapy</h2>
+
+      <details>
+        <summary>Do I need a doctor consultation before starting physiotherapy</summary>
+        <p>
+          For most joint problems a doctor consultation is recommended so that serious causes such as fracture or infection are not missed. At OrthoCure plans are created with input from both doctor and physiotherapist.
+        </p>
+      </details>
+
+      <details>
+        <summary>How many sessions will I need</summary>
+        <p>
+          This depends on the condition and your goals. Some problems settle in a few guided visits while others such as long standing arthritis or post operative rehab need a longer plan. You will be told a realistic range at the start.
+        </p>
+      </details>
+
+      <details>
+        <summary>Will I have pain after exercises</summary>
+        <p>
+          Mild muscle ache is common when you start new work. Sharp joint pain or swelling is not expected and is monitored closely. Exercises are adjusted so that effort is felt in the muscles not as a deep joint pain.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can physiotherapy replace surgery</summary>
+        <p>
+          In many early and moderate cases good physiotherapy delays or avoids surgery. In advanced disease it still improves strength and confidence and often helps patients recover better after an operation.
+        </p>
+      </details>
+    </section>
+
+    <!-- Bottom booking and related services -->
+    <section class="content-grid" aria-label="Visit and related services">
+      <article class="card-block">
+        <h2 class="section-title">Visit our clinic</h2>
+        <p>
+          <strong>OrthoCure Bone and Joint Speciality Clinic</strong><br>
+          No. 2 Second Street Santhipuram Thirumullaivoyal Chennai 600062
+        </p>
+        <p><strong>Clinic hours</strong> Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm.</p>
+        <p><strong>Phone and WhatsApp</strong> 93427 00212</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
+          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Physiotherapy%20appointment&utm_source=site&utm_campaign=physiotherapy">
+            Message on WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">
+            Open in Google Maps
+          </a>
+        </div>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">Related services and reading</h2>
+        <ul>
+          <li><a href="/services/knee-arthritis.html">Knee arthritis care</a></li>
+          <li><a href="/services/joint-pain-treatment-thirumullaivoyal.html">Joint pain and arthritis hub</a></li>
+          <li><a href="/services/spine-neck-pain-thirumullaivoyal.html">Spine and neck clinic</a></li>
+          <li><a href="/services/fracture-care.html">Fracture care and plaster service</a></li>
+          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE for injury recovery</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="lead" style="font-size:.95rem;margin-top:4px">
+      This page is a general guide for physiotherapy at OrthoCure for people from Ambattur, Avadi, Thirumullaivoyal and nearby areas. The exact plan and number of sessions depend on your medical history, examination and goals.
+    </p>
+  </main>
+
+  <footer>
+    © OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal — Dr Sumesh Subramanian.
+  </footer>
+
+  <!-- FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Do I need a doctor consultation before starting physiotherapy",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"For most joint problems a doctor consultation is recommended so that serious causes such as fracture or infection are not missed. At OrthoCure plans are created with input from both doctor and physiotherapist."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How many sessions will I need",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"This depends on the condition and your goals. Some problems settle in a few guided visits while others such as long standing arthritis or post operative rehab need a longer plan. You will be told a realistic range at the start."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Will I have pain after exercises",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Mild muscle ache is common when you start new work. Sharp joint pain or swelling is not expected and is monitored closely. Exercises are adjusted so that effort is felt in the muscles not as a deep joint pain."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can physiotherapy replace surgery",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"In many early and moderate cases good physiotherapy delays or avoids surgery. In advanced disease it still improves strength and confidence and often helps patients recover better after an operation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Quiet AI retrieval helper -->
   <div style="display:none">
-    OrthoCure physiotherapy Thirumullaivoyal Ambattur Avadi knee pain back pain shoulder pain sports injury arthritis post surgery rehab fracture rehab balance training gait training personalised exercise plan
+    Physiotherapy Thirumullaivoyal Ambattur Avadi in house rehab knee arthritis shoulder pain spine problems post fracture stiffness post replacement recovery exercise first conservative care OrthoCure Bone and Joint Speciality Clinic Dr Sumesh Subramanian 9342700212
   </div>
 </body>
 </html>
