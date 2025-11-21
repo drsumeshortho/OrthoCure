@@ -2,49 +2,230 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Joint Pain and Arthritis Treatment in Thirumullaivoyal and Ambattur | OrthoCure Bone and Joint Clinic</title>
+  <title>Joint Pain and Arthritis Treatment in Thirumullaivoyal and Ambattur | OrthoCure Bone and Joint Speciality Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://www.myorthocure.com/services/joint-pain-treatment-thirumullaivoyal.html" />
-  <meta name="description" content="Evidence based care for knee shoulder and joint pain in Thirumullaivoyal Ambattur and Avadi. Step wise non surgical plans PRP and hyaluronic acid injections and guided physiotherapy at OrthoCure." />
+  <meta name="description" content="Joint pain and arthritis care for knee shoulder hip hand and ankle at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal. Stepwise plans, exercise and lifestyle first, medicines and physiotherapy next, injections and surgery only when needed for patients from Ambattur, Avadi and nearby areas." />
   <meta name="theme-color" content="#053849" />
   <link rel="icon" href="/assets/logo.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        rel="preload" as="style"
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
 
   <style>
-    :root { --dark-cyan:#053849; --cyan:#0ea5e9; --cyan-light:#e7f6fc; --card:rgba(255,255,255,.96); --accent:#ffd454; --ink:#143444; --line:#e3eef7; }
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);color:var(--ink)}
-    a{color:var(--cyan);text-decoration:none;transition:color .18s} a:hover{color:#0284c7}
+    :root{
+      --dark-cyan:#053849;
+      --cyan:#0ea5e9;
+      --cyan-light:#e7f6fc;
+      --card:rgba(255,255,255,0.96);
+      --accent:#ffd454;
+      --ink:#132127;
+      --line:#e3eef7;
+      --focus:#94d9ff;
+    }
 
-    .header-bar{background:linear-gradient(90deg,var(--dark-cyan) 80%,var(--cyan) 100%);color:#fff;padding:32px 14px 24px;text-align:center;border-radius:0 0 24px 24px;box-shadow:0 8px 34px rgba(7,98,138,.16)}
-    .header-title{font-size:1.8rem;font-weight:700;margin:0 0 6px}
-    .main-nav{margin-top:14px;display:flex;gap:26px;justify-content:center;flex-wrap:wrap}
-    .main-nav a{color:#e9f7ff;font-weight:700;position:relative;padding-bottom:4px}
-    .main-nav a:after{content:'';display:block;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--cyan));border-radius:2px;transition:width .24s}
-    .main-nav a.active:after,.main-nav a:hover:after{width:100%}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,sans-serif;
+      background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);
+      color:var(--ink);
+    }
+    a{color:var(--cyan);text-decoration:none;transition:color .18s}
+    a:hover{color:#0284c7}
+    :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
-    .hero{background:var(--cyan-light);border-radius:16px;max-width:920px;margin:28px auto 0;padding:36px 18px 18px;text-align:center;box-shadow:0 6px 24px rgba(2,132,199,.10)}
-    .hero h1{font-size:2.02rem;color:var(--dark-cyan);margin:0 0 10px}
-    .hero p{font-size:1.12rem;color:#305068;margin:0}
+    .header-bar{
+      background:linear-gradient(90deg,var(--dark-cyan) 78%,var(--cyan) 100%);
+      color:#fff;
+      padding:34px 10px 26px 10px;
+      text-align:center;
+      border-radius:0 0 29px 29px;
+      box-shadow:0 7px 32px rgba(16,37,66,.13);
+      position:relative;
+      overflow:hidden;
+    }
+    .header-bar::after{
+      content:"";
+      position:absolute;
+      right:0;
+      top:-36px;
+      width:340px;
+      height:220px;
+      opacity:.13;
+      background:radial-gradient(circle at 90% 12%,var(--accent) 7%,var(--cyan) 60%,transparent 100%);
+      pointer-events:none;
+    }
+    .clinic-main-title{
+      font-size:2.1rem;
+      font-weight:700;
+      margin:0 0 8px;
+      letter-spacing:.018em;
+    }
+    .clinic-tagline{
+      font-size:1.07rem;
+      opacity:.97;
+    }
+    .main-nav{
+      margin:22px 0 0;
+      display:flex;
+      gap:31px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .main-nav a{
+      color:#e2ecf7;
+      font-weight:700;
+      font-size:1.09rem;
+      position:relative;
+      padding-bottom:5px;
+    }
+    .main-nav a:after{
+      content:'';
+      display:block;
+      height:3px;
+      width:0;
+      background:linear-gradient(90deg,var(--accent),var(--cyan));
+      border-radius:2px;
+      transition:width .24s;
+    }
+    .main-nav a.active:after,
+    .main-nav a:hover:after{
+      width:100%;
+    }
 
-    .section{max-width:920px;margin:22px auto;background:var(--card);border-radius:18px;box-shadow:0 6px 28px rgba(2,132,199,.08);padding:24px 18px;border:1px solid var(--line)}
-    .section h2{font-size:1.28rem;color:var(--dark-cyan);margin:0 0 12px}
-    ul,ol{margin-left:1.1em}
-    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
-    .btn{display:inline-block;padding:12px 28px;border-radius:20px;font-weight:700;background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);color:#fff;border:none;box-shadow:0 2px 12px rgba(2,132,199,.13);font-size:1.05rem}
-    .btn.alt{background:#fff;color:var(--dark-cyan);border:2px solid var(--cyan);box-shadow:none}
-    .btn:hover{background:linear-gradient(90deg,#035372 82%,#0ea5e9 100%)}
-    .btn.alt:hover{background:#e8f7ff;color:#035372;border-color:#0284c7}
-    .pill{display:inline-block;background:#edf7ff;border:1px solid #dbeefa;color:var(--dark-cyan);font-weight:700;font-size:.84rem;border-radius:999px;padding:6px 10px;margin:0 8px 10px 0}
+    .crumbs{
+      max-width:1160px;
+      margin:14px auto 0;
+      padding:0 15px;
+      color:#4a6a80;
+      font-size:.95rem;
+    }
+    .crumbs a{text-decoration:underline}
 
-    .related{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:10px}
-    .related a{display:block;background:#f7fbff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:#1f3f52}
-    .related a:hover{background:#eef7ff}
+    .services-section{
+      max-width:1160px;
+      margin:18px auto 0;
+      padding:0 15px;
+    }
+    .services-section h1{
+      color:var(--dark-cyan);
+      font-size:1.9rem;
+      margin:18px 0 10px;
+      font-weight:800;
+      letter-spacing:.02em;
+    }
 
-    .map-loc iframe{width:100%;height:220px;border-radius:12px;border:0}
-    @media (max-width:720px){.header-bar,.section,.hero{padding:12px 3vw}.hero{margin-top:16px}}
+    .lead{
+      font-size:1.06rem;
+      color:#3a5669;
+      max-width:960px;
+      margin:0 0 20px;
+    }
+
+    .card-block{
+      background:var(--card);
+      border-radius:22px;
+      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
+      padding:22px 20px 20px;
+      border:1.2px solid var(--line);
+      margin-bottom:22px;
+    }
+
+    .content-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:22px;
+      margin-bottom:22px;
+    }
+
+    ul.check{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    ul.check li{
+      padding-left:26px;
+      position:relative;
+      margin:6px 0;
+    }
+    ul.check li::before{
+      content:"✔";
+      position:absolute;
+      left:0;
+      top:0;
+      color:#059669;
+    }
+
+    .cta-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .btn{
+      display:inline-block;
+      padding:11px 20px;
+      font-weight:700;
+      font-size:1rem;
+      border-radius:18px;
+      border:none;
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .btn-primary{
+      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);
+      color:#fff;
+      box-shadow:0 1px 14px rgba(2,132,199,.1);
+    }
+    .btn-primary:hover{
+      background:linear-gradient(90deg,#035372 80%,#0ea5e9 100%);
+    }
+    .btn-outline{
+      background:#e7f6fc;
+      color:var(--dark-cyan);
+      border:1px solid var(--line);
+    }
+
+    .section-title{
+      font-size:1.25rem;
+      margin:0 0 10px;
+      color:var(--dark-cyan);
+    }
+
+    .faq-block details{
+      background:var(--card);
+      border-radius:18px;
+      border:1.2px solid var(--line);
+      padding:14px 16px;
+      margin-bottom:10px;
+      box-shadow:0 4px 16px rgba(15,23,42,.06);
+    }
+    .faq-block summary{
+      cursor:pointer;
+      font-weight:600;
+      color:var(--dark-cyan);
+    }
+
+    footer{
+      max-width:1160px;
+      margin:20px auto 18px;
+      padding:0 15px;
+      color:#49647a;
+      font-size:.92rem;
+    }
+
+    @media (max-width:700px){
+      .services-section h1{font-size:1.5rem}
+      .clinic-main-title{font-size:1.4rem}
+    }
   </style>
 
-  <!-- Schema: Breadcrumb and Service -->
+  <!-- Breadcrumb and Service schema -->
   <script type="application/ld+json">
   [
     {
@@ -59,96 +240,283 @@
     {
       "@context":"https://schema.org",
       "@type":"Service",
-      "name":"Joint Pain and Arthritis Treatment",
-      "serviceType":"Orthopaedic joint care",
+      "name":"Joint pain and arthritis care",
+      "description":"Stepwise care for knee shoulder hip hand and ankle arthritis with exercise and lifestyle change first, medicines and physiotherapy next and injections or surgery only when needed at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal.",
+      "medicalSpecialty":"Orthopedics",
+      "areaServed":[
+        {"@type":"City","name":"Thirumullaivoyal"},
+        {"@type":"City","name":"Ambattur"},
+        {"@type":"City","name":"Avadi"}
+      ],
+      "provider":{
+        "@type":"MedicalClinic",
+        "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
+        "telephone":"+919342700212",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"No. 2 Second Street Santhipuram Thirumullaivoyal",
+          "addressLocality":"Chennai",
+          "addressRegion":"TN",
+          "postalCode":"600062",
+          "addressCountry":"IN"
+        }
+      },
       "url":"https://www.myorthocure.com/services/joint-pain-treatment-thirumullaivoyal.html",
-      "areaServed":["Thirumullaivoyal","Ambattur","Avadi"],
-      "provider":{"@type":"MedicalClinic","name":"OrthoCure Bone and Joint Speciality Clinic","url":"https://www.myorthocure.com/"},
-      "availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://www.myorthocure.com/consult.html","availableLanguage":["en","ta"]}
+      "isRelatedTo":{
+        "@type":"Person",
+        "name":"Dr Sumesh Subramanian",
+        "jobTitle":"Orthopaedic Surgeon"
+      }
     }
   ]
   </script>
 </head>
+
 <body>
-  <div class="header-bar">
-    <div class="header-title">OrthoCure Thirumullaivoyal</div>
+  <header class="header-bar">
+    <div class="clinic-main-title">OrthoCure<br>Thirumullaivoyal</div>
+    <div class="clinic-tagline">
+      Evidence based orthopaedic care in Ambattur Avadi and North Chennai
+    </div>
     <nav class="main-nav" aria-label="Primary">
       <a href="/">Home</a>
       <a href="/about.html">About</a>
-      <a href="/services/index.html" class="active">Services</a>
+      <a href="/services/index.html" aria-current="page">Services</a>
       <a href="/consult.html">Consult</a>
+      <a href="/services/fracture-care.html">Fracture Care</a>
       <a href="/blog.html">Blog</a>
       <a href="/contact.html">Contact</a>
     </nav>
-  </div>
+  </header>
 
-  <section class="hero">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/services/index.html">Services</a> › Joint Pain and Arthritis
+  </nav>
+
+  <main class="services-section" id="main">
     <h1>Joint Pain and Arthritis Treatment</h1>
-    <p>Expert care for knee shoulder and other joint problems at OrthoCure Bone and Joint Clinic Thirumullaivoyal. We focus on modern non surgical therapy with clear guidance and measurable goals.</p>
-  </section>
 
-  <div class="section">
-    <span class="pill">Knee</span>
-    <span class="pill">Shoulder</span>
-    <span class="pill">Hip</span>
-    <span class="pill">Hand and wrist</span>
-    <span class="pill">Foot and ankle</span>
+    <p class="lead">
+      Joint pain can affect knees shoulders hips hands and ankles. At OrthoCure Bone and Joint Speciality Clinic we look at the full picture before naming it arthritis. The goal is simple. Understand which joint is troubled, match treatment to the exact stage and keep you moving with the least medicine and lowest risk needed.
+    </p>
 
-    <h2>Why choose OrthoCure for joint pain</h2>
-    <ul>
-      <li>Detailed examination and precise diagnosis by a fellowship trained orthopaedic surgeon</li>
-      <li>Step wise plan that starts with advice exercise and pain control and adds injections only when useful</li>
-      <li>Platelet rich plasma and hyaluronic acid options when indicated with image guidance</li>
-      <li>Personal plans that aim for pain reduction better function and safe return to activity</li>
-    </ul>
-
-    <h2>How we treat joint pain and arthritis</h2>
-    <ol>
-      <li>Consult and assessment of pain stiffness swelling and instability</li>
-      <li>Diagnosis which may include X ray or selective blood tests</li>
-      <li>Therapy which includes medication guided exercise physiotherapy and injections when indicated</li>
-      <li>Follow up and progression based on your response</li>
-    </ol>
-
-    <div class="cta-row">
-      <a class="btn" href="/consult.html">Book joint pain consultation</a>
-      <a class="btn alt" href="/services/prp-treatment-thirumullaivoyal.html">See PRP details</a>
+    <!-- Top CTA -->
+    <div class="card-block">
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+919342700212">Call for joint pain assessment</a>
+        <a class="btn btn-outline" href="https://wa.me/919342700212?text=Joint%20pain%20consultation&utm_source=site&utm_campaign=joint-pain">
+          WhatsApp 93427 00212
+        </a>
+        <a class="btn btn-outline" href="/consult.html">Book clinic visit</a>
+      </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>When joint replacement becomes the right next step</h2>
-    <p>Most patients do well with non surgical care. When pain and disability remain high despite a full plan we discuss joint replacement in a clear and practical way.</p>
-    <div class="cta-row">
-      <!-- Link now so search and users can discover it when you publish -->
-      <a class="btn alt" href="/services/total-knee-replacement-thirumullaivoyal.html">Total knee replacement service</a>
-    </div>
-    <small style="display:block;margin-top:8px;color:#577089">If this page is not live yet it will open soon. You can still <a href="/consult.html">book a consult</a> to discuss options.</small>
-  </div>
+    <!-- When to see a doctor -->
+    <section class="card-block" aria-label="When joint pain needs a check">
+      <h2 class="section-title">When to get joint pain checked</h2>
+      <ul class="check">
+        <li>Pain that lasts more than a few weeks or keeps coming back.</li>
+        <li>Stiffness in the morning or after sitting that takes time to ease.</li>
+        <li>Visible swelling warmth or a feeling of grinding or catching.</li>
+        <li>Difficulty with daily tasks such as walking stairs, turning taps, holding objects or sitting cross legged.</li>
+        <li>History of injury, fever, weight loss or other medical illness along with joint pain.</li>
+      </ul>
+      <p style="font-size:.96rem;color:#3a5669;margin-top:6px">
+        The same symptom can have many causes. A focused history examination and simple tests help separate wear and tear arthritis from inflammatory causes, tendon problems or referred pain.
+      </p>
+    </section>
 
-  <div class="section">
-    <h2>Related reading from our clinic</h2>
-    <div class="related">
-      <a href="/blog/early-arthritis-signs.html">Early signs of knee arthritis and what to do first</a>
-      <a href="/blog/cracking-knuckles.html">Cracking knuckles myths and facts</a>
-      <a href="/blog/peace-love-injury.html">PEACE and LOVE for acute injuries and why it beats old advice</a>
-      <!-- Add more once published for bone health vitamin D footwear etc -->
-    </div>
-  </div>
+    <!-- Hub style links to detailed services -->
+    <section class="content-grid" aria-label="Joint pain services by region">
+      <article class="card-block">
+        <h2 class="section-title">Knee pain and knee arthritis</h2>
+        <p>
+          For knee pain we look at body weight activity level and X rays where needed. Exercise and lifestyle change come first, medicines and physiotherapy next and injections or knee replacement are discussed only if they are truly likely to help.
+        </p>
+        <ul class="check">
+          <li>Early and moderate knee arthritis plans.</li>
+          <li>Guided home exercises and physiotherapy support.</li>
+          <li>PRP and hyaluronic acid when appropriate.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-outline" href="/services/knee-arthritis.html">
+            View detailed knee arthritis page
+          </a>
+        </div>
+      </article>
 
-  <div class="section map-loc">
-    <h2>Visit our clinic</h2>
-    <p>OrthoCure Bone and Joint Speciality Clinic<br>No. 2 Second Street Santhipuram Thirumullaivoyal Chennai 600062</p>
-    <div class="cta-row">
-      <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=13.130476%2C80.130412" target="_blank" rel="noopener">Get directions</a>
-      <a class="btn alt" href="tel:+919342700212">Call clinic</a>
-    </div>
-    <iframe src="https://maps.google.com/maps?q=13.130476,80.130412&z=17&output=embed" aria-label="OrthoCure location"></iframe>
-  </div>
+      <article class="card-block">
+        <h2 class="section-title">Shoulder and upper limb pain</h2>
+        <p>
+          Shoulder pain may come from rotator cuff tendons, frozen shoulder, arthritis or neck issues. Care focuses on pain control, targeted physiotherapy, injections when useful and clear guidance on when surgery is really required.
+        </p>
+        <ul class="check">
+          <li>Shoulder arthritis and rotator cuff related pain.</li>
+          <li>Elbow wrist and hand joint pain assessment.</li>
+          <li>Support for work related and household strain.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-outline" href="/services/shoulder-pain-specialist-annanur.html">
+            View shoulder pain service
+          </a>
+        </div>
+      </article>
 
-  <!-- Quiet retrieval aid -->
+      <article class="card-block">
+        <h2 class="section-title">Hip spine foot and ankle</h2>
+        <p>
+          Pain in the hip lower back or foot may be due to arthritis, disc problems or alignment issues. The first task is to locate the true source. Plans then combine exercise, shoe advice, physiotherapy and medicine with referrals for injections or surgery when required.
+        </p>
+        <ul class="check">
+          <li>Hip and groin arthritis assessment.</li>
+          <li>Spine and neck care with a focus on posture and nerve safety.</li>
+          <li>Foot and ankle arthritis and tendon problems.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-outline" href="/services/spine-neck-pain-thirumullaivoyal.html">Spine and neck service</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Physiotherapy and stepwise plan -->
+    <section class="content-grid" aria-label="Stepwise plan and physiotherapy">
+      <article class="card-block">
+        <h2 class="section-title">Our stepwise plan for joint pain</h2>
+        <ul class="check">
+          <li>Listen to your story and daily demands, not just the X ray report.</li>
+          <li>Identify which joint structures are involved and grade severity.</li>
+          <li>Begin with activity advice and exercise to offload and strengthen.</li>
+          <li>Use medicines for pain relief in short controlled periods.</li>
+          <li>Consider injections and surgery only when expected benefit is clear.</li>
+        </ul>
+        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
+          This way most patients from Ambattur Avadi and Thirumullaivoyal can stay functional with fewer medicines and a better understanding of their joints.
+        </p>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">Physiotherapy and exercise support</h2>
+        <p>
+          Many joint problems improve once muscles are retrained and movements are corrected. Our in house physiotherapy service focuses on safe gradual progress rather than one size fits all protocols.
+        </p>
+        <ul class="check">
+          <li>Individual exercise plans for arthritis and sports injuries.</li>
+          <li>Guidance on which movements to avoid and which to practise.</li>
+          <li>Simple home based programmes for busy patients.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-outline" href="/services/physiotherapy-thirumullaivoyal.html">
+            Physiotherapy at OrthoCure
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-block card-block" aria-label="Joint pain questions">
+      <h2 class="section-title">Common questions about joint pain</h2>
+
+      <details>
+        <summary>Is all joint pain due to arthritis</summary>
+        <p>
+          No. Tendon problems, ligament strain, bursitis, nerve issues and even problems from other organs can present as joint pain. A proper assessment is needed before naming it arthritis.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do I need an X ray or scan before the first visit</summary>
+        <p>
+          Not always. Many patients can be assessed clinically first and imaging is ordered only if it will change the plan. If you already have X rays or scans, bringing them is helpful.
+        </p>
+      </details>
+
+      <details>
+        <summary>Will I be asked to take pain tablets every day</summary>
+        <p>
+          Pain tablets are used as one tool among many. Exercise lifestyle change and physiotherapy are given equal or greater weight so that long term pill use is minimised.
+        </p>
+      </details>
+    </section>
+
+    <!-- Bottom booking and location -->
+    <section class="content-grid" aria-label="Visit and booking">
+      <article class="card-block">
+        <h2 class="section-title">Visit our clinic</h2>
+        <p>
+          <strong>OrthoCure Bone and Joint Speciality Clinic</strong><br>
+          No. 2 Second Street Santhipuram Thirumullaivoyal Chennai 600062
+        </p>
+        <p><strong>Clinic hours</strong> Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm.</p>
+        <p><strong>Phone and WhatsApp</strong> 93427 00212</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
+          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Joint%20pain%20appointment&utm_source=site&utm_campaign=joint-pain">
+            Message on WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">
+            Open in Google Maps
+          </a>
+        </div>
+      </article>
+
+      <article class="card-block">
+        <h2 class="section-title">Related services and reading</h2>
+        <ul>
+          <li><a href="/services/knee-arthritis.html">Knee arthritis care</a></li>
+          <li><a href="/services/shoulder-pain-specialist-annanur.html">Shoulder pain specialist service</a></li>
+          <li><a href="/services/spine-neck-pain-thirumullaivoyal.html">Spine and neck clinic</a></li>
+          <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy at OrthoCure</a></li>
+          <li><a href="/blog/early-arthritis-signs.html">Early arthritis signs and what to do</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="lead" style="font-size:.95rem;margin-top:4px">
+      This page is a general guide for adults with joint pain in Ambattur Avadi and Thirumullaivoyal. Treatment plans are always tailored to individual joints overall health and life goals.
+    </p>
+  </main>
+
+  <footer>
+    © OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal — Dr Sumesh Subramanian.
+  </footer>
+
+  <!-- FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Is all joint pain due to arthritis",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Tendon problems, ligament strain, bursitis, nerve issues and even problems from other organs can present as joint pain. A proper assessment is needed before naming it arthritis."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Do I need an X ray or scan before the first visit",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Not always. Many patients can be assessed clinically first and imaging is ordered only if it will change the plan. If you already have X rays or scans, bringing them is helpful."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Will I be asked to take pain tablets every day",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Pain tablets are used as one tool among many. Exercise lifestyle change and physiotherapy are given equal or greater weight so that long term pill use is minimised."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Quiet AI retrieval helper -->
   <div style="display:none">
-    OrthoCure joint pain arthritis care Thirumullaivoyal Ambattur Avadi PRP hyaluronic acid knee shoulder physiotherapy step wise plan non surgical first
+    Joint pain arthritis treatment Thirumullaivoyal Ambattur Avadi knee shoulder hip hand ankle exercise first physiotherapy medicines limited injections and surgery only when needed OrthoCure Bone and Joint Speciality Clinic Dr Sumesh Subramanian 9342700212
   </div>
 </body>
 </html>
