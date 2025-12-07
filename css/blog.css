@@ -491,3 +491,164 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Additions for Stress Fracture and Frozen Shoulder pages ===== */
+
+/* Breadcrumb navigation */
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  color: var(--color-teal);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Updated date under meta */
+
+.blog-updated {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* Table of contents */
+
+.table-of-contents {
+  margin: 24px 0 28px 0;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: var(--color-soft-panel);
+  border: 1px solid var(--color-border-soft);
+}
+
+.table-of-contents h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: var(--color-navy);
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.table-of-contents li {
+  margin-bottom: 6px;
+}
+
+.table-of-contents a {
+  font-size: 0.95rem;
+  color: var(--color-teal);
+  text-decoration: none;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+/* Inline highlight line inside article */
+
+.highlight-inline {
+  margin: 18px 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #ecfeff;
+  border-left: 4px solid var(--color-teal);
+  font-size: 0.98rem;
+}
+
+/* CTA card inside article body */
+
+.cta-card {
+  margin: 34px 0;
+  padding: 24px 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--color-teal), #006969);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: var(--shadow-medium);
+}
+
+.cta-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.cta-card p {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+}
+
+/* Share buttons under CTA */
+
+.share-buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.share-button {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(15, 118, 110, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.share-button:hover {
+  background: rgba(15, 118, 110, 0.2);
+}
+
+/* Internal links simple list version */
+
+.internal-links-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+}
+
+.internal-links-list li {
+  margin-bottom: 8px;
+}
+
+.internal-links-list a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.internal-links-list a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile tweaks for new blocks */
+
+@media (max-width: 768px) {
+  .table-of-contents {
+    padding: 14px 14px;
+  }
+
+  .cta-card {
+    padding: 22px 16px;
+  }
+}
