@@ -5,7 +5,7 @@
   <title>Fracture Care | OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://www.myorthocure.com/services/fracture-care.html" />
-  <meta name="description" content="Same day fracture care by Dr Sumesh Subramanian at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal. Digital X ray, accurate diagnosis, plaster or cast or splint, and clear follow up for patients from Ambattur, Avadi and nearby areas." />
+  <meta name="description" content="Fracture care by Dr Sumesh Subramanian at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal. Digital X ray, accurate diagnosis, plaster or cast or splint, and structured follow up for patients from Ambattur, Avadi and nearby areas." />
   <meta name="theme-color" content="#053849" />
   <link rel="icon" href="/assets/logo.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
@@ -46,130 +46,67 @@
       background:radial-gradient(circle at 90% 12%,var(--accent) 7%,var(--cyan) 60%,transparent 100%);
       pointer-events:none;
     }
-    .clinic-main-title{font-size:2.1rem;font-weight:700;margin:0 0 8px;letter-spacing:.018em}
+    .clinic-main-title{font-size:2.1rem;font-weight:700;margin:0 0 8px}
     .clinic-tagline{font-size:1.07rem;opacity:.97}
     .main-nav{margin:22px 0 0;display:flex;gap:31px;justify-content:center;flex-wrap:wrap}
-    .main-nav a{color:#e2ecf7;font-weight:700;font-size:1.09rem;position:relative;padding-bottom:5px}
-    .main-nav a:after{content:'';display:block;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--cyan));border-radius:2px;transition:width .24s}
-    .main-nav a.active:after,.main-nav a:hover:after{width:100%}
+    .main-nav a{color:#e2ecf7;font-weight:700;font-size:1.09rem;padding-bottom:5px}
+    .main-nav a.active{border-bottom:3px solid var(--accent)}
 
     .crumbs{max-width:1160px;margin:14px auto 0;padding:0 15px;color:#4a6a80;font-size:.95rem}
-    .crumbs a{text-decoration:underline}
 
     .services-section{max-width:1160px;margin:18px auto 0;padding:0 15px}
-    .services-section h1{text-align:left;color:var(--dark-cyan);font-size:1.9rem;margin:18px 0 14px;font-weight:800;letter-spacing:.02em}
+    h1,h2{color:var(--dark-cyan)}
 
     .detail-grid{
       display:grid;
-      grid-template-columns:minmax(0,1.4fr) minmax(0,1.1fr);
+      grid-template-columns:1.4fr 1.1fr;
       gap:26px;
       margin-bottom:26px;
     }
-    .detail-grid-two{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:26px;
-      margin-bottom:26px;
-    }
-    .detail-bottom-grid{
+    .detail-grid-two,.detail-bottom-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:26px;
-      margin-top:10px;
       margin-bottom:26px;
     }
 
     .card-block{
       background:var(--card);
       border-radius:22px;
-      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
-      padding:22px 20px 20px 20px;
+      box-shadow:0 8px 32px rgba(2,95,158,.13);
+      padding:22px;
       border:1.2px solid var(--line);
     }
 
-    .lead{font-size:1.06rem;color:#3a5669;margin-bottom:18px}
+    .lead{font-size:1.06rem;color:#3a5669}
 
-    ul.check{
-      list-style:none;
-      padding:0;
-      margin:0;
-    }
-    ul.check li{
-      padding-left:26px;
-      position:relative;
-      margin:6px 0;
-    }
-    ul.check li::before{
-      content:"✔";
-      position:absolute;
-      left:0;
-      top:0;
-      color:#059669;
-      font-size:.96rem;
-    }
+    ul.check{list-style:none;padding:0}
+    ul.check li{padding-left:26px;position:relative;margin:6px 0}
+    ul.check li::before{content:"✔";position:absolute;left:0;color:#059669}
 
-    .cta-row{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:12px;
-    }
-    .btn{
-      display:inline-block;
-      padding:11px 20px;
-      font-weight:700;
-      font-size:1.0rem;
-      border-radius:18px;
-      border:none;
-      cursor:pointer;
-      text-decoration:none;
-    }
-    .btn-primary{
-      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);
-      color:#fff;
-      box-shadow:0 1px 14px rgba(2,132,199,.1);
-    }
-    .btn-primary:hover{
-      background:linear-gradient(90deg,#035372 80%,#0ea5e9 100%);
-    }
-    .btn-outline{
-      background:#e7f6fc;
-      color:var(--dark-cyan);
-      border:1px solid var(--line);
-    }
+    .btn{display:inline-block;padding:11px 20px;font-weight:700;border-radius:18px}
+    .btn-primary{background:linear-gradient(90deg,var(--dark-cyan),var(--cyan));color:#fff}
+    .btn-outline{background:#e7f6fc;color:var(--dark-cyan);border:1px solid var(--line)}
 
-    .faq-block details{
-      background:var(--card);
-      border-radius:18px;
-      border:1.2px solid var(--line);
-      padding:14px 16px;
-      margin-bottom:10px;
-      box-shadow:0 4px 16px rgba(15,23,42,.06);
-    }
-    .faq-block summary{
-      cursor:pointer;
-      font-weight:600;
-      color:var(--dark-cyan);
-    }
+    img{max-width:100%;border-radius:16px}
 
-    .note{max-width:1150px;margin:8px auto 30px;padding:0 16px;color:#4c7ca1;font-size:1.0rem;text-align:left}
-    footer{max-width:1160px;margin:20px auto 18px;padding:0 15px;color:#49647a;font-size:.92rem}
+    .faq-block details{background:var(--card);border-radius:18px;padding:14px;margin-bottom:10px}
+    .faq-block summary{font-weight:600;cursor:pointer}
 
-    img{max-width:100%;height:auto;border-radius:16px}
+    footer{max-width:1160px;margin:20px auto;padding:0 15px;color:#49647a;font-size:.92rem}
 
-    @media (max-width:900px){
+    @media(max-width:900px){
       .detail-grid{grid-template-columns:1fr}
-      .card-block{padding:20px 16px}
     }
   </style>
 
-  <!-- Breadcrumb and Service schema -->
+  <!-- Schema -->
   <script type="application/ld+json">
   [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
         {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
         {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"},
         {"@type":"ListItem","position":3,"name":"Fracture care","item":"https://www.myorthocure.com/services/fracture-care.html"}
@@ -177,279 +114,142 @@
     },
     {
       "@context":"https://schema.org",
-      "@type":["Service","MedicalProcedure"],
+      "@type":"Service",
       "name":"Fracture care",
-      "alternateName":"Fracture management",
-      "serviceType":"Orthopaedics acute injury",
-      "areaServed":[
-        {"@type":"City","name":"Ambattur"},
-        {"@type":"City","name":"Avadi"},
-        {"@type":"City","name":"Thirumullaivoyal"}
-      ],
+      "serviceType":"Orthopaedic fracture evaluation and immobilisation",
       "provider":{
         "@type":"MedicalClinic",
         "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
         "telephone":"+919342700212",
-        "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"No. 2, Second Street, Santhipuram, Thirumullaivoyal",
-          "addressLocality":"Chennai",
-          "addressRegion":"TN",
-          "postalCode":"600062",
-          "addressCountry":"IN"
-        }
+        "url":"https://www.myorthocure.com/"
       },
-      "isRelatedTo":{
-        "@type":"Person",
-        "name":"Dr Sumesh Subramanian",
-        "jobTitle":"Orthopaedic Surgeon"
-      },
+      "areaServed":["Thirumullaivoyal","Ambattur","Avadi","Annanur","Iyyapakkam"],
       "url":"https://www.myorthocure.com/services/fracture-care.html",
-      "offers":{
-        "@type":"Offer",
-        "priceCurrency":"INR",
-        "availability":"https://schema.org/InStock",
-        "url":"https://www.myorthocure.com/consult.html"
-      },
-      "howPerformed":"Triage and physical examination, digital X ray at the clinic, closed reduction when indicated, plaster or cast or splinting, and rehabilitation guidance.",
-      "procedureType":"NoninvasiveProcedure",
-      "medicalSpecialty":"Orthopedics"
+      "description":"Evaluation and management of fractures including examination, digital X ray when required, plaster or cast or splint support, and follow up care."
     }
   ]
   </script>
 </head>
+
 <body>
-  <header class="header-bar">
-    <div class="clinic-main-title">OrthoCure Bone and Joint Speciality Clinic<br>Thirumullaivoyal</div>
-    <div class="clinic-tagline">Evidence based orthopaedic care in Ambattur, Avadi and North Chennai</div>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/services/index.html">Services</a>
-      <a href="/consult.html">Consult</a>
-      <a href="/services/fracture-care.html" class="active" aria-current="page">Fracture Care</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a> › <a href="/services/index.html">Services</a> › Fracture care
-  </nav>
+<header class="header-bar">
+  <div class="clinic-main-title">OrthoCure Bone and Joint Speciality Clinic<br>Thirumullaivoyal</div>
+  <div class="clinic-tagline">Evidence based orthopaedic care for Ambattur, Avadi and North Chennai</div>
+</header>
 
-  <main class="services-section" id="main">
-    <h1>Fracture care for Ambattur, Avadi and Thirumullaivoyal</h1>
-    <p class="lead">
-      Fractures need quick diagnosis and firm protection so that the bone heals in the correct position. At OrthoCure Bone and Joint Speciality Clinic, Dr Sumesh Subramanian provides same day fracture care with digital X ray, accurate reduction and proper plaster or cast for adults and children from Ambattur, Avadi and Thirumullaivoyal. Call <strong>93427 00212</strong> for guidance if you suspect a fracture.
-    </p>
+<nav class="crumbs">Home › Services › Fracture care</nav>
 
-    <!-- top hero two column -->
-    <section class="detail-grid" aria-label="Fracture overview">
-      <article class="card-block">
-        <h2>Why families choose OrthoCure for fractures</h2>
-        <ul class="check">
-          <li><strong>Immediate X ray</strong> at the clinic so decisions are not delayed.</li>
-          <li><strong>Precise immobilisation</strong> with plaster, cast or splint to protect healing.</li>
-          <li><strong>Pain control and safety advice</strong> including swelling care and warning signs.</li>
-          <li><strong>Clear recovery roadmap</strong> explaining weight bearing, movement and when to start physiotherapy.</li>
-        </ul>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
-          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Fracture%20care%20appointment%20from%20website&utm_source=site&utm_medium=cta&utm_campaign=fracture-care">
-            WhatsApp 93427 00212
-          </a>
-          <a class="btn btn-outline" href="/consult.html">Book clinic visit online</a>
-        </div>
-      </article>
+<main class="services-section">
 
-      <article class="card-block">
-        <figure style="margin:0">
-          <img src="/assets/fracture-care.jpg"
-               alt="Fracture care with digital X ray and plaster application at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal"
-               loading="lazy">
-          <figcaption style="font-size:.9rem;color:#4a6a80;margin-top:8px">
-            Usual pathway: triage, digital X ray, reduction and immobilisation, then planned follow up and rehabilitation.
-          </figcaption>
-        </figure>
-        <ul class="check" style="margin-top:10px">
-          <li>Closed reduction when indicated.</li>
-          <li>Plaster of Paris, fibre cast or splints as needed.</li>
-          <li>Follow up reminders and written home care instructions.</li>
-        </ul>
-      </article>
-    </section>
+<h1>Fracture care for Ambattur, Avadi and Thirumullaivoyal</h1>
+<p class="lead">
+Fractures need timely diagnosis and firm protection so the bone heals in the correct position. At OrthoCure Bone and Joint Speciality Clinic, fracture care includes clinical assessment, digital X ray when required, and proper plaster, cast or splint support with structured follow up.
+</p>
 
-    <!-- common fractures and first aid -->
-    <section class="detail-grid-two" aria-label="Fracture types and first aid">
-      <article class="card-block">
-        <h2>Common fractures treated at OrthoCure</h2>
-        <ul class="check">
-          <li>Wrist fractures including distal radius and Colles.</li>
-          <li>Forearm fractures.</li>
-          <li>Clavicle or collarbone fractures.</li>
-          <li>Ankle and foot fractures.</li>
-          <li>Metacarpal and finger fractures.</li>
-          <li>Early stress fractures.</li>
-        </ul>
-      </article>
+<section class="detail-grid">
+  <article class="card-block">
+    <h2>Why families choose OrthoCure</h2>
+    <ul class="check">
+      <li>On site digital X ray when required</li>
+      <li>Precise plaster, cast or splint immobilisation</li>
+      <li>Clear recovery and follow up guidance</li>
+      <li>Convenient access for Ambattur and Avadi</li>
+    </ul>
+    <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
+  </article>
 
-      <article class="card-block">
-        <h2>What to do before you reach the clinic</h2>
-        <ul class="check">
-          <li>Elevate the limb and use a cold pack for ten to fifteen minutes at a time.</li>
-          <li>Do not try to pull or set the bone yourself.</li>
-          <li>Remove rings and watches from a swollen hand.</li>
-          <li>Bring previous X rays or reports if available.</li>
-        </ul>
-        <p><strong>Emergency note:</strong> open wounds, loss of sensation or severe deformity need immediate hospital care.</p>
-      </article>
-    </section>
+  <article class="card-block">
+    <img src="/assets/fracture-care.jpg" alt="Fracture care with plaster and digital X ray at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal" loading="lazy">
+  </article>
+</section>
 
-    <!-- story and clinic details -->
-    <section class="detail-grid-two" aria-label="Patient experience and clinic information">
-      <article class="card-block">
-        <h2>Patient story from Ambattur</h2>
-        <blockquote style="margin:0 0 10px 0;color:#365064">
-          “I slipped and fractured my wrist. X ray, plaster and clear home care advice were finished within an hour. Follow up visits were simple and the bone healed well.”
-        </blockquote>
-        <p class="lead" style="font-size:1rem;color:#0f766e">— Patient S, 41 years, Ambattur</p>
-      </article>
+<section class="detail-grid-two">
+  <article class="card-block">
+    <h2>Common fractures treated</h2>
+    <ul class="check">
+      <li>Wrist and forearm fractures</li>
+      <li>Ankle and foot fractures</li>
+      <li>Clavicle fractures</li>
+      <li>Finger and hand fractures</li>
+      <li>Early stress fractures</li>
+    </ul>
+  </article>
 
-      <article class="card-block">
-        <h2>Clinic details</h2>
-        <p>No. 2, Second Street, Santhipuram, Thirumullaivoyal, Chennai – 600062</p>
-        <p><strong>Clinic hours:</strong> Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm.</p>
-        <p><strong>Phone and WhatsApp:</strong> 93427 00212</p>
-        <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">
-          Open in Google Maps
-        </a>
-      </article>
-    </section>
+  <article class="card-block">
+    <h2>What to do before coming</h2>
+    <ul class="check">
+      <li>Elevate the injured limb</li>
+      <li>Use a cold pack briefly</li>
+      <li>Do not attempt self reduction</li>
+      <li>Carry any previous X rays</li>
+    </ul>
+  </article>
+</section>
 
-    <!-- FAQs -->
-    <section class="faq-block" aria-label="Fracture care questions">
-      <h2>Fracture care questions</h2>
+<section class="faq-block">
+  <h2>Fracture care questions</h2>
 
-      <details>
-        <summary>Do you have X ray at the clinic?</summary>
-        <p>Yes. The digital X ray unit at OrthoCure allows quick and accurate diagnosis, so treatment decisions are not delayed.</p>
-      </details>
+  <details>
+    <summary>Do you have X ray at the clinic?</summary>
+    <p>Yes. Digital X ray is available at the clinic when required for diagnosis.</p>
+  </details>
 
-      <details>
-        <summary>Will every fracture need surgery?</summary>
-        <p>No. Many fractures heal well with proper reduction and firm plaster or cast support. Surgery is advised only when the joint or bone position will not stay stable with conservative treatment alone.</p>
-      </details>
+  <details>
+    <summary>Will every fracture need surgery?</summary>
+    <p>No. Many fractures heal well with plaster or cast support without surgery.</p>
+  </details>
 
-      <details>
-        <summary>How long does a cast stay on?</summary>
-        <p>Most fractures need three to six weeks of immobilisation depending on the bone and pattern of injury. You will be told when to start gentle movement and physiotherapy.</p>
-      </details>
+  <details>
+    <summary>How long does a cast stay on?</summary>
+    <p>Most fractures require three to six weeks of immobilisation depending on the injury.</p>
+  </details>
+</section>
 
-      <details>
-        <summary>Are Sunday consultations available?</summary>
-        <p>Yes. The clinic is open on Sunday from 11 am to 1 pm for reviews and planned follow up visits.</p>
-      </details>
-    </section>
+<section class="detail-bottom-grid">
+  <article class="card-block">
+    <h2>Related services</h2>
+    <ul>
+      <li><a href="/services/digital-xray-thirumullaivoyal.html">Digital X ray imaging</a></li>
+      <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy</a></li>
+      <li><a href="/services/knee-arthritis.html">Knee arthritis care</a></li>
+      <li><a href="/services/spine-neck-pain-thirumullaivoyal.html">Spine and neck pain clinic</a></li>
+      <li><a href="/services/prp-treatment.html">PRP treatment</a></li>
+      <li><a href="/services/total-knee-replacement-thirumullaivoyal.html">Total knee replacement</a></li>
+    </ul>
+  </article>
 
-    <!-- related services and CTA -->
-    <section class="detail-bottom-grid" aria-label="Related services and booking">
-      <article class="card-block">
-        <h2>Related services</h2>
-        <ul>
-          <li><a href="/services/knee-arthritis.html">Knee arthritis care</a></li>
-          <li><a href="/services/spine-neck-back-pain.html">Spine and neck pain clinic</a></li>
-          <li><a href="/services/knee-replacement.html">Total knee replacement</a></li>
-        </ul>
-      </article>
+  <article class="card-block">
+    <h2>Helpful reading</h2>
+    <ul>
+      <li><a href="/blog/peace-love-injury.html">PEACE and LOVE after injury</a></li>
+      <li><a href="/blog/stress-fractures-foot-pain-chennai.html">Stress fractures of foot and leg</a></li>
+      <li><a href="/blog.html">All patient education articles</a></li>
+    </ul>
+  </article>
+</section>
 
-      <article class="card-block">
-        <h2>Helpful reading</h2>
-        <ul>
-          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE first steps after an injury</a></li>
-          <li><a href="/blog.html">When a fracture may need surgery</a></li>
-          <li><a href="/blog.html">Cast care tips and warning signs</a></li>
-        </ul>
-      </article>
+</main>
 
-      <article class="card-block">
-        <h2>Ready to start healing</h2>
-        <p>If you suspect a fracture, do not wait. Call the clinic so we can guide you on the next safe step and arrange X ray and immobilisation if needed.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
-          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Fracture%20care%20appointment&utm_source=site&utm_medium=faq_cta&utm_campaign=fracture-care">
-            Message on WhatsApp
-          </a>
-        </div>
-      </article>
-    </section>
+<footer>
+© OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal — Dr Sumesh Subramanian
+</footer>
 
-    <p class="note">If you are unsure whether it is a fracture or a sprain, a quick call to the clinic can help you decide the next step safely.</p>
-  </main>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Do you have X ray at the clinic?","acceptedAnswer":{"@type":"Answer","text":"Yes. Digital X ray is available at the clinic when required for diagnosis."}},
+    {"@type":"Question","name":"Will every fracture need surgery?","acceptedAnswer":{"@type":"Answer","text":"No. Many fractures heal well with plaster or cast support without surgery."}},
+    {"@type":"Question","name":"How long does a cast stay on?","acceptedAnswer":{"@type":"Answer","text":"Most fractures require three to six weeks of immobilisation depending on the injury."}}
+  ]
+}
+</script>
 
-  <footer>
-    © OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal — Dr Sumesh Subramanian.
-  </footer>
+<div style="display:none">
+fracture care plaster cast splint digital x ray orthocure thirumullaivoyal ambattur avadi orthopaedic surgeon clinic
+</div>
 
-  <!-- FAQPage and Review schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Do you have X ray at the clinic?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. The digital X ray unit at OrthoCure allows quick and accurate diagnosis, so treatment decisions are not delayed."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Will every fracture need surgery?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"No. Many fractures heal well with proper reduction and firm plaster or cast support. Surgery is advised only when the joint or bone position will not stay stable with conservative treatment alone."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"How long does a cast stay on?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Most fractures need three to six weeks of immobilisation depending on the bone and pattern of injury. Patients are advised when to start gentle movement and physiotherapy."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Are Sunday consultations available?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. The clinic is open on Sunday from 11 am to 1 pm for reviews and planned follow up visits."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Review",
-    "itemReviewed":{
-      "@type":"LocalBusiness",
-      "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal"
-    },
-    "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
-    "author":{"@type":"Person","name":"Patient S"},
-    "reviewBody":"Came in after a fall with a wrist fracture. X ray, a proper cast and clear home care instructions were completed the same day. Follow up visits were on time and healing was smooth."
-  }
-  </script>
-
-  <!-- Quiet AI retrieval helper -->
-  <div style="display:none">
-    Fracture care plaster cast splint digital X ray OrthoCure Thirumullaivoyal Ambattur Avadi trauma injury clinic acute fracture treatment conservative care Sunday clinic 9342700212
-  </div>
 </body>
 </html>
-
