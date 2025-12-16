@@ -5,7 +5,7 @@
   <title>Spine and Neck Pain Treatment in Thirumullaivoyal Ambattur Avadi | OrthoCure Bone and Joint Speciality Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html" />
-  <meta name="description" content="Conservative first treatment for spine and neck pain in Thirumullaivoyal, Ambattur and Avadi. Assessment for acute low back pain, disc prolapse, sciatica, cervical spondylosis and posture related neck strain with clear plans and surgery only when truly needed." />
+  <meta name="description" content="Conservative first treatment for spine and neck pain in Thirumullaivoyal, Ambattur and Avadi. Clear evaluation for low back pain, sciatica, disc problems and cervical spondylosis with surgery only when truly needed." />
   <meta name="theme-color" content="#053849" />
   <link rel="icon" href="/assets/logo.png" type="image/png" />
 
@@ -29,85 +29,34 @@
     }
 
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
     body{
+      margin:0;
       font-family:Inter,system-ui,sans-serif;
       background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);
       color:var(--ink);
     }
-    a{color:var(--cyan);text-decoration:none;transition:color .18s}
+
+    a{color:var(--cyan);text-decoration:none}
     a:hover{color:#0284c7}
-    :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
     .header-bar{
       background:linear-gradient(90deg,var(--dark-cyan) 78%,var(--cyan) 100%);
       color:#fff;
-      padding:34px 10px 26px 10px;
+      padding:34px 10px 26px;
       text-align:center;
       border-radius:0 0 29px 29px;
       box-shadow:0 7px 32px rgba(16,37,66,.13);
-      position:relative;
-      overflow:hidden;
     }
-    .header-bar::after{
-      content:"";
-      position:absolute;
-      right:0;
-      top:-36px;
-      width:340px;
-      height:220px;
-      opacity:.13;
-      background:radial-gradient(circle at 90% 12%,var(--accent) 7%,var(--cyan) 60%,transparent 100%);
-      pointer-events:none;
-    }
-    .clinic-main-title{
-      font-size:2.1rem;
-      font-weight:700;
-      margin:0 0 8px;
-      letter-spacing:.018em;
-      line-height:1.15;
-    }
-    .clinic-tagline{
-      font-size:1.07rem;
-      opacity:.97;
-    }
-    .main-nav{
-      margin:22px 0 0;
-      display:flex;
-      gap:31px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
-    .main-nav a{
-      color:#e2ecf7;
-      font-weight:700;
-      font-size:1.09rem;
-      position:relative;
-      padding-bottom:5px;
-    }
-    .main-nav a:after{
-      content:'';
-      display:block;
-      height:3px;
-      width:0;
-      background:linear-gradient(90deg,var(--accent),var(--cyan));
-      border-radius:2px;
-      transition:width .24s;
-    }
-    .main-nav a.active:after,
-    .main-nav a:hover:after{
-      width:100%;
-    }
+
+    .clinic-main-title{font-size:2.1rem;font-weight:700;margin:0 0 8px}
+    .clinic-tagline{font-size:1.05rem;opacity:.95}
 
     .crumbs{
       max-width:1160px;
       margin:14px auto 0;
       padding:0 15px;
-      color:#4a6a80;
       font-size:.95rem;
-    }
-    .crumbs a{
-      text-decoration:underline;
+      color:#4a6a80;
     }
 
     .services-section{
@@ -115,26 +64,24 @@
       margin:18px auto 0;
       padding:0 15px;
     }
-    .services-section h1{
+
+    h1{
       color:var(--dark-cyan);
       font-size:1.9rem;
       margin:18px 0 10px;
-      font-weight:800;
-      letter-spacing:.02em;
     }
 
     .lead{
       font-size:1.06rem;
       color:#3a5669;
       max-width:960px;
-      margin:0 0 20px;
     }
 
     .card-block{
       background:var(--card);
       border-radius:22px;
-      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
-      padding:22px 20px 20px;
+      box-shadow:0 8px 32px rgba(2,95,158,.13);
+      padding:22px 20px;
       border:1.2px solid var(--line);
       margin-bottom:22px;
     }
@@ -143,14 +90,9 @@
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:22px;
-      margin-bottom:22px;
     }
 
-    ul.check{
-      list-style:none;
-      padding:0;
-      margin:0;
-    }
+    ul.check{list-style:none;padding:0;margin:0}
     ul.check li{
       padding-left:26px;
       position:relative;
@@ -160,372 +102,213 @@
       content:"✔";
       position:absolute;
       left:0;
-      top:0;
       color:#059669;
+    }
+
+    .section-title{
+      font-size:1.25rem;
+      color:var(--dark-cyan);
+      margin-bottom:10px;
+    }
+
+    .icon-green::before{content:"🟢 "}
+    .icon-blue::before{content:"🔵 "}
+    .icon-yellow::before{content:"🟡 "}
+    .icon-orange::before{content:"🟠 "}
+
+    .soft-divider{
+      height:1px;
+      background:linear-gradient(to right, transparent, #dbeaf4, transparent);
+      margin:26px 0;
     }
 
     .cta-row{
       display:flex;
       gap:12px;
       flex-wrap:wrap;
-      margin-top:12px;
     }
+
     .btn{
-      display:inline-block;
       padding:11px 20px;
       font-weight:700;
-      font-size:1rem;
       border-radius:18px;
-      border:none;
-      cursor:pointer;
       text-decoration:none;
     }
+
     .btn-primary{
-      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);
+      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan));
       color:#fff;
-      box-shadow:0 1px 14px rgba(2,132,199,.1);
     }
-    .btn-primary:hover{
-      background:linear-gradient(90deg,#035372 80%,#0ea5e9 100%);
-    }
+
     .btn-outline{
       background:#e7f6fc;
       color:var(--dark-cyan);
       border:1px solid var(--line);
     }
 
-    .section-title{
-      font-size:1.25rem;
-      margin:0 0 10px;
-      color:var(--dark-cyan);
-    }
-
     .faq-block details{
       background:var(--card);
       border-radius:18px;
-      border:1.2px solid var(--line);
       padding:14px 16px;
       margin-bottom:10px;
-      box-shadow:0 4px 16px rgba(15,23,42,.06);
-    }
-    .faq-block summary{
-      cursor:pointer;
-      font-weight:600;
-      color:var(--dark-cyan);
+      border:1.2px solid var(--line);
     }
 
     footer{
       max-width:1160px;
-      margin:20px auto 18px;
+      margin:20px auto;
       padding:0 15px;
-      color:#49647a;
       font-size:.92rem;
-    }
-
-    @media (max-width:700px){
-      .services-section h1{font-size:1.5rem}
-      .clinic-main-title{font-size:1.4rem}
+      color:#49647a;
     }
   </style>
 
   <script type="application/ld+json">
-  [
-    {
-      "@context":"https://schema.org",
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
-        {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"},
-        {"@type":"ListItem","position":3,"name":"Spine and neck pain","item":"https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html"}
-      ]
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Spine and neck pain treatment",
+    "provider":{
+      "@type":"MedicalClinic",
+      "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
+      "telephone":"+919342700212"
     },
-    {
-      "@context":"https://schema.org",
-      "@type":"Service",
-      "name":"Spine and neck pain treatment",
-      "serviceType":"Orthopaedic spine and neck pain evaluation and conservative care",
-      "description":"Conservative first care for low back pain, sciatica, disc related symptoms, cervical spondylosis and posture related neck strain at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal.",
-      "provider":{
-        "@type":"MedicalClinic",
-        "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
-        "telephone":"+919342700212",
-        "url":"https://www.myorthocure.com/",
-        "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"No. 2 Second Street Santhipuram Thirumullaivoyal",
-          "addressLocality":"Chennai",
-          "addressRegion":"TN",
-          "postalCode":"600062",
-          "addressCountry":"IN"
-        }
-      },
-      "areaServed":["Thirumullaivoyal","Ambattur","Avadi","Annanur","Iyyapakkam"],
-      "url":"https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html"
-    }
-  ]
+    "areaServed":["Thirumullaivoyal","Ambattur","Avadi"],
+    "url":"https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html"
+  }
   </script>
 </head>
 
 <body>
-  <header class="header-bar">
-    <div class="clinic-main-title">OrthoCure Bone and Joint Speciality Clinic<br>Thirumullaivoyal</div>
-    <div class="clinic-tagline">
-      Evidence based orthopaedic care in Ambattur, Avadi and North Chennai
-    </div>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/services/index.html" class="active">Services</a>
-      <a href="/consult.html">Consult</a>
-      <a href="/services/spine-neck-pain-thirumullaivoyal.html" class="active" aria-current="page">Spine and Neck</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a> › <a href="/services/index.html">Services</a> › <span aria-current="page">Spine and neck pain</span>
-  </nav>
+<header class="header-bar">
+  <div class="clinic-main-title">OrthoCure Bone and Joint Speciality Clinic<br>Thirumullaivoyal</div>
+  <div class="clinic-tagline">Evidence based orthopaedic care in Ambattur and Avadi</div>
+</header>
 
-  <main class="services-section" id="main">
-    <h1>Spine and neck pain clinic</h1>
+<nav class="crumbs">
+  <a href="/">Home</a> › <a href="/services/index.html">Services</a> › Spine and neck pain
+</nav>
 
-    <p class="lead">
-      At OrthoCure Bone and Joint Speciality Clinic, spine and neck problems are treated with a conservative first plan. The focus is on finding the real source of pain, explaining it in simple language and building a safe programme of posture change, exercise and physiotherapy. Surgery is discussed only when there is clear evidence that it is needed.
-    </p>
+<main class="services-section">
 
-    <div class="card-block">
-      <div class="cta-row">
-        <a class="btn btn-primary" href="tel:+919342700212">Call for spine and neck assessment</a>
-        <a class="btn btn-outline" href="https://wa.me/919342700212?text=Spine%20or%20neck%20pain%20consultation&utm_source=site&utm_campaign=spine-neck">
-          WhatsApp 93427 00212
-        </a>
-        <a class="btn btn-outline" href="/consult.html">Book clinic visit</a>
-      </div>
-    </div>
+<h1>Spine and neck pain clinic</h1>
+<p class="lead">
+Spine and neck pain are managed at OrthoCure with a conservative first approach. The goal is to identify the real source of pain, explain it clearly, and build a safe plan using posture correction, exercise and physiotherapy. Surgery is discussed only when it clearly improves outcome.
+</p>
 
-    <section class="content-grid" aria-label="Common spine and neck problems and when to seek help">
-      <article class="card-block">
-        <h2 class="section-title">Common spine and neck problems we see</h2>
-        <ul class="check">
-          <li>Acute low back pain after lifting, travel or sudden movements.</li>
-          <li>Disc related symptoms with pain going down the leg or arm.</li>
-          <li>Sciatica with pain from back to buttock and leg.</li>
-          <li>Cervical spondylosis with neck pain and stiffness.</li>
-          <li>Mechanical posture pain from long sitting and poor ergonomics.</li>
-          <li>Neck strain from screen time and poor desk setup.</li>
-        </ul>
-        <p style="font-size:.96rem;color:#3a5669;margin-top:6px">
-          Many of these conditions improve with clear advice, graded activity and physiotherapy. The key is to identify red flags early and avoid unnecessary scans.
-        </p>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">When spine or neck pain needs a check</h2>
-        <ul class="check">
-          <li>Pain that lasts beyond one to two weeks or keeps returning.</li>
-          <li>Pain that disturbs sleep or is steadily worsening.</li>
-          <li>Pain going into the arm or leg with tingling or numbness.</li>
-          <li>Weakness in hand grip or foot lift, or imbalance while walking.</li>
-          <li>History of trauma, fever, unexplained weight loss or cancer.</li>
-        </ul>
-        <p style="font-size:.96rem;color:#3a5669;margin-top:6px">
-          Sudden bladder or bowel symptoms, rapidly worsening weakness, or severe trauma are emergencies and need hospital care without delay.
-        </p>
-      </article>
-    </section>
-
-    <section class="content-grid" aria-label="Assessment and treatment plan">
-      <article class="card-block">
-        <h2 class="section-title">How we assess spine and neck pain</h2>
-        <ul class="check">
-          <li>History of work pattern, posture, travel and previous episodes.</li>
-          <li>Examination of spine movement, nerve tension and muscle strength.</li>
-          <li>X ray when required to rule out structural causes.</li>
-          <li>MRI only when results will change the plan.</li>
-          <li>Review of other problems such as diabetes and bone health.</li>
-        </ul>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">Stepwise treatment plan</h2>
-        <ul class="check">
-          <li>Advice on positions for sitting, sleeping and turning.</li>
-          <li>Gentle early movement to reduce stiffness and fear.</li>
-          <li>Medicines in short controlled courses when required.</li>
-          <li>Physiotherapy with targeted exercises once pain settles.</li>
-          <li>Injections or surgery only when there is clear benefit expected.</li>
-        </ul>
-        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-          Most patients improve with this structured approach without needing surgery.
-        </p>
-      </article>
-    </section>
-
-    <section class="content-grid" aria-label="Posture change and physiotherapy">
-      <article class="card-block">
-        <h2 class="section-title">Posture and daily routine changes</h2>
-        <ul class="check">
-          <li>Planned breaks during long sitting.</li>
-          <li>Chair, desk and screen position guidance.</li>
-          <li>Safer ways to use mobile and laptop for long hours.</li>
-          <li>Correct lifting and bending habits.</li>
-          <li>Simple routines that work even on busy days.</li>
-        </ul>
-        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-          Small consistent changes often give longer relief than repeated tablets.
-        </p>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">Role of physiotherapy at OrthoCure</h2>
-        <p style="margin-top:0;color:#3a5669">
-          Physiotherapy is closely linked with spine and neck care at our clinic. The aim is to strengthen support muscles, improve flexibility and rebuild confidence in movement.
-        </p>
-        <ul class="check">
-          <li>Core strengthening for low back pain and disc related symptoms.</li>
-          <li>Neck and shoulder training for cervical spondylosis and posture pain.</li>
-          <li>Stretching for tight muscle groups.</li>
-          <li>Balance and gait work where nerve symptoms have reduced confidence.</li>
-        </ul>
-        <div class="cta-row">
-          <a class="btn btn-outline" href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy at OrthoCure</a>
-        </div>
-      </article>
-    </section>
-
-    <section class="card-block" aria-label="When surgery enters the discussion">
-      <h2 class="section-title">When surgery is discussed</h2>
-      <ul class="check">
-        <li>Progressive weakness with clear nerve compression signs.</li>
-        <li>Persistent severe arm or leg pain after adequate conservative care.</li>
-        <li>Walking limitation due to spinal canal narrowing with matching symptoms.</li>
-        <li>Structural instability where conservative care cannot protect the nerves.</li>
-      </ul>
-      <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-        When surgery is likely to help more than harm, options are explained in plain language and decisions are never rushed.
-      </p>
-    </section>
-
-    <section class="faq-block card-block" aria-label="Spine and neck pain questions">
-      <h2 class="section-title">Common questions about spine and neck pain</h2>
-
-      <details>
-        <summary>Do I need an MRI scan for every back or neck pain episode</summary>
-        <p>
-          No. Many episodes settle with rest, guidance and exercise. MRI is advised when pain is persistent, severe, associated with nerve symptoms or when the result will change the plan.
-        </p>
-      </details>
-
-      <details>
-        <summary>Is bed rest the best treatment for low back pain</summary>
-        <p>
-          Short rest can help during very painful days. Prolonged bed rest often increases stiffness. A controlled return to gentle activity is usually better.
-        </p>
-      </details>
-
-      <details>
-        <summary>Do all disc problems need surgery</summary>
-        <p>
-          No. Many disc related symptoms improve with time, medicines when required and physiotherapy. Surgery is reserved for selected cases with persistent severe pain, weakness or serious nerve signs.
-        </p>
-      </details>
-
-      <details>
-        <summary>Can posture related neck pain be reversed</summary>
-        <p>
-          In many patients it improves when position, duration and exercise are corrected. Lasting change needs habit change and strengthening, not medicine alone.
-        </p>
-      </details>
-    </section>
-
-    <section class="content-grid" aria-label="Visit and related services">
-      <article class="card-block">
-        <h2 class="section-title">Visit our clinic</h2>
-        <p>
-          <strong>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal</strong><br>
-          No. 2 Second Street Santhipuram Thirumullaivoyal Chennai 600062
-        </p>
-        <p><strong>Clinic hours</strong> Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm.</p>
-        <p><strong>Phone and WhatsApp</strong> 93427 00212</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
-          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Spine%20or%20neck%20pain%20appointment&utm_source=site&utm_campaign=spine-neck">
-            Message on WhatsApp
-          </a>
-          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">
-            Open in Google Maps
-          </a>
-        </div>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">Related services and reading</h2>
-        <ul>
-          <li><a href="/services/knee-arthritis.html">Joint pain and arthritis care</a></li>
-          <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy</a></li>
-          <li><a href="/services/digital-xray-thirumullaivoyal.html">Digital X ray</a></li>
-          <li><a href="/services/fracture-care.html">Fracture care</a></li>
-          <li><a href="/services/prp-treatment.html">PRP treatment</a></li>
-          <li><a href="/services/total-knee-replacement-thirumullaivoyal.html">Total knee replacement</a></li>
-          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE after injury</a></li>
-          <li><a href="/blog.html">All patient education articles</a></li>
-        </ul>
-      </article>
-    </section>
-
-    <p class="lead" style="font-size:.95rem;margin-top:4px">
-      This page is a general guide for adults with spine and neck pain in Ambattur, Avadi and Thirumullaivoyal. Your exact plan depends on examination and tests when needed.
-    </p>
-  </main>
-
-  <footer>
-    © OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal — Dr Sumesh Subramanian.
-  </footer>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Do I need an MRI scan for every back or neck pain episode",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"No. Many episodes settle with rest, guidance and exercise. MRI is advised when pain is persistent, severe, associated with nerve symptoms or when the result will change the plan."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Is bed rest the best treatment for low back pain",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Short rest can help during very painful days. Prolonged bed rest often increases stiffness. A controlled return to gentle activity is usually better."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Do all disc problems need surgery",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"No. Many disc related symptoms improve with time, medicines when required and physiotherapy. Surgery is reserved for selected cases with persistent severe pain, weakness or serious nerve signs."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Can posture related neck pain be reversed",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"In many patients it improves when position, duration and exercise are corrected. Lasting change needs habit change and strengthening, not medicine alone."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <div style="display:none">
-    Spine and neck pain clinic Thirumullaivoyal Ambattur Avadi low back pain sciatica disc related symptoms cervical spondylosis posture neck pain physiotherapy conservative care OrthoCure Bone and Joint Speciality Clinic Dr Sumesh Subramanian 9342700212
+<div class="card-block">
+  <div class="cta-row">
+    <a class="btn btn-primary" href="tel:+919342700212">Call for spine assessment</a>
+    <a class="btn btn-outline" href="/consult.html">Book clinic visit</a>
   </div>
+</div>
+
+<div class="content-grid">
+  <article class="card-block">
+    <h2 class="section-title icon-green">Common spine and neck problems</h2>
+    <ul class="check">
+      <li>Acute low back pain</li>
+      <li>Sciatica and leg pain</li>
+      <li>Disc related symptoms</li>
+      <li>Cervical spondylosis</li>
+      <li>Posture related neck pain</li>
+    </ul>
+  </article>
+
+  <article class="card-block">
+    <h2 class="section-title icon-blue">When pain needs evaluation</h2>
+    <ul class="check">
+      <li>Pain lasting more than two weeks</li>
+      <li>Pain disturbing sleep</li>
+      <li>Numbness or tingling in limbs</li>
+      <li>Weakness or imbalance</li>
+      <li>History of trauma or fever</li>
+    </ul>
+  </article>
+</div>
+
+<div class="soft-divider"></div>
+
+<div class="content-grid">
+  <article class="card-block">
+    <h2 class="section-title icon-yellow">How assessment is done</h2>
+    <ul class="check">
+      <li>Detailed history and posture review</li>
+      <li>Spine and nerve examination</li>
+      <li>X ray when required</li>
+      <li>MRI only if it changes treatment</li>
+    </ul>
+  </article>
+
+  <article class="card-block">
+    <h2 class="section-title icon-orange">Stepwise treatment plan</h2>
+    <div class="content-grid">
+      <ul class="check">
+        <li>Position and posture guidance</li>
+        <li>Early safe movement</li>
+        <li>Short medicine courses</li>
+      </ul>
+      <ul class="check">
+        <li>Physiotherapy exercises</li>
+        <li>Activity modification</li>
+        <li>Injections or surgery only if needed</li>
+      </ul>
+    </div>
+  </article>
+</div>
+
+<div class="soft-divider"></div>
+
+<div class="content-grid">
+  <article class="card-block">
+    <h2 class="section-title">Role of physiotherapy</h2>
+    <ul class="check">
+      <li>Core strengthening</li>
+      <li>Neck and shoulder training</li>
+      <li>Stretching tight muscles</li>
+      <li>Balance confidence restoration</li>
+    </ul>
+    <div class="cta-row">
+      <a class="btn btn-outline" href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy at OrthoCure</a>
+    </div>
+  </article>
+
+  <article class="card-block">
+    <h2 class="section-title">When surgery is discussed</h2>
+    <ul class="check">
+      <li>Progressive weakness</li>
+      <li>Persistent severe nerve pain</li>
+      <li>Walking limitation from stenosis</li>
+      <li>Structural instability</li>
+    </ul>
+  </article>
+</div>
+
+<section class="faq-block card-block">
+<h2 class="section-title">Common questions</h2>
+
+<details>
+<summary>Do I need MRI for every episode</summary>
+<p>No. MRI is advised only when it changes treatment decisions.</p>
+</details>
+
+<details>
+<summary>Is bed rest useful</summary>
+<p>Short rest may help briefly. Early guided movement works better long term.</p>
+</details>
+
+<details>
+<summary>Do all disc problems need surgery</summary>
+<p>No. Most improve with conservative care and physiotherapy.</p>
+</details>
+</section>
+
+</main>
+
+<footer>
+© OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal — Dr Sumesh Subramanian
+</footer>
+
 </body>
 </html>
