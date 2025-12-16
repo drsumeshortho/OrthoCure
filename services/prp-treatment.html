@@ -27,6 +27,7 @@
       --ink:#132127;
       --line:#e3eef7;
       --muted:#3a5669;
+      --focus:#94d9ff;
     }
     *{box-sizing:border-box}
     body{
@@ -35,8 +36,9 @@
       background:linear-gradient(135deg,var(--light),#e8f2f8);
       color:var(--ink);
     }
-    a{color:var(--blue);text-decoration:none}
+    a{color:var(--blue);text-decoration:none;transition:color .18s}
     a:hover{color:#0284c7}
+    :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
     .header{
       background:linear-gradient(90deg,var(--dark),var(--blue));
@@ -132,7 +134,6 @@
       color:var(--dark);
     }
 
-    /* IMAGE CONTAINER CONTROL */
     .media-box{
       max-width:520px;
       margin:0 auto;
@@ -149,6 +150,21 @@
       margin-top:6px;
     }
 
+    .faq details{
+      background:var(--card);
+      border-radius:18px;
+      border:1px solid var(--line);
+      padding:14px 16px;
+      margin-bottom:10px;
+      box-shadow:0 4px 16px rgba(15,23,42,.06);
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight:700;
+      color:var(--dark);
+    }
+    .faq p{margin:10px 0 0;color:var(--muted)}
+
     footer{
       max-width:1160px;
       margin:24px auto 18px;
@@ -158,7 +174,6 @@
     }
   </style>
 
-  <!-- Schema -->
   <script type="application/ld+json">
   [
     {
@@ -174,16 +189,66 @@
       "@context":"https://schema.org",
       "@type":["Service","MedicalProcedure"],
       "name":"Platelet Rich Plasma Injection",
+      "alternateName":"PRP Injection",
       "medicalSpecialty":"Orthopedics",
       "provider":{
         "@type":"MedicalClinic",
         "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
-        "telephone":"+919342700212"
+        "telephone":"+919342700212",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"No. 2 Second Street Santhipuram",
+          "addressLocality":"Thirumullaivoyal",
+          "addressRegion":"TN",
+          "postalCode":"600062",
+          "addressCountry":"IN"
+        }
       },
       "areaServed":["Thirumullaivoyal","Ambattur","Avadi"],
       "url":"https://www.myorthocure.com/services/prp-treatment.html"
     }
   ]
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Is PRP right for every knee or shoulder problem",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. PRP is usually considered for selected early to moderate knee arthritis and some shoulder tendon problems. Advanced arthritis, major tears, and significant deformity often need other treatments. Clinical assessment comes first."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Will PRP regrow cartilage",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"PRP is mainly aimed at reducing inflammation and improving symptoms in selected patients. It is not proven to regrow lost cartilage."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How many PRP injections are needed",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Some patients may benefit from a single injection, while others may be advised a short series depending on the joint and response. The plan is decided after examination and discussion of realistic benefit."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can PRP help me avoid knee replacement",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"In some patients, PRP can reduce pain and improve function and may delay the need for surgery. It does not replace knee replacement when arthritis is advanced and daily life is significantly limited."
+        }
+      }
+    ]
+  }
   </script>
 </head>
 
@@ -192,7 +257,7 @@
 <header class="header">
   <h1>PRP Injections for Knee and Shoulder Pain</h1>
   <p>Balanced, evidence based biologic care at OrthoCure Thirumullaivoyal</p>
-  <nav class="main-nav">
+  <nav class="main-nav" aria-label="Primary">
     <a href="/">Home</a>
     <a href="/services/index.html">Services</a>
     <a href="/consult.html">Consult</a>
@@ -200,7 +265,7 @@
   </nav>
 </header>
 
-<nav class="crumbs">
+<nav class="crumbs" aria-label="Breadcrumb">
   <a href="/">Home</a> › <a href="/services/index.html">Services</a> › PRP Injection
 </nav>
 
@@ -213,12 +278,11 @@
   <div class="card">
     <div class="cta">
       <a class="btn primary" href="tel:+919342700212">Call 93427 00212</a>
-      <a class="btn outline" href="https://wa.me/919342700212?text=PRP%20consultation">WhatsApp appointment</a>
+      <a class="btn outline" href="https://wa.me/919342700212?text=PRP%20consultation&utm_source=site&utm_campaign=prp-service">WhatsApp appointment</a>
       <a class="btn outline" href="/consult.html">Book clinic visit</a>
     </div>
   </div>
 
-  <!-- PRP IMAGE BLOCK -->
   <section class="card">
     <h2>PRP procedure at OrthoCure</h2>
     <div class="media-box">
@@ -231,17 +295,17 @@
     </div>
   </section>
 
-  <section class="grid">
+  <section class="grid" aria-label="PRP information blocks">
     <div class="card">
       <h2>When PRP may help</h2>
       <ul>
         <li>Early to moderate knee arthritis</li>
-        <li>Selected shoulder tendinopathy</li>
-        <li>Persistent pain despite physiotherapy</li>
+        <li>Selected shoulder tendon pain</li>
+        <li>Persistent symptoms despite physiotherapy</li>
         <li>Patients aiming to delay surgery responsibly</li>
       </ul>
-      <p>
-        Read more about <a href="/services/knee-arthritis.html">knee arthritis care at OrthoCure</a>.
+      <p class="lead" style="margin:12px 0 0">
+        For a full arthritis plan, see <a href="/services/knee-arthritis.html">knee arthritis care</a>.
       </p>
     </div>
 
@@ -249,24 +313,24 @@
       <h2>What PRP does and does not do</h2>
       <ul>
         <li>May reduce inflammation and pain</li>
-        <li>May improve walking comfort</li>
+        <li>May improve walking comfort and activity tolerance</li>
         <li>Does not regrow lost cartilage</li>
-        <li>Does not replace surgery</li>
+        <li>Does not replace surgery in advanced arthritis</li>
       </ul>
     </div>
   </section>
 
-  <section class="grid">
+  <section class="grid" aria-label="Recovery and limits">
     <div class="card">
       <h2>Procedure and recovery</h2>
       <ul>
         <li>Blood sample collected and processed in clinic</li>
         <li>Injection performed with sterile technique</li>
         <li>Temporary soreness for one to two days is common</li>
-        <li>Exercise and load management are essential afterwards</li>
+        <li>Exercise and load management matter most afterwards</li>
       </ul>
-      <p>
-        Rehabilitation is coordinated with our <a href="/services/physiotherapy-thirumullaivoyal.html">physiotherapy team</a>.
+      <p class="lead" style="margin:12px 0 0">
+        Rehab support is coordinated through <a href="/services/physiotherapy-thirumullaivoyal.html">physiotherapy</a>.
       </p>
     </div>
 
@@ -278,9 +342,52 @@
         <li>Expectation of cartilage regrowth</li>
         <li>Unwillingness to follow rehabilitation</li>
       </ul>
-      <p>
+      <p class="lead" style="margin:12px 0 0">
         In such cases, <a href="/services/total-knee-replacement-thirumullaivoyal.html">knee replacement</a> may be discussed.
       </p>
+    </div>
+  </section>
+
+  <section class="card faq" aria-label="PRP frequently asked questions">
+    <h2>Common questions about PRP</h2>
+
+    <details>
+      <summary>Is PRP right for every knee or shoulder problem</summary>
+      <p>No. PRP is usually considered for selected early to moderate knee arthritis and some shoulder tendon problems. Advanced arthritis, major tears, and significant deformity often need other treatments. Clinical assessment comes first.</p>
+    </details>
+
+    <details>
+      <summary>Will PRP regrow cartilage</summary>
+      <p>PRP is mainly aimed at reducing inflammation and improving symptoms in selected patients. It is not proven to regrow lost cartilage.</p>
+    </details>
+
+    <details>
+      <summary>How many PRP injections are needed</summary>
+      <p>Some patients may benefit from a single injection, while others may be advised a short series depending on the joint and response. The plan is decided after examination and discussion of realistic benefit.</p>
+    </details>
+
+    <details>
+      <summary>Can PRP help me avoid knee replacement</summary>
+      <p>In some patients, PRP can reduce pain and improve function and may delay the need for surgery. It does not replace knee replacement when arthritis is advanced and daily life is significantly limited.</p>
+    </details>
+
+    <div class="cta" style="margin-top:14px">
+      <a class="btn primary" href="tel:+919342700212">Call 93427 00212</a>
+      <a class="btn outline" href="https://wa.me/919342700212?text=PRP%20appointment&utm_source=site&utm_campaign=prp-faq">Message on WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="card" aria-label="Clinic details">
+    <h2>Clinic details</h2>
+    <p class="lead" style="margin:0">
+      <strong>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal</strong><br>
+      No. 2 Second Street Santhipuram, Chennai 600062<br>
+      Clinic hours Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm<br>
+      Phone and WhatsApp 93427 00212
+    </p>
+    <div class="cta">
+      <a class="btn outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%20Thirumullaivoyal">Open in Google Maps</a>
+      <a class="btn outline" href="/services/index.html">Browse all services</a>
     </div>
   </section>
 
@@ -291,7 +398,7 @@
 </footer>
 
 <div style="display:none">
-PRP injection knee arthritis shoulder pain Thirumullaivoyal Ambattur Avadi OrthoCure Dr Sumesh Subramanian platelet rich plasma conservative orthopaedic care
+PRP injection knee arthritis shoulder pain Thirumullaivoyal Ambattur Avadi OrthoCure Dr Sumesh Subramanian platelet rich plasma evidence based counselling physiotherapy rehabilitation conservative orthopaedic care
 </div>
 
 </body>
