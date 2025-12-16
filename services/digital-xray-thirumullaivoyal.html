@@ -26,6 +26,8 @@
       --ink:#132127;
       --line:#e3eef7;
       --focus:#94d9ff;
+      --muted:#3a5669;
+      --chip:#e7f6fc;
     }
 
     *{box-sizing:border-box}
@@ -61,26 +63,29 @@
       pointer-events:none;
     }
     .clinic-main-title{
-      font-size:2.1rem;
+      font-size:2.05rem;
       font-weight:700;
       margin:0 0 8px;
       letter-spacing:.018em;
+      line-height:1.15;
     }
     .clinic-tagline{
-      font-size:1.07rem;
+      font-size:1.05rem;
       opacity:.97;
     }
+
     .main-nav{
       margin:22px 0 0;
       display:flex;
-      gap:31px;
+      gap:26px;
       justify-content:center;
       flex-wrap:wrap;
+      padding:0 10px;
     }
     .main-nav a{
       color:#e2ecf7;
       font-weight:700;
-      font-size:1.09rem;
+      font-size:1.03rem;
       position:relative;
       padding-bottom:5px;
     }
@@ -122,9 +127,25 @@
 
     .lead{
       font-size:1.06rem;
-      color:#3a5669;
-      max-width:960px;
-      margin:0 0 20px;
+      color:var(--muted);
+      max-width:980px;
+      margin:0 0 14px;
+    }
+
+    .chip-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:10px 0 18px;
+    }
+    .chip{
+      background:var(--chip);
+      border:1px solid var(--line);
+      color:var(--dark-cyan);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:.92rem;
     }
 
     .card-block{
@@ -143,6 +164,18 @@
       margin-bottom:22px;
     }
 
+    .section-title{
+      font-size:1.25rem;
+      margin:0 0 10px;
+      color:var(--dark-cyan);
+    }
+
+    .soft-divider{
+      height:1px;
+      background:linear-gradient(to right, transparent, #dbeaf4, transparent);
+      margin:22px 0;
+    }
+
     ul.check{
       list-style:none;
       padding:0;
@@ -151,7 +184,8 @@
     ul.check li{
       padding-left:26px;
       position:relative;
-      margin:6px 0;
+      margin:8px 0;
+      color:var(--muted);
     }
     ul.check li::before{
       content:"✔";
@@ -159,13 +193,23 @@
       left:0;
       top:0;
       color:#059669;
+      font-size:.96rem;
+    }
+
+    .two-col{
+      columns:2;
+      column-gap:26px;
+    }
+    .two-col li{
+      break-inside:avoid;
+      -webkit-column-break-inside:avoid;
     }
 
     .cta-row{
       display:flex;
       gap:12px;
       flex-wrap:wrap;
-      margin-top:12px;
+      margin-top:10px;
     }
     .btn{
       display:inline-block;
@@ -191,21 +235,13 @@
       border:1px solid var(--line);
     }
 
-    .section-title{
-      font-size:1.25rem;
-      margin:0 0 10px;
-      color:var(--dark-cyan);
-    }
-
     .image-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:18px;
-      margin:8px 0 4px;
+      margin:10px 0 0;
     }
-    .image-grid figure{
-      margin:0;
-    }
+    .image-grid figure{margin:0}
     .image-grid img{
       width:100%;
       border-radius:18px;
@@ -214,8 +250,18 @@
     .image-grid figcaption{
       font-size:.9rem;
       color:#4b6578;
-      margin-top:6px;
+      margin-top:8px;
+      line-height:1.45;
     }
+
+    .callout{
+      background:#f3fbff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:14px 16px;
+      color:var(--muted);
+    }
+    .callout strong{color:var(--dark-cyan)}
 
     .faq-block details{
       background:var(--card);
@@ -227,7 +273,7 @@
     }
     .faq-block summary{
       cursor:pointer;
-      font-weight:600;
+      font-weight:700;
       color:var(--dark-cyan);
     }
 
@@ -239,13 +285,13 @@
       font-size:.92rem;
     }
 
-    @media (max-width:700px){
-      .services-section h1{font-size:1.5rem}
+    @media (max-width:760px){
+      .two-col{columns:1}
+      .services-section h1{font-size:1.55rem}
       .clinic-main-title{font-size:1.4rem}
     }
   </style>
 
-  <!-- Breadcrumb and Service schema -->
   <script type="application/ld+json">
   [
     {
@@ -302,14 +348,12 @@
 
 <body>
   <header class="header-bar">
-    <div class="clinic-main-title">OrthoCure<br>Thirumullaivoyal</div>
-    <div class="clinic-tagline">
-      Evidence based orthopaedic care in Ambattur Avadi and North Chennai
-    </div>
+    <div class="clinic-main-title">OrthoCure Bone and Joint Speciality Clinic<br>Thirumullaivoyal</div>
+    <div class="clinic-tagline">Evidence based orthopaedic care in Ambattur, Avadi and North Chennai</div>
     <nav class="main-nav" aria-label="Primary">
       <a href="/">Home</a>
       <a href="/about.html">About</a>
-      <a href="/services/index.html" aria-current="page">Services</a>
+      <a href="/services/index.html">Services</a>
       <a href="/consult.html">Consult</a>
       <a href="/services/fracture-care.html">Fracture Care</a>
       <a href="/blog.html">Blog</a>
@@ -325,52 +369,57 @@
     <h1>Digital X ray in Thirumullaivoyal Ambattur Avadi</h1>
 
     <p class="lead">
-      Digital X ray at OrthoCure Bone and Joint Speciality Clinic supports quicker diagnosis for fractures and joint problems without sending you to another centre. Scans are advised only when they are truly needed and results are explained by Dr Sumesh Subramanian during the same visit whenever possible.
+      Digital X ray at OrthoCure supports quicker decisions for fractures and bone and joint pain without sending you to another centre. Films are advised only when needed, and images are explained by Dr Sumesh Subramanian in simple language.
     </p>
 
-    <!-- Top CTA -->
+    <div class="chip-row" aria-label="Key benefits">
+      <div class="chip">On site X ray when needed</div>
+      <div class="chip">Faster fracture decisions</div>
+      <div class="chip">Orthopaedic interpretation</div>
+      <div class="chip">Follow up comparison</div>
+    </div>
+
     <div class="card-block">
       <div class="cta-row">
         <a class="btn btn-primary" href="tel:+919342700212">Call to check X ray availability</a>
-        <a class="btn btn-outline" href="https://wa.me/919342700212?text=Digital%20X%20ray%20query&utm_source=site&utm_campaign=digital-xray">
-          WhatsApp 93427 00212
-        </a>
+        <a class="btn btn-outline" href="https://wa.me/919342700212?text=Digital%20X%20ray%20query&utm_source=site&utm_campaign=digital-xray">WhatsApp 93427 00212</a>
         <a class="btn btn-outline" href="/consult.html">Book fracture or joint pain consult</a>
       </div>
     </div>
 
-    <!-- Why X ray at OrthoCure -->
-    <section class="content-grid" aria-label="Digital X ray benefits">
+    <section class="content-grid" aria-label="Digital X ray overview">
       <article class="card-block">
-        <h2 class="section-title">Why digital X ray at OrthoCure helps you</h2>
-        <ul class="check">
-          <li>Same visit diagnosis for many fractures and joint problems.</li>
-          <li>No extra travel between clinic and X ray centre when you are already in pain.</li>
-          <li>Images reviewed directly with an orthopaedic surgeon, not in isolation.</li>
-          <li>Clear explanation of what the X ray shows and what it does not show.</li>
-          <li>Immediate start of plaster, splint or pain management when needed.</li>
+        <h2 class="section-title">Why on site digital X ray helps</h2>
+        <ul class="check two-col">
+          <li>Same visit clarity for many fractures</li>
+          <li>Less travel when you are already in pain</li>
+          <li>Images reviewed with your symptoms and examination</li>
+          <li>Clear explanation of what X ray shows and what it cannot show</li>
+          <li>Faster start to plaster, splint, medicines, or referral</li>
+          <li>Images stored for later comparison</li>
         </ul>
-        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-          The X ray facility is for patients under care at OrthoCure. It is not run as a separate referral imaging centre.
-        </p>
+        <div class="soft-divider"></div>
+        <div class="callout">
+          <strong>Important:</strong> This is a clinic linked service for patients evaluated at OrthoCure. It is not run as a separate walk in imaging centre.
+        </div>
       </article>
 
       <article class="card-block">
         <h2 class="section-title">When we usually advise an X ray</h2>
         <ul class="check">
-          <li>Falls or injuries where a fracture is suspected.</li>
-          <li>Persistent knee pain where arthritis needs confirmation or staging.</li>
-          <li>Joint swelling after injury that does not settle with rest.</li>
-          <li>Back or neck problems with red flag features where imaging will change the plan.</li>
-          <li>Follow up review of fractures already treated with plaster or surgery elsewhere.</li>
+          <li>Falls or injuries where fracture is suspected</li>
+          <li>Persistent knee pain where arthritis staging is needed</li>
+          <li>Joint swelling after injury that does not settle</li>
+          <li>Follow up review of fractures treated elsewhere</li>
+          <li>Selected back or neck pain cases where imaging changes the plan</li>
         </ul>
-        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-          Minor sprains and simple muscular pain are often managed without X ray after careful examination.
-        </p>
+        <div class="soft-divider"></div>
+        <div class="callout">
+          <strong>Often no X ray:</strong> simple sprains, muscle strain, and early pain patterns can be managed safely after examination without routine imaging.
+        </div>
       </article>
     </section>
 
-    <!-- X ray room image -->
     <section class="card-block" aria-label="Digital X ray room">
       <h2 class="section-title">Inside our digital X ray room</h2>
       <div class="image-grid">
@@ -379,74 +428,62 @@
                alt="Digital X ray room at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal"
                loading="lazy">
           <figcaption>
-            Clean, well lit room designed for quick positioning and clear images. Protective measures are used whenever appropriate.
+            Clean, well lit room designed for faster positioning and clear images. The team helps you move slowly and safely, especially after injury.
           </figcaption>
         </figure>
       </div>
-      <p style="font-size:.95rem;color:#3a5669;margin-top:8px">
-        Most studies take only a few minutes. Staff will help you move slowly and safely, especially after injury or surgery.
-      </p>
     </section>
 
-    <!-- What to expect and safety -->
     <section class="content-grid" aria-label="Process and safety">
       <article class="card-block">
-        <h2 class="section-title">What to expect during your X ray visit</h2>
+        <h2 class="section-title">What to expect on the same visit</h2>
         <ul class="check">
-          <li>Clinical examination first to decide whether imaging is required.</li>
-          <li>Explanation of which views are planned and why.</li>
-          <li>Positioning with support to reduce pain as much as possible.</li>
-          <li>Digital images reviewed on screen with you in simple language.</li>
-          <li>Written plan for plaster, physiotherapy or further tests if needed.</li>
+          <li>Clinical examination first to decide if imaging is required</li>
+          <li>Simple explanation of which views are needed and why</li>
+          <li>Support during positioning to reduce pain</li>
+          <li>Images reviewed on screen with you</li>
+          <li>Clear next step plan, plaster, physiotherapy, or further tests if needed</li>
         </ul>
       </article>
 
       <article class="card-block">
         <h2 class="section-title">Radiation safety and responsible use</h2>
         <ul class="check">
-          <li>Only required views are taken, guided by the clinical question.</li>
-          <li>Modern digital system allows lower exposure compared with older film units.</li>
-          <li>Extra care in children and women who may be pregnant, with shielding where appropriate.</li>
-          <li>No routine repeat films unless they change treatment decisions.</li>
-          <li>Images are stored safely for future comparison when you return for follow up.</li>
+          <li>Only required views are taken, guided by the clinical question</li>
+          <li>Extra caution in children and in women who may be pregnant</li>
+          <li>No routine repeat films unless they change decisions</li>
+          <li>Images stored for follow up comparison</li>
         </ul>
+        <p style="font-size:.95rem;color:var(--muted);margin:10px 0 0">
+          For most adults, the benefit of a clinically needed X ray is far greater than the small risk.
+        </p>
       </article>
     </section>
 
-    <!-- FAQ -->
     <section class="faq-block card-block" aria-label="Digital X ray questions">
       <h2 class="section-title">Common questions about digital X ray</h2>
 
       <details>
         <summary>Do I always need an X ray for joint pain</summary>
-        <p>
-          No. Many soft tissue and muscular problems can be diagnosed with a good history and examination alone. X ray is advised when it is likely to change treatment, such as suspected fracture or arthritis.
-        </p>
+        <p>No. Many soft tissue and muscular problems can be diagnosed with history and examination. X ray is advised when it changes treatment, such as suspected fracture or arthritis.</p>
       </details>
 
       <details>
         <summary>Is digital X ray safe</summary>
-        <p>
-          Digital systems use controlled amounts of radiation. At OrthoCure only the required number of views are taken and extra care is used in children and in women who may be pregnant. For most adults the benefit of a needed X ray is far greater than the small risk.
-        </p>
+        <p>Digital systems use controlled amounts of radiation. Only required views are taken, and extra care is used in children and in women who may be pregnant.</p>
       </details>
 
       <details>
-        <summary>Will you give me the X ray images to take elsewhere if needed</summary>
-        <p>
-          Yes. If you need review at another hospital for surgery or a second opinion, images can be shared or printed so that you do not have to repeat the test.
-        </p>
+        <summary>Will you share the images if I need review elsewhere</summary>
+        <p>Yes. If you need review at another hospital for surgery or a second opinion, images can be shared or printed so that you do not have to repeat the test.</p>
       </details>
 
       <details>
         <summary>Can I walk in only for X ray without consultation</summary>
-        <p>
-          The facility is mainly for patients who consult at OrthoCure. If you are coming just for an X ray, a brief clinical review is still advised so that the right views are taken and the study is used meaningfully.
-        </p>
+        <p>The facility is mainly for patients who consult at OrthoCure. If you are coming only for an X ray, a brief clinical review is still advised so that the right views are taken and the study is used meaningfully.</p>
       </details>
     </section>
 
-    <!-- Related services and visit info -->
     <section class="content-grid" aria-label="Visit and related services">
       <article class="card-block">
         <h2 class="section-title">Visit our clinic</h2>
@@ -458,29 +495,24 @@
         <p><strong>Phone and WhatsApp</strong> 93427 00212</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
-          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Digital%20X%20ray%20appointment&utm_source=site&utm_campaign=digital-xray">
-            Message on WhatsApp
-          </a>
-          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">
-            Open in Google Maps
-          </a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">Open in Google Maps</a>
         </div>
       </article>
 
       <article class="card-block">
         <h2 class="section-title">Related services and reading</h2>
-        <ul>
-          <li><a href="/services/fracture-care.html">Fracture treatment with plaster and splints</a></li>
-          <li><a href="/services/knee-arthritis.html">Knee arthritis care</a></li>
+        <ul class="check">
+          <li><a href="/services/fracture-care.html">Fracture care with plaster and splints</a></li>
+          <li><a href="/services/knee-arthritis.html">Joint pain and arthritis care</a></li>
           <li><a href="/services/spine-neck-pain-thirumullaivoyal.html">Spine and neck pain clinic</a></li>
           <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy and rehabilitation</a></li>
-          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE first aid for injuries</a></li>
+          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE first steps after injury</a></li>
         </ul>
       </article>
     </section>
 
     <p class="lead" style="font-size:.95rem;margin-top:4px">
-      This page is a general guide for patients in Thirumullaivoyal Ambattur and Avadi who want to know whether digital X ray is available if needed. Final decisions on imaging are always made after examination by Dr Sumesh Subramanian.
+      This page is a general guide for patients in Thirumullaivoyal, Ambattur and Avadi who want to know whether digital X ray is available when needed. Final decisions on imaging are always made after examination by Dr Sumesh Subramanian.
     </p>
   </main>
 
@@ -488,7 +520,6 @@
     © OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal — Dr Sumesh Subramanian.
   </footer>
 
-  <!-- FAQ schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -499,7 +530,7 @@
         "name":"Do I always need an X ray for joint pain",
         "acceptedAnswer":{
           "@type":"Answer",
-          "text":"No. Many soft tissue and muscular problems can be diagnosed with a good history and examination alone. X ray is advised when it is likely to change treatment, such as suspected fracture or arthritis."
+          "text":"No. Many soft tissue and muscular problems can be diagnosed with history and examination. X ray is advised when it changes treatment, such as suspected fracture or arthritis."
         }
       },
       {
@@ -507,12 +538,12 @@
         "name":"Is digital X ray safe",
         "acceptedAnswer":{
           "@type":"Answer",
-          "text":"Digital systems use controlled amounts of radiation. At OrthoCure only the required number of views are taken and extra care is used in children and in women who may be pregnant."
+          "text":"Digital systems use controlled amounts of radiation. Only required views are taken, and extra care is used in children and in women who may be pregnant."
         }
       },
       {
         "@type":"Question",
-        "name":"Will you give me the X ray images to take elsewhere if needed",
+        "name":"Will you share the images if I need review elsewhere",
         "acceptedAnswer":{
           "@type":"Answer",
           "text":"Yes. If you need review at another hospital for surgery or a second opinion, images can be shared or printed so that you do not have to repeat the test."
@@ -523,14 +554,13 @@
         "name":"Can I walk in only for X ray without consultation",
         "acceptedAnswer":{
           "@type":"Answer",
-          "text":"The facility is mainly for patients who consult at OrthoCure. If you are coming just for an X ray, a brief clinical review is still advised so that the right views are taken and the study is used meaningfully."
+          "text":"The facility is mainly for patients who consult at OrthoCure. If you are coming only for an X ray, a brief clinical review is still advised so that the right views are taken and the study is used meaningfully."
         }
       }
     ]
   }
   </script>
 
-  <!-- Quiet AI retrieval helper -->
   <div style="display:none">
     Digital X ray Thirumullaivoyal Ambattur Avadi fracture diagnosis joint pain imaging at OrthoCure Bone and Joint Speciality Clinic Dr Sumesh Subramanian on site X ray responsible radiation use clinic hours phone 9342700212
   </div>
