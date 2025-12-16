@@ -26,6 +26,7 @@
       --card:rgba(255,255,255,0.96);
       --ink:#132127;
       --line:#e3eef7;
+      --muted:#3a5669;
     }
     *{box-sizing:border-box}
     body{
@@ -35,6 +36,8 @@
       color:var(--ink);
     }
     a{color:var(--blue);text-decoration:none}
+    a:hover{color:#0284c7}
+
     .header{
       background:linear-gradient(90deg,var(--dark),var(--blue));
       color:#fff;
@@ -45,14 +48,23 @@
     .header h1{margin:0;font-size:2rem}
     .header p{margin:6px 0 0;opacity:.95}
 
-    nav{
+    .main-nav{
       margin-top:16px;
       display:flex;
       justify-content:center;
       gap:24px;
       flex-wrap:wrap;
     }
-    nav a{color:#e2ecf7;font-weight:700}
+    .main-nav a{color:#e2ecf7;font-weight:700}
+
+    .crumbs{
+      max-width:1160px;
+      margin:14px auto 0;
+      padding:0 15px;
+      font-size:.95rem;
+      color:#4a6a80;
+    }
+    .crumbs a{text-decoration:underline}
 
     .wrap{
       max-width:1160px;
@@ -66,7 +78,7 @@
     }
     .lead{
       font-size:1.05rem;
-      color:#3a5669;
+      color:var(--muted);
       max-width:900px;
     }
     .card{
@@ -77,20 +89,19 @@
       box-shadow:0 8px 28px rgba(0,0,0,.08);
       margin-bottom:22px;
     }
+
     .grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
       gap:22px;
     }
-    ul{
-      list-style:none;
-      padding:0;
-      margin:0;
-    }
+
+    ul{list-style:none;padding:0;margin:0}
     ul li{
       padding-left:26px;
       position:relative;
       margin:7px 0;
+      color:var(--muted);
     }
     ul li::before{
       content:"✔";
@@ -98,6 +109,7 @@
       left:0;
       color:#059669;
     }
+
     .cta{
       display:flex;
       gap:12px;
@@ -119,8 +131,15 @@
       border:1px solid var(--line);
       color:var(--dark);
     }
-    img{
-      max-width:100%;
+
+    /* IMAGE CONTAINER CONTROL */
+    .media-box{
+      max-width:520px;
+      margin:0 auto;
+      text-align:center;
+    }
+    .media-box img{
+      width:100%;
       border-radius:18px;
       display:block;
     }
@@ -129,6 +148,7 @@
       color:#4a6a80;
       margin-top:6px;
     }
+
     footer{
       max-width:1160px;
       margin:24px auto 18px;
@@ -140,28 +160,30 @@
 
   <!-- Schema -->
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":["Service","MedicalProcedure"],
-    "name":"Platelet Rich Plasma Injection",
-    "alternateName":"PRP Injection",
-    "medicalSpecialty":"Orthopedics",
-    "provider":{
-      "@type":"MedicalClinic",
-      "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
-      "telephone":"+919342700212",
-      "address":{
-        "@type":"PostalAddress",
-        "streetAddress":"No. 2 Second Street Santhipuram",
-        "addressLocality":"Thirumullaivoyal",
-        "addressRegion":"TN",
-        "postalCode":"600062",
-        "addressCountry":"IN"
-      }
+  [
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
+        {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"},
+        {"@type":"ListItem","position":3,"name":"PRP Injection","item":"https://www.myorthocure.com/services/prp-treatment.html"}
+      ]
     },
-    "areaServed":["Thirumullaivoyal","Ambattur","Avadi"],
-    "url":"https://www.myorthocure.com/services/prp-treatment.html"
-  }
+    {
+      "@context":"https://schema.org",
+      "@type":["Service","MedicalProcedure"],
+      "name":"Platelet Rich Plasma Injection",
+      "medicalSpecialty":"Orthopedics",
+      "provider":{
+        "@type":"MedicalClinic",
+        "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
+        "telephone":"+919342700212"
+      },
+      "areaServed":["Thirumullaivoyal","Ambattur","Avadi"],
+      "url":"https://www.myorthocure.com/services/prp-treatment.html"
+    }
+  ]
   </script>
 </head>
 
@@ -170,7 +192,7 @@
 <header class="header">
   <h1>PRP Injections for Knee and Shoulder Pain</h1>
   <p>Balanced, evidence based biologic care at OrthoCure Thirumullaivoyal</p>
-  <nav>
+  <nav class="main-nav">
     <a href="/">Home</a>
     <a href="/services/index.html">Services</a>
     <a href="/consult.html">Consult</a>
@@ -178,13 +200,16 @@
   </nav>
 </header>
 
+<nav class="crumbs">
+  <a href="/">Home</a> › <a href="/services/index.html">Services</a> › PRP Injection
+</nav>
+
 <main class="wrap">
 
   <p class="lead">
-    Platelet rich plasma injections are offered at OrthoCure Bone and Joint Speciality Clinic only for selected knee and shoulder conditions. PRP is not a miracle cure. It is considered when exercise based care and medicines are not enough and when evidence suggests a reasonable chance of benefit.
+    Platelet rich plasma injections are offered at OrthoCure Bone and Joint Speciality Clinic only for selected knee and shoulder conditions. PRP is not a miracle cure. It is considered when structured exercise based care and medicines are insufficient and when evidence suggests a reasonable chance of benefit.
   </p>
 
-  <!-- CTA -->
   <div class="card">
     <div class="cta">
       <a class="btn primary" href="tel:+919342700212">Call 93427 00212</a>
@@ -193,15 +218,17 @@
     </div>
   </div>
 
-  <!-- PRP IMAGE BLOCK (RESTORED) -->
+  <!-- PRP IMAGE BLOCK -->
   <section class="card">
     <h2>PRP procedure at OrthoCure</h2>
-    <img src="/assets/prp-knee-injection-orthocure-thirumullaivoyal-ambattur.jpg"
-         alt="PRP knee injection procedure at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal"
-         loading="lazy">
-    <p class="caption">
-      PRP is prepared from the patient’s own blood under sterile conditions and injected around the joint when clinically appropriate. The injection is always combined with rehabilitation guidance.
-    </p>
+    <div class="media-box">
+      <img src="/assets/prp-knee-injection-orthocure-thirumullaivoyal-ambattur.jpg"
+           alt="PRP knee injection procedure at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal"
+           loading="lazy">
+      <p class="caption">
+        PRP is prepared from the patient’s own blood under sterile conditions and injected only when clinically appropriate. Rehabilitation guidance is always included.
+      </p>
+    </div>
   </section>
 
   <section class="grid">
@@ -209,19 +236,22 @@
       <h2>When PRP may help</h2>
       <ul>
         <li>Early to moderate knee arthritis</li>
-        <li>Shoulder tendinopathy without full thickness tear</li>
-        <li>Persistent pain despite exercise and physiotherapy</li>
+        <li>Selected shoulder tendinopathy</li>
+        <li>Persistent pain despite physiotherapy</li>
         <li>Patients aiming to delay surgery responsibly</li>
       </ul>
+      <p>
+        Read more about <a href="/services/knee-arthritis.html">knee arthritis care at OrthoCure</a>.
+      </p>
     </div>
 
     <div class="card">
       <h2>What PRP does and does not do</h2>
       <ul>
         <li>May reduce inflammation and pain</li>
-        <li>May improve walking comfort and activity tolerance</li>
+        <li>May improve walking comfort</li>
         <li>Does not regrow lost cartilage</li>
-        <li>Does not replace surgery in advanced arthritis</li>
+        <li>Does not replace surgery</li>
       </ul>
     </div>
   </section>
@@ -235,29 +265,22 @@
         <li>Temporary soreness for one to two days is common</li>
         <li>Exercise and load management are essential afterwards</li>
       </ul>
+      <p>
+        Rehabilitation is coordinated with our <a href="/services/physiotherapy-thirumullaivoyal.html">physiotherapy team</a>.
+      </p>
     </div>
 
     <div class="card">
-      <h2>Risks and limitations</h2>
+      <h2>When PRP is not the right choice</h2>
       <ul>
-        <li>Variable response between patients</li>
-        <li>Small infection risk like any injection</li>
-        <li>May not provide meaningful benefit in some cases</li>
-        <li>Repeat injections only after careful review</li>
+        <li>Advanced arthritis with severe deformity</li>
+        <li>Complete tendon or ligament tears</li>
+        <li>Expectation of cartilage regrowth</li>
+        <li>Unwillingness to follow rehabilitation</li>
       </ul>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Clinic details</h2>
-    <p>
-      <strong>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal</strong><br>
-      No. 2 Second Street Santhipuram, Chennai 600062<br>
-      Clinic hours Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm
-    </p>
-    <div class="cta">
-      <a class="btn primary" href="tel:+919342700212">Call clinic</a>
-      <a class="btn outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%20Thirumullaivoyal">Open in Maps</a>
+      <p>
+        In such cases, <a href="/services/total-knee-replacement-thirumullaivoyal.html">knee replacement</a> may be discussed.
+      </p>
     </div>
   </section>
 
@@ -267,7 +290,6 @@
   © OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal — Dr Sumesh Subramanian
 </footer>
 
-<!-- Quiet AI retrieval -->
 <div style="display:none">
 PRP injection knee arthritis shoulder pain Thirumullaivoyal Ambattur Avadi OrthoCure Dr Sumesh Subramanian platelet rich plasma conservative orthopaedic care
 </div>
