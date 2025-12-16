@@ -35,54 +35,39 @@
       background:linear-gradient(135deg,var(--cyan-light) 0%,#e8f2f8 85%);
       color:var(--ink);
     }
-    a{color:var(--cyan);text-decoration:none;transition:color .18s}
+    a{color:var(--cyan);text-decoration:none}
     a:hover{color:#0284c7}
     :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
     .header-bar{
       background:linear-gradient(90deg,var(--dark-cyan) 78%,var(--cyan) 100%);
       color:#fff;
-      padding:34px 10px 26px 10px;
+      padding:34px 10px 26px;
       text-align:center;
       border-radius:0 0 29px 29px;
       box-shadow:0 7px 32px rgba(16,37,66,.13);
-      position:relative;
-      overflow:hidden;
     }
-    .header-bar::after{
-      content:"";
-      position:absolute;
-      right:0;
-      top:-36px;
-      width:340px;
-      height:220px;
-      opacity:.13;
-      background:radial-gradient(circle at 90% 12%,var(--accent) 7%,var(--cyan) 60%,transparent 100%);
-      pointer-events:none;
-    }
+
     .clinic-main-title{
       font-size:2.1rem;
       font-weight:700;
       margin:0 0 8px;
-      letter-spacing:.018em;
     }
-    .clinic-tagline{
-      font-size:1.07rem;
-      opacity:.97;
-    }
+    .clinic-tagline{font-size:1.07rem}
+
     .main-nav{
-      margin:22px 0 0;
+      margin-top:22px;
       display:flex;
-      gap:31px;
+      gap:26px;
       justify-content:center;
       flex-wrap:wrap;
     }
     .main-nav a{
       color:#e2ecf7;
       font-weight:700;
-      font-size:1.09rem;
-      position:relative;
+      font-size:1.05rem;
       padding-bottom:5px;
+      position:relative;
     }
     .main-nav a:after{
       content:'';
@@ -90,20 +75,17 @@
       height:3px;
       width:0;
       background:linear-gradient(90deg,var(--accent),var(--cyan));
-      border-radius:2px;
-      transition:width .24s;
+      transition:width .25s;
     }
     .main-nav a.active:after,
-    .main-nav a:hover:after{
-      width:100%;
-    }
+    .main-nav a:hover:after{width:100%}
 
     .crumbs{
       max-width:1160px;
       margin:14px auto 0;
       padding:0 15px;
-      color:#4a6a80;
       font-size:.95rem;
+      color:#4a6a80;
     }
     .crumbs a{text-decoration:underline}
 
@@ -112,26 +94,25 @@
       margin:18px auto 0;
       padding:0 15px;
     }
-    .services-section h1{
+    h1{
       color:var(--dark-cyan);
       font-size:1.9rem;
       margin:18px 0 10px;
       font-weight:800;
-      letter-spacing:.02em;
     }
 
     .lead{
       font-size:1.06rem;
       color:#3a5669;
       max-width:960px;
-      margin:0 0 20px;
+      margin-bottom:20px;
     }
 
     .card-block{
       background:var(--card);
       border-radius:22px;
-      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
-      padding:22px 20px 20px;
+      box-shadow:0 8px 32px rgba(2,95,158,.13);
+      padding:22px 20px;
       border:1.2px solid var(--line);
       margin-bottom:22px;
     }
@@ -145,7 +126,7 @@
 
     .content-grid-single{
       display:grid;
-      grid-template-columns:minmax(0,1fr);
+      grid-template-columns:1fr;
       gap:22px;
       margin-bottom:22px;
     }
@@ -158,13 +139,12 @@
     ul.check li{
       padding-left:26px;
       position:relative;
-      margin:6px 0;
+      margin:8px 0;
     }
     ul.check li::before{
       content:"✔";
       position:absolute;
       left:0;
-      top:0;
       color:#059669;
     }
 
@@ -174,437 +154,147 @@
       flex-wrap:wrap;
       margin-top:12px;
     }
+
     .btn{
-      display:inline-block;
       padding:11px 20px;
       font-weight:700;
-      font-size:1rem;
       border-radius:18px;
-      border:none;
-      cursor:pointer;
-      text-decoration:none;
+      display:inline-block;
     }
     .btn-primary{
-      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan) 80%);
+      background:linear-gradient(90deg,var(--dark-cyan),var(--cyan));
       color:#fff;
-      box-shadow:0 1px 14px rgba(2,132,199,.1);
-    }
-    .btn-primary:hover{
-      background:linear-gradient(90deg,#035372 80%,#0ea5e9 100%);
     }
     .btn-outline{
       background:#e7f6fc;
-      color:var(--dark-cyan);
       border:1px solid var(--line);
+      color:var(--dark-cyan);
     }
 
     .section-title{
       font-size:1.25rem;
-      margin:0 0 10px;
+      margin-bottom:10px;
       color:var(--dark-cyan);
     }
 
     .service-img{
-      display:block;
-      max-width:760px;
       width:100%;
-      margin:8px auto 10px;
+      max-width:760px;
+      margin:10px auto;
+      display:block;
       border-radius:20px;
-      box-shadow:0 8px 32px rgba(2,95,158,.13),0 2px 9px #d9e9fa;
     }
     .img-caption{
       font-size:.9rem;
-      color:#4a6a80;
       text-align:center;
-      margin-bottom:4px;
+      color:#4a6a80;
     }
 
-    .faq-block details{
-      background:var(--card);
-      border-radius:18px;
-      border:1.2px solid var(--line);
-      padding:14px 16px;
-      margin-bottom:10px;
-      box-shadow:0 4px 16px rgba(15,23,42,.06);
-    }
-    .faq-block summary{
-      cursor:pointer;
-      font-weight:600;
-      color:var(--dark-cyan);
-    }
-
-    .bottom-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:22px;
-      margin:16px 0 26px;
-    }
-
-    .note{
-      max-width:1150px;
-      margin:4px auto 30px;
-      padding:0 16px;
-      color:#4c7ca1;
-      font-size:1rem;
-      text-align:left;
+    .soft-divider{
+      height:1px;
+      background:linear-gradient(to right, transparent, #dbeaf4, transparent);
+      margin:28px 0;
     }
 
     footer{
       max-width:1160px;
-      margin:20px auto 18px;
+      margin:20px auto;
       padding:0 15px;
-      color:#49647a;
       font-size:.92rem;
+      color:#49647a;
     }
 
-    @media (max-width:900px){
+    @media(max-width:900px){
       .content-grid{grid-template-columns:1fr}
-      .card-block{padding:20px 16px}
-    }
-    @media (max-width:700px){
-      .services-section h1{font-size:1.5rem}
-      .clinic-main-title{font-size:1.4rem}
     }
   </style>
 
-  <!-- Breadcrumb and Service schema -->
   <script type="application/ld+json">
-  [
-    {
-      "@context":"https://schema.org",
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
-        {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"},
-        {"@type":"ListItem","position":3,"name":"Knee Arthritis","item":"https://www.myorthocure.com/services/knee-arthritis.html"}
-      ]
-    },
-    {
-      "@context":"https://schema.org",
-      "@type":["Service","MedicalCondition"],
-      "name":"Knee arthritis care",
-      "alternateName":"Knee osteoarthritis treatment",
-      "description":"Exercise first knee arthritis care with physiotherapy, lifestyle change, selected PRP or hyaluronic acid injections and balanced knee replacement advice for adults in Ambattur Avadi and Thirumullaivoyal.",
-      "medicalSpecialty":"Orthopedics",
-      "areaServed":[
-        {"@type":"City","name":"Thirumullaivoyal"},
-        {"@type":"City","name":"Ambattur"},
-        {"@type":"City","name":"Avadi"}
-      ],
-      "provider":{
-        "@type":"MedicalClinic",
-        "name":"OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal",
-        "telephone":"+919342700212",
-        "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"No. 2 Second Street Santhipuram Thirumullaivoyal",
-          "addressLocality":"Chennai",
-          "addressRegion":"TN",
-          "postalCode":"600062",
-          "addressCountry":"IN"
-        }
-      },
-      "url":"https://www.myorthocure.com/services/knee-arthritis.html",
-      "isRelatedTo":{
-        "@type":"Person",
-        "name":"Dr Sumesh Subramanian",
-        "jobTitle":"Orthopaedic Surgeon"
-      }
-    }
-  ]
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
+      {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"},
+      {"@type":"ListItem","position":3,"name":"Knee arthritis care","item":"https://www.myorthocure.com/services/knee-arthritis.html"}
+    ]
+  }
   </script>
 </head>
 
 <body>
-  <header class="header-bar">
-    <div class="clinic-main-title">OrthoCure Bone and Joint Speciality Clinic<br>Thirumullaivoyal</div>
-    <div class="clinic-tagline">
-      Evidence based orthopaedic care in Ambattur Avadi and North Chennai
-    </div>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/services/index.html" aria-current="page">Services</a>
-      <a href="/consult.html">Consult</a>
-      <a href="/services/fracture-care.html">Fracture Care</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
-  </header>
+<header class="header-bar">
+  <div class="clinic-main-title">OrthoCure Bone and Joint Speciality Clinic<br>Thirumullaivoyal</div>
+  <div class="clinic-tagline">Evidence based orthopaedic care in Ambattur Avadi and North Chennai</div>
 
-  <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a> › <a href="/services/index.html">Services</a> › Knee Arthritis
+  <nav class="main-nav">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/services/index.html">Services</a>
+    <a href="/services/knee-arthritis.html" class="active">Knee Arthritis</a>
+    <a href="/consult.html">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
   </nav>
+</header>
 
-  <main class="services-section" id="main">
-    <h1>Knee Arthritis Care</h1>
+<nav class="crumbs">
+  <a href="/">Home</a> › <a href="/services/index.html">Services</a> › Knee Arthritis
+</nav>
 
-    <p class="lead">
-      At OrthoCure Bone and Joint Speciality Clinic knee arthritis is treated with a clear plan that favours exercise and lifestyle change first. Medicines and physiotherapy come next and selected injections such as PRP and hyaluronic acid are offered only when they are likely to add real benefit. Knee replacement is discussed calmly when all other options have been explored.
-    </p>
+<main class="services-section">
+<h1>Knee Arthritis Care</h1>
 
-    <!-- Top CTA -->
-    <div class="card-block">
-      <div class="cta-row">
-        <a class="btn btn-primary" href="tel:+919342700212">Call for knee assessment</a>
-        <a class="btn btn-outline" href="https://wa.me/919342700212?text=Knee%20arthritis%20consultation&utm_source=site&utm_campaign=knee-arthritis">
-          WhatsApp 93427 00212
-        </a>
-        <a class="btn btn-outline" href="/consult.html">Book in clinic</a>
-      </div>
-    </div>
+<p class="lead">
+At OrthoCure, knee arthritis is managed with a stepwise plan focused on exercise and lifestyle change first, medicines and physiotherapy next, and selected injections only when useful. Knee replacement is discussed calmly when all other options are exhausted.
+</p>
 
-    <!-- Overview and diagram -->
-    <section class="content-grid" aria-label="Overview of knee arthritis">
-      <article class="card-block">
-        <h2 class="section-title">What we look for in knee arthritis</h2>
-        <ul class="check">
-          <li>Pain on walking climbing stairs squatting or standing for long periods.</li>
-          <li>Morning stiffness or tightness after sitting for some time.</li>
-          <li>Swelling feeling of grinding or a sense that the knee may give way.</li>
-          <li>Limits in daily activities work home duties and social life.</li>
-          <li>Body weight footwear and lifestyle habits that are loading the joint more than needed.</li>
-        </ul>
-        <p class="lead" style="font-size:.96rem;margin-top:6px">
-          A detailed examination and X ray when required help grade severity and match treatment to your stage of arthritis.
-        </p>
-      </article>
-
-      <article class="card-block">
-        <p class="img-caption">
-          Early knee arthritis often shows cartilage thinning joint space narrowing and small bone spurs.
-        </p>
-        <img src="/assets/knee-arthritis-thirumullaivoyal-ambattur-diagram.jpg"
-             class="service-img"
-             alt="Diagram of early knee arthritis showing cartilage thinning joint space narrowing and osteophytes">
-      </article>
-    </section>
-
-    <!-- Stepwise plan and exercise image -->
-    <section class="content-grid" aria-label="How we treat knee arthritis without surgery first">
-      <article class="card-block">
-        <h2 class="section-title">Stepwise plan for knee arthritis</h2>
-        <ul class="check">
-          <li><strong>Step one</strong> Advice on weight daily activity and safe movement patterns.</li>
-          <li><strong>Step two</strong> Structured strengthening and stretching focused on quadriceps hip and ankle mechanics.</li>
-          <li><strong>Step three</strong> Short courses of medicines for flare days when needed and never as the only treatment.</li>
-          <li><strong>Step four</strong> Selected injections such as PRP or hyaluronic acid when symptoms remain strong despite proper exercise.</li>
-        </ul>
-        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-          The aim is simple. Less pain more confidence in walking and better quality of life without rushing into surgery.
-        </p>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">Exercise for stronger and steadier knees</h2>
-        <p class="img-caption">
-          Simple home exercises can support the joint and ease pain when done with correct technique.
-        </p>
-        <img src="/assets/knee-exercises-arthritis-strengthening-ambattur.jpg"
-             class="service-img"
-             alt="Straight leg raise and sit to stand exercises for knee arthritis taught for patients at OrthoCure Thirumullaivoyal">
-        <ul class="check">
-          <li>Quadriceps sets and straight leg raise in lying.</li>
-          <li>Slow controlled sit to stand from a chair.</li>
-          <li>Hip and core strengthening to keep alignment steady.</li>
-          <li>Stretching of calf and hamstring to ease stiffness.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Injections and PRP image -->
-    <section class="content-grid-single" aria-label="Role of injections in knee arthritis">
-      <article class="card-block">
-        <h2 class="section-title">When injections are considered</h2>
-        <ul class="check">
-          <li>Early to moderate arthritis where pain remains despite regular exercise and medicines.</li>
-          <li>Patients who want to delay knee replacement but understand that surgery may still be needed in future.</li>
-          <li>Clear X ray correlation between symptoms and joint changes.</li>
-          <li>After discussion of cost benefit and realistic expectations.</li>
-        </ul>
-        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-          At OrthoCure PRP and hyaluronic acid are offered only in selected cases and always as part of a broader plan that includes exercise and lifestyle change.
-        </p>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">PRP and hyaluronic acid explained simply</h2>
-        <p class="img-caption">
-          Injections act mainly by calming inflammation and improving comfort. They do not rebuild lost cartilage.
-        </p>
-        <img src="/assets/prp-knee-arthritis-treatment-thirumullaivoyal.jpg"
-             class="service-img"
-             alt="PRP preparation and knee injection concept for selected knee arthritis cases at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal">
-        <ul class="check">
-          <li>PRP uses your own blood processed to concentrate platelets.</li>
-          <li>Hyaluronic acid works like a lubricant similar to joint fluid.</li>
-          <li>Both aim to reduce pain and improve function in some patients.</li>
-          <li>Benefits can last months for some and shorter in others. Results are not guaranteed and are always balanced with exercise.</li>
-        </ul>
-        <div class="cta-row">
-          <a class="btn btn-outline" href="/services/prp-treatment.html">Read more about PRP at OrthoCure</a>
-        </div>
-      </article>
-    </section>
-
-    <!-- When replacement is needed and visit info -->
-    <section class="content-grid-single" aria-label="When knee replacement becomes the right step">
-      <article class="card-block">
-        <h2 class="section-title">When knee replacement is the right next step</h2>
-        <ul class="check">
-          <li>Severe pain that limits basic movement sleep work and family responsibilities.</li>
-          <li>Marked stiffness and deformity that no longer respond to conservative care.</li>
-          <li>X rays that show advanced joint space loss and bone changes on both sides of the joint.</li>
-          <li>Failure of a full trial of exercise weight control medicines and injections where appropriate.</li>
-        </ul>
-        <p style="font-size:.95rem;color:#3a5669;margin-top:6px">
-          In such situations Dr Sumesh explains total knee replacement in a clear practical way and helps patients in Ambattur Avadi and nearby areas choose the right timing rather than waiting until life is fully restricted.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-outline" href="/services/total-knee-replacement-thirumullaivoyal.html">
-            View knee replacement service
-          </a>
-        </div>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">Visit our clinic</h2>
-        <p>
-          <strong>OrthoCure Bone and Joint Speciality Clinic</strong><br>
-          No. 2 Second Street Santhipuram Thirumullaivoyal Chennai 600062
-        </p>
-        <p><strong>Clinic hours</strong> Monday to Saturday 5 pm to 9 pm, Sunday 11 am to 1 pm.</p>
-        <p><strong>Phone and WhatsApp</strong> 93427 00212</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
-          <a class="btn btn-outline" href="https://wa.me/919342700212?text=Knee%20arthritis%20appointment&utm_source=site&utm_campaign=knee-arthritis">
-            Message on WhatsApp
-          </a>
-          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%2C%20Thirumullaivoyal">
-            Open in Google Maps
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <!-- FAQ and related services -->
-    <section class="faq-block" aria-label="Knee arthritis questions">
-      <h2 class="section-title">Common questions about knee arthritis</h2>
-
-      <details>
-        <summary>Will exercise worsen the damage in my knee</summary>
-        <p>
-          Correctly guided strengthening usually helps rather than harms knee arthritis. Movements are chosen to avoid sharp twisting or deep bending while still building muscle support around the joint.
-        </p>
-      </details>
-
-      <details>
-        <summary>Do all patients with knee arthritis eventually need replacement</summary>
-        <p>
-          No. Many patients manage well for years with exercise weight control medicines and sometimes injections. Replacement is an option when pain and X ray changes remain severe despite full conservative care.
-        </p>
-      </details>
-
-      <details>
-        <summary>Is it safe to take pain tablets every day</summary>
-        <p>
-          Pain tablets have limits and side effects. They are used for short periods or for flare days and always after checking other medical conditions. Non medicine measures are built around them so that long term reliance is avoided.
-        </p>
-      </details>
-
-      <details>
-        <summary>Can PRP or gel injections regrow cartilage</summary>
-        <p>
-          Current evidence suggests that PRP and hyaluronic acid mainly calm inflammation and reduce pain in some patients. They are not proven to regrow lost cartilage and are never presented as a cure.
-        </p>
-      </details>
-    </section>
-
-    <section class="bottom-grid" aria-label="Related services and booking">
-      <article class="card-block">
-        <h2 class="section-title">Related services</h2>
-        <ul>
-          <li><a href="/services/prp-treatment.html">PRP injections for knee and shoulder</a></li>
-          <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy at OrthoCure</a></li>
-          <li><a href="/services/total-knee-replacement-thirumullaivoyal.html">Total knee replacement service</a></li>
-        </ul>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">Helpful reading from our clinic</h2>
-        <ul>
-          <li><a href="/blog/early-arthritis-signs.html">Early signs of knee arthritis and first steps</a></li>
-          <li><a href="/blog/cracking-knuckles.html">Cracking knuckles myths and facts</a></li>
-          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE for injuries instead of old RICE advice</a></li>
-        </ul>
-      </article>
-
-      <article class="card-block">
-        <h2 class="section-title">Ready to plan your knees for the long term</h2>
-        <p>
-          If knee pain is stopping you from walking working or caring for your family a clear plan can make every month ahead easier. In one consultation you will know what you can start at home what the clinic can offer and whether surgery is anywhere on the horizon.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
-          <a class="btn btn-outline" href="/consult.html">Book appointment at OrthoCure</a>
-        </div>
-      </article>
-    </section>
-
-    <p class="note">
-      This page is a general guide for adults with knee arthritis in Ambattur Avadi and Thirumullaivoyal. Final treatment plans always depend on individual examination X rays and overall health.
-    </p>
-  </main>
-
-  <footer>
-    © OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal — Dr Sumesh Subramanian.
-  </footer>
-
-  <!-- FAQ schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Will exercise worsen the damage in my knee",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Correctly guided strengthening usually helps rather than harms knee arthritis. Movements are chosen to avoid sharp twisting or deep bending while still building muscle support around the joint."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Do all patients with knee arthritis eventually need replacement",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"No. Many patients manage well for years with exercise weight control medicines and sometimes injections. Replacement is an option when pain and X ray changes remain severe despite full conservative care."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Is it safe to take pain tablets every day",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Pain tablets have limits and side effects. They are used for short periods or for flare days and always after checking other medical conditions. Non medicine measures are built around them so that long term reliance is avoided."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Can PRP or gel injections regrow cartilage",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Current evidence suggests that PRP and hyaluronic acid mainly calm inflammation and reduce pain in some patients. They are not proven to regrow lost cartilage and are never presented as a cure."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Quiet AI retrieval helper -->
-  <div style="display:none">
-    Knee arthritis treatment Ambattur Avadi Thirumullaivoyal exercise first lifestyle change physiotherapy PRP hyaluronic acid when needed knee replacement decision OrthoCure Bone and Joint Speciality Clinic Dr Sumesh Subramanian 9342700212
+<div class="card-block">
+  <div class="cta-row">
+    <a class="btn btn-primary" href="tel:+919342700212">Call for knee assessment</a>
+    <a class="btn btn-outline" href="https://wa.me/919342700212?text=Knee%20arthritis%20consultation">WhatsApp 93427 00212</a>
   </div>
+</div>
+
+<div class="soft-divider"></div>
+
+<section class="content-grid">
+  <article class="card-block">
+    <h2 class="section-title">What we assess</h2>
+    <ul class="check">
+      <li>Pain on walking, stairs, or prolonged standing</li>
+      <li>Stiffness after rest</li>
+      <li>Swelling or grinding sensation</li>
+      <li>Impact on daily life and work</li>
+      <li>Weight, footwear, and lifestyle load</li>
+    </ul>
+  </article>
+
+  <article class="card-block">
+    <p class="img-caption">Early arthritis changes on X ray</p>
+    <img src="/assets/knee-arthritis-thirumullaivoyal-ambattur-diagram.jpg" class="service-img" alt="Early knee arthritis diagram">
+  </article>
+</section>
+
+<div class="soft-divider"></div>
+
+<section class="content-grid-single">
+  <article class="card-block">
+    <h2 class="section-title">When injections are useful</h2>
+    <ul class="check">
+      <li>Persistent pain despite proper exercise</li>
+      <li>Early to moderate arthritis</li>
+      <li>Clear X ray correlation</li>
+      <li>Realistic expectations</li>
+    </ul>
+    <a class="btn btn-outline" href="/services/prp-treatment.html">PRP injections for knee arthritis</a>
+  </article>
+</section>
+
+<div class="soft-divider"></div>
+
+<footer>
+© OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal — Dr Sumesh Subramanian
+</footer>
 </body>
 </html>
