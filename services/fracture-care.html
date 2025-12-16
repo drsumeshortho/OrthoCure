@@ -51,8 +51,21 @@
     .main-nav{margin:22px 0 0;display:flex;gap:31px;justify-content:center;flex-wrap:wrap}
     .main-nav a{color:#e2ecf7;font-weight:700;font-size:1.09rem;padding-bottom:5px}
     .main-nav a.active{border-bottom:3px solid var(--accent)}
-
-    .crumbs{max-width:1160px;margin:14px auto 0;padding:0 15px;color:#4a6a80;font-size:.95rem}
+    
+.crumbs{
+  max-width:1160px;
+  margin:14px auto 0;
+  padding:0 15px;
+  color:#4a6a80;
+  font-size:.95rem;
+}
+.crumbs a{
+  color:#0ea5e9;
+  text-decoration:underline;
+}
+.crumbs a:hover{
+  color:#0284c7;
+}
 
     .services-section{max-width:1160px;margin:18px auto 0;padding:0 15px}
     h1,h2{color:var(--dark-cyan)}
@@ -138,7 +151,12 @@
   <div class="clinic-tagline">Evidence based orthopaedic care for Ambattur, Avadi and North Chennai</div>
 </header>
 
-<nav class="crumbs">Home › Services › Fracture care</nav>
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="/">Home</a> ›
+  <a href="/services/index.html">Services</a> ›
+  <span aria-current="page">Fracture care</span>
+</nav>
+
 
 <main class="services-section">
 
