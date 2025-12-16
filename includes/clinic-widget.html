@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OrthoCure Bone and Joint Speciality Clinic Widget</title>
+
+  <style>
+    :root {
+      --navy: #142a46;
+      --coral: #ff5c5c;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --line: #e5e7eb;
+      --soft: #f8fafc;
+      --open: #1f9d55;
+      --closed: #b91c1c;
+      --wa: #25D366;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f1f5f9;
+      margin: 0;
+      color: var(--text);
+    }
+
+    .oc-widget {
+      width: 360px;
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .oc-header {
+      background: var(--navy);
+      color: #fff;
+      padding: 18px 18px 14px;
+      text-align: center;
+    }
+    .oc-header .title {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      line-height: 1.25;
+    }
+    .oc-header .subtitle {
+      margin: 6px 0 0;
+      font-size: 0.88rem;
+      opacity: 0.92;
+    }
+
+    .oc-status {
+      padding: 10px 14px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+    }
+    .oc-status.open { color: var(--open); }
+    .oc-status.closed { color: var(--closed); }
+
+    .oc-body { padding: 16px; }
+
+    .oc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .oc-btn {
+      padding: 11px 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.92rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .oc-btn.call { background: var(--navy); color: #fff; }
+    .oc-btn.wa { background: var(--wa); color: #fff; }
+    .oc-btn.map {
+      grid-column: span 2;
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+    .oc-btn:active { transform: scale(0.99); }
+
+    .oc-form h3 {
+      margin: 14px 0 10px;
+      font-size: 1rem;
+    }
+
+    .oc-field { margin-bottom: 10px; }
+    .oc-field label {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .oc-field input, .oc-field select {
+      width: 100%;
+      padding: 11px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      outline: none;
+      background: #fff;
+    }
+    .oc-field input:focus, .oc-field select:focus {
+      border-color: rgba(255,92,92,0.8);
+      box-shadow: 0 0 0 3px rgba(255,92,92,0.15);
+    }
+
+    .oc-submit {
+      width: 100%;
+      background: var(--coral);
+      color: #fff;
+      padding: 12px 12px;
+      border: none;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 0.98rem;
+      cursor: pointer;
+    }
+
+    .oc-foot {
+      margin-top: 12px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .oc-note {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border: 1px dashed var(--line);
+      border-radius: 10px;
+      background: var(--soft);
+      font-size: 0.84rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Simple honeypot */
+    .hp { position: absolute; left: -9999px; top: -9999px; }
+  </style>
+</head>
+
+<body>
+  <div class="oc-widget" role="region" aria-label="Clinic contact and appointment widget">
+    <div class="oc-header">
+      <p class="title">OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal</p>
+      <p class="subtitle">Call, WhatsApp, or request an appointment in 30 seconds</p>
+    </div>
+
+    <div id="ocStatus" class="oc-status closed">Checking clinic hours…</div>
+
+    <div class="oc-body">
+      <div class="oc-grid">
+        <a class="oc-btn call" href="tel:+919342700212" id="ocCallBtn">Call</a>
+        <a class="oc-btn wa" href="https://wa.me/919342700212?text=Hi%2C%20I%20want%20to%20book%20an%20appointment%20at%20OrthoCure%20Thirumullaivoyal." id="ocWaBtn" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="oc-btn map" href="https://www.google.com/maps/search/?api=1&query=OrthoCure%20Bone%20and%20Joint%20Speciality%20Clinic%20Thirumullaivoyal%20Chennai%20600062" target="_blank" rel="noopener">
+          No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai 600 062
+        </a>
+      </div>
+
+      <div class="oc-form">
+        <h3>Request appointment on WhatsApp</h3>
+
+        <form id="ocForm">
+          <div class="oc-field">
+            <label for="ocName">Name</label>
+            <input id="ocName" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="oc-field">
+            <label for="ocPhone">Phone number</label>
+            <input id="ocPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
+          </div>
+
+          <div class="oc-field">
+            <label for="ocReason">Reason</label>
+            <select id="ocReason" name="reason">
+              <option>General consultation</option>
+              <option>Fracture care</option>
+              <option>Knee pain or arthritis</option>
+              <option>Shoulder pain</option>
+              <option>Back or neck pain</option>
+              <option>Digital X ray enquiry</option>
+            </select>
+          </div>
+
+          <div class="hp">
+            <label for="ocCompany">Company</label>
+            <input id="ocCompany" name="company" type="text" />
+          </div>
+
+          <button class="oc-submit" type="submit" id="ocSubmit">Send request</button>
+        </form>
+
+        <div class="oc-note">
+          Hours: Monday to Saturday 5:00 PM to 9:00 PM. Sunday 11:00 AM to 1:00 PM.
+        </div>
+
+        <div class="oc-foot">
+          Serving Thirumullaivoyal, Ambattur, Avadi, Annanur, Iyyapakkam
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const CLINIC_PHONE = "919342700212";
+
+    function getISTNow() {
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      return new Date(utc + (3600000 * 5.5));
+    }
+
+    function formatTime(h, m) {
+      const ampm = h >= 12 ? "PM" : "AM";
+      const hr12 = (h % 12) || 12;
+      const mm = String(m).padStart(2, "0");
+      return `${hr12}:${mm} ${ampm}`;
+    }
+
+    function checkOpenStatus() {
+      const ist = getISTNow();
+      const day = ist.getDay();       // 0 Sun, 1 Mon, ... 6 Sat
+      const hour = ist.getHours();
+      const minute = ist.getMinutes();
+
+      const statusDiv = document.getElementById("ocStatus");
+      let isOpen = false;
+      let nextText = "";
+
+      // Sunday: 11:00 to 13:00
+      if (day === 0) {
+        if ((hour > 11 || (hour === 11 && minute >= 0)) && (hour < 13)) {
+          isOpen = true;
+        } else {
+          nextText = "Opens Monday at 5:00 PM";
+        }
+      } else {
+        // Mon to Sat: 17:00 to 21:00
+        if ((hour > 17 || (hour === 17 && minute >= 0)) && (hour < 21)) {
+          isOpen = true;
+        } else {
+          if (hour < 17) {
+            nextText = `Opens today at 5:00 PM`;
+          } else {
+            if (day === 6) nextText = "Opens Sunday at 11:00 AM";
+            else nextText = "Opens tomorrow at 5:00 PM";
+          }
+        }
+      }
+
+      if (isOpen) {
+        statusDiv.className = "oc-status open";
+        statusDiv.textContent = `Open now. Closes at ${formatTime(21, 0)} IST`;
+      } else {
+        statusDiv.className = "oc-status closed";
+        statusDiv.textContent = `Closed now. ${nextText}`;
+      }
+    }
+
+    function buildWhatsAppMessage({ name, phone, reason }) {
+      const page = window.location.href;
+      return [
+        "Hi, I want to book an appointment at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal.",
+        `Name: ${name}`,
+        `Phone: ${phone}`,
+        `Reason: ${reason}`,
+        `Page: ${page}`
+      ].join("\n");
+    }
+
+    document.getElementById("ocForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const hp = document.getElementById("ocCompany").value.trim();
+      if (hp) return;
+
+      const name = document.getElementById("ocName").value.trim();
+      const phone = document.getElementById("ocPhone").value.trim();
+      const reason = document.getElementById("ocReason").value;
+
+      const msg = buildWhatsAppMessage({ name, phone, reason });
+      const url = `https://wa.me/${CLINIC_PHONE}?text=${encodeURIComponent(msg)}`;
+
+      window.open(url, "_blank", "noopener");
+
+      const btn = document.getElementById("ocSubmit");
+      const old = btn.textContent;
+      btn.textContent = "Opening WhatsApp…";
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.textContent = old;
+        btn.disabled = false;
+        e.target.reset();
+      }, 1200);
+    });
+
+    checkOpenStatus();
+    setInterval(checkOpenStatus, 30000);
+  </script>
+</body>
+</html>
