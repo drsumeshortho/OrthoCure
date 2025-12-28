@@ -224,7 +224,7 @@
     *{margin:0;padding:0;box-sizing:border-box;}
 
     body{
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
       line-height:1.85;
       color:var(--text);
       background:linear-gradient(to bottom, var(--bg1) 0%, var(--bg2) 100%);
@@ -238,7 +238,7 @@
       max-width:1020px;
       margin:0 auto;
       padding:22px;
-      padding-bottom:90px;
+      padding-bottom:110px;
     }
 
     .hero{
@@ -312,6 +312,29 @@
       color:var(--navy);
       margin:18px 0 18px 0;
     }
+
+    .miniCtaRow{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .miniCtaBtn{
+      display:inline-block;
+      background:var(--navy);
+      color:#fff;
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:1.02rem;
+      text-decoration:none;
+    }
+    .miniCtaBtn.secondary{
+      background:#ffffff;
+      color:var(--teal);
+      border:2px solid rgba(0,139,139,0.25);
+    }
+    .miniCtaBtn:hover{opacity:0.95; text-decoration:none;}
 
     h2{
       color:var(--navy);
@@ -507,32 +530,42 @@
     }
     footer a{color:#fff; text-decoration:underline;}
 
-    .stickyCall{
+    .stickyBar{
       display:none;
     }
+
     @media (max-width: 820px){
       .hero h1{font-size:1.85rem;}
       h2{font-size:1.5rem;}
       .contentCard{padding:22px;}
       .relatedGrid{grid-template-columns:1fr;}
       .ctaSection{padding:26px 18px;}
-      .stickyCall{
-        display:block;
+      .stickyBar{
+        display:flex;
         position:fixed;
         bottom:0;
         left:0;
         right:0;
         background:var(--navy);
         border-top:3px solid var(--coral);
-        padding:12px 14px;
+        padding:10px 10px;
         z-index:9999;
-        text-align:center;
+        gap:10px;
       }
-      .stickyCall a{
+      .stickyBar a{
+        flex:1;
+        text-align:center;
         color:#fff;
         font-weight:900;
-        font-size:1.06rem;
+        font-size:1.03rem;
         text-decoration:none;
+        padding:12px 10px;
+        border-radius:12px;
+        background:rgba(255,255,255,0.10);
+      }
+      .stickyBar a.whatsapp{
+        background:var(--coral);
+        color:#142a46;
       }
     }
 
@@ -551,7 +584,7 @@
       <h1>Knee Pain While Climbing Stairs and Getting Up From a Chair</h1>
 
       <div class="sub">
-        If the pain is mainly in the front of the knee, it is often patellofemoral pain, common, frustrating, and usually treatable without surgery.
+        If your pain is mainly in the front of the knee, it is often patellofemoral pain: common, frustrating, and usually treatable without surgery.
       </div>
 
       <div class="meta">By Dr Sumesh Subramanian | Orthopaedic Surgeon | Thirumullaivoyal, Chennai</div>
@@ -563,11 +596,16 @@
 
     <section class="contentCard" id="top">
       <div class="introHighlight">
-        <strong>If your knee hurts in the front every time you climb stairs or get up from a chair</strong>, you are not alone. This pattern is extremely common in office workers and homemakers, and it usually improves with the right plan.
+        <strong>If your knee hurts in the front every time you climb stairs or get up from a chair, you are not alone.</strong> This pattern is extremely common in office workers and homemakers, and it usually improves with the right plan.
         <br /><br />
-        Most people worry about one thing. Is this arthritis. Do I need surgery.
+        Most people worry about two questions: Is this arthritis? Do I need surgery?
         <br />
         <strong>In many cases, the answer is no.</strong>
+
+        <div class="miniCtaRow" aria-label="Quick appointment actions">
+          <a class="miniCtaBtn" href="tel:+919342700212">Call 93427 00212</a>
+          <a class="miniCtaBtn secondary" href="https://wa.me/919342700212" target="_blank" rel="noopener">WhatsApp for appointment</a>
+        </div>
       </div>
 
       <p>
@@ -594,7 +632,7 @@
       <h2>What front knee pain usually means</h2>
 
       <p>
-        The kneecap sits in a groove at the end of the thigh bone. When the knee bends and takes load, the pressure between the kneecap and the thigh bone rises. If the joint is irritated, or if muscle support and movement control are reduced, pain is often felt in the front of the knee.
+        The kneecap sits in a groove at the end of the thigh bone. When the knee bends and takes load, pressure between the kneecap and the thigh bone rises. If the joint is irritated, or if muscle support and movement control are reduced, pain is often felt in the front of the knee.
       </p>
 
       <p>
@@ -632,7 +670,7 @@
           <li>Getting up from a low sofa or floor sitting</li>
           <li>Using Indian toilets, deep knee bend positions</li>
           <li>Repeated chair rise during household work</li>
-          <li>Long sitting in office then sudden stairs</li>
+          <li>Long sitting in office, then sudden stairs</li>
         </ul>
       </div>
 
@@ -676,7 +714,7 @@
       <h2>Risk factors in office life and home routines</h2>
 
       <p>
-        In Chennai, two patterns show up again and again. Long sitting with sudden activity, and repeated bending with limited recovery.
+        In Chennai, two patterns show up again and again: long sitting with sudden activity, and repeated bending with limited recovery.
       </p>
 
       <figure>
@@ -723,7 +761,7 @@
       <h2>Proven non surgical treatment</h2>
 
       <p>
-        The best results come from three pillars. Education, load management, and targeted strengthening. This is what evidence based physiotherapy is built around.
+        The best results come from three pillars: education, load management, and targeted strengthening. This is what evidence based physiotherapy is built around.
       </p>
 
       <figure>
@@ -789,7 +827,7 @@
       <h2>When to see an orthopaedic doctor</h2>
 
       <p>
-        Consider a review if any of the below is true.
+        Consider a review if any of the below is true:
       </p>
 
       <ul class="iconList">
@@ -891,9 +929,10 @@
 
   </div>
 
-  <!-- Mobile sticky call bar -->
-  <div class="stickyCall" aria-label="Call OrthoCure Thirumullaivoyal">
-    <a href="tel:+919342700212">Call OrthoCure Thirumullaivoyal 93427 00212</a>
+  <!-- Mobile sticky action bar -->
+  <div class="stickyBar" aria-label="Contact OrthoCure Thirumullaivoyal">
+    <a href="tel:+919342700212">Call</a>
+    <a class="whatsapp" href="https://wa.me/919342700212" target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </body>
 </html>
