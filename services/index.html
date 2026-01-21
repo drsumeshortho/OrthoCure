@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Orthopaedic Services | OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal</title>
+  <title>Orthopaedic Services | OrthoCure Bone & Joint Clinic, Thirumullaivoyal</title>
   
-  <meta name="description" content="Fracture care, knee arthritis care, spine and neck care, physiotherapy, PRP options, and on site digital X ray at OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal. Serving Ambattur and Avadi." />
-  
+  <meta name="description" content="Expert fracture care, knee replacement, spine care, and digital X-ray in Thirumullaivoyal. Dr Sumesh Subramanian serves patients from Ambattur, Avadi, and North Chennai." />
   <meta name="author" content="Dr Sumesh Subramanian MS Ortho" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#142a46" />
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Orthopaedic Services | OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal">
+  <meta property="og:title" content="Orthopaedic Services | OrthoCure Bone & Joint Clinic, Thirumullaivoyal">
   <meta property="og:description" content="Fracture care, Digital X-ray, PRP, and Joint Replacement. Expert care by Dr Sumesh Subramanian.">
   <meta property="og:image" content="https://www.myorthocure.com/assets/logo.png">
   <meta property="og:url" content="https://www.myorthocure.com/services/">
@@ -22,18 +21,7 @@
   <link rel="canonical" href="https://www.myorthocure.com/services/" />
   <link rel="icon" href="/assets/favicon.png" type="image/png" />
   
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myorthocure.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.myorthocure.com/services/" }
-    ]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -81,7 +69,37 @@
         { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "PRP Injection" } },
         { "@type": "Offer", "itemOffered": { "@type": "SurgicalProcedure", "name": "Total Knee Replacement" } }
       ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "35"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need a referral to visit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You can call or WhatsApp us directly. Walk-ins are welcome during clinic hours (5 PM - 9 PM)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is digital X-ray available on-site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We have high-quality digital imaging at the clinic. We can diagnose fractures or arthritis immediately."
+        }
+      }
+    ]
   }
   </script>
 
@@ -112,7 +130,7 @@
 
     a { text-decoration: none; transition: 0.2s; }
 
-    /* TOP NAVIGATION */
+    /* NAVIGATION */
     .top-nav {
         background: var(--navy);
         padding: 12px 20px;
@@ -159,7 +177,6 @@
         position: relative;
         overflow: hidden;
     }
-    
     .hero::before {
         content: "";
         position: absolute;
@@ -167,7 +184,6 @@
         background: radial-gradient(circle at top right, rgba(255,255,255,0.1) 0%, transparent 60%);
         pointer-events: none;
     }
-
     .visual-breadcrumbs {
         font-size: 0.85rem;
         color: rgba(255, 255, 255, 0.7);
@@ -203,7 +219,7 @@
         font-size: 1.05rem;
     }
 
-    /* SERVICES GRID */
+    /* MAIN CONTAINER */
     .wrap {
         max-width: 1200px;
         margin: 0 auto;
@@ -213,6 +229,47 @@
         z-index: 10;
     }
 
+    /* DOCTOR PROFILE SNIPPET */
+    .doc-profile {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      gap: 25px;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+    .doc-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: contain; /* Changed to contain for logo */
+      border: 1px solid #f1f5f9;
+      flex-shrink: 0;
+      padding: 5px; /* Added padding for logo breathability */
+    }
+    .doc-info h3 { margin: 0 0 5px 0; color: var(--navy); font-size: 1.4rem; font-weight: 800; }
+    .doc-label { 
+      background: #e0f2f1; color: var(--teal); 
+      font-size: 0.75rem; font-weight: 700; 
+      padding: 4px 10px; border-radius: 6px; text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .doc-creds { margin: 8px 0; font-size: 0.9rem; font-weight: 600; color: #64748b; }
+    .doc-desc { margin: 0; font-size: 0.95rem; color: #475569; line-height: 1.5; }
+    
+    .doc-profile-link {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 25px;
+    }
+
+    /* INTRO CARD */
     .intro-card {
         background: var(--white);
         border-radius: var(--radius);
@@ -221,12 +278,14 @@
         border-left: 5px solid var(--coral);
         margin-bottom: 30px;
     }
-    .intro-text { font-weight: 500; color: var(--navy); }
+    .intro-text { font-weight: 600; color: var(--navy); font-size: 1.1rem; margin-bottom: 8px; display: block; }
 
+    /* SERVICES GRID */
     .services-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 24px;
+        margin-bottom: 50px;
     }
 
     .service-card {
@@ -247,7 +306,7 @@
     }
 
     .tag {
-        background: #e0f2f1;
+        background: #e0f2f1; 
         color: var(--teal);
         font-weight: 700;
         font-size: 0.75rem;
@@ -257,10 +316,7 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
-    .tag.special {
-        background: #ffebee;
-        color: var(--coral);
-    }
+    .tag.special { background: #ffebee; color: var(--coral); }
 
     .service-card h2 {
         font-size: 1.35rem;
@@ -292,13 +348,47 @@
     }
     .btn:hover { background: var(--teal); }
 
+    /* TESTIMONIALS */
+    .testimonials { text-align: center; margin-bottom: 50px; }
+    .testimonials h3 { color: var(--navy); font-size: 1.8rem; margin-bottom: 30px; }
+    .review-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        text-align: left;
+    }
+    .review-card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        border: 1px solid rgba(0,0,0,0.03);
+    }
+    .stars { color: #F6C453; letter-spacing: 2px; margin-bottom: 12px; font-size: 1.1rem; }
+    .review-card p { font-style: italic; color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px; }
+    .reviewer { font-weight: 700; color: var(--navy); font-size: 0.9rem; }
+    .verified { color: var(--teal); font-weight: 500; font-size: 0.75rem; margin-left: 5px; background: #e0f2f1; padding: 2px 6px; border-radius: 4px; }
+
+    /* FAQ SECTION */
+    .faq-section { margin-bottom: 50px; }
+    .faq-section h3 { text-align: center; color: var(--navy); font-size: 1.6rem; margin-bottom: 30px; }
+    .faq-grid { display: grid; gap: 15px; max-width: 800px; margin: 0 auto; }
+    .faq-item {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid var(--teal);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .faq-item strong { display: block; color: var(--navy); font-size: 1.05rem; margin-bottom: 5px; }
+    .faq-item p { margin: 0; color: #555; font-size: 0.95rem; }
+
     /* TRUST BLOCK */
     .trust-block {
         background: #fff;
         border-radius: var(--radius);
         padding: 40px 20px;
         text-align: center;
-        margin: 50px auto 20px;
         box-shadow: var(--card-shadow);
     }
     .trust-block h3 { color: var(--navy); margin-top: 0; font-size: 1.5rem; }
@@ -338,6 +428,7 @@
 
     @media (max-width: 900px) {
         .nav-links { display: none; }
+        .doc-profile-link { flex-direction: column; text-align: center; }
         
         .stickyBar {
             display: flex;
@@ -378,7 +469,7 @@
     <div class="nav-links">
         <a href="/">Home</a>
         <a href="/about.html">About</a>
-        <a href="/services/" class="active">Services</a>
+        <a href="/services/index.html" class="active">Services</a>
         <a href="/consult.html">Consult</a>
         <a href="/services/fracture-care.html">Fracture Care</a>
         <a href="/blog.html">Blog</a>
@@ -399,12 +490,22 @@
 
   <main class="wrap">
 
+    <div class="doc-profile">
+      <a href="/about.html" class="doc-profile-link">
+        <img src="/assets/logo.png" alt="OrthoCure Logo" class="doc-img">
+        <div class="doc-info">
+          <span class="doc-label">Lead Surgeon</span>
+          <h3>Dr. Sumesh Subramanian</h3>
+          <p class="doc-creds">MS Orthopaedics • Fellowship in Joint Replacement</p>
+          <p class="doc-desc">With over 14 years of experience, Dr. Sumesh combines corporate hospital expertise with the personal care of a neighborhood clinic. He focuses on saving the natural joint whenever possible. <strong style="color:var(--teal);">Read More &rarr;</strong></p>
+        </div>
+      </a>
+    </div>
+
     <section class="intro-card">
-      <p class="intro-text">
-        Not sure which service you need?
-      </p>
+      <span class="intro-text">Not sure which service you need?</span>
       <p style="margin: 0; color: #666; font-size: 0.95rem;">
-        If you have pain, stiffness, or an injury, a clinical exam is the first step. <strong>Digital X-ray support during the visit when required.</strong>
+        If you have pain, stiffness, or an injury, a clinical exam is the first step. <strong>Digital X-ray support is available during the visit when required.</strong>
       </p>
     </section>
 
@@ -466,6 +567,45 @@
         <a href="/services/spine-neck-pain-thirumullaivoyal.html" class="btn">View Details</a>
       </article>
 
+    </section>
+
+    <section class="testimonials">
+      <h3>Patient Stories from Thirumullaivoyal</h3>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"The doctor patiently listened to all my complaints... My shoulder joint is close to normal and I am able to do all my activities comfortably now."</p>
+          <div class="reviewer">— Perumal <span class="verified">Verified Patient</span></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"I didn't have to wait long... The facilities were clean and well-equipped. Highly recommend this clinic for anyone needing bone or joint care!"</p>
+          <div class="reviewer">— Samuel <span class="verified">Verified Patient</span></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Diagnosed clearly with all treatment options... Dr. Sumesh was humble to treat my pain and muscle spasm. Now I am pain free."</p>
+          <div class="reviewer">— Dr. Abhilash <span class="verified">Verified Patient</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h3>Common Questions</h3>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <strong>Do I need a referral to visit?</strong>
+          <p>No. You can call or WhatsApp us directly. Walk-ins are welcome during clinic hours (5 PM - 9 PM).</p>
+        </div>
+        <div class="faq-item">
+          <strong>Is digital X-ray available on-site?</strong>
+          <p>Yes. We have high-quality digital imaging at the clinic. We can diagnose fractures or arthritis immediately.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Is surgery always required for joint pain?</strong>
+          <p>No. We follow a "Conservative First" approach. We exhaust medicine, physiotherapy, and lifestyle changes before ever discussing surgery.</p>
+        </div>
+      </div>
     </section>
 
     <section class="trust-block">
