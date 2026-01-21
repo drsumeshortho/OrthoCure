@@ -4,318 +4,661 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Fracture Care in Thirumullaivoyal | OrthoCure Bone & Joint Clinic</title>
+  <title>Fracture Treatment in Thirumullaivoyal | OrthoCure Bone & Joint Clinic</title>
 
-  <meta name="description" content="Fracture care with clinical evaluation, X-ray when required, plaster cast or splint, and structured follow-up at OrthoCure Bone & Joint Clinic, Thirumullaivoyal. Serving Ambattur and Avadi." />
+  <meta name="description" content="Immediate care for broken bones. Digital X-ray, plaster, fiberglass casts, and splints in Thirumullaivoyal. Expert diagnosis by Dr Sumesh Subramanian." />
   <meta name="author" content="Dr Sumesh Subramanian MS Ortho" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#142a46" />
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fracture Care & Plaster Services | OrthoCure Bone & Joint Clinic">
+  <meta property="og:description" content="Get X-ray, diagnosis, and stabilization (plaster or splint) in one visit. Serving Ambattur & Avadi.">
+  <meta property="og:image" content="https://www.myorthocure.com/assets/logo.png">
+  <meta property="og:url" content="https://www.myorthocure.com/services/fracture-care.html">
+  <meta property="og:site_name" content="OrthoCure Bone & Joint Clinic">
+
   <link rel="canonical" href="https://www.myorthocure.com/services/fracture-care.html" />
   <link rel="icon" href="/assets/logo.png" type="image/png" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- SERVICE SCHEMA -->
+  <!-- JSON-LD: Breadcrumbs + Service -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Fracture Care",
-    "serviceType": "Orthopaedic fracture evaluation and immobilisation",
-    "provider": {
-      "@type": "MedicalClinic",
-      "name": "OrthoCure Bone & Joint Clinic",
-      "telephone": "+919342700212"
+  [
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
+        {"@type":"ListItem","position":2,"name":"Services","item":"https://www.myorthocure.com/services/index.html"},
+        {"@type":"ListItem","position":3,"name":"Fracture Care","item":"https://www.myorthocure.com/services/fracture-care.html"}
+      ]
     },
-    "areaServed": ["Thirumullaivoyal","Ambattur","Avadi"],
-    "url": "https://www.myorthocure.com/services/fracture-care.html"
-  }
+    {
+      "@context":"https://schema.org",
+      "@type":"Service",
+      "name":"Fracture care",
+      "serviceType":"Orthopaedic fracture evaluation and immobilisation",
+      "description":"Fracture care includes clinical assessment, digital X-ray when required, plaster or cast or splint support, and structured follow up.",
+      "provider":{
+        "@type":"MedicalClinic",
+        "name":"OrthoCure Bone & Joint Clinic",
+        "telephone":"+919342700212",
+        "url":"https://www.myorthocure.com/",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"No. 2, 2nd Street, Santhipuram",
+          "addressLocality":"Thirumullaivoyal",
+          "addressRegion":"Tamil Nadu",
+          "postalCode":"600062",
+          "addressCountry":"IN"
+        }
+      },
+      "areaServed":["Thirumullaivoyal","Ambattur","Avadi","Annanur","Iyyapakkam"],
+      "url":"https://www.myorthocure.com/services/fracture-care.html",
+      "isRelatedTo":{
+        "@type":"Person",
+        "name":"Dr Sumesh Subramanian",
+        "jobTitle":"Orthopaedic Surgeon"
+      }
+    }
+  ]
   </script>
 
   <style>
-    :root{
-      --navy:#142a46;
-      --navy-gradient:linear-gradient(135deg,#142a46,#005f73);
-      --coral:#ff5c5c;
-      --bg:#f4f8fb;
-      --card:#ffffff;
-      --ink:#334155;
-      --muted:#64748b;
-      --radius:18px;
-      --shadow:0 14px 40px rgba(20,42,70,0.15);
+    :root {
+      --navy: #142a46;
+      --navy-gradient: linear-gradient(135deg, #142a46 0%, #005f73 100%);
+      --coral: #ff5c5c;
+      --teal: #008b8b;
+      --white: #ffffff;
+      --bg-soft: #f4f8fb;
+      --line: #e2e8f0;
+      --muted: #475569;
+      --ink: #0f172a;
+      --card-shadow: 0 10px 30px -5px rgba(20, 42, 70, 0.12);
+      --radius: 16px;
+      --focus: #94d9ff;
     }
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,sans-serif;
-      background:var(--bg);
-      color:var(--ink);
-      line-height:1.7;
-      padding-bottom:90px;
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-soft);
+      color: var(--ink);
+      line-height: 1.65;
+      padding-bottom: calc(92px + env(safe-area-inset-bottom, 0px));
+      overflow: visible;
     }
 
-    /* NAV */
-    .top-nav{
-      background:var(--navy);
-      padding:12px 20px;
-      display:flex;
-      align-items:center;
-      gap:12px;
-      position:sticky;
-      top:0;
-      z-index:1000;
+    a { text-decoration: none; transition: 0.2s; }
+    a:hover { opacity: 0.95; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 8px; }
+
+    /* TOP NAV */
+    .top-nav {
+      background: var(--navy);
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
     }
-    .top-nav img{height:36px}
-    .top-nav span{
-      color:#fff;
-      font-weight:700;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+    .brand img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: block;
+    }
+    .nav-links { display: flex; gap: 18px; flex-wrap: wrap; }
+    .nav-links a {
+      color: rgba(255,255,255,0.92);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 6px 8px;
+      border-radius: 8px;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: #fff;
+      background: rgba(255,255,255,0.12);
     }
 
     /* HERO */
-    .hero{
-      background:var(--navy-gradient);
-      color:#fff;
-      padding:3.5rem 1.5rem 5rem;
-      text-align:center;
-      border-radius:0 0 32px 32px;
-      position:relative;
+    .hero {
+      background: var(--navy-gradient);
+      color: #fff;
+      padding: 2.6rem 1.2rem 4.6rem 1.2rem;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+      position: relative;
+      overflow: hidden;
     }
-    .hero::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:radial-gradient(circle at top right,rgba(255,255,255,0.12),transparent 60%);
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(255,255,255,0.12) 0%, transparent 62%);
+      pointer-events: none;
     }
-    .hero h1{
-      position:relative;
-      margin:0 0 12px;
-      font-size:2.2rem;
-      font-weight:800;
+    .breadcrumbs {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.74);
+      margin-bottom: 14px;
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
     }
-    .hero p{
-      position:relative;
-      max-width:760px;
-      margin:0 auto;
-      opacity:.95;
-      font-size:1.05rem;
+    .breadcrumbs a { color: rgba(255,255,255,0.95); }
+    .breadcrumbs span { opacity: 0.7; margin: 0 6px; }
+
+    .hero h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.05rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      position: relative;
+      z-index: 1;
+    }
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      opacity: 0.92;
+      font-size: 1.05rem;
+      position: relative;
+      z-index: 1;
     }
 
-    .wrap{
-      max-width:1100px;
-      margin:-50px auto 0;
-      padding:0 20px;
-      position:relative;
-      z-index:10;
+    /* WRAP */
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 18px;
+      margin-top: -42px;
+      position: relative;
+      z-index: 2;
+      overflow: visible;
     }
 
-    .card{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:32px;
-      box-shadow:var(--shadow);
-      margin-bottom:34px;
+    /* CARDS */
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      border: 1px solid rgba(0,0,0,0.04);
     }
 
-    .card h2{
-      margin-top:0;
-      color:var(--navy);
-      font-size:1.55rem;
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      margin-bottom: 18px;
+      align-items: stretch;
     }
 
-    /* EMERGENCY BOX */
-    .alert{
-      background:#fff5f5;
-      border-left:6px solid #e53e3e;
-      padding:20px 22px;
-      border-radius:12px;
-      margin-bottom:34px;
-    }
-    .alert strong{
-      color:#c53030;
-      display:block;
-      margin-bottom:6px;
+    .block {
+      padding: 22px;
+      margin-bottom: 18px;
     }
 
-    /* CHECKLIST */
-    .check{
-      list-style:none;
-      padding:0;
-      margin:0;
+    .block h2 {
+      margin: 0 0 12px 0;
+      font-size: 1.45rem;
+      color: var(--navy);
+      letter-spacing: -0.02em;
     }
-    .check li{
-      padding-left:28px;
-      position:relative;
-      margin:10px 0;
-      font-weight:500;
+    .block p { margin: 0 0 12px 0; color: var(--muted); }
+    .muted { color: var(--muted); }
+
+    /* Anxiety reducer: ER guidance */
+    .emergency {
+      background: #fff5f5;
+      border: 1px solid #fed7d7;
+      border-left: 6px solid #e53e3e;
+      padding: 16px 18px;
+      border-radius: 14px;
+      box-shadow: var(--card-shadow);
+      margin-bottom: 18px;
     }
-    .check li::before{
-      content:"✓";
-      position:absolute;
-      left:0;
-      color:var(--coral);
-      font-weight:800;
+    .emergency strong { color: #b91c1c; }
+    .emergency p { margin: 6px 0 0; color: #7f1d1d; font-weight: 600; font-size: 0.96rem; }
+
+    /* Buttons */
+    .cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      font-weight: 800;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      min-height: 46px;
+    }
+    .btn-primary {
+      background: var(--navy);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--teal); }
+    .btn-outline {
+      background: #f1f5f9;
+      color: var(--navy);
+      border-color: var(--line);
+    }
+    .btn-outline:hover { background: #e8eef6; }
+
+    /* Check list */
+    .check-list { list-style: none; padding: 0; margin: 0; }
+    .check-list li {
+      padding-left: 26px;
+      position: relative;
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--teal);
+      font-weight: 900;
     }
 
-    /* IMAGE */
-    .image-wrap{
-      margin-top:22px;
-      text-align:center;
+    /* Treatment grid */
+    .treatment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
     }
-    .image-wrap img{
-      max-width:560px;
-      width:100%;
-      border-radius:14px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.18);
+    .treatment-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 16px;
     }
+    .treatment-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.03rem;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+    }
+    .treatment-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
-    /* TREATMENT GRID */
-    .treatment-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:22px;
-      margin-top:22px;
+    /* Image: smaller, clearer */
+    .image-card {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
     }
-    .treatment{
-      background:#f8fafc;
-      border-radius:14px;
-      padding:20px;
-      border:1px solid #e2e8f0;
+    .image-frame {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+      background: #fff;
     }
-    .treatment h4{
-      margin:0 0 8px;
-      color:var(--navy);
+    .image-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .image-caption {
+      max-width: 520px;
+      margin: 0 auto;
+      font-size: 0.92rem;
+      color: #64748b;
+      line-height: 1.5;
     }
 
     /* FAQ */
-    .faq details{
-      background:#f8fafc;
-      border-radius:12px;
-      padding:16px;
-      margin-bottom:12px;
+    .faq-item {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
     }
-    .faq summary{
-      cursor:pointer;
-      font-weight:600;
-      color:var(--navy);
+    .faq-item summary {
+      padding: 14px 14px;
+      font-weight: 800;
+      cursor: pointer;
+      color: var(--navy);
+      list-style: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item p {
+      padding: 0 14px 14px;
+      margin: 0;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
     }
 
-    /* STICKY BAR */
-    .sticky{
-      display:flex;
-      position:fixed;
-      bottom:0;
-      left:0;
-      right:0;
-      background:#fff;
-      padding:10px;
-      gap:8px;
-      box-shadow:0 -6px 24px rgba(0,0,0,0.18);
+    /* Footer */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.74);
+      text-align: center;
+      padding: 2.4rem 1rem 1.1rem 1rem;
+      margin-top: 26px;
+      font-size: 0.9rem;
     }
-    .sticky a{
-      flex:1;
-      text-align:center;
-      padding:12px;
-      font-weight:800;
-      border-radius:8px;
-      color:#fff;
-      text-decoration:none;
+    footer a { color: #fff; text-decoration: underline; }
+    footer strong { color: #fff; display: block; margin-bottom: 6px; font-size: 1.05rem; }
+
+    /* Sticky bar: fixed + safe area + unstoppable z-index */
+    .stickyBar { display: none; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .grid-2 { grid-template-columns: 1fr; }
+
+      .stickyBar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2147483647;
+        display: flex;
+        gap: 8px;
+        padding: 10px 12px calc(env(safe-area-inset-bottom, 0px) + 10px);
+        background: #ffffff;
+        box-shadow: 0 -8px 30px rgba(0,0,0,0.18);
+        border-top: 1px solid #e5e7eb;
+      }
+      .stickyBar a {
+        flex: 1;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 0.95rem;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #fff;
+      }
+      .stickyBar .btn-call { background: #0ea5e9; }
+      .stickyBar .btn-wa { background: #25D366; }
+      .stickyBar .btn-book { background: var(--navy); }
     }
-    .call{background:#0ea5e9}
-    .wa{background:#25D366}
-    .book{background:var(--navy)}
   </style>
 </head>
 
 <body>
 
-<nav class="top-nav">
-  <img src="/assets/logo.png" alt="OrthoCure Bone & Joint Clinic logo">
-  <span>OrthoCure Bone & Joint Clinic</span>
-</nav>
+  <nav class="top-nav" aria-label="Top navigation">
+    <a class="brand" href="/" aria-label="OrthoCure Bone & Joint Clinic home">
+      <img src="/assets/logo.png" alt="OrthoCure Bone & Joint Clinic logo" width="28" height="28" loading="eager">
+      <span>OrthoCure Bone & Joint Clinic</span>
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/services/index.html">Services</a>
+      <a href="/consult.html">Consult</a>
+      <a href="/services/fracture-care.html" class="active">Fracture Care</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </nav>
 
-<header class="hero">
-  <h1>Fracture Care in Thirumullaivoyal</h1>
-  <p>Prompt assessment, X-ray when required, proper immobilisation, and clear guidance — without unnecessary hospital visits.</p>
-</header>
+  <header class="hero">
+    <div class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span>&gt;</span> <a href="/services/index.html">Services</a> <span>&gt;</span> <span>Fracture Care</span>
+    </div>
 
-<main class="wrap">
+    <h1>Fracture Treatment in Thirumullaivoyal</h1>
+    <p>
+      Digital X-ray, diagnosis, and stabilization (splint or plaster or cast) in one visit.
+      Serving Ambattur, Avadi, and nearby areas.
+    </p>
+  </header>
 
-  <div class="alert">
-    <strong>When should you go directly to a hospital Emergency Room?</strong>
-    If the bone is visible through the skin, there is heavy bleeding, loss of consciousness, severe chest pain, or breathing difficulty — please go to a major hospital ER immediately.
+  <main class="wrap">
+
+    <div class="emergency" role="note" aria-label="Emergency guidance">
+      <strong>When should you go to a hospital ER?</strong>
+      <p>
+        If the bone is visible through the skin, if there is a head injury or unconsciousness, or if there is chest pain or difficulty breathing, please visit a major hospital Emergency Room immediately.
+      </p>
+    </div>
+
+    <section class="grid-2">
+      <article class="card block">
+        <h2>Not sure if it is a sprain or a fracture?</h2>
+        <p>
+          It can be hard to tell without an X-ray. Please visit us soon if any of these are present.
+        </p>
+        <ul class="check-list">
+          <li>You heard a snap or crack during the injury.</li>
+          <li>There is immediate, severe swelling or bruising.</li>
+          <li>The limb looks crooked or misshapen.</li>
+          <li>You cannot put weight on the leg or foot.</li>
+        </ul>
+        <p class="muted" style="margin-top:12px;">
+          We have on site Digital X-ray to confirm the diagnosis quickly, when clinically required.
+        </p>
+
+        <div class="cta-row" aria-label="Primary actions">
+          <a class="btn btn-primary" href="tel:+919342700212">Call 93427 00212</a>
+          <a class="btn btn-outline" href="https://wa.me/919342700212?text=I%20have%20a%20suspected%20fracture" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a class="btn btn-outline" href="/contact.html">Book</a>
+        </div>
+      </article>
+
+      <aside class="card image-card" aria-label="Fracture care image">
+        <div class="image-frame">
+          <img src="/assets/fracture-care.jpg" alt="Fracture care with plaster and Digital X-ray at OrthoCure Bone & Joint Clinic, Thirumullaivoyal" loading="lazy">
+        </div>
+        <p class="image-caption">
+          Stabilization matters. A well applied splint or cast protects the fracture, reduces pain, and supports correct healing.
+        </p>
+      </aside>
+    </section>
+
+    <section class="card block" aria-label="How fractures are treated">
+      <h2>How do we treat fractures?</h2>
+      <p>
+        Not every fracture needs surgery. Many fractures heal well with the right immobilization and follow up.
+        Dr Sumesh follows a conservative first approach, and surgery is discussed only when clearly needed.
+      </p>
+
+      <div class="treatment-grid" aria-label="Treatment options">
+        <div class="treatment-card">
+          <h3>Splinting, first stage</h3>
+          <p>Often used immediately after injury to protect the limb and allow swelling to settle before a full cast.</p>
+        </div>
+        <div class="treatment-card">
+          <h3>Plaster of Paris</h3>
+          <p>Traditional cast option. Useful when careful molding and stability are needed.</p>
+        </div>
+        <div class="treatment-card">
+          <h3>Fiberglass casts</h3>
+          <p>Lightweight and durable. Dr Sumesh will advise what suits your fracture type.</p>
+        </div>
+        <div class="treatment-card">
+          <h3>Functional braces</h3>
+          <p>For selected minor fractures, removable boots or braces can support earlier movement, when appropriate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <article class="card block" aria-label="Common fractures treated">
+        <h2>What fractures do we commonly treat?</h2>
+        <ul class="check-list">
+          <li>Wrist and forearm fractures.</li>
+          <li>Ankle and foot fractures.</li>
+          <li>Clavicle fractures.</li>
+          <li>Finger and hand fractures.</li>
+          <li>Early stress fractures.</li>
+        </ul>
+        <p class="muted" style="margin-top:12px;">
+          If you already have X-rays from elsewhere, please bring them along.
+        </p>
+      </article>
+
+      <article class="card block" aria-label="What to do before coming">
+        <h2>What should you do before coming?</h2>
+        <ul class="check-list">
+          <li>Elevate the injured limb.</li>
+          <li>Use a cold pack briefly, with a cloth barrier.</li>
+          <li>Do not attempt self reduction.</li>
+          <li>Avoid eating heavy meals if surgery might be needed later.</li>
+        </ul>
+        <p class="muted" style="margin-top:12px;">
+          A short, safe first aid plan helps, but the priority is timely assessment.
+        </p>
+      </article>
+    </section>
+
+    <section class="card block" aria-label="Common questions">
+      <h2>Common questions?</h2>
+
+      <details class="faq-item">
+        <summary>Do you have Digital X-ray facilities here?</summary>
+        <p>
+          Yes. We have a modern Digital X-ray unit. We can diagnose the fracture, show you the images, and apply a splint or cast in one visit, when appropriate.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do all fractures need surgery?</summary>
+        <p>
+          No. Many fractures heal well with proper immobilization. Surgery is discussed only when the fracture pattern is unstable, displaced, or involves joints in a way that needs fixation.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How long does a cast stay on?</summary>
+        <p>
+          It depends on the bone and fracture pattern. Many wrist fractures need about four to six weeks. Some ankle fractures can need around six weeks. Follow up is planned based on healing.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I come only for an X-ray?</summary>
+        <p>
+          This is a clinic linked service. A brief clinical review is advised so the correct views are taken and the study is used meaningfully.
+        </p>
+      </details>
+    </section>
+
+    <section class="grid-2">
+      <article class="card block" aria-label="Related services">
+        <h2>Related services?</h2>
+        <ul class="check-list">
+          <li><a href="/services/digital-xray-thirumullaivoyal.html">Digital X-ray imaging.</a></li>
+          <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy and rehabilitation.</a></li>
+          <li><a href="/services/knee-arthritis.html">Knee arthritis care.</a></li>
+          <li><a href="/services/spine-neck-pain-thirumullaivoyal.html">Spine and neck pain clinic.</a></li>
+          <li><a href="/services/prp-treatment.html">PRP treatment.</a></li>
+          <li><a href="/services/total-knee-replacement-thirumullaivoyal.html">Total knee replacement.</a></li>
+        </ul>
+      </article>
+
+      <article class="card block" aria-label="Helpful reading">
+        <h2>Helpful reading?</h2>
+        <ul class="check-list">
+          <li><a href="/blog/peace-love-injury.html">PEACE and LOVE after injury.</a></li>
+          <li><a href="/blog/stress-fractures-foot-pain-chennai.html">Stress fractures of foot and leg.</a></li>
+          <li><a href="/blog.html">All patient education articles.</a></li>
+        </ul>
+
+        <div class="cta-row" aria-label="Visit actions">
+          <a class="btn btn-primary" href="tel:+919342700212">Call now</a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=OrthoCure%20Bone%20%26%20Joint%20Clinic%2C%20Thirumullaivoyal" target="_blank" rel="noopener noreferrer">Open Maps</a>
+          <a class="btn btn-outline" href="/contact.html">Book a visit</a>
+        </div>
+      </article>
+    </section>
+
+    <p class="muted" style="font-weight:700; font-size:0.95rem; margin: 6px 0 12px 0;">
+      This page is a general guide. Final decisions on imaging and treatment are always made after examination by Dr Sumesh Subramanian.
+    </p>
+
+  </main>
+
+  <footer>
+    <strong>OrthoCure Bone & Joint Clinic</strong>
+    <p>No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai 600062</p>
+    <p><a href="/">myorthocure.com</a></p>
+  </footer>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Do you have Digital X-ray facilities here?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes. We have a modern Digital X-ray unit. We can diagnose the fracture, show you the images, and apply a splint or cast in one visit, when appropriate."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Do all fractures need surgery?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Many fractures heal well with proper immobilization. Surgery is discussed only when the fracture pattern is unstable, displaced, or involves joints in a way that needs fixation."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How long does a cast stay on?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"It depends on the bone and fracture pattern. Many wrist fractures need about four to six weeks. Some ankle fractures can need around six weeks. Follow up is planned based on healing."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can I come only for an X-ray?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"This is a clinic linked service. A brief clinical review is advised so the correct views are taken and the study is used meaningfully."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <div style="display:none">
+    fracture care plaster cast splint Digital X-ray OrthoCure Bone & Joint Clinic Thirumullaivoyal Ambattur Avadi orthopaedic surgeon Dr Sumesh Subramanian on site X-ray clinic hours phone 9342700212
   </div>
 
-  <section class="card">
-    <h2>Is it a fracture or just a sprain?</h2>
-    <ul class="check">
-      <li>Did you hear a snap or crack at the time of injury?</li>
-      <li>Is there sudden swelling or bruising?</li>
-      <li>Does the limb look bent or misaligned?</li>
-      <li>Is weight-bearing or movement impossible?</li>
-    </ul>
-
-    <div class="image-wrap">
-      <img src="/assets/fracture-care.jpg" alt="Fracture assessment and plaster care at OrthoCure Bone & Joint Clinic">
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>How fractures are treated at our clinic</h2>
-    <p>Not every fracture needs surgery. Many heal well with the right support, protection, and follow-up.</p>
-
-    <div class="treatment-grid">
-      <div class="treatment">
-        <h4>Splints</h4>
-        Temporary support used initially to allow swelling to settle safely.
-      </div>
-      <div class="treatment">
-        <h4>Plaster of Paris (POP)</h4>
-        Traditional, well-moulded casts for stable fracture healing.
-      </div>
-      <div class="treatment">
-        <h4>Fiberglass Casts</h4>
-        Lighter, stronger casts with better durability.
-      </div>
-      <div class="treatment">
-        <h4>Functional Braces</h4>
-        Removable supports that allow early movement when appropriate.
-      </div>
-    </div>
-  </section>
-
-  <section class="card faq">
-    <h2>Common questions</h2>
-
-    <details>
-      <summary>Do you have X-ray facilities at the clinic?</summary>
-      <p>Yes. Digital X-ray is available for patients being evaluated, only when clinically required.</p>
-    </details>
-
-    <details>
-      <summary>Do all fractures need surgery?</summary>
-      <p>No. Many fractures heal completely with plaster or splint support alone.</p>
-    </details>
-
-    <details>
-      <summary>How long does a cast usually stay on?</summary>
-      <p>Most fractures require 4 to 6 weeks of immobilisation, depending on the bone and fracture type.</p>
-    </details>
-  </section>
-
-</main>
-
-<footer style="background:#142a46;color:#fff;text-align:center;padding:26px">
-  OrthoCure Bone & Joint Clinic, Thirumullaivoyal<br>
-  No. 2, 2nd Street, Santhipuram, Chennai 600062
-</footer>
-
-<div class="sticky">
-  <a class="call" href="tel:+919342700212">Call</a>
-  <a class="wa" href="https://wa.me/919342700212?text=I%20have%20a%20suspected%20fracture">WhatsApp</a>
-  <a class="book" href="/contact.html">Book</a>
-</div>
+  <div class="stickyBar" aria-label="Contact OrthoCure">
+    <a href="tel:+919342700212" class="btn-call">Call</a>
+    <a href="https://wa.me/919342700212?text=I%20have%20a%20suspected%20fracture" target="_blank" rel="noopener noreferrer" class="btn-wa">WhatsApp</a>
+    <a href="/contact.html" class="btn-book">Book</a>
+  </div>
 
 </body>
 </html>
