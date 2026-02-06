@@ -38,19 +38,17 @@
   <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
 
   <style>
-    /* ===== THEME ===== */
     :root{
-      --ink:#0e1a2c; 
-      --muted:#6b7a92; 
-      --navy:#0A2342; 
+      --ink:#0e1a2c;
+      --muted:#6b7a92;
+      --navy:#0A2342;
       --coral:#FF6F61;
-      --bg:#f7f9fc; 
+      --bg:#f7f9fc;
       --card:#ffffff;
 
-      /* layout scales */
-      --site-max: 1120px;        /* hard page cap */
-      --content-max: 780px;      /* comfy reading width on desktop */
-      --video-width: 540px;      /* vertical Short width */
+      --site-max: 1120px;
+      --content-max: 780px;
+      --video-width: 540px;
       --radius-lg: 16px;
       --radius-md: 12px;
       --shadow: 0 8px 24px rgba(20,42,70,.08);
@@ -68,14 +66,12 @@
       -moz-osx-font-smoothing:grayscale;
     }
 
-    /* Container and center line */
     .container{
       max-width:var(--site-max);
       margin:0 auto;
       padding:0 24px;
     }
 
-    /* Band header trimmed for desktop */
     header.band{
       background:linear-gradient(180deg,#142a46 0%,#0a2342 100%);
       color:#fff;
@@ -83,6 +79,17 @@
     }
     .band .container{
       padding:28px 0 24px;
+    }
+    .clinicBadge{
+      display:inline-block;
+      font-weight:800;
+      font-size:.9rem;
+      letter-spacing:.2px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.16);
+      margin:0 0 12px;
     }
     .band h1{
       margin:0 0 6px;
@@ -97,8 +104,31 @@
       color:#d9e4f3;
       max-width:var(--content-max);
     }
+    .metaRow{
+      margin-top:10px;
+      color:#d9e4f3;
+      font-size:.95rem;
+      max-width:var(--content-max);
+    }
+    .datePill{
+      display:inline-block;
+      margin-top:10px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.16);
+      font-weight:700;
+      font-size:.9rem;
+    }
+    .breadcrumbs{
+      margin-top:10px;
+      color:#d9e4f3;
+      font-size:.95rem;
+      max-width:var(--content-max);
+    }
+    .breadcrumbs a{color:#d9e4f3;text-decoration:underline}
+    .breadcrumbs a:hover{text-decoration:none}
 
-    /* Core page layout: a single center column */
     main{display:block}
     article{
       max-width:var(--content-max);
@@ -106,7 +136,6 @@
       padding:22px 0 0;
     }
 
-    /* Cards and surface polish */
     .card{
       background:var(--card);
       border-radius:var(--radius-lg);
@@ -116,7 +145,6 @@
       width:100%;
     }
 
-    /* Headings */
     h2{
       color:var(--navy);
       margin:0 0 10px;
@@ -132,7 +160,6 @@
       font-weight:800;
     }
 
-    /* Text helpers */
     p{margin:10px 0 16px}
     .small{color:var(--muted);font-size:.95rem}
     a{color:var(--navy);text-decoration:none}
@@ -174,18 +201,16 @@
     }
     .cta a{color:#fff;text-decoration:underline}
 
-    /* Author box */
     #author.card{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center}
     #author img{border-radius:12px;display:block}
 
-    /* Vertical YouTube Short: cannot blow out */
     .yt-vert{
-      position:relative; 
-      width:min(var(--video-width),100%); 
-      aspect-ratio:9/16; 
-      overflow:hidden; 
+      position:relative;
+      width:min(var(--video-width),100%);
+      aspect-ratio:9/16;
+      overflow:hidden;
       margin:16px auto;
-      border-radius:var(--radius-md); 
+      border-radius:var(--radius-md);
       box-shadow:var(--shadow);
       background:#000;
     }
@@ -193,12 +218,10 @@
       position:absolute; inset:0; width:100%; height:100%; border:0;
     }
 
-    /* Figures */
     figure{margin:22px 0;text-align:center}
     figure img{max-width:100%;height:auto;border-radius:12px}
     figcaption{font-size:13px;color:#4f5b6b;margin-top:6px}
 
-    /* Lists */
     ol{padding-left:22px}
     ul{padding-left:22px}
     li{margin:6px 0}
@@ -211,13 +234,11 @@
       max-width:var(--content-max);
     }
 
-    /* Desktop refinements */
     @media (min-width: 900px){
       body{font-size:17px}
       .card{padding:22px}
     }
 
-    /* Small-screen tweaks untouched */
     @media (max-width: 520px){
       .container{padding:0 16px}
       .card{border-radius:12px}
@@ -262,7 +283,7 @@
   }
   </script>
 
-  <!-- JSON LD. FAQ (expanded) -->
+  <!-- JSON LD. FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -291,7 +312,7 @@
   }
   </script>
 
-  <!-- JSON LD. Speakable for voice and AI -->
+  <!-- JSON LD. Speakable -->
   <script type="application/ld+json">
   {
    "@context":"https://schema.org",
@@ -307,7 +328,7 @@
   }
   </script>
 
-  <!-- JSON LD. HowTo for the seven night fit test -->
+  <!-- JSON LD. HowTo -->
   <script type="application/ld+json">
   {
    "@context":"https://schema.org",
@@ -322,7 +343,7 @@
   }
   </script>
 
-  <!-- JSON LD. Person enrichment (entity signals) -->
+  <!-- JSON LD. Person -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -339,7 +360,7 @@
   }
   </script>
 
-  <!-- JSON LD. LocalBusiness with sameAs merged (geo signals) -->
+  <!-- JSON LD. LocalBusiness -->
   <script type="application/ld+json">
   {
    "@context": "https://schema.org",
@@ -368,30 +389,32 @@
 </head>
 
 <body>
-  
- <header class="hero">
-      <div class="clinicBadge">OrthoCure Bone & Joint Speciality Clinic, Thirumullaivoyal</div>
+
+  <header class="band">
+    <div class="container">
+      <div class="clinicBadge">OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal</div>
 
       <h1>Pillow and Neck Pain. Find Your Right Height and Sleep Easier</h1>
 
-      <div class="sub">
-        Professional. Personable. Precise. A clear guide for side and back sleepers in Chennai.
-      </div>
+      <p>Professional. Personable. Precise. A clear guide for side and back sleepers in Chennai.</p>
 
-      <div class="meta">By Dr Sumesh Subramanian, Orthopaedic Surgeon | Thirumullaivoyal, Chennai</div>
+      <div class="metaRow">By Dr Sumesh Subramanian, Orthopaedic Surgeon | Thirumullaivoyal, Chennai</div>
       <div class="datePill" aria-label="Article date">Updated: 16 October 2025</div>
 
       <div class="breadcrumbs">
         <a href="/">Home</a> &nbsp;›&nbsp; <a href="/blog.html">Blog</a> &nbsp;›&nbsp; Pillow and Neck Pain
       </div>
-    </header>
+    </div>
+  </header>
+
   <div class="container">
     <main>
       <article>
 
         <!-- TLDR -->
         <div class="card small" id="summary">
-          <strong>TLDR.</strong> Correct pillow height depends on your body width and your sleep style. Side sleeping needs medium height that fills the ear to shoulder gap. Back sleeping needs low height with gentle neck support. In Chennai humidity pick breathable materials like latex or open cell foam. Serving Thirumullaivoyal Ambattur and Avadi with spine aware sleep posture care.
+          <strong>TLDR.</strong>
+          If you wake with neck pain or stiffness, your pillow height is often the main cause. Side sleeping usually needs medium height that fills the ear to shoulder gap. Back sleeping usually needs low to medium low height with gentle neck support. In Chennai humidity, breathable materials like latex or open cell foam can improve comfort. Dr Sumesh Subramanian consults at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, serving Ambattur, Avadi, and Annanur.
         </div>
 
         <!-- VIDEO -->
@@ -414,13 +437,24 @@
         </div>
 
         <!-- CONTENT -->
+        <div class="card" id="intro">
+          <p class="pull">If you wake up with neck pain, stiffness, or a dull headache, it does not automatically mean a disc problem. In many patients, the reason is simply pillow height and sleep alignment.</p>
+          <p>We see this commonly in Thirumullaivoyal, Ambattur, and Avadi because daytime neck load is already high. Two wheeler travel on uneven roads, long screen time, and late night phone use keep neck muscles tight. A wrong pillow then holds the neck in a strained position for six to eight hours.</p>
+          <p><strong>The good news.</strong> Most pillow related neck pain improves with alignment correction and a few daily habits. Medicines and scans are not the first step for most people.</p>
+        </div>
+
         <div class="card" id="why">
-          <p class="pull">Your pillow is not for the head. It is for the spine. Wrong height bends the neck for six to eight hours and keeps muscles switched on through the night.</p>
-          <p><strong>The science in short.</strong> Trials and EMG work show that pillow height and the way a pillow supports the natural neck curve change symptoms and sleep comfort. Contoured or adjustable loft designs help when they keep the neck neutral.</p>
+          <h2>Why pillow height matters</h2>
+          <p>Your pillow is not meant to support only the head. It is meant to support the neck and keep the spine in a neutral line while you sleep.</p>
+          <ul class="list-check">
+            <li><strong>Too low.</strong> The neck bends sideways or drops forward. Muscles stay active through the night.</li>
+            <li><strong>Too high.</strong> The neck tilts upward. Joints get compressed. Morning pain and headache are common.</li>
+          </ul>
+          <p class="small">Research studies and muscle activity work show that height and support change symptoms and sleep comfort, especially when the neck stays neutral.</p>
         </div>
 
         <div class="card" id="positions">
-          <h2>Side and Back. What happens to your neck</h2>
+          <h2>Side and back. What happens to your neck</h2>
 
           <figure>
             <img src="/assets/pillow-alignment-diagram-orthocure-thirumullaivoyal.jpg" width="1400" height="850" fetchpriority="high" loading="eager" alt="Side and back sleeper diagram with too low too high and correct pillow height Chennai" />
@@ -429,38 +463,45 @@
 
           <h3>Side sleeping</h3>
           <ul class="list-check">
-            <li>Pillow must fill the gap from ear to outer shoulder so your nose stays in line with the sternum.</li>
-            <li>Too thin and the head drops. Too thick and the neck bends upward.</li>
+            <li>The pillow must fill the gap from ear to outer shoulder so your nose and chest stay aligned.</li>
+            <li>If the pillow is thin, the head drops. If it is thick, the neck bends upward.</li>
+            <li>Shoulder width matters. Broad shoulders usually need a little more height.</li>
           </ul>
 
           <h3>Back sleeping</h3>
           <ul class="list-check">
             <li>Low or medium low height works best.</li>
-            <li>A gentle neck roll supports the curve. Avoid a block that pushes the chin toward the chest.</li>
+            <li>A gentle neck roll supports the natural curve.</li>
+            <li>Avoid a pillow that pushes the chin toward the chest.</li>
           </ul>
+
+          <div class="note">
+            If you sleep on your stomach, the neck stays rotated for long hours. If changing the habit is difficult, use the thinnest pillow or shift to a three quarter side position.
+          </div>
         </div>
 
         <div class="card" id="choose">
-          <h2>How to choose the right pillow. Height and shape</h2>
-          <h3>One. Height first. Brand later</h3>
+          <h2>How to choose the right pillow. Height and comfort</h2>
+
+          <h3>One. Choose height first</h3>
           <ul class="list-check">
-            <li><strong>Side.</strong> Medium to taller height that fills shoulder width. Adjustable loft or layered pillows make this easy.</li>
-            <li><strong>Back.</strong> Low or medium low height with a small neck roll to maintain the natural curve.</li>
-            <li><strong>Stomach.</strong> Thinnest possible, or none.</li>
+            <li><strong>Side.</strong> Medium height that fills shoulder width. Adjustable loft is helpful.</li>
+            <li><strong>Back.</strong> Low or medium low height with gentle neck support.</li>
+            <li><strong>Stomach.</strong> Thinnest possible, or no pillow.</li>
           </ul>
 
-          <h3>Two. Shape and fill</h3>
+          <h3>Two. Choose material that suits Chennai humidity</h3>
           <ul class="list-check">
-            <li><strong>Adjustable loft.</strong> Fine tune at home and prevents collapse overnight.</li>
-            <li><strong>Gentle contour.</strong> Useful for back sleeping. Side sleeping often prefers a flatter taller block.</li>
-            <li><strong>Material.</strong> Latex and open cell foam breathe better in humid weather.</li>
+            <li>Latex and open cell memory foam tend to breathe better.</li>
+            <li>Use a breathable cover and air the pillow regularly.</li>
+            <li>Comfort matters, but height must still match your sleep position.</li>
           </ul>
 
-          <h3>Three. Quick alignment check</h3>
+          <h3>Three. Quick alignment check at home</h3>
           <ul class="list-check">
-            <li><strong>Side view.</strong> Chin neither tucked nor poking up.</li>
-            <li><strong>Front view while side sleeping.</strong> Nose and sternum in one straight line.</li>
-            <li><strong>Feel test.</strong> If upper traps feel tight or you keep adjusting, change height by one to two cm.</li>
+            <li><strong>Side view.</strong> Chin should not tuck down or tilt up.</li>
+            <li><strong>Front view while side sleeping.</strong> Nose and sternum should line up.</li>
+            <li><strong>Feel test.</strong> If you keep adjusting the pillow at night, change height by one to two cm.</li>
           </ul>
         </div>
 
@@ -469,38 +510,47 @@
           <ol>
             <li>Nights one to two. Start with your best guess height for your position.</li>
             <li>Nights three to four. If you wake sore, adjust loft by one to two cm.</li>
-            <li>Nights five to seven. Lock the height where you stop waking to fix the pillow.</li>
+            <li>Nights five to seven. Keep the height where you stop waking to fix the pillow.</li>
           </ol>
-          <p class="small">A simple height titration approach often reduces morning neck symptoms.</p>
+          <p class="small">This simple height titration approach often reduces morning neck symptoms within a week.</p>
         </div>
 
         <div class="card" id="care">
-          <h2>Three lifestyle levers that calm neck pain</h2>
+          <h2>Three daily levers that reduce neck pain recurrence</h2>
           <ul class="list-check">
-            <li><strong>Move.</strong> Daily walk, cycle, or light yoga for thirty to forty five minutes. Break desk time every hour.</li>
-            <li><strong>Load.</strong> Keep bags light and screens at eye level. Avoid long phone flexion.</li>
-            <li><strong>Sleep.</strong> Seven to eight hours. Cool dark room. Air the pillow in humid months.</li>
+            <li><strong>Move.</strong> Walk, cycle, or light exercise for thirty to forty five minutes most days. Break desk time every hour.</li>
+            <li><strong>Load.</strong> Keep screens at eye level. Avoid long phone bending. Keep bags light.</li>
+            <li><strong>Sleep.</strong> Aim for seven to eight hours. Keep the room cool. Air the pillow during humid months.</li>
           </ul>
-          <p class="small">Learn more about <a href="/blog/techneck.html">Tech Neck</a> and our <a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy</a> services. </p>
+
+          <p class="small">
+            Related reading:
+            <a href="/blog/tech-neck.html">Tech neck</a>,
+            <a href="/blog/peace-love-injury.html">PEACE and LOVE for acute injuries</a>,
+            <a href="/blog/cracking-knuckles.html">Cracking knuckles</a>,
+            <a href="/blog/early-arthritis-signs.html">Early arthritis signs</a>,
+            <a href="/blog.html">All blog posts</a>.
+          </p>
         </div>
 
         <div class="card" id="flags">
           <h2>When to see a doctor now</h2>
           <ul>
-            <li>Morning stiffness beyond thirty minutes or pain that lasts beyond two to three weeks</li>
-            <li>Numbness or tingling in the arm or hand, weakness, severe night pain</li>
-            <li>Fever, recent trauma, or past cancer</li>
+            <li>Pain lasting more than two to three weeks</li>
+            <li>Arm pain, tingling, numbness, or weakness</li>
+            <li>Severe night pain or pain that wakes you repeatedly</li>
+            <li>Fever, recent trauma, or past cancer history</li>
           </ul>
           <p class="small">Care is individual if you have cervical spondylosis, radiculopathy, migraine, osteoporosis, diabetes, pregnancy, or sleep apnea.</p>
         </div>
 
-        <!-- Author box with Person entity hints -->
+        <!-- Author box -->
         <section id="author" class="card" itemscope itemtype="https://schema.org/Person">
           <img src="/assets/dp.jpg" alt="Dr Sumesh Subramanian Orthopaedic Surgeon Chennai" width="84" height="84" itemprop="image">
           <div>
             <h3 itemprop="name" style="margin:0 0 6px">Dr Sumesh Subramanian</h3>
             <p class="small" itemprop="description" style="margin:0 0 8px">
-              Orthopaedic Surgeon at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai. Focus on sleep posture neck and shoulder care.
+              Orthopaedic Surgeon at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai. Focus on practical neck, shoulder, and spine care with conservative first management.
             </p>
             <ul class="small" style="margin:0; padding-left:18px">
               <li><a href="/about.html" itemprop="url">About</a></li>
@@ -513,11 +563,10 @@
 
         <div class="card cta" id="visit">
           <h2 style="margin:0 0 8px">Still waking with neck pain</h2>
-          <p style="margin:6px 0 12px">Get a fast sleep posture check and pillow fit guidance from a spine aware orthopaedic clinic.</p>
+          <p style="margin:6px 0 12px">Get a quick sleep posture check and pillow fit guidance from a spine aware orthopaedic clinic.</p>
           <a class="btn" href="https://wa.me/919342700212" target="_blank" rel="noopener">Book at OrthoCure Thirumullaivoyal</a>
           <p class="small" style="margin-top:10px">Open all days. Mon to Sat 5 pm to 9 pm. Sunday 11 am to 1 pm.</p>
           <p class="small">Find the clinic on <a href="https://www.google.com/maps?q=OrthoCure+Bone+and+Joint+Speciality+Clinic+Thirumullaivoyal" target="_blank" rel="noopener">Google Maps</a>. See our <a href="/#contact">map</a> and directions.</p>
-          <p class="small">Related reading. <a href="/blog/tech-neck.html">Tech Neck</a>. See our <a href="/#physiotherapy">Physiotherapy</a> section. Find us on the <a href="/#contact">map</a>.</p>
         </div>
 
         <div class="card" id="refs">
@@ -544,7 +593,8 @@
 
   <footer style="margin-top:24px;background:#0f213a;color:#cbd6ea">
     <div class="container" style="padding:18px 0">
-      © 2025 OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai • <a style="color:#cbd6ea" href="https://www.myorthocure.com/">myorthocure.com</a>
+      © 2025 OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai •
+      <a style="color:#cbd6ea" href="https://www.myorthocure.com/">myorthocure.com</a>
     </div>
   </footer>
 </body>
