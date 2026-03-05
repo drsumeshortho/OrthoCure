@@ -247,7 +247,7 @@
 
     .articleLayout{
       display:grid;
-      grid-template-columns:1fr 280px;
+      grid-template-columns:minmax(0, 720px) 280px;
       gap:48px;
       align-items:start;
     }
@@ -346,6 +346,14 @@
     .btnSideCall{background:transparent; color:#fff; border:2px solid rgba(255,255,255,.4)}
 
     .articleBody{min-width:0}
+
+    .articleBody{
+min-width:0;
+max-width:720px;
+}
+.articleLayout{
+justify-content:space-between;
+}
 
     .factStrip{
       background:var(--navy);
@@ -963,17 +971,7 @@
   </style>
 
   <!-- AI key takeaways, visually hidden -->
-  <section class="sr-only" aria-label="Key takeaways">
-    <h2>Key takeaways</h2>
-    <ul>
-      <li>Thumb base pain is often De Quervain tenosynovitis, a tendon overuse injury.</li>
-      <li>Common triggers include lifting infants, two wheeler commuting, repetitive tool work, and phone use.</li>
-      <li>The Finkelstein test helps confirm the diagnosis clinically without MRI in most cases.</li>
-      <li>Most patients improve in two to six weeks with activity change, thumb spica splint, and guided physiotherapy.</li>
-      <li>Surgery is uncommon and considered only after adequate conservative care fails.</li>
-      <li>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal serves Ambattur, Avadi, Annanur, Pattabiram, and nearby areas of Chennai.</li>
-    </ul>
-  </section>
+
 
   <!-- Schema 1 BlogPosting -->
   <script type="application/ld+json">
@@ -1194,6 +1192,17 @@
 </head>
 
 <body>
+    <section class="sr-only" aria-label="Key takeaways">
+    <h2>Key takeaways</h2>
+    <ul>
+      <li>Thumb base pain is often De Quervain tenosynovitis, a tendon overuse injury.</li>
+      <li>Common triggers include lifting infants, two wheeler commuting, repetitive tool work, and phone use.</li>
+      <li>The Finkelstein test helps confirm the diagnosis clinically without MRI in most cases.</li>
+      <li>Most patients improve in two to six weeks with activity change, thumb spica splint, and guided physiotherapy.</li>
+      <li>Surgery is uncommon and considered only after adequate conservative care fails.</li>
+      <li>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal serves Ambattur, Avadi, Annanur, Pattabiram, and nearby areas of Chennai.</li>
+    </ul>
+  </section>
 
   <div class="announcBar">
     Conservative orthopaedic care in Thirumullaivoyal. WhatsApp <a href="https://wa.me/919342700212" rel="nofollow">93427 00212</a> or call <a href="tel:+919342700212">93427 00212</a>
