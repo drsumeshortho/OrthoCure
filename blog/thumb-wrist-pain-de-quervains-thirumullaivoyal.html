@@ -75,7 +75,11 @@
     }
     a{color:var(--accent); text-decoration:none}
     a:hover{text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px}
-    img{display:block; max-width:100%}
+    img{
+  display:block;
+  max-width:100%;
+  height:auto;
+}
 
     .announcBar{
       background:var(--accent);
@@ -132,7 +136,16 @@
     @media (max-width:680px){
       .navLinks .navLink:not(.navCta){display:none}
     }
-
+@media (max-width:480px){
+  .stickyBar{
+    padding:8px 12px;
+    gap:8px;
+  }
+  .stickyBar a{
+    font-size:13px;
+    padding:10px 8px;
+  }
+}
     .pageWrap{
       max-width:var(--max);
       margin:0 auto;
@@ -228,23 +241,27 @@
       padding:4px 10px;
     }
 
-    .heroFig{
-      border-radius:var(--radius);
-      overflow:hidden;
-      margin:0 0 40px;
-      box-shadow:var(--shadowMd);
-      border:1px solid var(--border);
-      position:relative;
-    }
-    .heroFig figcaption{
-      background:var(--soft);
-      padding:12px 18px;
-      font-size:13px;
-      color:var(--muted);
-      border-top:1px solid var(--border);
-      line-height:1.5;
-    }
-
+   .heroFig{
+  border-radius:var(--radius);
+  overflow:hidden;
+  margin:0 0 40px;
+  box-shadow:var(--shadowMd);
+  border:1px solid var(--border);
+  position:relative;
+  background:var(--soft);
+}
+.heroFig img{
+  width:100%;
+  height:auto;
+}
+.heroFig figcaption{
+  background:var(--soft);
+  padding:12px 18px;
+  font-size:13px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+  line-height:1.5;
+}
     .articleLayout{
       display:grid;
       grid-template-columns:minmax(0, 720px) 280px;
@@ -265,6 +282,24 @@
     @media (min-width:901px){
       .sidebar{position:sticky; top:86px}
     }
+
+    @media (max-width:680px){
+  .heroFig img{
+    max-height:none;
+    object-fit:contain;
+  }
+
+  .articleFig img{
+    object-fit:contain;
+  }
+
+  .heroFig figcaption,
+  .articleFig figcaption,
+  .splintFig figcaption{
+    font-size:12.5px;
+    padding:10px 14px;
+  }
+}
 
     .tocCard{
       background:var(--bg);
@@ -614,22 +649,47 @@
     }
     .stepBody p{font-size:15px; color:var(--muted); margin:0; line-height:1.65}
 
-    .articleFig{
-      border-radius:var(--radius);
-      overflow:hidden;
-      border:1px solid var(--border);
-      margin:28px 0;
-      box-shadow:var(--shadow);
-    }
-    .articleFig figcaption{
-      padding:11px 16px;
-      font-size:13px;
-      color:var(--muted);
-      background:var(--soft);
-      border-top:1px solid var(--border);
-      line-height:1.5;
-    }
-
+   .articleFig{
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid var(--border);
+  margin:28px 0;
+  box-shadow:var(--shadow);
+  background:#fff;
+}
+    .splintFig{
+  margin:28px 0;
+  text-align:center;
+}
+.splintFig img{
+  width:100%;
+  max-width:450px;
+  height:auto;
+  margin:0 auto;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  background:#fff;
+}
+.splintFig figcaption{
+  margin-top:10px;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.5;
+}
+.articleFig img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+.articleFig figcaption{
+  padding:11px 16px;
+  font-size:13px;
+  color:var(--muted);
+  background:var(--soft);
+  border-top:1px solid var(--border);
+  line-height:1.5;
+}
     .redFlag{
       background:var(--warnBg);
       border:1px solid rgba(220,38,38,.22);
@@ -968,11 +1028,11 @@
   {
     "@context":"https://schema.org",
     "@type":"BlogPosting",
-    "@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-repetitive-use-chennai.html#BlogPosting",
+    "@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html#BlogPosting",
     "headline":"Thumb and Wrist Pain from Repetitive Use in Chennai",
     "description":"Thumb base pain while lifting a baby, riding a two wheeler, or using tools is often De Quervain tendon inflammation. Step by step conservative care guide by Dr Sumesh Subramanian in Thirumullaivoyal, Chennai.",
     "image":"https://www.myorthocure.com/assets/thumb-side-wrist-pain-two-wheeler-rider-chennai.jpg",
-    "url":"https://www.myorthocure.com/blog/thumb-wrist-pain-repetitive-use-chennai.html",
+    "url":"https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html",
     "datePublished":"2026-03-04",
     "dateModified":"2026-03-04",
     "inLanguage":"en-IN",
@@ -1000,7 +1060,7 @@
     },
     "mainEntityOfPage":{
       "@type":"WebPage",
-      "@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-repetitive-use-chennai.html"
+      "@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html"
     },
     "articleSection":["Hand and Wrist Pain","Overuse Injuries","Conservative Care"],
     "keywords":["thumb pain","wrist pain","De Quervain","mommy thumb","two wheeler thumb pain","Thirumullaivoyal","Ambattur","Avadi","Annanur","tenosynovitis Chennai"],
@@ -1131,7 +1191,7 @@
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://www.myorthocure.com/"},
       {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.myorthocure.com/blog.html"},
-      {"@type":"ListItem","position":3,"name":"Thumb and Wrist Pain","item":"https://www.myorthocure.com/blog/thumb-wrist-pain-repetitive-use-chennai.html"}
+      {"@type":"ListItem","position":3,"name":"Thumb and Wrist Pain","item":"https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html"}
     ]
   }
   </script>
@@ -1160,12 +1220,12 @@
   {
     "@context":"https://schema.org",
     "@type":"WebPage",
-    "@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-repetitive-use-chennai.html",
+    "@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html",
     "name":"Thumb and Wrist Pain from Repetitive Use in Chennai",
-    "url":"https://www.myorthocure.com/blog/thumb-wrist-pain-repetitive-use-chennai.html",
+    "url":"https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html",
     "inLanguage":"en-IN",
     "isPartOf":{"@type":"WebSite","url":"https://www.myorthocure.com"},
-    "mainEntity":{"@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-repetitive-use-chennai.html#BlogPosting"},
+    "mainEntity":{"@id":"https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html#BlogPosting"},
     "hasPart":[
       {"@type":"WebPageElement","cssSelector":"#what-it-is","name":"What De Quervain is and why it happens"},
       {"@type":"WebPageElement","cssSelector":"#local-triggers","name":"Common triggers in daily life"},
@@ -1238,9 +1298,10 @@
 
     <figure class="heroFig">
       <img src="/assets/thumb-side-wrist-pain-two-wheeler-rider-chennai.jpg"
-           alt="Two wheeler rider holding thumb in pain due to De Quervain's tendon inflammation caused by repetitive grip while riding a bike"
-           width="957" height="1011" loading="eager" />
-      <figcaption>
+     alt="Two wheeler rider holding the thumb side of the wrist in pain due to De Quervain tenosynovitis from repetitive grip while riding"
+     width="957" height="1011"
+     loading="eager"
+     decoding="async" />      <figcaption>
         Thumb side wrist pain can occur in two wheeler riders due to repeated grip on the handlebar. In Thirumullaivoyal, Ambattur, and Avadi, repetitive gripping during work and commuting is a common trigger.
       </figcaption>
     </figure>
@@ -1309,10 +1370,11 @@
         </div>
 
         <figure class="articleFig">
-          <img src="/assets/finkelstein-test-de-quervains-wrist-pain.jpg"
-               alt="Finkelstein test demonstration used to diagnose De Quervain tendon inflammation at the wrist"
-               width="1050" height="506" loading="lazy" />
-          <figcaption>
+         <img src="/assets/finkelstein-test-de-quervains-wrist-pain.jpg"
+     alt="Finkelstein test demonstration used to clinically diagnose De Quervain tenosynovitis at the thumb side of the wrist"
+     width="1050" height="506"
+     loading="lazy"
+     decoding="async" />          <figcaption>
             The Finkelstein test helps confirm De Quervain clinically in most cases and is often sufficient without MRI.
           </figcaption>
         </figure>
@@ -1376,11 +1438,12 @@
 <p>
           Many patients benefit from wearing a thumb spica splint, which immobilizes the thumb and reduces tendon irritation.
         </p>
-        <figure style="text-align:center;">
-<img src="/assets/thumb-spica-splint-de-quervains-treatment.jpg"
-alt="Thumb spica splint used to treat De Quervain's tendon inflammation"
-style="max-width:450px; width:100%; height:auto;">
-<figcaption>Thumb spica splints help rest the tendons involved in De Quervain’s tenosynovitis.</figcaption>
+       <figure class="splintFig">
+  <img src="/assets/thumb-spica-splint-de-quervains-treatment.jpg"
+       alt="Thumb spica splint used to treat De Quervain's tendon inflammation"
+       width="450" height="450"
+       loading="lazy" />
+  <figcaption>Thumb spica splints help rest the tendons involved in De Quervain’s tenosynovitis.</figcaption>
 </figure>
          
 
@@ -1458,27 +1521,27 @@ style="max-width:450px; width:100%; height:auto;">
         <h2 id="faq">Frequently asked questions</h2>
         <div class="faqList">
           <details class="faqItem">
-            <summary class="faqQ">Is thumb base pain always arthritis <span class="faqIcon" aria-hidden="true">A</span></summary>
+            <summary class="faqQ">Is thumb base pain always arthritis? <span class="faqIcon" aria-hidden="true">A</span></summary>
             <div class="faqA">No. Tendon overuse is a very common cause, especially with repetitive gripping and lifting. A clinical examination often tells the difference quickly.</div>
           </details>
 
           <details class="faqItem">
-            <summary class="faqQ">Do I need MRI for thumb and wrist pain <span class="faqIcon" aria-hidden="true">A</span></summary>
+            <summary class="faqQ">Do I need MRI for thumb and wrist pain? <span class="faqIcon" aria-hidden="true">A</span></summary>
             <div class="faqA">Usually no. Clinical tests and examination are often enough. MRI is reserved for unclear diagnosis, suspected fracture, or persistent symptoms despite adequate conservative care.</div>
           </details>
 
           <details class="faqItem">
-            <summary class="faqQ">How long does it take to improve <span class="faqIcon" aria-hidden="true">A</span></summary>
+            <summary class="faqQ">How long does it take to improve? <span class="faqIcon" aria-hidden="true">A</span></summary>
             <div class="faqA">Many patients improve within two to six weeks with splinting, activity modification, and guided exercises. Recovery is faster when the trigger is controlled early.</div>
           </details>
 
           <details class="faqItem">
-            <summary class="faqQ">What is mommy thumb <span class="faqIcon" aria-hidden="true">A</span></summary>
+            <summary class="faqQ">What is mommy thumb? <span class="faqIcon" aria-hidden="true">A</span></summary>
             <div class="faqA">It is a common name for De Quervain tenosynovitis in new mothers due to repetitive infant lifting with an extended thumb. The same condition affects riders and manual workers too.</div>
           </details>
 
           <details class="faqItem">
-            <summary class="faqQ">Is surgery common for De Quervain <span class="faqIcon" aria-hidden="true">A</span></summary>
+            <summary class="faqQ">Is surgery common for De Quervain? <span class="faqIcon" aria-hidden="true">A</span></summary>
             <div class="faqA">No. Surgery is considered only when conservative care, including splinting, exercises, and sometimes injection, has genuinely not worked over an adequate period.</div>
           </details>
         </div>
