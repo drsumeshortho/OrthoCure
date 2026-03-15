@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Twisted Ankle or Ankle Sprain: What To Do After a Fall in Thirumullaivoyal or Ambattur | OrthoCure Bone and Joint Speciality Clinic</title>
+  <title>Twisted Ankle or Ankle Sprain: What To Do After a Fall in Thirumullaivoyal or Ambattur | OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal</title>
 
-  <meta name="description" content="Twisted your ankle while playing cricket, badminton, or missing a step? Learn what is injured, when you may need an X ray, and the step by step recovery plan. By Dr Sumesh Subramanian at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, serving Ambattur, Avadi, and Annanur." />
+  <meta name="description" content="Twisted your ankle while playing cricket, badminton, or missing a step? Learn what is injured, when you need an X ray, and the step by step recovery plan. By Dr Sumesh Subramanian at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, serving Ambattur, Avadi, and Annanur." />
   <meta name="author" content="Dr Sumesh Subramanian MS Ortho" />
   <meta name="robots" content="max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <meta name="theme-color" content="#142a46" />
@@ -65,7 +65,7 @@
     }
 
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    html{scroll-behavior:smooth; overflow-x:hidden;}
     body{
       margin:0;
       font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -74,6 +74,8 @@
       line-height:1.72;
       font-size:16px;
       -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+      max-width:100vw;
     }
     a{color:var(--accent); text-decoration:none}
     a:hover{text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px}
@@ -83,16 +85,17 @@
       background:var(--accent);
       color:#fff;
       text-align:center;
-      padding:9px 18px;
+      padding:9px 16px;
       font-size:13px;
       font-weight:600;
       letter-spacing:.2px;
+      width:100%;
     }
     .announcBar a{color:#fff; text-decoration:underline}
 
     .siteNav{
       background:var(--navy);
-      padding:0 24px;
+      padding:0 16px;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -101,6 +104,7 @@
       top:0;
       z-index:900;
       box-shadow:0 2px 8px rgba(0,0,0,.18);
+      width:100%;
     }
     .navBrand{font-family:Sora,system-ui,sans-serif;font-weight:800;font-size:15px;color:#fff;letter-spacing:-0.3px;text-decoration:none;}
     .navBrand span{color:var(--accent)}
@@ -112,7 +116,7 @@
     @media(max-width:680px){.navLinks .navLink:not(.navCta){display:none}}
     @media(max-width:480px){.stickyBar{padding:8px 12px;gap:8px;}.stickyBar a{font-size:13px;padding:10px 8px;}}
 
-    .pageWrap{max-width:var(--max);margin:0 auto;padding:0 24px 120px;}
+    .pageWrap{max-width:var(--max);margin:0 auto;padding:0 16px 120px;width:100%;overflow-x:hidden;}
 
     .crumbs{display:flex;align-items:center;gap:6px;padding:18px 0 0;font-size:13px;color:var(--muted2);flex-wrap:wrap;}
     .crumbs a{color:var(--muted);font-weight:500}
@@ -135,7 +139,8 @@
     .heroFig img{width:100%;height:auto;}
     .heroFig figcaption{background:var(--soft);padding:12px 18px;font-size:13px;color:var(--muted);border-top:1px solid var(--border);line-height:1.5;}
 
-    .articleLayout{display:grid;grid-template-columns:minmax(0,720px) 280px;gap:48px;align-items:start;}
+    .articleLayout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;align-items:start;}
+    .articleLayout > *{min-width:0;}
     @media(max-width:900px){.articleLayout{grid-template-columns:1fr;gap:32px}.sidebar{order:-1}}
 
     .sidebar{display:flex;flex-direction:column;gap:20px;align-self:start;}
@@ -181,7 +186,7 @@
     .calloutLabel{font-family:Sora,system-ui,sans-serif;font-weight:900;color:var(--accent);font-size:13px;letter-spacing:.3px;text-transform:uppercase;margin:0 0 6px;}
     .callout p{margin:0;font-size:15px;line-height:1.65}
 
-    .triggerGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:20px 0 32px;}
+    .triggerGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:16px;margin:20px 0 32px;}
     .triggerCard{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);transition:box-shadow .2s,transform .2s;}
     .triggerCard:hover{box-shadow:var(--shadowMd);transform:translateY(-2px)}
     .triggerCardIcon{width:40px;height:40px;background:var(--accentLight);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;margin:0 0 12px;color:var(--accent);font-weight:900;}
@@ -210,7 +215,7 @@
 
     .peaceBox{background:var(--soft);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin:20px 0 28px;}
     .peaceBoxHead{background:var(--navyMid);color:#fff;padding:14px 20px;font-family:Sora,system-ui,sans-serif;font-size:14px;font-weight:900;letter-spacing:.4px;}
-    .peaceGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));}
+    .peaceGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));}
     @media(max-width:600px){.peaceGrid{grid-template-columns:1fr 1fr;}}
     @media(max-width:360px){.peaceGrid{grid-template-columns:1fr;}}
     .peaceCell{padding:14px 18px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);}
@@ -253,6 +258,7 @@
     .examItem strong{color:var(--navy);font-weight:900}
 
     .ctaStrip{background:var(--navy);border-radius:var(--radius);padding:28px;margin:40px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+    @media(max-width:520px){.ctaStrip{padding:20px 16px;}.ctaStripBtns{width:100%;}.btnPrimary,.btnOutline{width:100%;text-align:center;}}
     .ctaStripText strong{font-family:Sora,system-ui,sans-serif;font-size:18px;color:#fff;display:block;margin:0 0 4px;font-weight:900;}
     .ctaStripText p{color:rgba(255,255,255,.78);font-size:14px;margin:0}
     .ctaStripBtns{display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0}
@@ -276,7 +282,7 @@
     details.faqItem[open] .faqChevron svg path{stroke:#fff;}
     .faqA{padding:14px 20px 16px;font-size:15px;color:var(--muted);line-height:1.65;border-top:1px solid var(--border);background:var(--soft);}
 
-    .relatedGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:20px 0 32px;}
+    .relatedGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:14px;margin:20px 0 32px;}
     .relatedCard{background:var(--bg);border:1px solid var(--border);border-radius:var(--radiusSm);padding:16px;box-shadow:var(--shadow);transition:box-shadow .2s,transform .2s;text-decoration:none;display:block;}
     .relatedCard:hover{box-shadow:var(--shadowMd);transform:translateY(-2px);text-decoration:none}
     .relatedTag{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;color:var(--accent);margin:0 0 6px;}
@@ -284,7 +290,7 @@
 
     .topicHub{background:var(--soft);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:var(--radius);padding:20px 22px;margin:32px 0;}
     .topicHub strong{font-family:Sora,system-ui,sans-serif;font-size:13px;font-weight:900;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;display:block;margin:0 0 12px;}
-    .topicHub ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px 20px;list-style:none;padding:0;margin:0;}
+    .topicHub ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));gap:6px 20px;list-style:none;padding:0;margin:0;}
     .topicHub li a{font-size:13.5px;color:var(--navy);font-weight:700;display:flex;align-items:center;gap:6px;padding:4px 0;}
     .topicHub li a::before{content:'→';color:var(--accent);font-size:12px}
     .topicHub li a:hover{color:var(--accent);text-decoration:none}
@@ -311,6 +317,16 @@
 
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
     .mt0{margin-top:0 !important}
+    @media(max-width:480px){
+      .articleHero h1{font-size:clamp(24px,7vw,38px);}
+      .articleDek{font-size:16px;}
+      .factStrip{padding:18px 16px;}
+      .callout{padding:14px 16px;}
+      .checkPanel{padding:16px 14px;}
+      .relatedGrid{grid-template-columns:1fr;}
+      .gradeTable{min-width:0;font-size:13px;}
+      .gradeTable th,.gradeTable td{padding:8px 10px;}
+    }
 
     .readProgress{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--accent);z-index:9999;transition:width .1s linear;border-radius:0 2px 2px 0;}
   </style>
@@ -522,7 +538,7 @@
       <div class="categoryBadge"><span class="badgeDot" aria-hidden="true"></span> Ankle and Foot Care</div>
       <h1>Twisted Ankle or Ankle Sprain: What To Do After a Fall in Thirumullaivoyal or Ambattur</h1>
       <p class="articleDek">
-        Whether it happened while landing from a badminton jump, turning your ankle on the cricket field, stepping off an uneven road edge, or missing a step on the staircase at home, a twisted ankle is one of the most common injuries we see. Here is a clear guide on what is injured, whether you may need an X ray, and how to recover properly.
+        Whether it happened while landing from a badminton jump, turning your ankle on the cricket field, stepping off an uneven road edge, or missing a step on the staircase at home, a twisted ankle is one of the most common injuries we see. Here is a clear guide on what is injured, whether you need an X ray, and how to recover properly.
       </p>
       <div class="bylineRow">
         <div class="bylineAvatar" aria-hidden="true">SS</div>
