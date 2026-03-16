@@ -48,7 +48,6 @@
       --muted2:#64748b;
       --bg:#ffffff;
       --soft:#f8fafc;
-      --soft2:#f1f5f9;
       --border:#e2e8f0;
       --warn:#dc2626;
       --warnBg:#fef2f2;
@@ -151,10 +150,6 @@
       color:#fff;
       text-decoration:none;
     }
-    .navLink.active{
-      background:rgba(255,255,255,.14);
-      color:#fff;
-    }
     .navCta{
       background:var(--accent);
       color:#fff !important;
@@ -170,7 +165,7 @@
     }
 
     @media(max-width:900px){
-      .navLinks .navLink:not(.navCta):not(.active){display:none}
+      .navLinks .navLink:not(.navCta){display:none}
     }
 
     .pageWrap{
@@ -752,6 +747,47 @@
       line-height:1.65;
     }
 
+    .medicalReview,
+    .treatmentPrinciples,
+    .serviceArea{
+      margin-top:40px;
+      padding:26px;
+      background:var(--soft);
+      border:1px solid var(--border);
+      border-radius:12px;
+    }
+
+    .treatmentPrinciples{
+      border-left:5px solid var(--accent);
+      background:#f3f7ff;
+    }
+
+    .serviceArea{
+      border-left:5px solid var(--navyMid);
+      background:#f9fbff;
+    }
+
+    .medicalReview ul,
+    .treatmentPrinciples ul,
+    .serviceArea ul{
+      margin:0 0 16px 20px;
+      padding:0;
+      color:var(--ink);
+    }
+
+    .medicalReview li,
+    .treatmentPrinciples li,
+    .serviceArea li{
+      margin:0 0 10px;
+      line-height:1.7;
+    }
+
+    .lastReviewed{
+      margin-top:14px;
+      font-size:14px;
+      color:var(--muted);
+    }
+
     .faqList{
       list-style:none;
       padding:0;
@@ -844,13 +880,6 @@
       line-height:1.45;
       margin:0;
     }
-    .serviceArea{
-margin-top:40px;
-padding:25px;
-background:#f9fbff;
-border-left:5px solid #142a46;
-border-radius:8px;
-}
 
     .ctaStrip{
       background:var(--navy);
@@ -917,12 +946,6 @@ border-radius:8px;
       border-color:#fff;
       text-decoration:none;
     }
-    .relatedCare{
-margin-top:40px;
-padding:25px;
-background:#f7f9fc;
-border-radius:8px;
-}
 
     .hoursStrip{
       display:flex;
@@ -1053,14 +1076,6 @@ border-radius:8px;
       white-space:nowrap;
       border:0;
     }
-
-.treatmentPrinciples {
-background:#f3f7ff;
-border-left:5px solid #ff5c5c;
-padding:30px;
-border-radius:8px;
-margin-top:40px;
-}
   </style>
 
   <script type="application/ld+json">
@@ -1208,7 +1223,7 @@ margin-top:40px;
     <div class="navLinks">
       <a class="navLink" href="/">Home</a>
       <a class="navLink" href="/about.html">About</a>
-      <a class="navLink active" href="/services/index.html">Services</a>
+      <a class="navLink" href="/services/index.html">Services</a>
       <a class="navLink" href="/consult.html">Consult</a>
       <a class="navLink" href="/services/fracture-care.html">Fracture Care</a>
       <a class="navLink" href="/blog.html">Blog</a>
@@ -1276,40 +1291,36 @@ margin-top:40px;
     <figure class="heroFig">
       <img
         src="/assets/dr-sumesh-clinical-approach-thirumullaivoyal.jpg"
-        alt="Dr Sumesh Subramanian orthopaedic surgeon at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai"
-width="1920"
-height="1080"
-loading="eager"
+        alt="Dr Sumesh Subramanian orthopaedic surgeon explaining treatment at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal Chennai"
+        width="1920"
+        height="1080"
+        loading="eager"
         decoding="async"
       />
-<meta itemprop="author" content="Dr Sumesh Subramanian">
-<meta itemprop="copyrightHolder" content="OrthoCure Bone and Joint Speciality Clinic">
-<meta itemprop="contentLocation" content="Thirumullaivoyal Chennai India">
-      
       <figcaption>
-Dr Sumesh Subramanian, Orthopaedic Surgeon at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai.
-</figcaption>
+        Dr Sumesh Subramanian, Orthopaedic Surgeon at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai.
+      </figcaption>
     </figure>
 
     <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "ImageObject",
- "contentUrl": "https://www.myorthocure.com/assets/dr-sumesh-clinical-approach-thirumullaivoyal.jpg",
- "name": "Dr Sumesh Subramanian Orthopaedic Surgeon",
- "description": "Dr Sumesh Subramanian consulting patients at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai",
- "creator": {
-   "@type": "Person",
-   "name": "Dr Sumesh Subramanian",
-   "jobTitle": "Orthopaedic Surgeon"
- },
- "copyrightHolder": {
-   "@type": "MedicalClinic",
-   "name": "OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal"
- }
-}
-</script>
-    
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "contentUrl": "https://www.myorthocure.com/assets/dr-sumesh-clinical-approach-thirumullaivoyal.jpg",
+      "name": "Dr Sumesh Subramanian Orthopaedic Surgeon",
+      "description": "Dr Sumesh Subramanian at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai",
+      "creator": {
+        "@type": "Person",
+        "name": "Dr Sumesh Subramanian",
+        "jobTitle": "Orthopaedic Surgeon"
+      },
+      "copyrightHolder": {
+        "@type": "MedicalClinic",
+        "name": "OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal"
+      }
+    }
+    </script>
+
     <div class="pageLayout" id="top">
       <main class="pageBody" id="mainContent">
         <div class="factStrip">
@@ -1447,32 +1458,54 @@ Dr Sumesh Subramanian, Orthopaedic Surgeon at OrthoCure Bone and Joint Specialit
         </p>
 
         <section class="medicalReview">
-<h2>Medical Expertise Behind This Page</h2>
-
-<p>
-This page reflects the clinical experience and treatment philosophy of
-<strong>Dr Sumesh Subramanian, MS Orthopaedics</strong>, an orthopaedic surgeon practicing at
-<strong>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai</strong>.
-</p>
-
-<p>
-Dr Sumesh focuses on clear diagnosis, patient education, and evidence based treatment.
-Whenever possible, treatment begins with conservative approaches such as medication,
-physiotherapy, and activity modification before considering surgical options.
-</p>
-
-<p>
-Patients visiting the clinic come from Thirumullaivoyal, Ambattur, Avadi, Annanur and
-nearby North Chennai areas for consultation on joint pain, fractures, sports injuries
-and other musculoskeletal conditions.
-</p>
-
-</section>
+          <h2>Medical Expertise Behind This Page</h2>
+          <p>
+            This page reflects the clinical experience and treatment philosophy of <strong>Dr Sumesh Subramanian, MS Orthopaedics</strong>, an orthopaedic surgeon practicing at <strong>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai</strong>.
+          </p>
+          <p>
+            Dr Sumesh focuses on clear diagnosis, patient education, and evidence based treatment. Whenever possible, treatment begins with conservative approaches such as medication, physiotherapy, and activity modification before considering surgical options.
+          </p>
+          <p>
+            Patients visiting the clinic come from Thirumullaivoyal, Ambattur, Avadi, Annanur, and nearby North Chennai areas for consultation on joint pain, fractures, sports injuries, and other musculoskeletal conditions.
+          </p>
+        </section>
 
         <p class="lastReviewed">
-Last medically reviewed by Dr Sumesh Subramanian – Orthopaedic Surgeon, 
-OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai.
-</p>
+          Last medically reviewed on 16 March 2026 by Dr Sumesh Subramanian, Orthopaedic Surgeon, OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai.
+        </p>
+
+        <section class="treatmentPrinciples">
+          <h2>Our Treatment Philosophy</h2>
+          <p>
+            At OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, orthopaedic care is guided by a clear set of clinical principles followed by Dr Sumesh Subramanian.
+          </p>
+          <ul>
+            <li><strong>Accurate diagnosis first.</strong> Careful clinical examination and appropriate imaging help identify the true source of pain or injury.</li>
+            <li><strong>Conservative treatment whenever possible.</strong> Many orthopaedic conditions improve with medication, physiotherapy, and lifestyle modification before surgery becomes necessary.</li>
+            <li><strong>Clear patient education.</strong> Patients are encouraged to understand their condition and treatment options so they can make confident decisions about their care.</li>
+            <li><strong>Surgery only when clearly beneficial.</strong> Operative treatment is recommended only when it is likely to significantly improve function, reduce pain, or prevent long term complications.</li>
+            <li><strong>Focus on long term joint health.</strong> Treatment plans aim not only to relieve symptoms but also to preserve mobility and musculoskeletal health over time.</li>
+          </ul>
+          <p>
+            Patients from Thirumullaivoyal, Ambattur, Avadi, Annanur, and surrounding North Chennai areas visit OrthoCure Bone and Joint Speciality Clinic for personalised orthopaedic consultation and treatment.
+          </p>
+        </section>
+
+        <section class="serviceArea">
+          <h2>Orthopaedic Care for Patients Across North Chennai</h2>
+          <p>
+            OrthoCure Bone and Joint Speciality Clinic in Thirumullaivoyal serves patients from several nearby neighbourhoods in North Chennai. Dr Sumesh Subramanian provides consultation for joint pain, fractures, sports injuries, and other musculoskeletal conditions for patients travelling from surrounding areas.
+          </p>
+          <ul>
+            <li><strong>Ambattur:</strong> Patients from Ambattur frequently visit for knee pain, back pain, and fracture care.</li>
+            <li><strong>Avadi:</strong> Many patients from Avadi consult Dr Sumesh for orthopaedic injuries, sports related problems, and joint pain.</li>
+            <li><strong>Annanur:</strong> The clinic is easily accessible for residents of Annanur seeking orthopaedic evaluation and treatment.</li>
+            <li><strong>Thirumullaivoyal:</strong> Local residents benefit from quick access to orthopaedic consultation close to home.</li>
+          </ul>
+          <p>
+            This convenient location makes OrthoCure Bone and Joint Speciality Clinic a trusted orthopaedic centre for patients across Thirumullaivoyal and nearby North Chennai communities.
+          </p>
+        </section>
 
         <h2 id="faq">Frequently asked questions</h2>
         <div class="faqList">
@@ -1504,120 +1537,27 @@ OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Chennai.
 
         <h2 id="related">Related pages</h2>
         <div class="relatedGrid">
+          <a class="relatedCard" href="/services/fracture-care.html">
+            <div class="relatedTag">Service</div>
+            <h4>Fracture care and trauma management</h4>
+          </a>
+          <a class="relatedCard" href="/services/knee-arthritis.html">
+            <div class="relatedTag">Service</div>
+            <h4>Knee arthritis evaluation and treatment</h4>
+          </a>
+          <a class="relatedCard" href="/services/spine-neck-pain-thirumullaivoyal.html">
+            <div class="relatedTag">Service</div>
+            <h4>Spine and neck pain treatment</h4>
+          </a>
           <a class="relatedCard" href="/services/physiotherapy-thirumullaivoyal.html">
             <div class="relatedTag">Service</div>
             <h4>Physiotherapy in Thirumullaivoyal</h4>
           </a>
-          <a class="relatedCard" href="/services/digital-xray-thirumullaivoyal.html">
-            <div class="relatedTag">Service</div>
-            <h4>Digital X ray in Thirumullaivoyal</h4>
-          </a>
-          <a class="relatedCard" href="/blog/ankle-sprain-twisted-ankle-thirumullaivoyal.html">
-            <div class="relatedTag">Blog</div>
-            <h4>Twisted ankle or ankle sprain guide</h4>
-          </a>
-          <a class="relatedCard" href="/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html">
-            <div class="relatedTag">Blog</div>
-            <h4>Thumb and wrist pain from repetitive use</h4>
-          </a>
         </div>
-
-        <section class="treatmentPrinciples">
-
-<h2>Our Treatment Philosophy</h2>
-
-<p>
-At OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, orthopaedic care is guided by a clear set of clinical principles followed by Dr Sumesh Subramanian.
-</p>
-
-<ul>
-
-<li>
-<strong>Accurate diagnosis first.</strong>
-Careful clinical examination and appropriate imaging help identify the true source of pain or injury.
-</li>
-
-<li>
-<strong>Conservative treatment whenever possible.</strong>
-Many orthopaedic conditions improve with medication, physiotherapy, and lifestyle modification before surgery becomes necessary.
-</li>
-
-<li>
-<strong>Clear patient education.</strong>
-Patients are encouraged to understand their condition and treatment options so they can make confident decisions about their care.
-</li>
-
-<li>
-<strong>Surgery only when clearly beneficial.</strong>
-Operative treatment is recommended only when it is likely to significantly improve function, reduce pain, or prevent long term complications.
-</li>
-
-<li>
-<strong>Focus on long term joint health.</strong>
-Treatment plans aim not only to relieve symptoms but also to preserve mobility and musculoskeletal health over time.
-</li>
-
-</ul>
-
-<p>
-Patients from Thirumullaivoyal, Ambattur, Avadi, Annanur and surrounding North Chennai areas visit OrthoCure Bone and Joint Speciality Clinic for personalised orthopaedic consultation and treatment.
-</p>
-
-</section>
-        <section class="serviceArea">
-
-<h2>Orthopaedic Care for Patients Across North Chennai</h2>
-
-<p>
-OrthoCure Bone and Joint Speciality Clinic in Thirumullaivoyal serves patients from several nearby neighbourhoods in North Chennai. 
-Dr Sumesh Subramanian provides consultation for joint pain, fractures, sports injuries and other musculoskeletal conditions for patients travelling from surrounding areas.
-</p>
-
-<ul>
-
-<li><strong>Ambattur:</strong> Patients from Ambattur frequently visit for knee pain, back pain and fracture care.</li>
-
-<li><strong>Avadi:</strong> Many patients from Avadi consult Dr Sumesh for orthopaedic injuries, sports related problems and joint pain.</li>
-
-<li><strong>Annanur:</strong> The clinic is easily accessible for residents of Annanur seeking orthopaedic evaluation and treatment.</li>
-
-<li><strong>Thirumullaivoyal:</strong> Local residents benefit from quick access to orthopaedic consultation close to home.</li>
-
-</ul>
-
-<p>
-This convenient location makes OrthoCure Bone and Joint Speciality Clinic a trusted orthopaedic centre for patients across Thirumullaivoyal and nearby North Chennai communities.
-</p>
-
-</section>
-
-        <section class="relatedCare">
-
-<h2>Orthopaedic Conditions We Treat</h2>
-
-<p>
-At OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Dr Sumesh Subramanian provides diagnosis and treatment for a wide range of bone, joint and musculoskeletal conditions.
-</p>
-
-<ul>
-
-<li><a href="/services/fracture-care.html">Fracture care and trauma management</a></li>
-
-<li><a href="/services/knee-pain.html">Knee pain evaluation and treatment</a></li>
-
-<li><a href="/services/back-pain.html">Back pain and spine related conditions</a></li>
-
-<li><a href="/services/sports-injury.html">Sports injuries and ligament problems</a></li>
-
-<li><a href="/services/arthritis-treatment.html">Arthritis and joint degeneration</a></li>
-
-</ul>
-
-</section>
 
         <div class="ctaStrip">
           <div class="ctaStripText">
-            <strong>Want a clear, step by step orthopaedic opinion?</strong>
+            <strong>Need a clear orthopaedic opinion about your joint or injury?</strong>
             <p>Dr Sumesh Subramanian consults at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal for patients from Thirumullaivoyal, Ambattur, Avadi, Annanur, and nearby areas.</p>
           </div>
           <div class="ctaStripBtns">
@@ -1672,8 +1612,8 @@ At OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Dr Sumesh Subra
           <ul>
             <li><a href="/about.html">About</a></li>
             <li><a href="/services/index.html">Services</a></li>
+            <li><a href="/consult.html">Consult</a></li>
             <li><a href="/blog.html">Blog archive</a></li>
-            <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy</a></li>
             <li><a href="/services/digital-xray-thirumullaivoyal.html">Digital X ray</a></li>
             <li><a href="#top">Back to top</a></li>
           </ul>
@@ -1744,34 +1684,35 @@ At OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal, Dr Sumesh Subra
       updateToc();
     })();
   </script>
-    <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Physician",
- "name": "Dr Sumesh Subramanian",
- "medicalSpecialty": "Orthopaedics",
- "jobTitle": "Orthopaedic Surgeon",
- "worksFor": {
-   "@type": "MedicalClinic",
-   "name": "OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal"
- },
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "No. 2, 2nd Street, Santhipuram",
-   "addressLocality": "Thirumullaivoyal",
-   "addressRegion": "Tamil Nadu",
-   "postalCode": "600062",
-   "addressCountry": "IN"
- },
- "areaServed": [
- "Thirumullaivoyal",
- "Ambattur",
- "Avadi",
- "Annanur",
- "North Chennai"
- ],
- "url": "https://www.myorthocure.com/clinical-approach.html"
-}
-</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr Sumesh Subramanian",
+    "medicalSpecialty": "Orthopaedics",
+    "jobTitle": "Orthopaedic Surgeon",
+    "worksFor": {
+      "@type": "MedicalClinic",
+      "name": "OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 2, 2nd Street, Santhipuram",
+      "addressLocality": "Thirumullaivoyal",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600062",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      "Thirumullaivoyal",
+      "Ambattur",
+      "Avadi",
+      "Annanur",
+      "North Chennai"
+    ],
+    "url": "https://www.myorthocure.com/clinical-approach.html"
+  }
+  </script>
 </body>
 </html>
