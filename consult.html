@@ -302,20 +302,20 @@
       margin: 0 auto;
       padding: 28px 24px 60px;
       display: grid;
-      grid-template-columns: minmax(0, 1.02fr) minmax(360px, 440px);
+      grid-template-columns: minmax(360px, 440px) minmax(0, 1.02fr);
       gap: 28px;
       align-items: start;
     }
 
     .left-col {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
+      position: sticky;
+      top: 76px;
     }
 
     .right-col {
-      position: sticky;
-      top: 76px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
     }
 
     .panel {
@@ -857,9 +857,8 @@
       .page {
         grid-template-columns: 1fr;
       }
-      .right-col {
+      .left-col {
         position: static;
-        order: -1;
       }
     }
 
@@ -907,7 +906,6 @@
   </style>
 
   <script>
-    /* submission flow preserved */
     function showModal() {
       document.getElementById("successModal").style.display = "flex";
       setTimeout(() => {
@@ -986,75 +984,7 @@
   </section>
 
   <main class="page">
-    <section class="left-col" aria-label="Consultation information">
-      <div class="mini-grid">
-        <article class="path-card primary">
-          <div class="path-icon">🏥</div>
-          <div class="path-body">
-            <h2 class="path-title">In Clinic Consultation</h2>
-            <p class="path-desc">Hands on examination, report review, and a clear treatment plan.</p>
-          </div>
-          <span class="path-badge badge-teal">Recommended</span>
-        </article>
-
-        <article class="path-card secondary">
-          <div class="path-icon">📋</div>
-          <div class="path-body">
-            <h2 class="path-title">Second Opinion &amp; Report Review</h2>
-            <p class="path-desc">Bring your X ray, MRI, or prior advice for a clearer orthopaedic opinion.</p>
-          </div>
-          <span class="path-badge badge-navy">Available</span>
-        </article>
-
-        <article class="path-card tertiary">
-          <div class="path-icon">📞</div>
-          <div class="path-body">
-            <h2 class="path-title">Callback / Online Guidance</h2>
-            <p class="path-desc">Best for follow up questions, report clarification, or when an in person visit is not immediately possible.</p>
-          </div>
-          <span class="path-badge badge-muted">Limited</span>
-        </article>
-      </div>
-
-      <div class="panel hours-strip">
-        <p class="eyebrow">Clinic timings</p>
-        <div class="hours-list">
-          <div class="hours-row">
-            <span class="hours-day">Monday to Saturday</span>
-            <span class="hours-time">5 PM – 9 PM · In Clinic</span>
-          </div>
-          <div class="hours-row">
-            <span class="hours-day">Sunday</span>
-            <span class="hours-time">11 AM – 1 PM · In Clinic</span>
-          </div>
-          <div class="hours-row">
-            <span class="hours-day">Daytime</span>
-            <span class="hours-time">Callback / online review when feasible</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="urgent-card">
-        <div class="urgent-head">
-          <span class="urgent-icon">⚠️</span>
-          <h2>Fresh injury or severe pain? Call first.</h2>
-        </div>
-        <p>If there is severe pain after a fall, visible deformity, rapid swelling, inability to bear weight, or an open wound, please call immediately. Basic emergency assessment or X rays may still be needed first, but further orthopaedic review and coordination can then be guided appropriately.</p>
-        <div class="signal-tags" aria-label="Urgent orthopaedic warning signs">
-          <span class="signal-tag">Severe pain after injury</span>
-          <span class="signal-tag">Visible deformity</span>
-          <span class="signal-tag">Rapid swelling</span>
-          <span class="signal-tag">Unable to bear weight</span>
-          <span class="signal-tag">Open wound</span>
-        </div>
-        <div class="urgent-actions">
-          <a href="tel:+919342700212" class="btn btn-call">📞 Call Dr Sumesh Now</a>
-          <a href="https://wa.me/919342700212" target="_blank" rel="noopener" class="btn btn-wa">💬 WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <aside class="right-col" aria-label="Appointment form">
+    <aside class="left-col" aria-label="Appointment form">
       <div class="form-card">
         <div class="form-top">
           <h2>Request an Appointment</h2>
@@ -1063,7 +993,7 @@
 
         <form
           class="consult-form"
-          action="https://script.google.com/macros/s/AKfycbw3ZK2D8fVuOaqr0lb-d_Sggf82k6k26JZLoQMuewTE1ZpCUoIiyQev1QwNqJnEL00/exec"
+          action="https://script.google.com/macros/s/AKfycbxzZ64J3TUM32j-Un7hf1PTeTf4lnc3PCAO65KQjpmXLPm_5YPhUdvR6Aoabzp6XG0/exec"
           method="POST"
           target="hiddenFrame"
           onsubmit="showModal()"
@@ -1180,6 +1110,74 @@
         <iframe name="hiddenFrame" style="display:none;"></iframe>
       </div>
     </aside>
+
+    <section class="right-col" aria-label="Consultation information">
+      <div class="mini-grid">
+        <article class="path-card primary">
+          <div class="path-icon">🏥</div>
+          <div class="path-body">
+            <h2 class="path-title">In Clinic Consultation</h2>
+            <p class="path-desc">Hands on examination, report review, and a clear treatment plan.</p>
+          </div>
+          <span class="path-badge badge-teal">Recommended</span>
+        </article>
+
+        <article class="path-card secondary">
+          <div class="path-icon">📋</div>
+          <div class="path-body">
+            <h2 class="path-title">Second Opinion &amp; Report Review</h2>
+            <p class="path-desc">Bring your X ray, MRI, or prior advice for a clearer orthopaedic opinion.</p>
+          </div>
+          <span class="path-badge badge-navy">Available</span>
+        </article>
+
+        <article class="path-card tertiary">
+          <div class="path-icon">📞</div>
+          <div class="path-body">
+            <h2 class="path-title">Callback / Online Guidance</h2>
+            <p class="path-desc">Best for follow up questions, report clarification, or when an in person visit is not immediately possible.</p>
+          </div>
+          <span class="path-badge badge-muted">Limited</span>
+        </article>
+      </div>
+
+      <div class="panel hours-strip">
+        <p class="eyebrow">Clinic timings</p>
+        <div class="hours-list">
+          <div class="hours-row">
+            <span class="hours-day">Monday to Saturday</span>
+            <span class="hours-time">5 PM – 9 PM · In Clinic</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Sunday</span>
+            <span class="hours-time">11 AM – 1 PM · In Clinic</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Daytime</span>
+            <span class="hours-time">Callback / online review when feasible</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="urgent-card">
+        <div class="urgent-head">
+          <span class="urgent-icon">⚠️</span>
+          <h2>Fresh injury or severe pain? Call first.</h2>
+        </div>
+        <p>If there is severe pain after a fall, visible deformity, rapid swelling, inability to bear weight, or an open wound, please call immediately. Basic emergency assessment or X rays may still be needed first, but further orthopaedic review and coordination can then be guided appropriately.</p>
+        <div class="signal-tags" aria-label="Urgent orthopaedic warning signs">
+          <span class="signal-tag">Severe pain after injury</span>
+          <span class="signal-tag">Visible deformity</span>
+          <span class="signal-tag">Rapid swelling</span>
+          <span class="signal-tag">Unable to bear weight</span>
+          <span class="signal-tag">Open wound</span>
+        </div>
+        <div class="urgent-actions">
+          <a href="tel:+919342700212" class="btn btn-call">📞 Call Dr Sumesh Now</a>
+          <a href="https://wa.me/919342700212" target="_blank" rel="noopener" class="btn btn-wa">💬 WhatsApp</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <section class="trust-strip" aria-label="Trust information">
