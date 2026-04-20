@@ -2,78 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://www.myorthocure.com/</loc></url>
-  <url><loc>https://www.myorthocure.com/about.html</loc></url>
-  <url><loc>https://www.myorthocure.com/consult.html</loc></url>
-  <url><loc>https://www.myorthocure.com/contact.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog.html</loc></url>
-  <url><loc>https://www.myorthocure.com/clinical-approach.html</loc></url>
-  <url><loc>https://www.myorthocure.com/second-opinion.html</loc></url>
-  
+  <url>
+    <loc>https://www.myorthocure.com/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-  <!-- Services index -->
-  <url><loc>https://www.myorthocure.com/services/index.html</loc></url>
+  <url>
+    <loc>https://www.myorthocure.com/blog.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-  <!-- New generation service detail pages -->
-  <url><loc>https://www.myorthocure.com/services/fracture-care.html</loc></url>
-  <url><loc>https://www.myorthocure.com/services/frozen-shoulder-treatment-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/services/knee-arthritis.html</loc></url>
-  <url><loc>https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/services/total-knee-replacement-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/services/digital-xray-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/services/prp-treatment.html</loc></url>
-    <url><loc>https://www.myorthocure.com/services/sports-injury-treatment-thirumullaivoyal.html</loc></url>
+  <url>
+    <loc>https://www.myorthocure.com/about.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-  <!-- Location focused service pages already present -->
+  <url>
+    <loc>https://www.myorthocure.com/contact.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
+  <url>
+    <loc>https://www.myorthocure.com/consult.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
+  <url>
+    <loc>https://www.myorthocure.com/second-opinion.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
+  <url>
+    <loc>https://www.myorthocure.com/clinical-approach.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-  <!-- Blog posts: arthritis, fracture care, knee, spine, lifestyle etc -->
-    <url><loc>https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/heel-pain-plantar-fasciitis-thirumullaivoyal.html</loc></url>
-    <url><loc>https://www.myorthocure.com/blog/bikers-back-pain-chennai.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/knee-pain-climbing-stairs-sit-to-stand-chennai.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/gym-injuries-joint-damage-thirumullaivoyal.html</loc></url>
+  <!-- Services -->
+  <url>
+    <loc>https://www.myorthocure.com/services/index.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-  <!-- Arthritis / bone health focussed -->
-  <url><loc>https://www.myorthocure.com/blog/frozen-shoulder-adhesive-capsulitis-chennai.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/stress-fractures-foot-pain-chennai.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/early-arthritis-signs.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/bone-health-after-50-chennai.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/walkingwitharthritis.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/elderly-joint-pain-mistakes.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/knee-damaging-habits.html</loc></url>
+  <url><loc>https://www.myorthocure.com/services/fracture-care.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/frozen-shoulder-treatment-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/knee-arthritis.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/total-knee-replacement-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/spine-neck-pain-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/digital-xray-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/prp-treatment.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.myorthocure.com/services/sports-injury-treatment-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
-  <!-- Injury, first aid, fracture related -->
-  <url><loc>https://www.myorthocure.com/blog/ankle-sprain-twisted-ankle-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/peace-love-injury.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/fall-prevention-after-60.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/schoolbag-safety.html</loc></url>
-
-
-  <!-- Spine and sciatica cluster -->
-  <url><loc>https://www.myorthocure.com/blog/leg-pain-sciatica-thirumullaivoyal.html</loc></url>
-
-  <!-- Shoulder, neck, pillow, sleep cluster -->
-  <url><loc>https://www.myorthocure.com/blog/pillow-neck-pain.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/shoulder-pain-sleeping-position.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/sleep-and-joint-healing-orthocure-thirumullaivoyal.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/techneck.html</loc></url>
-
-  <!-- Lifestyle and prevention: footwear, sunlight, golden milk etc -->
-  <url><loc>https://www.myorthocure.com/blog/footwear-standing-long-hours.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/footwear-vs-knees.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/sunlight-vitamin-d-chennai.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/golden-milk.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/monsoon-joint-pain.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/bone-health-tips.html</loc></url>
-  <url><loc>https://www.myorthocure.com/blog/choosing-ortho-clinic-chennai.html</loc></url>
-
-  <!-- Popular explainer posts -->
-  <url><loc>https://www.myorthocure.com/blog/cracking-knuckles.html</loc></url>
+  <!-- Blog posts -->
+  <url><loc>https://www.myorthocure.com/blog/gym-injuries-joint-damage-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/thumb-wrist-pain-de-quervains-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/heel-pain-plantar-fasciitis-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/bikers-back-pain-chennai.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/knee-pain-climbing-stairs-sit-to-stand-chennai.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/frozen-shoulder-adhesive-capsulitis-chennai.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/stress-fractures-foot-pain-chennai.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/early-arthritis-signs.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/bone-health-after-50-chennai.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/walkingwitharthritis.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/elderly-joint-pain-mistakes.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/knee-damaging-habits.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/ankle-sprain-twisted-ankle-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/peace-love-injury.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/fall-prevention-after-60.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/schoolbag-safety.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/leg-pain-sciatica-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/pillow-neck-pain.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/shoulder-pain-sleeping-position.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/sleep-and-joint-healing-orthocure-thirumullaivoyal.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/techneck.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/footwear-standing-long-hours.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/footwear-vs-knees.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/sunlight-vitamin-d-chennai.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/golden-milk.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/monsoon-joint-pain.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/bone-health-tips.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/choosing-ortho-clinic-chennai.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.myorthocure.com/blog/cracking-knuckles.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
 </urlset>
-
-
