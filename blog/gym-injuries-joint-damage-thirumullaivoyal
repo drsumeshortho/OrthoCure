@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#142a46" />
+
+  <title>Gym Injuries: 5 Mistakes That Damage Your Joints | Dr Sumesh Subramanian, OrthoCure Thirumullaivoyal</title>
+  <meta name="description" content="Most gym injuries develop gradually from ego lifting, poor form, and insufficient recovery. Dr Sumesh Subramanian explains the five habits that damage joints and what to do early — without surgery." />
+  <link rel="canonical" href="https://www.myorthocure.com/blog/gym-injuries-joint-damage-thirumullaivoyal.html" />
+
+  <meta property="og:title" content="Gym Injuries: 5 Mistakes That Damage Your Joints" />
+  <meta property="og:description" content="Most gym injuries are preventable. Dr Sumesh Subramanian explains the common mistakes and how to protect your joints." />
+  <meta property="og:type" content="article" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Gym Injuries: 5 Mistakes That Damage Your Joints",
+    "author": {
+      "@type": "Person",
+      "name": "Dr Sumesh Subramanian",
+      "jobTitle": "Orthopaedic Surgeon",
+      "affiliation": {
+        "@type": "MedicalClinic",
+        "name": "OrthoCure Bone and Joint Speciality Clinic",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Thirumullaivoyal",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600062",
+          "addressCountry": "IN"
+        }
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OrthoCure Bone and Joint Speciality Clinic",
+      "url": "https://www.myorthocure.com"
+    },
+    "dateModified": "2026-04-16",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.myorthocure.com/blog/gym-injuries-joint-damage-thirumullaivoyal.html"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do gym injuries happen even without a major accident?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most gym injuries develop gradually due to repeated stress on joints from poor form, excessive weight, and lack of recovery rather than a single incident."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which joints are most commonly affected in gym workouts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The shoulder, knee, and lower back are most commonly affected because they bear significant load during exercises like squats, presses, and deadlifts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can gym injuries be treated without surgery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Most early gym-related injuries can be managed with activity modification, physiotherapy, and technique correction without the need for surgery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I see a doctor for gym-related pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If pain persists for more than a few days, worsens with activity, or limits movement, consult an orthopaedic surgeon for proper evaluation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #142a46;
+      --navyMid: #1e3a5f;
+      --accent: #0d9488;
+      --accentLight: #f0fdfa;
+      --warn: #dc2626;
+      --warnBg: #fef2f2;
+      --ink: #0e1520;
+      --muted: #5b6777;
+      --muted2: #8a95a3;
+      --bg: #ffffff;
+      --soft: #f5f7fb;
+      --border: #e2e6ef;
+      --max: 1100px;
+      --radius: 14px;
+      --radiusSm: 8px;
+      --shadow: 0 2px 12px rgba(20,42,70,.08);
+      --shadowMd: 0 4px 24px rgba(20,42,70,.13);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.72;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    img { display: block; max-width: 100%; height: auto; }
+
+    /* Announce bar */
+    .announcBar {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 9px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+    .announcBar a { color: #fff; text-decoration: underline; }
+
+    /* Nav */
+    .siteNav {
+      background: var(--navy);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      box-shadow: 0 2px 8px rgba(0,0,0,.18);
+    }
+    .navBrand {
+      font-family: Sora, system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      color: #fff;
+      letter-spacing: -0.3px;
+      text-decoration: none;
+    }
+    .navBrand span { color: var(--accent); }
+    .navLinks { display: flex; gap: 6px; align-items: center; }
+    .navLink {
+      color: rgba(255,255,255,.78);
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background .15s, color .15s;
+    }
+    .navLink:hover { background: rgba(255,255,255,.1); color: #fff; text-decoration: none; }
+    .navCta {
+      background: var(--accent);
+      color: #fff !important;
+      border-radius: 999px;
+      padding: 8px 18px !important;
+      font-weight: 700;
+      font-size: 13.5px;
+    }
+    .navCta:hover { opacity: .88; text-decoration: none; }
+    @media (max-width: 680px) {
+      .navLinks .navLink:not(.navCta) { display: none; }
+    }
+
+    /* Page wrap */
+    .pageWrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px 120px;
+    }
+
+    /* Breadcrumb */
+    .crumbs {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 18px 0 0;
+      font-size: 13px;
+      color: var(--muted2);
+      flex-wrap: wrap;
+    }
+    .crumbs a { color: var(--muted); font-weight: 500; }
+    .crumbs a:hover { color: var(--accent); text-decoration: none; }
+    .crumbSep { color: var(--border); font-size: 16px; }
+
+    /* Hero */
+    .articleHero { padding: 36px 0 0; }
+    .categoryBadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accentLight);
+      color: var(--accent);
+      border: 1px solid rgba(13,148,136,.2);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .badgeDot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+    .articleHero h1 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: clamp(28px, 4.5vw, 46px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.8px;
+      color: var(--navy);
+      max-width: 860px;
+      margin: 0 0 18px;
+    }
+    .articleDek {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 720px;
+      line-height: 1.65;
+      margin: 0 0 20px;
+    }
+
+    /* Byline */
+    .bylineRow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+    .bylineAvatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Sora, system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    .bylineMeta { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+    .bylineMeta strong { color: var(--navy); font-weight: 700; display: block; }
+    .bylineDivider { width: 1px; height: 32px; background: var(--border); }
+    .bylineTag {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      background: var(--soft);
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+
+    /* Key takeaways */
+    .keyTakes {
+      background: var(--accentLight);
+      border: 1px solid rgba(13,148,136,.2);
+      border-radius: var(--radius);
+      padding: 22px 26px;
+      margin: 0 0 36px;
+    }
+    .keyTakes h2 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      color: var(--accent);
+      margin: 0 0 14px;
+    }
+    .keyTakes ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .keyTakes li {
+      font-size: 14.5px;
+      color: var(--ink);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.55;
+    }
+    .keyTakes li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    /* Layout: article + sidebar */
+    .articleLayout {
+      display: grid;
+      grid-template-columns: minmax(0, 720px) 280px;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .articleLayout { grid-template-columns: 1fr; gap: 32px; }
+      .sidebar { order: -1; }
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-self: start;
+    }
+    @media (min-width: 901px) {
+      .sidebar { position: sticky; top: 86px; }
+    }
+
+    /* TOC card */
+    .tocCard {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .tocCardHead {
+      background: var(--navy);
+      color: #fff;
+      padding: 14px 18px;
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+    .tocList {
+      padding: 10px 0;
+      list-style: none;
+      counter-reset: toc;
+      margin: 0;
+    }
+    .tocList li { counter-increment: toc; }
+    .tocList a {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 9px 18px;
+      font-size: 13.5px;
+      color: var(--muted);
+      font-weight: 600;
+      transition: background .12s, color .12s;
+      text-decoration: none;
+    }
+    .tocList a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    .tocList a:hover { background: var(--soft); color: var(--navy); text-decoration: none; }
+
+    /* Sidebar CTA card */
+    .sideCtaCard {
+      background: var(--navy);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      color: #fff;
+    }
+    .sideCtaCard h3 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 8px;
+    }
+    .sideCtaCard p {
+      font-size: 13px;
+      color: rgba(255,255,255,.75);
+      margin: 0 0 16px;
+      line-height: 1.55;
+    }
+    .sideCtaCard .hours {
+      font-size: 12px;
+      color: rgba(255,255,255,.55);
+      margin: 12px 0 0;
+      line-height: 1.6;
+    }
+    .ctaBtn {
+      display: block;
+      text-align: center;
+      padding: 11px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 13.5px;
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: opacity .14s;
+    }
+    .ctaBtn:hover { opacity: .88; text-decoration: none; }
+    .ctaBtn.wa { background: var(--accent); color: #fff; }
+    .ctaBtn.ph { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.25); }
+
+    /* Prose */
+    .prose h2 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: clamp(20px, 2.5vw, 26px);
+      font-weight: 800;
+      color: var(--navy);
+      margin: 48px 0 16px;
+      letter-spacing: -0.4px;
+      padding-top: 8px;
+      border-top: 2px solid var(--border);
+    }
+    .prose h2:first-child { margin-top: 0; border-top: none; }
+    .prose h3 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 32px 0 10px;
+    }
+    .prose p { margin: 0 0 18px; }
+    .prose ul, .prose ol {
+      padding-left: 22px;
+      margin: 0 0 18px;
+    }
+    .prose li { margin-bottom: 7px; }
+    .prose a { font-weight: 600; }
+
+    /* Mistake numbered blocks */
+    .mistakeNum {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radiusSm);
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+    .mistakeNumBadge {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--accent);
+      font-family: Sora, system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mistakeBody h3 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 15.5px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0 0 7px;
+    }
+    .mistakeBody p {
+      font-size: 15px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    /* Joint sections */
+    .jointBlock {
+      border: 1px solid var(--border);
+      border-radius: var(--radiusSm);
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      background: var(--bg);
+      box-shadow: var(--shadow);
+    }
+    .jointBlock h3 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .jointLabel {
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: var(--accent);
+      background: var(--accentLight);
+      border-radius: 4px;
+      padding: 3px 8px;
+    }
+
+    /* Doctor note */
+    .doctorNote {
+      background: var(--soft);
+      border-radius: var(--radiusSm);
+      padding: 18px 20px;
+      margin: 24px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .noteIcon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Sora, system-ui, sans-serif;
+    }
+    .noteBody {
+      font-size: 14.5px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .noteBody strong { color: var(--navy); display: block; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+
+    /* Warning box */
+    .warnBox {
+      background: var(--warnBg);
+      border: 1px solid rgba(220,38,38,.2);
+      border-left: 4px solid var(--warn);
+      border-radius: var(--radiusSm);
+      padding: 18px 20px;
+      margin: 24px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .warnIcon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--warn);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .warnBody { font-size: 14.5px; color: #7f1d1d; line-height: 1.65; }
+    .warnBody strong { display: block; color: var(--warn); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 8px; }
+    .warnBody ul { padding-left: 18px; margin: 8px 0 0; }
+    .warnBody li { margin-bottom: 5px; }
+
+    /* Step plan */
+    .stepPlan { display: flex; flex-direction: column; gap: 14px; margin: 20px 0; }
+    .stepItem {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radiusSm);
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+    }
+    .stepNum {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-family: Sora, system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .stepBody h3 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0 0 6px;
+    }
+    .stepBody p { font-size: 14.5px; color: var(--muted); margin: 0; line-height: 1.6; }
+
+    /* Inline CTA */
+    .inlineCta {
+      background: var(--navy);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      margin: 36px 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .inlineCta .ctaText { flex: 1; min-width: 200px; }
+    .inlineCta h3 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 6px;
+    }
+    .inlineCta p { font-size: 13.5px; color: rgba(255,255,255,.7); margin: 0; line-height: 1.5; }
+    .inlineCta .ctaActions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .inlineCta .ctaBtn { display: inline-block; margin-bottom: 0; min-width: 140px; }
+
+    /* FAQ */
+    .faqList { margin: 20px 0; }
+    details.faqItem {
+      border: 1px solid var(--border);
+      border-radius: var(--radiusSm);
+      margin: 0 0 10px;
+      overflow: hidden;
+      background: var(--bg);
+    }
+    summary.faqQ {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 20px;
+      cursor: pointer;
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+    summary.faqQ::-webkit-details-marker { display: none; }
+    .faqIcon {
+      width: 24px;
+      height: 24px;
+      background: var(--accentLight);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .faqA {
+      padding: 14px 20px 16px;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.65;
+      border-top: 1px solid var(--border);
+      background: var(--soft);
+    }
+
+    /* Related cards */
+    .relatedGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin: 20px 0 32px;
+    }
+    .relatedCard {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radiusSm);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      transition: box-shadow .2s, transform .2s;
+      text-decoration: none;
+      display: block;
+    }
+    .relatedCard:hover { box-shadow: var(--shadowMd); transform: translateY(-2px); text-decoration: none; }
+    .relatedTag { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .5px; color: var(--accent); margin: 0 0 6px; }
+    .relatedCard h4 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* Topic hub */
+    .topicHub {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin: 32px 0;
+    }
+    .topicHub strong {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      display: block;
+      margin: 0 0 12px;
+    }
+    .topicHub ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 6px 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .topicHub li a {
+      font-size: 13.5px;
+      color: var(--navy);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 0;
+    }
+    .topicHub li a::before { content: '→'; color: var(--accent); font-size: 12px; }
+    .topicHub li a:hover { color: var(--accent); text-decoration: none; }
+
+    /* Footer */
+    .pageFooter {
+      margin-top: 48px;
+      padding: 32px 0 0;
+      border-top: 2px solid var(--border);
+    }
+    .footerInner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 0 0 24px;
+    }
+    @media (max-width: 600px) {
+      .footerInner { grid-template-columns: 1fr; }
+    }
+    .footerBrand {
+      font-family: Sora, system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 15px;
+      color: var(--navy);
+      margin: 0 0 6px;
+    }
+    .footerBrand span { color: var(--accent); }
+    .footerTagline { font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+    .footerContact { font-size: 14px; color: var(--muted); margin: 0; }
+    .footerContact a { color: var(--accent); font-weight: 900; }
+    .footerLinks h5 {
+      font-family: Sora, system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+    .footerLinks ul { list-style: none; padding: 0; margin: 0; }
+    .footerLinks li { margin: 0 0 7px; }
+    .footerLinks a { font-size: 13.5px; color: var(--muted); font-weight: 700; }
+    .footerLinks a:hover { color: var(--accent); }
+    .footerBottom {
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      font-size: 12.5px;
+      color: var(--muted2);
+      line-height: 1.6;
+    }
+
+    /* Sticky bar */
+    .stickyBar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--navy);
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 16px;
+      z-index: 999;
+      box-shadow: 0 -3px 16px rgba(0,0,0,.2);
+    }
+    .stickyBar a {
+      flex: 1;
+      max-width: 220px;
+      text-align: center;
+      padding: 11px 10px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,.35);
+      transition: opacity .14s;
+    }
+    .stickyBar a:hover { opacity: .88; text-decoration: none; }
+    .stickyBar a.wa { background: var(--accent); border-color: var(--accent); }
+
+    @media (max-width: 480px) {
+      .stickyBar { padding: 8px 12px; gap: 8px; }
+      .stickyBar a { font-size: 13px; padding: 10px 8px; }
+    }
+
+    /* Figures */
+    .heroFig {
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 0 0 40px;
+      box-shadow: var(--shadowMd);
+      border: 1px solid var(--border);
+      position: relative;
+      background: var(--soft);
+    }
+    .heroFig img { width: 100%; height: auto; }
+    .heroFig figcaption {
+      background: var(--soft);
+      padding: 12px 18px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      line-height: 1.5;
+    }
+    .articleFig {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      margin: 28px 0;
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+    .articleFig img { width: 100%; height: auto; }
+    .articleFig figcaption {
+      padding: 11px 16px;
+      font-size: 13px;
+      color: var(--muted);
+      background: var(--soft);
+      border-top: 1px solid var(--border);
+      line-height: 1.5;
+    }
+    @media (max-width: 680px) {
+      .heroFig figcaption, .articleFig figcaption { font-size: 12.5px; padding: 10px 14px; }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Announce bar -->
+  <div class="announcBar">
+    Conservative orthopaedic care in Thirumullaivoyal. 
+    <a href="https://wa.me/919342700212">WhatsApp 93427 00212</a> or 
+    <a href="tel:+919342700212">call 93427 00212</a>
+  </div>
+
+  <!-- Nav -->
+  <nav class="siteNav">
+    <a href="https://www.myorthocure.com/" class="navBrand">Ortho<span>Cure</span></a>
+    <div class="navLinks">
+      <a href="https://www.myorthocure.com/blog.html" class="navLink">Blog</a>
+      <a href="https://www.myorthocure.com/services/physiotherapy-thirumullaivoyal.html" class="navLink">Physiotherapy</a>
+      <a href="https://www.myorthocure.com/second-opinion.html" class="navLink">Second Opinion</a>
+      <a href="https://wa.me/919342700212" class="navLink navCta">Book appointment</a>
+    </div>
+  </nav>
+
+  <div class="pageWrap">
+
+    <!-- Breadcrumb -->
+    <nav class="crumbs" aria-label="breadcrumb">
+      <a href="https://www.myorthocure.com/">Home</a>
+      <span class="crumbSep">›</span>
+      <a href="https://www.myorthocure.com/blog.html">Blog</a>
+      <span class="crumbSep">›</span>
+      <span>Gym injuries and joint damage</span>
+    </nav>
+
+    <!-- Hero -->
+    <header class="articleHero">
+      <div class="categoryBadge"><span class="badgeDot"></span> Sports &amp; Exercise Injuries</div>
+      <h1>Gym Injuries: 5 Mistakes That Damage Your Joints</h1>
+      <p class="articleDek">Most gym injuries do not happen from a single bad session. They build quietly over weeks through poor habits. The shoulder, knee, and lower back are most commonly affected — and most cases improve without surgery when addressed early.</p>
+
+      <div class="bylineRow">
+        <div class="bylineAvatar">SS</div>
+        <div class="bylineMeta">
+          <strong>Dr Sumesh Subramanian</strong>
+          Orthopaedic Surgeon, Thirumullaivoyal, Chennai
+        </div>
+        <div class="bylineDivider"></div>
+        <span class="bylineTag">Updated April 2026</span>
+        <span class="bylineTag">About 7 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero image -->
+    <figure class="heroFig">
+      <img
+        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80&fit=crop"
+        alt="Gym injury from poor lifting form causing knee and shoulder pain — orthopaedic guidance by Dr Sumesh Subramanian, OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal Chennai"
+        width="1200"
+        height="630"
+        loading="eager"
+      />
+      <figcaption>
+        Most gym injuries develop through repeated sessions of poor form and excessive load — not a single incident. In Thirumullaivoyal, Ambattur, Avadi, Annanur, and Iyyapakkam, young adults returning to gym training without structured guidance are among the most commonly affected.
+        <br><em>Note: Replace with an OrthoCure clinic photo or a locally relevant gym image before publishing.</em>
+      </figcaption>
+    </figure>
+
+    <!-- Key takeaways -->
+    <div class="keyTakes">
+      <h2>Key takeaways</h2>
+      <ul>
+        <li>Most gym injuries develop gradually from repeated overloading, not a single incident.</li>
+        <li>The shoulder, knee, and lower back are most commonly affected during common gym exercises.</li>
+        <li>Ego lifting, poor form under fatigue, and ignoring early pain are the most preventable causes.</li>
+        <li>Most early gym-related injuries improve with conservative care — activity modification, physiotherapy, and technique correction.</li>
+        <li>Surgery is uncommon and considered only when conservative care has genuinely failed.</li>
+        <li>OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal serves Ambattur, Avadi, Annanur, and nearby areas.</li>
+      </ul>
+    </div>
+
+    <!-- Two-column layout -->
+    <div class="articleLayout">
+
+      <!-- Main content -->
+      <main class="prose">
+
+        <h2 id="what-makes-gym-injuries-different">What makes gym injuries different from other pain</h2>
+        <p>
+          A road accident produces a clear injury with a clear moment. Gym injuries are more complicated. The joint is loaded repeatedly — squats, presses, deadlifts, rows — and over time, if load exceeds the body's capacity to recover, breakdown begins quietly. The pain is not sudden. It is cumulative.
+        </p>
+        <p>
+          This is why early symptoms get dismissed. The session ends, the ache fades, training resumes. The cycle continues until the tissue has less reserve, pain starts earlier, and recovery takes longer. By the time someone comes in for evaluation, the problem that started months ago has layered into something more persistent.
+        </p>
+
+        <div class="doctorNote">
+          <div class="noteIcon">i</div>
+          <div class="noteBody">
+            <strong>Doctor note</strong>
+            Persistent discomfort during or after training is not a normal part of building strength. Muscle soreness over the following days is expected. Joint pain during a movement, or pain that worsens week by week, is a signal worth taking seriously.
+          </div>
+        </div>
+
+        <h2 id="five-mistakes">5 habits that silently damage your joints</h2>
+
+        <div class="mistakeNum">
+          <div class="mistakeNumBadge">1</div>
+          <div class="mistakeBody">
+            <h3>Ego lifting</h3>
+            <p>Loading more weight than the body is prepared to handle is the most common pattern. Muscles fatigue under excessive load, and compensatory stress shifts to the joints — the knees during squats, the lower back during deadlifts, the shoulder during pressing movements. Strength builds in weeks. Joint damage recovers in months. That mismatch is the problem.</p>
+          </div>
+        </div>
+
+        <div class="mistakeNum">
+          <div class="mistakeNumBadge">2</div>
+          <div class="mistakeBody">
+            <h3>Poor form under fatigue</h3>
+            <p>Form breaks down when the body is tired. A rounded lower back in the last sets of a deadlift, knees collapsing inward during a squat, shoulder blade losing control during a press — these are common. Each repetition with compromised mechanics places abnormal load on a specific joint surface. Repeated hundreds of times across a training cycle, this accumulates significantly.</p>
+          </div>
+        </div>
+
+        <div class="mistakeNum">
+          <div class="mistakeNumBadge">3</div>
+          <div class="mistakeBody">
+            <h3>Ignoring early pain signals</h3>
+            <p>Pain that appears consistently during one movement, or that is still present 48 hours after training, is not something to train through. Early symptoms are often the body's first signal before the problem becomes structural. Ignoring them routinely delays the point at which the injury is still easy to manage.</p>
+          </div>
+        </div>
+
+        <div class="mistakeNum">
+          <div class="mistakeNumBadge">4</div>
+          <div class="mistakeBody">
+            <h3>Insufficient recovery between sessions</h3>
+            <p>Tendons and cartilage adapt far more slowly than muscle. A programme that increases volume quickly without adequate rest does not give connective tissue time to remodel and strengthen. This is how overuse injuries develop — not from one session, but from repeated loading without sufficient recovery between cycles.</p>
+          </div>
+        </div>
+
+        <div class="mistakeNum">
+          <div class="mistakeNumBadge">5</div>
+          <div class="mistakeBody">
+            <h3>Rapid progression without structured guidance</h3>
+            <p>Starting gym training without a structured plan, or rapidly increasing load based on what others are doing rather than what the body can currently handle, is a common pattern. Beginners are particularly vulnerable in the first three to six months, when enthusiasm often outpaces tissue readiness.</p>
+          </div>
+        </div>
+
+        <figure class="articleFig">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80&fit=crop"
+            alt="Person holding lower back in pain after a gym workout in Chennai — illustrating cumulative joint stress from poor training habits treated at OrthoCure Thirumullaivoyal"
+            width="900"
+            height="500"
+            loading="lazy"
+          />
+          <figcaption>
+            Pain that appears consistently after specific gym movements — not just general soreness — is the body's early signal that load is exceeding recovery capacity. Early assessment prevents the problem from becoming structural.
+            <br><em>Note: Replace with an OrthoCure or locally relevant image before publishing.</em>
+          </figcaption>
+        </figure>
+
+        <h2 id="joints-affected">Which joints are most commonly affected</h2>
+
+        <div class="jointBlock">
+          <h3><span class="jointLabel">Shoulder</span></h3>
+          <p>The rotator cuff — four muscles and tendons that stabilise the shoulder — is under significant stress during overhead pressing, lateral raises, and pull movements. Poor scapular control, tight shoulders, or progressing too quickly in pressing volume can lead to rotator cuff irritation or partial tears. These typically present as pain during shoulder-height or overhead movements, and are sometimes felt at night.</p>
+          <p>If you are already experiencing shoulder pain with movement or at rest: <a href="/blog/frozen-shoulder-adhesive-capsulitis-chennai.html">Shoulder pain and stiffness — understanding frozen shoulder</a>.</p>
+        </div>
+
+        <div class="jointBlock">
+          <h3><span class="jointLabel">Knee</span></h3>
+          <p>Squats, leg press, and lunges done with excessive load, poor depth control, or inward knee collapse put abnormal stress on the kneecap joint and the menisci. Knee pain that appears hours after a session, or is worst when climbing stairs or standing from a low seat, is a common gym-related presentation.</p>
+          <p>For more on this pattern: <a href="/blog/knee-pain-climbing-stairs-sit-to-stand-chennai.html">Knee pain on stairs and chair rise — what it means and what helps</a>.</p>
+        </div>
+
+        <div class="jointBlock">
+          <h3><span class="jointLabel">Lower back</span></h3>
+          <p>Repeated deadlifts or rows with a flexed lumbar spine — especially under fatigue — place significant compressive forces on the intervertebral discs and facet joints. Lower back tightness after sessions that progressively takes longer to settle is an early warning sign worth addressing before it develops into a disc problem.</p>
+          <p>For lower back pain related to repetitive activity and commuting: <a href="/blog/bikers-back-pain-chennai.html">The biker's back — muscle spasm or disc issue?</a></p>
+
+        <div class="doctorNote">
+          <div class="noteIcon">i</div>
+          <div class="noteBody">
+            <strong>Doctor note</strong>
+            The location of pain does not always identify the source. Knee pain during squats can be driven by hip weakness rather than a knee problem. Lower back pain during deadlifts can reflect hamstring tightness or poor hip hinge mechanics. A proper assessment identifies where the loading problem originates, not only where it is felt.
+          </div>
+        </div>
+
+        <h2 id="red-flags">Warning signs that need evaluation</h2>
+        <p>Not every gym-related pain requires immediate review. But the following signs should prompt a clinical assessment rather than continued training:</p>
+
+        <div class="warnBox">
+          <div class="warnIcon">!</div>
+          <div class="warnBody">
+            <strong>Seek a clinical review if you have</strong>
+            <ul>
+              <li>Pain that persists beyond 3 to 5 days after training and does not settle</li>
+              <li>Swelling in or around a joint after sessions</li>
+              <li>A sensation of instability, giving way, or locking</li>
+              <li>Pain that now affects daily activities, not only gym sessions</li>
+              <li>Night pain in the shoulder, knee, or hip that disrupts sleep</li>
+              <li>A sudden sharp pain or pop during a session with rapid swelling after</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>A sudden pop with rapid swelling and loss of function — particularly in the knee — needs urgent review and should not be dismissed as a simple sprain.</p>
+
+        <h2 id="early-management">What can be done early</h2>
+        <p>Most gym-related joint problems, when identified before structural damage has occurred, can be managed without surgery. The key is addressing both the symptom and the underlying loading cause. If pain has started after a recent session, the <a href="/blog/peace-love-injury.html">PEACE and LOVE protocol</a> explains what to do in the first days after a soft tissue injury.</p>
+
+        <div class="stepPlan">
+          <div class="stepItem">
+            <div class="stepNum">1</div>
+            <div class="stepBody">
+              <h3>Reduce load, but stay active</h3>
+              <p>Complete rest is rarely the right answer. Reduce the specific movements causing stress while maintaining overall conditioning. A rotator cuff irritation does not mean stopping all training — it means modifying pressing movements while the problem settles.</p>
+            </div>
+          </div>
+          <div class="stepItem">
+            <div class="stepNum">2</div>
+            <div class="stepBody">
+              <h3>Correct the technique</h3>
+              <p>Understanding why the injury developed is essential to preventing recurrence. This often means reviewing form on the specific exercises causing the problem, addressing muscle imbalances, and rebuilding the movement pattern with appropriate load.</p>
+            </div>
+          </div>
+          <div class="stepItem">
+            <div class="stepNum">3</div>
+            <div class="stepBody">
+              <h3>Guided physiotherapy</h3>
+              <p>Specific strengthening of the muscles supporting the affected joint, movement correction, and progressive return to training is the most reliable route back to full gym activity. <a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy at OrthoCure, Thirumullaivoyal</a>.</p>
+            </div>
+          </div>
+          <div class="stepItem">
+            <div class="stepNum">4</div>
+            <div class="stepBody">
+              <h3>Imaging when it changes the plan</h3>
+              <p>An X ray or MRI is useful when the clinical picture is unclear, when a significant acute injury has occurred, or when symptoms are not improving after structured conservative care. Most early overuse problems do not need imaging to begin management.</p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="articleFig">
+          <img
+            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=900&q=80&fit=crop"
+            alt="Physiotherapy session at OrthoCure Bone and Joint Speciality Clinic Thirumullaivoyal for gym-related joint injury rehabilitation"
+            width="900"
+            height="500"
+            loading="lazy"
+          />
+          <figcaption>
+            Guided physiotherapy — specific strengthening, technique correction, and progressive return to training — is the most reliable route back to full gym activity. At OrthoCure, the orthopaedic surgeon and physiotherapist work from the same assessment and plan.
+            <br><em>Note: Replace with an actual OrthoCure physiotherapy session photo before publishing.</em>
+          </figcaption>
+        </figure>
+
+        <div class="doctorNote">
+          <div class="noteIcon">+</div>
+          <div class="noteBody">
+            <strong>Our approach at OrthoCure</strong>
+            A scan showing cartilage irritation or a partial tendon finding does not automatically mean surgery. Many of these findings are manageable conservatively when the load problem is corrected and rehabilitation is followed through properly. We treat the person and their function, not only the scan report.
+          </div>
+        </div>
+
+        <h2 id="when-to-consult">When to consult an orthopaedic surgeon</h2>
+        <p>Consider a consultation if any of these apply:</p>
+        <ul>
+          <li>Pain that has been present for more than 2 to 3 weeks and is not improving</li>
+          <li>Swelling, locking, or instability in a joint</li>
+          <li>Night pain disrupting sleep</li>
+          <li>Pain now limiting daily activities, not only gym sessions</li>
+          <li>A sudden injury with rapid swelling or loss of function</li>
+          <li>You want a clear diagnosis and a structured plan rather than continued trial and error</li>
+        </ul>
+        <p>An examination usually clarifies the problem faster than trial and error. If surgery is not needed — the case for the majority of early gym-related injuries — you leave with a clear conservative plan. If there is a structural problem requiring further evaluation, that becomes apparent early, before delays worsen the outcome.</p>
+
+        <!-- Inline CTA -->
+        <div class="inlineCta">
+          <div class="ctaText">
+            <h3>Need evaluation for gym-related joint pain?</h3>
+            <p>Dr Sumesh Subramanian (MS Ortho) at OrthoCure Bone and Joint Speciality Clinic, Thirumullaivoyal. Walk ins welcome. Evening and Sunday slots available.</p>
+          </div>
+          <div class="ctaActions">
+            <a href="https://wa.me/919342700212" class="ctaBtn wa">💬 WhatsApp</a>
+            <a href="tel:+919342700212" class="ctaBtn ph">📞 Call</a>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faqList">
+
+          <details class="faqItem">
+            <summary class="faqQ">
+              Why do gym injuries happen without a major incident?
+              <span class="faqIcon">A</span>
+            </summary>
+            <div class="faqA">Most gym injuries are cumulative overuse problems rather than acute trauma. Repeated loading with poor form, excessive weight, or insufficient recovery gradually exceeds the tissue's capacity to repair, and pain eventually becomes consistent.</div>
+          </details>
+
+          <details class="faqItem">
+            <summary class="faqQ">
+              Which joints are most commonly affected?
+              <span class="faqIcon">A</span>
+            </summary>
+            <div class="faqA">The shoulder, knee, and lower back are most frequently involved. These joints carry significant load during compound exercises and are particularly sensitive to technique errors under fatigue.</div>
+          </details>
+
+          <details class="faqItem">
+            <summary class="faqQ">
+              Can these injuries heal without surgery?
+              <span class="faqIcon">A</span>
+            </summary>
+            <div class="faqA">Yes. Most early gym-related injuries improve with conservative management — load modification, technique correction, and guided physiotherapy. Surgery is considered when conservative care has been properly followed and a specific structural problem genuinely benefits from it.</div>
+          </details>
+
+          <details class="faqItem">
+            <summary class="faqQ">
+              When should I consult a doctor?
+              <span class="faqIcon">A</span>
+            </summary>
+            <div class="faqA">If pain persists beyond a few days, worsens progressively, limits daily activity, or is accompanied by swelling or instability, a proper assessment is the most efficient next step. Continuing to train through worsening symptoms usually extends the time to recovery.</div>
+          </details>
+
+          <details class="faqItem">
+            <summary class="faqQ">
+              Is gym training safe if I already have a disc bulge or early arthritis?
+              <span class="faqIcon">A</span>
+            </summary>
+            <div class="faqA">In many cases, yes — with appropriate modification. Early arthritis and many disc findings do not prohibit training. They require adjusted load, controlled range of motion, and exercise selection that avoids provocative positions. A clinical review helps define what is safe for your specific situation.</div>
+          </details>
+
+        </div>
+
+        <!-- Related -->
+        <h2>You may also find useful</h2>
+        <div class="relatedGrid">
+          <a href="/blog/peace-love-injury.html" class="relatedCard">
+            <div class="relatedTag">Injury recovery</div>
+            <h4>PEACE and LOVE: the current approach to soft tissue injury recovery</h4>
+          </a>
+          <a href="/blog/knee-pain-climbing-stairs-sit-to-stand-chennai.html" class="relatedCard">
+            <div class="relatedTag">Knee pain</div>
+            <h4>Knee pain on stairs and chair rise: what it means and what helps</h4>
+          </a>
+          <a href="/blog/frozen-shoulder-adhesive-capsulitis-chennai.html" class="relatedCard">
+            <div class="relatedTag">Shoulder</div>
+            <h4>Frozen shoulder: night pain, stiffness, and safe recovery</h4>
+          </a>
+          <a href="/services/physiotherapy-thirumullaivoyal.html" class="relatedCard">
+            <div class="relatedTag">Service</div>
+            <h4>Physiotherapy at OrthoCure, Thirumullaivoyal</h4>
+          </a>
+        </div>
+
+        <!-- Topic hub -->
+        <div class="topicHub">
+          <strong>More from OrthoCure Thirumullaivoyal</strong>
+          <ul>
+            <li><a href="https://www.myorthocure.com/blog.html">Blog archive</a></li>
+            <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy</a></li>
+            <li><a href="/services/digital-xray-thirumullaivoyal.html">Digital X ray</a></li>
+            <li><a href="/second-opinion.html">Second opinion</a></li>
+            <li><a href="/blog/bikers-back-pain-chennai.html">Biker's back pain</a></li>
+            <li><a href="/blog/early-arthritis-signs.html">Early arthritis signs</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="pageFooter">
+          <div class="footerInner">
+            <div>
+              <p class="footerBrand">OrthoCure <span>Bone &amp; Joint</span></p>
+              <p class="footerTagline">Start Healing. Stay Moving.</p>
+              <p class="footerContact">
+                Clinic hours: Mon – Sat 5 PM to 9 PM · Sun 11 AM to 1 PM<br>
+                Evidence based bone and joint care for Thirumullaivoyal, Ambattur, Avadi, Annanur, and nearby areas.<br><br>
+                For appointments: <a href="tel:+919342700212">93427 00212</a>
+              </p>
+            </div>
+            <div class="footerLinks">
+              <h5>Quick links</h5>
+              <ul>
+                <li><a href="https://www.myorthocure.com/blog.html">Blog archive</a></li>
+                <li><a href="/services/physiotherapy-thirumullaivoyal.html">Physiotherapy</a></li>
+                <li><a href="/services/digital-xray-thirumullaivoyal.html">Digital X ray</a></li>
+                <li><a href="#top">Back to top</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footerBottom">
+            Medical disclaimer: This article is for patient education only and does not replace a clinical examination. If you have severe pain, sudden weakness, rapid swelling, or inability to bear weight, seek prompt medical evaluation.
+          </div>
+        </footer>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+
+        <div class="tocCard">
+          <div class="tocCardHead">What this guide covers</div>
+          <ol class="tocList">
+            <li><a href="#what-makes-gym-injuries-different">What makes gym injuries different</a></li>
+            <li><a href="#five-mistakes">5 habits that damage joints</a></li>
+            <li><a href="#joints-affected">Which joints are affected</a></li>
+            <li><a href="#red-flags">Warning signs</a></li>
+            <li><a href="#early-management">What can be done early</a></li>
+            <li><a href="#when-to-consult">When to consult</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ol>
+        </div>
+
+        <div class="sideCtaCard">
+          <h3>Book an appointment</h3>
+          <p>Mon to Sat 5 PM to 9 PM. Sun 11 AM to 1 PM.<br>Thirumullaivoyal 600062</p>
+          <a href="https://wa.me/919342700212" class="ctaBtn wa">💬 WhatsApp appointment</a>
+          <a href="tel:+919342700212" class="ctaBtn ph">📞 Call 93427 00212</a>
+          <p class="hours">No. 2, 2nd Street, Santhipuram, Thirumullaivoyal, Chennai 600062</p>
+        </div>
+
+      </aside>
+
+    </div><!-- end articleLayout -->
+
+  </div><!-- end pageWrap -->
+
+  <!-- Sticky bottom bar -->
+  <div class="stickyBar" aria-label="Quick contact">
+    <a href="https://wa.me/919342700212" class="wa">💬 WhatsApp appointment</a>
+    <a href="tel:+919342700212">📞 Call 93427 00212</a>
+  </div>
+
+</body>
+</html>
