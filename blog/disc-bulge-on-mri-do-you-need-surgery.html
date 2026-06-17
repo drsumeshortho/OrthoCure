@@ -81,13 +81,53 @@
   .article ul li{position:relative;padding:6px 0 6px 28px}
   .article ul li::before{content:"";position:absolute;left:4px;top:15px;width:7px;height:7px;border-radius:2px;background:var(--teal)}
 
-  .figure{margin:30px 0 8px}
-  .img-ph{position:relative;aspect-ratio:16/9;border:2px dashed #b9cbd6;border-radius:var(--radius);background:linear-gradient(135deg,#f3f7f9,#eaf1f3);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--navy-soft)}
-  .img-ph .lbl{font-family:'Sora';font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-dark);background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:999px}
-  .img-ph .desc{font-weight:500;font-size:.96rem;max-width:480px;margin-top:14px;color:var(--ink)}
-  .img-ph .fname{font-family:'Sora';font-size:.78rem;color:var(--muted);margin-top:10px}
-  .caption{font-size:.86rem;color:var(--muted);font-style:italic;margin:12px 4px 0;line-height:1.55}
+  .figure{
+  margin:40px auto;
+  text-align:center;
+}
 
+.figure img{
+  width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto;
+  border-radius:16px;
+  box-shadow:0 8px 24px rgba(20,42,70,.08);
+}
+
+/* MRI consultation image */
+.figure.hero-image img{
+  max-width:760px;
+}
+
+/* Daily activity collage */
+.figure.collage-image img{
+  max-width:760px;
+}
+
+/* Anatomy diagram */
+.figure.diagram-image img{
+  max-width:650px;
+}
+
+.caption{
+  max-width:760px;
+  margin:12px auto 0;
+  font-size:.86rem;
+  color:var(--muted);
+  font-style:italic;
+  line-height:1.55;
+}
+
+@media(max-width:768px){
+
+  .figure.hero-image img,
+  .figure.collage-image img,
+  .figure.diagram-image img{
+    max-width:100%;
+  }
+
+}
   .box{border-radius:var(--radius);padding:24px 26px;margin:30px 0;box-shadow:var(--shadow)}
   .box .h{font-family:'Sora';font-weight:700;font-size:1.02rem;margin-bottom:8px;display:flex;align-items:center;gap:9px}
   .box p{margin:8px 0}
@@ -221,7 +261,7 @@
       </ul>
     </div>
 
-    <div class="figure">
+    <div class="figure hero-image">
   <img 
     src="/assets/patient-reviewing-lumbar-spine-mri.jpg"
     alt="Patient reviewing a lumbar spine MRI during an orthopaedic consultation"
@@ -238,7 +278,7 @@
     <p>Between each pair of bones in your spine sits a disc. Think of it as a small cushion with a soft centre and a tougher outer ring. These discs absorb load every time you bend, lift a gas cylinder, sit on the floor for a meal, or ride your two-wheeler over a rough road.</p>
     <p>A <strong>disc bulge</strong> means the disc has spread slightly beyond its normal border, a little like a tyre that has softened with years of use. It is broad and gentle, not a dramatic event. This is different from a <strong>disc herniation</strong> or prolapse, where a more focal piece of the disc pushes out and can press on a nerve. Many people use the words interchangeably, but on a report they are not the same thing.</p>
 
-   <div class="figure">
+   <div class="figure diagram-image">
   <img 
     src="/assets/disc-bulge-vs-disc-herniation-comparison.jpg"
     alt="Comparison of a healthy spinal disc, disc bulge, and disc herniation showing how disc changes can affect nearby nerves"
@@ -274,7 +314,7 @@
     <p>Yes, sometimes it can, and it would be wrong to pretend otherwise. A disc bulge can contribute to back pain or stiffness, and if disc material presses on a nearby nerve it can cause pain, tingling, or numbness travelling down the leg. That leg symptom is what people often call <a href="https://www.myorthocure.com/blog/leg-pain-sciatica-thirumullaivoyal.html">sciatica</a>.</p>
     <p>But contributing to a problem and being the whole problem are two different things. Most back pain is mechanical, meaning it comes from how the back is loaded and used: posture, long hours of sitting, repeated bending, and a routine that never gives the spine a break. A familiar local example is the ache that builds up from <a href="https://www.myorthocure.com/blog/bikers-back-pain-chennai.html">long two-wheeler rides</a> through Chennai traffic. In these cases the bulge on the report is part of the background, not the villain. The honest position is that a bulge <strong>may</strong> be relevant, and the job of a careful examination is to work out whether it actually is.</p>
 
-<div class="figure">
+<div class="figure collage-image">
   <img 
     src="/assets/daily-spine-loading-activities-chennai.jpg"
     alt="Common daily activities that place stress on the lower back including two-wheeler commuting, lifting heavy loads, and prolonged floor sitting"
