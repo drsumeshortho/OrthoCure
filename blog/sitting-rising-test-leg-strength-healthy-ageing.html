@@ -6,10 +6,10 @@
   <title>Sitting Rising Test: What It Says About Leg Strength, Balance and Mobility | Dr Sumesh Subramanian</title>
 
   <meta name="description"
-        content="What does the sitting-rising test tell us about leg strength, balance and mobility? Learn how the test works, what it measures, how it differs from chair-rise tests, and when difficulty getting up deserves attention. Explained by Dr Sumesh Subramanian, Orthopaedic Surgeon.">
+        content="What does the sitting-rising test tell us about leg strength, balance and mobility? Learn how the test works, what it measures, how it differs from chair-rise tests, and when difficul[...]
 
   <meta name="keywords"
-        content="sitting rising test, sitting-rising test, sit rise test, chair rise test, leg strength test, leg strength elderly, floor sitting test, balance test elderly, functional mobility test, sit to stand test, chair stand test, elderly mobility, fall prevention, orthopaedic surgeon Thirumullaivoyal">
+        content="sitting rising test, sitting-rising test, sit rise test, chair rise test, leg strength test, leg strength elderly, floor sitting test, balance test elderly, functional mobility test, [...]
 
   <meta name="author" content="Dr Sumesh Subramanian">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -357,6 +357,50 @@
       margin-top: 30px;
     }
 
+    .rehab-pathway {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 30px 0 28px;
+    }
+
+    .rehab-step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 22px 20px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .rehab-number {
+      flex: 0 0 34px;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--light);
+      color: var(--secondary);
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .rehab-step h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+
+    .rehab-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
     @media (max-width: 680px) {
       body {
         font-size: 16px;
@@ -372,7 +416,8 @@
       }
 
       .key-points,
-      .related-grid {
+      .related-grid,
+      .rehab-pathway {
         grid-template-columns: 1fr;
       }
 
@@ -471,7 +516,7 @@
             "name": "What is the sitting-rising test?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The sitting-rising test is a functional assessment in which a person sits down on the floor and rises back to standing, using as little support as possible. The original SRT is scored from 0 to 10."
+              "text": "The sitting-rising test is a functional assessment in which a person sits down on the floor and rises back to standing, using as little support as possible. The original SRT is [...]
             }
           },
           {
@@ -495,7 +540,7 @@
             "name": "Does a poor sitting-rising test mean that someone will die early?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Research has found an association between lower test performance and higher mortality risk in certain populations. The test should not be interpreted as a prediction that an individual will die early."
+              "text": "No. Research has found an association between lower test performance and higher mortality risk in certain populations. The test should not be interpreted as a prediction that an[...]
             }
           },
           {
@@ -503,7 +548,7 @@
             "name": "What should I do if I find it difficult to get up from the floor?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Difficulty may reflect reduced strength, balance, flexibility, joint pain or other functional limitations. If the difficulty is new, worsening, associated with pain, weakness, falls or walking difficulty, an appropriate clinical assessment is sensible."
+              "text": "Difficulty may reflect reduced strength, balance, flexibility, joint pain or other functional limitations. If the difficulty is new, worsening, associated with pain, weakness, f[...]
             }
           }
         ]
@@ -962,14 +1007,53 @@
     exercises rather than anything complicated.
   </p>
 
-  <ul>
-    <li>Progressive lower-limb strengthening</li>
-    <li>Repeated sit-to-stand practice when appropriate</li>
-    <li>Balance exercises</li>
-    <li>Walking and general physical activity suited to the person</li>
-    <li>Addressing painful knee or hip conditions</li>
-    <li>Physiotherapy when more structured rehabilitation is needed</li>
-  </ul>
+  <div class="rehab-pathway">
+
+    <div class="rehab-step">
+      <span class="rehab-number">01</span>
+      <div>
+        <h3>Build strength</h3>
+        <p>
+          Progressive lower-limb strengthening can help improve the ability
+          to stand, walk and perform everyday transfers.
+        </p>
+      </div>
+    </div>
+
+    <div class="rehab-step">
+      <span class="rehab-number">02</span>
+      <div>
+        <h3>Practice useful movements</h3>
+        <p>
+          Sit-to-stand practice and other functional exercises can help the
+          strength gained in exercise translate into everyday movement.
+        </p>
+      </div>
+    </div>
+
+    <div class="rehab-step">
+      <span class="rehab-number">03</span>
+      <div>
+        <h3>Work on balance and mobility</h3>
+        <p>
+          Balance exercises, walking and appropriate physical activity can
+          support confidence and functional mobility.
+        </p>
+      </div>
+    </div>
+
+    <div class="rehab-step">
+      <span class="rehab-number">04</span>
+      <div>
+        <h3>Address the reason for limitation</h3>
+        <p>
+          If pain, stiffness or another joint problem is limiting movement,
+          that underlying problem should also be assessed and managed.
+        </p>
+      </div>
+    </div>
+
+  </div>
 
   <p>
     If knee arthritis is limiting movement, for example, the goal is not
@@ -998,122 +1082,33 @@
         Fall Prevention After 60
       </a>
       <span>
-        Practical ways to protect mobility and independence as we age.
-      </span>
-    </div>
-
-    <div class="related-card">
-      <a href="/blog/walkingwitharthritis.html">
-        Is Walking Good for Arthritis?
-      </a>
-      <span>
-        How walking and regular movement can fit into arthritis management.
-      </span>
-    </div>
-
-    <div class="related-card">
-      <a href="/blog/elderly-joint-pain-mistakes.html">
-        Common Joint-Pain Mistakes in Older Adults
-      </a>
-      <span>
-        Common habits that can make maintaining mobility harder.
-      </span>
-    </div>
-
-    <div class="related-card">
-      <a href="/blog/early-arthritis-signs.html">
-        Early Signs of Knee Arthritis
-      </a>
-      <span>
-        Symptoms that may appear before arthritis begins to significantly
-        restrict daily activities.
-      </span>
-    </div>
-
-    <div class="related-card">
-      <a href="/blog/bone-health-after-50-chennai.html">
-        Bone Health After 50
-      </a>
-      <span>
-        Practical considerations for maintaining musculoskeletal health
-        with age.
+        Fall risk factors in older adults and practical strategies to reduce
+        fall risk and maintain independence.
       </span>
     </div>
 
   </div>
 
 
-  <h2>Where physiotherapy can fit in</h2>
-
-  <p>
-    If reduced strength, balance or mobility is the main limitation,
-    structured rehabilitation may be useful.
-  </p>
-
-  <p>
-    At <strong>OrthoCure Bone &amp; Joint Speciality Clinic, Thirumullaivoyal</strong>,
-    in-house physiotherapy can be coordinated with the orthopaedic assessment
-    so that the exercise programme matches the underlying problem.
-  </p>
-
-  <p>
-    <a href="/services/physiotherapy-thirumullaivoyal.html">
-      Learn more about physiotherapy at OrthoCure →
-    </a>
-  </p>
-
-
-  <h2>When knee pain is the limiting factor</h2>
-
-  <p>
-    If pain rather than weakness is preventing you from standing, walking,
-    climbing stairs or getting up from a chair, the underlying joint problem
-    deserves attention.
-  </p>
-
-  <p>
-    You can read more about
-    <a href="/services/knee-arthritis.html">knee arthritis management</a>
-    and how conservative treatment can be used before considering more
-    invasive options.
-  </p>
-
-
-  <h2>What if you are already unsure about your diagnosis?</h2>
-
-  <p>
-    A functional test is only one piece of the clinical picture. If you have
-    already been advised surgery or are unsure whether your symptoms require
-    an operation, a second opinion can help clarify the diagnosis, treatment
-    options and reasonable next steps.
-  </p>
-
-  <p>
-    <a href="/second-opinion.html">
-      Learn about a second opinion with Dr Sumesh Subramanian →
-    </a>
-  </p>
-
-
-  <div class="faq">
-
-    <h2>Frequently Asked Questions</h2>
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
 
     <div class="faq-item">
       <h3>What is the sitting-rising test?</h3>
       <p>
         The sitting-rising test is a functional assessment in which a person
-        sits down on the floor and rises back to standing while using as
-        little support as possible. The original SRT is scored from 0 to 10.
+        sits down on the floor and rises back to standing, using as little
+        support as possible. The original SRT scores both phases separately
+        and deducts points for hand, knee or other support used.
       </p>
     </div>
 
     <div class="faq-item">
       <h3>What does the sitting-rising test measure?</h3>
       <p>
-        It reflects several components of physical function, including
-        lower-limb strength, balance, flexibility, coordination and movement
-        control.
+        It reflects several aspects of physical function: lower-limb strength,
+        balance, flexibility, coordination and the ability to control movement
+        during a floor transfer.
       </p>
     </div>
 
@@ -1121,102 +1116,45 @@
       <h3>Is the sitting-rising test the same as a chair-rise test?</h3>
       <p>
         No. The floor sitting-rising test and chair-rise tests assess related
-        aspects of functional mobility but use different protocols.
+        aspects of functional mobility but use different movements and
+        assessment protocols.
       </p>
     </div>
 
     <div class="faq-item">
-      <h3>Does a poor sitting-rising test mean I will die early?</h3>
+      <h3>Does a poor sitting-rising test mean early death?</h3>
       <p>
-        No. Research has found an association between lower test performance
-        and higher mortality risk in certain populations. It should not be
-        interpreted as a personal prediction of lifespan.
+        No. Research has found an <em>association</em> between lower test
+        performance and higher mortality risk in certain populations. But
+        association is not the same as causation. The test is a measure of
+        physical function, not a life prediction.
       </p>
     </div>
 
     <div class="faq-item">
-      <h3>What if I cannot get up from the floor easily?</h3>
+      <h3>What should I do if I find it difficult to get up from the floor?</h3>
       <p>
-        Difficulty may relate to weakness, balance, flexibility, joint pain
-        or other functional limitations. If the problem is new, worsening,
-        or associated with falls, weakness, significant pain or walking
-        difficulty, an assessment is sensible.
+        Difficulty may reflect reduced strength, balance, flexibility, joint
+        pain or another functional limitation. If the difficulty is new,
+        worsening, associated with pain, weakness, falls or loss of everyday
+        independence, consider an assessment by an orthopaedic or medical
+        professional.
       </p>
     </div>
 
-  </div>
-
-
-  <div class="cta">
-
-    <h2>When should you get it checked?</h2>
-
-    <p>
-      If difficulty getting up, climbing stairs or walking is becoming part
-      of everyday life, it is worth understanding why rather than simply
-      accepting it as "age."
-    </p>
-
-    <p>
-      <strong>
-        Dr Sumesh Subramanian, Orthopaedic Surgeon, consults at
-        OrthoCure Bone &amp; Joint Speciality Clinic, Thirumullaivoyal.
-      </strong>
-    </p>
-
-    <p>
-      The clinic serves patients from
-      Thirumullaivoyal, Ambattur, Avadi and Annanur.
-    </p>
-
-    <p>
-      <a href="/consult.html">Consultation details →</a>
-      &nbsp;&nbsp;
-      <a href="/contact.html">Contact the clinic →</a>
-    </p>
-
-  </div>
+  </section>
 
 
   <div class="disclaimer">
-    <strong>A note about functional tests:</strong>
-    A sitting-rising or chair-rise score is not a diagnosis and should not be
-    used on its own to predict an individual's health outcome. Interpretation
-    depends on age, symptoms, physical condition and the reason the test is
-    being performed. If you have significant pain, weakness, dizziness,
-    balance problems or recent injury, do not force the movement simply to
-    obtain a score.
+    <p>
+      <strong>Disclaimer:</strong>
+      This article is educational content about functional mobility and the
+      sitting-rising test. It is not personalised medical advice. You should
+      discuss symptoms, medical concerns, function and treatment options with
+      a healthcare professional who knows your individual case before making
+      any decisions about your health care.
+    </p>
   </div>
-
-
-  <section class="sources">
-
-    <h2>References</h2>
-
-    <ol>
-      <li>
-        de Brito LBB, Ricardo DR, de Araújo DSM, et al.
-        Ability to sit and rise from the floor as a predictor of all-cause
-        mortality. European Journal of Preventive Cardiology.
-        2014;21(7):892–898.
-        DOI: 10.1177/2047487312471759.
-      </li>
-
-      <li>
-        Das S, Bagepally BS, Eerike M, et al.
-        Performance in a Balance Test and Prediction of All-Cause Mortality
-        in Community-Dwelling Elderly Ambulatory Individuals: A Systematic
-        Review and Meta-analysis. Research on Aging. 2024.
-      </li>
-
-      <li>
-        Stamatakis E, Gale J, Bauman A, et al.
-        Sitting time, physical activity and mortality risk: evidence from
-        large prospective cohort and meta-analytic research.
-      </li>
-    </ol>
-
-  </section>
 
 </article>
 
