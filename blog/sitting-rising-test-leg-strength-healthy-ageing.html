@@ -41,394 +41,449 @@
 
   <style>
     :root {
-      --primary: #173f5f;
-      --secondary: #2f6690;
-      --accent: #4f8fbf;
-      --light: #f5f8fa;
-      --lighter: #fafcfd;
-      --border: #dfe7ec;
-      --text: #24323d;
-      --muted: #64727d;
-      --success-bg: #edf7f1;
-      --warning-bg: #fff8e8;
-      --radius: 14px;
-      --shadow: 0 5px 22px rgba(23, 63, 95, 0.07);
+      --oc-navy: #123b56;
+      --oc-blue: #2d6f91;
+      --oc-teal: #3c8b87;
+      --oc-sky: #eaf4f7;
+      --oc-ice: #f6fafb;
+      --oc-green: #eaf6f0;
+      --oc-yellow: #fff7df;
+      --oc-text: #263640;
+      --oc-muted: #687780;
+      --oc-border: #dce7eb;
+      --oc-white: #ffffff;
+      --oc-radius: 18px;
+      --oc-radius-sm: 12px;
+      --oc-shadow: 0 12px 35px rgba(18, 59, 86, 0.08);
+      --oc-shadow-hover: 0 18px 45px rgba(18, 59, 86, 0.13);
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
+    /* Base */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
       margin: 0;
-      padding: 0;
-      background: #ffffff;
-      color: var(--text);
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Arial,
-        sans-serif;
-      line-height: 1.75;
-      font-size: 17px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--oc-ice);
+      color: var(--oc-text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height: 1.6;
+      font-size: 16px;
     }
 
+    /* Article container */
     article {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 24px 20px 70px;
+      max-width: 960px;
+      margin: 36px auto;
+      padding: 28px;
+      background: var(--oc-white);
+      border-radius: 20px;
+      box-shadow: var(--oc-shadow);
+      border: 1px solid var(--oc-border);
     }
 
-    h1,
-    h2,
-    h3 {
-      color: var(--primary);
-      line-height: 1.25;
-    }
-
-    h1 {
-      font-size: clamp(32px, 5vw, 48px);
-      margin: 20px 0 16px;
-    }
-
-    h2 {
-      font-size: 30px;
-      margin-top: 52px;
-      margin-bottom: 18px;
-    }
-
-    h3 {
-      font-size: 21px;
-      margin-top: 28px;
-    }
-
-    p {
-      margin: 0 0 18px;
-    }
-
-    a {
-      color: var(--secondary);
-      font-weight: 600;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-
+    /* Breadcrumb & eyebrow */
     .breadcrumb {
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 24px;
+      font-size: 13px;
+      color: var(--oc-muted);
+      margin-bottom: 14px;
     }
 
     .eyebrow {
       display: inline-block;
-      padding: 7px 12px;
-      background: var(--light);
+      padding: 8px 14px;
+      background: var(--oc-ice);
       border-radius: 999px;
-      color: var(--secondary);
+      color: var(--oc-blue);
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
     }
 
-    .intro {
-      font-size: 20px;
-      color: #40505b;
+    h1 {
+      margin: 14px 0 10px;
+      color: var(--oc-navy);
+      font-size: clamp(28px, 4.6vw, 40px);
+      line-height: 1.12;
+      letter-spacing: -0.01em;
     }
 
+    .intro {
+      font-size: 18px;
+      color: var(--oc-text);
+      margin-bottom: 18px;
+    }
+
+    /* Author box - professional attribution */
     .author-box {
       display: flex;
-      gap: 14px;
+      gap: 16px;
       align-items: center;
-      padding: 16px;
-      margin: 24px 0 30px;
-      background: var(--lighter);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      padding: 14px;
+      margin: 18px 0 26px;
+      background: linear-gradient(180deg, rgba(246,250,fb,0.6), rgba(246,250,fb,0.6));
+      border-radius: 12px;
+      border: 1px solid var(--oc-border);
     }
 
-    .author-box strong {
-      color: var(--primary);
-    }
+    .author-box strong { color: var(--oc-navy); display:block; }
+    .author-box a { color: var(--oc-blue); text-decoration: none; font-weight:600; }
 
-    figure {
-      margin: 32px 0;
+    /* Hero figure */
+    figure[data-image-role="hero"] {
+      margin: 22px 0;
+      border-radius: var(--oc-radius);
+      overflow: hidden;
+      box-shadow: var(--oc-shadow);
+      border: 1px solid var(--oc-border);
     }
-
-    figure img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: var(--radius);
-      background: #eef3f6;
-    }
+    figure img { display:block; width:100%; height:auto; border-radius: inherit; }
 
     figcaption {
-      margin-top: 9px;
-      color: var(--muted);
+      margin-top: 10px;
+      color: var(--oc-muted);
       font-size: 14px;
       line-height: 1.55;
+      padding: 8px 2px 0;
     }
 
+    /* Important distinction card */
     .data-card {
-      padding: 24px;
-      margin: 28px 0;
-      background: var(--light);
-      border-left: 5px solid var(--accent);
-      border-radius: 10px;
+      padding: 20px;
+      margin: 18px 0;
+      background: linear-gradient(180deg, var(--oc-sky), #fff);
+      border-left: 5px solid var(--oc-teal);
+      border-radius: 12px;
+      color: var(--oc-text);
     }
+    .data-card strong { color: var(--oc-navy); }
 
-    .data-card strong {
-      color: var(--primary);
-    }
-
+    /* Key points grid (will be used for 4-function cards styling) */
     .key-points {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
-      margin: 28px 0;
+      margin: 18px 0 24px;
     }
-
     .key-point {
-      padding: 20px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      background: #fff;
-      box-shadow: var(--shadow);
-    }
-
-    .key-point h3 {
-      margin-top: 0;
-      font-size: 19px;
-    }
-
-    .steps {
-      counter-reset: step;
-      padding: 0;
-      list-style: none;
-    }
-
-    .steps li {
-      counter-increment: step;
+      padding: 18px;
+      border: 1px solid var(--oc-border);
+      border-radius: var(--oc-radius-sm);
+      background: var(--oc-white);
+      box-shadow: 0 8px 20px rgba(18,59,86,0.04);
       position: relative;
-      padding: 18px 18px 18px 64px;
-      margin-bottom: 12px;
-      background: var(--lighter);
-      border: 1px solid var(--border);
-      border-radius: 12px;
+      overflow: hidden;
+      transition: transform .18s ease, box-shadow .18s ease;
     }
+    .key-point:hover { transform: translateY(-4px); box-shadow: var(--oc-shadow-hover); }
+    .key-point h3 { margin: 0 0 8px; color: var(--oc-navy); font-size: 18px; }
 
-    .steps li::before {
-      content: counter(step);
+    /* Component number label */
+    .component-number {
       position: absolute;
-      left: 18px;
-      top: 17px;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: #fff;
-      display: flex;
+      left: 16px;
+      top: 16px;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--oc-sky);
+      color: var(--oc-blue);
+      font-weight: 800;
+      font-size: 13px;
+      border: 1px solid var(--oc-border);
+      box-shadow: 0 6px 18px rgba(10,30,40,0.03);
+    }
+    .key-point p { margin: 10px 0 0 0; color: var(--oc-muted); padding-left: 64px; }
+
+    /* SRT scoring visual */
+    .srt-score-box {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, #ffffff, var(--oc-ice));
+      border: 1px solid var(--oc-border);
+      box-shadow: 0 8px 25px rgba(18,59,86,0.03);
+    }
+    .srt-score-heading { margin: 0 0 6px; color: var(--oc-navy); font-size: 18px; }
+    .srt-score-subtitle { margin: 0 0 12px; color: var(--oc-muted); font-size: 14px; }
+
+    .srt-score-flow {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
     }
 
-    .comparison {
+    .srt-score-card {
+      flex: 1 1 180px;
+      min-width: 140px;
+      padding: 14px;
+      background: var(--oc-white);
+      border: 1px solid var(--oc-border);
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(18,59,86,0.02);
+    }
+    .srt-score-card.srt-score-total { background: linear-gradient(180deg, #fff, var(--oc-sky)); border-left: 4px solid var(--oc-blue); }
+
+    .score-label {
+  display: block;
+  font-size: 14px;
+    .score-label { display:block; font-size: 14px; color: var(--oc-muted); margin-top:6px; }
+    .score-note { display:block; font-size:13px; color: var(--oc-muted); margin-top:8px; }
+
+    .srt-score-symbol {
+      font-weight:700;
+      color: var(--oc-muted);
+      font-size: 20px;
+      padding: 0 6px;
+    }
+
+    .srt-score-note {
+      margin-top: 12px;
+      color: var(--oc-muted);
+      font-size: 14px;
+    }
+
+    /* Education figure (image 2) */
+    figure.education-figure {
+      margin: 20px 0;
+      padding: 12px;
+      border-radius: 14px;
+      background: var(--oc-ice);
+      border: 1px solid var(--oc-border);
+      position: relative;
+      overflow: hidden;
+    }
+    figure.education-figure .education-label {
+      display: inline-block;
+      background: rgba(60,139,135,0.08);
+      color: var(--oc-teal);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-weight:700;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    figure.education-figure img { border-radius: 10px; display:block; width:100%; height:auto; margin-top:8px; }
+    figure.education-figure figcaption { margin-top:10px; color:var(--oc-muted); font-size:14px; }
+
+    /* Research stats */
+    .research-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .research-stat {
+      background: var(--oc-white);
+      border: 1px solid var(--oc-border);
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(18,59,86,0.02);
+    }
+        .research-stat strong {
+      display: block;
+      font-size: 26px;
+      line-height: 1.1;
+      color: var(--oc-navy);
+    }
+    .research-stat span { color:var(--oc-muted); font-size:12px; }
+
+    /* Caution box (evidence interpretation) */
+    .caution {
+      margin: 16px 0;
+      padding: 16px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #fffaf6, var(--oc-yellow));
+      border: 1px solid #f1e6c8;
+      color: var(--oc-text);
+    }
+    .caution strong { color: var(--oc-navy); }
+
+    /* Comparison wrap and table */
+    .comparison-wrap { margin: 16px 0; overflow-x: auto; border-radius: 12px; padding: 8px 0; }
+    table.comparison {
       width: 100%;
       border-collapse: collapse;
-      margin: 25px 0;
-      font-size: 15px;
+      min-width: 720px;
+      background: var(--oc-white);
     }
-
-    .comparison th,
-    .comparison td {
-      border: 1px solid var(--border);
-      padding: 13px;
+    .comparison th, .comparison td {
+      border: 1px solid var(--oc-border);
+      padding: 12px 14px;
       text-align: left;
       vertical-align: top;
+      font-size: 15px;
+      color: var(--oc-text);
     }
+    .comparison th { background: var(--oc-ice); color:var(--oc-navy); }
+    .test-name { display:block; font-weight:700; color:var(--oc-navy); }
+    .test-type { display:block; color:var(--oc-muted); font-size:13px; margin-top:6px; }
 
-    .comparison th {
-      background: var(--light);
-      color: var(--primary);
-    }
-
-    .reassurance {
-      background: var(--success-bg);
-      padding: 22px;
-      border-radius: var(--radius);
-      margin: 28px 0;
-    }
-
-    .caution {
-      background: var(--warning-bg);
-      padding: 22px;
-      border-radius: var(--radius);
-      margin: 28px 0;
-    }
-
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      margin: 28px 0 12px;
-      overflow: hidden;
-      border-radius: var(--radius);
-      background: #111;
-    }
-
-    .video-wrapper iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .video-caption {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 24px;
-    }
-
-    .related-grid {
+    /* Clinical reasons cards */
+    .clinical-reasons {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 14px;
-      margin: 25px 0;
+      margin: 14px 0 20px;
     }
+    .clinical-reason {
+      background: var(--oc-white);
+      border: 1px solid var(--oc-border);
+      border-radius: var(--oc-radius-sm);
+      padding: 14px;
+      box-shadow: 0 8px 20px rgba(18,59,86,0.02);
+    }
+    .clinical-reason-label {
+      display:inline-block;
+      font-size:12px;
+      color:var(--oc-teal);
+      font-weight:700;
+      margin-bottom:6px;
+    }
+    .clinical-reason h3 { margin:6px 0; color:var(--oc-navy); font-size:16px; }
 
-    .related-card {
+    /* Youtube feature */
+    .youtube-feature {
+      margin: 20px 0;
       padding: 18px;
-      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: linear-gradient(180deg, #fff, #fbfdff);
+      border: 1px solid var(--oc-border);
+      box-shadow: 0 10px 28px rgba(18,59,86,0.03);
+    }
+    .youtube-label {
+      display:inline-block;
+      background: #fff0f0;
+      color: #bf2b2b;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-weight:700;
+      font-size:13px;
+      margin-bottom:10px;
+    }
+    .youtube-feature-intro { color: var(--oc-muted); margin: 8px 0 12px; }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
       border-radius: 12px;
-      background: #fff;
+      background: #000;
+      margin-bottom: 10px;
+    }
+    .video-wrapper iframe { width:100%; height:100%; border:0; display:block; }
+
+    .youtube-watch-link {
+      color: var(--oc-blue);
+      text-decoration: none;
+      font-weight:600;
     }
 
-    .related-card a {
-      display: block;
-      margin-bottom: 6px;
+    /* Home test safety panel */
+    .home-test-panel {
+      margin: 18px 0;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid var(--oc-border);
+      background: linear-gradient(180deg, #fff, var(--oc-ice));
     }
-
-    .cta {
-      margin-top: 45px;
-      padding: 30px;
-      background: var(--primary);
-      color: #fff;
-      border-radius: var(--radius);
+    .home-test-header { display:flex; gap:12px; align-items:center; }
+    .home-test-icon {
+      display:inline-flex;
+      width:36px;
+      height:36px;
+      align-items:center;
+      justify-content:center;
+      border-radius:8px;
+      background: var(--oc-sky);
+      color: var(--oc-teal);
+      font-weight:800;
     }
+    .home-test-list { margin:12px 0 0 18px; color:var(--oc-text); }
+    .home-test-final { color:var(--oc-muted); margin-top:10px; }
 
-    .cta h2,
-    .cta h3 {
-      color: #fff;
-      margin-top: 0;
-    }
-
-    .cta a {
-      color: #fff;
-    }
-
-    .faq {
-      border-top: 1px solid var(--border);
-    }
-
-    .faq-item {
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .faq-item h3 {
-      margin: 0 0 8px;
-      font-size: 19px;
-    }
-
-    .sources {
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .disclaimer {
-      font-size: 14px;
-      color: var(--muted);
-      padding: 18px;
-      background: var(--light);
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-
-    .rehab-pathway {
+    /* Related grid cards */
+    .related-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin: 30px 0 28px;
+      gap: 12px;
+      margin: 18px 0;
     }
+    .related-card {
+      padding: 14px;
+      border-radius: 12px;
+      background: var(--oc-white);
+      border: 1px solid var(--oc-border);
+      box-shadow: 0 8px 22px rgba(18,59,86,0.02);
+      transition: transform .16s ease;
+    }
+    .related-card:hover { transform: translateY(-4px); box-shadow: var(--oc-shadow-hover); }
+    .related-card a { color:var(--oc-blue); text-decoration:none; font-weight:700; display:block; margin-bottom:8px; }
 
+    /* Rehab pathway (keep existing component but restyled) */
+    .rehab-pathway { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
     .rehab-step {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      padding: 22px 20px;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+      padding: 18px;
+      background: var(--oc-white);
+      border-radius: 12px;
+      border: 1px solid var(--oc-border);
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
     }
-
     .rehab-number {
-      flex: 0 0 34px;
-      width: 34px;
-      height: 34px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--light);
-      color: var(--secondary);
-      border-radius: 50%;
-      font-size: 10px;
-      font-weight: 800;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background: var(--oc-ice);
+      color: var(--oc-blue);
+      font-weight:800;
     }
 
-    .rehab-step h3 {
-      margin: 0 0 6px;
-      font-size: 18px;
-    }
+    /* FAQ styling - no JS accordion, just visual sections */
+    .faq { border-top: 1px solid var(--oc-border); margin-top: 18px; padding-top: 18px; }
+    .faq-item { padding: 14px 0; border-bottom: 1px solid var(--oc-border); }
+    .faq-item h3 { margin: 0 0 8px; color: var(--oc-navy); font-size:16px; }
+    .faq-item p { margin: 0; color: var(--oc-muted); }
 
-    .rehab-step p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.65;
-    }
+    /* Footer disclaimers */
+    .sources, .disclaimer { font-size: 14px; color: var(--oc-muted); margin-top: 14px; }
 
-    @media (max-width: 680px) {
-      body {
-        font-size: 16px;
-      }
-
-      article {
-        padding: 18px 16px 50px;
-      }
-
-      h2 {
-        font-size: 27px;
-        margin-top: 42px;
-      }
-
-      .key-points,
+    /* Responsive */
+    @media (max-width: 780px) {
+      article { margin: 18px; padding: 18px; }
+            .key-points,
       .related-grid,
+      .clinical-reasons,
       .rehab-pathway {
         grid-template-columns: 1fr;
       }
 
-      .author-box {
-        align-items: flex-start;
+      .research-stats {
+        grid-template-columns: repeat(2, 1fr);
       }
+      .srt-score-flow { flex-direction: column; align-items: stretch; }
+      .srt-score-symbol { text-align:center; }
+      .comparison-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      table.comparison { min-width: 620px; }
+      figcaption { font-size: 13px; }
+    }
 
-      .comparison {
-        display: block;
-        overflow-x: auto;
-      }
+    @media (min-width: 1400px) {
+      article { max-width: 1100px; }
+      .research-stats { grid-template-columns: repeat(4, 1fr); }
     }
   </style>
 
@@ -617,7 +672,6 @@
     </figcaption>
   </figure>
 
-
   <div class="data-card">
     <strong>The important distinction:</strong>
     the sitting-rising test is a measure of physical function — it is not a
@@ -640,6 +694,55 @@
     a total score from 0 to 10.
   </p>
 
+  <div class="srt-score-box">
+    <h3 class="srt-score-heading">
+      How is the Sitting-Rising Test scored?
+    </h3>
+
+    <p class="srt-score-subtitle">
+      In the original SRT, the sitting and rising phases are scored separately.
+    </p>
+
+    <div class="srt-score-flow">
+
+      <div class="srt-score-card">
+        <span class="score-number">0–5</span>
+        <span class="score-label">Sitting</span>
+        <span class="score-note">
+          How well you lower yourself to the floor.
+        </span>
+      </div>
+
+      <div class="srt-score-symbol" aria-hidden="true">+</div>
+
+      <div class="srt-score-card">
+        <span class="score-number">0–5</span>
+        <span class="score-label">Rising</span>
+        <span class="score-note">
+          How well you return to standing.
+        </span>
+      </div>
+
+      <div class="srt-score-symbol" aria-hidden="true">=</div>
+
+      <div class="srt-score-card srt-score-total">
+        <span class="score-number">0–10</span>
+        <span class="score-label">Total SRT Score</span>
+        <span class="score-note">
+          Higher scores indicate less need for support during the movement.
+        </span>
+      </div>
+
+    </div>
+
+    <p class="srt-score-note">
+      Points can be deducted when a person uses a hand, knee or other support
+      or shows instability during the movement. The score should be interpreted
+      in the context of the person's age, symptoms and physical ability.
+    </p>
+
+  </div>
+
   <p>
     That makes the test interesting from an orthopaedic perspective because
     the movement brings together several components of physical function
@@ -649,6 +752,7 @@
 
   <!-- IMAGE 2 -->
   <figure
+    class="education-figure"
     data-image-id="srt-components-02"
     data-image-role="education"
     data-image-purpose="Show the physical components involved in the sitting-rising movement"
@@ -656,6 +760,10 @@
     data-image-exif-title="Components of the Sitting Rising Test"
     data-image-exif-description="Illustration showing leg strength, balance, flexibility and coordination involved in floor sitting and rising."
     data-image-exif-keywords="leg strength, balance, flexibility, coordination, sitting rising test">
+
+    <span class="education-label">
+      What the movement requires
+    </span>
 
     <img
       src="/images/sitting-rising-test-leg-strength-balance-flexibility.jpg"
@@ -675,6 +783,15 @@
 
   <h2>Why is getting up from the floor such an interesting movement?</h2>
 
+  <div class="section-kicker">
+    Four things working together
+  </div>
+
+  <p class="components-intro">
+    The movement is more demanding than it looks. Your ability to get down
+    and back up depends on several physical systems working together.
+  </p>
+
   <p>
     In everyday Indian life, this ability can be surprisingly relevant.
     Sitting on the floor, getting up from a low seat, using stairs, getting
@@ -690,6 +807,7 @@
   <div class="key-points">
 
     <div class="key-point">
+      <span class="component-number">01</span>
       <h3>Leg strength</h3>
       <p>
         The hips, thighs and lower-leg muscles have to generate enough force
@@ -698,6 +816,7 @@
     </div>
 
     <div class="key-point">
+      <span class="component-number">02</span>
       <h3>Balance</h3>
       <p>
         The body has to remain controlled while the centre of mass moves
@@ -706,6 +825,7 @@
     </div>
 
     <div class="key-point">
+      <span class="component-number">03</span>
       <h3>Flexibility</h3>
       <p>
         Adequate movement at the hips, knees and ankles helps make the
@@ -714,6 +834,7 @@
     </div>
 
     <div class="key-point">
+      <span class="component-number">04</span>
       <h3>Coordination</h3>
       <p>
         Several joints and muscle groups have to work together rather than
@@ -732,6 +853,30 @@
     the floor sitting-rising test and were followed for a median of
     approximately 6.3 years.
   </p>
+
+  <div class="research-stats">
+
+    <div class="research-stat">
+      <strong>2,002</strong>
+      <span>adults studied</span>
+    </div>
+
+    <div class="research-stat">
+      <strong>51–80</strong>
+      <span>years of age</span>
+    </div>
+
+    <div class="research-stat">
+      <strong>6.3 yrs</strong>
+      <span>median follow-up</span>
+    </div>
+
+    <div class="research-stat">
+      <strong>0–10</strong>
+      <span>SRT score range</span>
+    </div>
+
+  </div>
 
   <p>
     The researchers found that lower SRT scores were associated with higher
@@ -808,47 +953,58 @@
 
   <h2>How is the sitting-rising test different from a chair-rise test?</h2>
 
-  <p>
-    These terms are sometimes used interchangeably online, but they are not
-    exactly the same assessment.
+  <p class="comparison-intro">
+    These tests assess related aspects of functional mobility, but they use
+    different movements and answer slightly different clinical questions.
   </p>
 
-  <table class="comparison">
-    <thead>
-      <tr>
-        <th>Test</th>
-        <th>Basic movement</th>
-        <th>What it broadly assesses</th>
-      </tr>
-    </thead>
+  <div class="comparison-wrap">
+    <table class="comparison">
+      <thead>
+        <tr>
+          <th>Test</th>
+          <th>Basic movement</th>
+          <th>What it broadly assesses</th>
+        </tr>
+      </thead>
 
-    <tbody>
-      <tr>
-        <td><strong>Sitting-Rising Test</strong></td>
-        <td>Floor → sitting → floor → standing</td>
-        <td>
-          Strength, balance, flexibility, coordination and functional
-          movement control.
-        </td>
-      </tr>
+      <tbody>
+        <tr>
+          <td>
+            <span class="test-name">Sitting-Rising Test</span>
+            <span class="test-type">Floor transfer</span>
+          </td>
+          <td>Floor → sitting → floor → standing</td>
+          <td>
+            Strength, balance, flexibility, coordination and functional
+            movement control.
+          </td>
+        </tr>
 
-      <tr>
-        <td><strong>5-Times Sit-to-Stand</strong></td>
-        <td>Chair → standing → sitting, repeated five times</td>
-        <td>
-          Functional lower-limb strength, power and transfer performance.
-        </td>
-      </tr>
+        <tr>
+          <td>
+            <span class="test-name">5-Times Sit-to-Stand</span>
+            <span class="test-type">Chair transfer</span>
+          </td>
+          <td>Chair → standing → sitting, repeated five times</td>
+          <td>
+            Functional lower-limb strength, power and transfer performance.
+          </td>
+        </tr>
 
-      <tr>
-        <td><strong>30-Second Chair Stand</strong></td>
-        <td>Repeated chair rises for 30 seconds</td>
-        <td>
-          Functional lower-body strength and endurance.
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        <tr>
+          <td>
+            <span class="test-name">30-Second Chair Stand</span>
+            <span class="test-type">Chair transfer</span>
+          </td>
+          <td>Repeated chair rises for 30 seconds</td>
+          <td>
+            Functional lower-body strength and endurance.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <p>
     These tests answer related but different questions. A clinician may choose
@@ -858,6 +1014,46 @@
 
 
   <h2>What can make getting up from the floor difficult?</h2>
+
+  <div class="clinical-reasons">
+
+    <div class="clinical-reason">
+      <span class="clinical-reason-label">Possible factor</span>
+      <h3>Pain</h3>
+      <p>
+        Knee, hip or back pain can make both lowering to the floor and
+        getting back up more difficult.
+      </p>
+    </div>
+
+    <div class="clinical-reason">
+      <span class="clinical-reason-label">Possible factor</span>
+      <h3>Reduced strength</h3>
+      <p>
+        Reduced strength around the thighs, hips or lower legs can limit
+        the ability to generate enough force to rise.
+      </p>
+    </div>
+
+    <div class="clinical-reason">
+      <span class="clinical-reason-label">Possible factor</span>
+      <h3>Stiffness</h3>
+      <p>
+        Reduced movement at the hips, knees or ankles can make the transition
+        mechanically more difficult.
+      </p>
+    </div>
+
+    <div class="clinical-reason">
+      <span class="clinical-reason-label">Possible factor</span>
+      <h3>Balance or confidence</h3>
+      <p>
+        Poor balance or fear of falling may cause someone to avoid or restrict
+        the movement even when strength is adequate.
+      </p>
+    </div>
+
+  </div>
 
   <p>
     There is rarely one single explanation.
@@ -923,37 +1119,48 @@
     useful movement and independence for as long as possible.
   </p>
 
+  <div class="youtube-feature">
 
-  <h2>Watch the 5-minute explanation</h2>
+    <span class="youtube-label">
+      5-minute video
+    </span>
 
-  <p>
-    If you want to see how the movement works and understand what it may tell
-    us about leg strength and functional mobility, I have explained the topic
-    in more detail in this 5-minute video.
-  </p>
+    <h2>
+      Watch the 5-minute explanation
+    </h2>
 
-  <div class="video-wrapper">
-    <iframe
-      src="https://www.youtube.com/embed/JmBjK12qEwI"
-      title="Sitting Rising Test: What It Tells You About Leg Strength - Dr Sumesh Subramanian"
-      loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
+    <p class="youtube-feature-intro">
+      Want to see the movement and understand what it may tell us about
+      leg strength, balance and functional mobility? I explain the test
+      and the research in this short video.
+    </p>
+
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/JmBjK12qEwI"
+        title="Sitting Rising Test: What It Tells You About Leg Strength - Dr Sumesh Subramanian"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p class="video-caption">
+      <strong>5-minute video:</strong>
+      Sitting Rising Test, leg strength and functional mobility — Dr Sumesh Subramanian.
+    </p>
+
+    <p>
+      <a
+        class="youtube-watch-link"
+        href="https://www.youtube.com/watch?v=JmBjK12qEwI"
+        target="_blank"
+        rel="noopener">
+        Watch on YouTube
+      </a>
+    </p>
+
   </div>
-
-  <p class="video-caption">
-    <strong>5-minute video:</strong>
-    Sitting Rising Test, leg strength and functional mobility — Dr Sumesh Subramanian.
-  </p>
-
-  <p>
-    <a href="https://www.youtube.com/watch?v=JmBjK12qEwI"
-       target="_blank"
-       rel="noopener">
-      Watch the full video on YouTube →
-    </a>
-  </p>
 
 
   <h2>Should you try the test at home?</h2>
@@ -965,13 +1172,42 @@
     a good candidate for attempting it without supervision.
   </p>
 
-  <div class="reassurance">
-    <strong>The test is not a competition.</strong>
+  <div class="home-test-panel">
+
+    <div class="home-test-header">
+
+      <span class="home-test-icon" aria-hidden="true">
+        !
+      </span>
+
+      <h3>
+  A few situations need extra caution
+</h3>
+
+    </div>
+
     <p>
-      If you cannot perform it easily, there is no reason to panic. The more
-      useful step is to understand whether the difficulty comes from pain,
-      weakness, stiffness, balance or another functional limitation.
+      The floor test is not appropriate for everyone. It should not become
+      a challenge that someone feels they have to complete at any cost.
     </p>
+
+    <ul class="home-test-list">
+
+      <li>Significant knee or hip pain</li>
+      <li>Recent surgery or injury</li>
+      <li>Severe weakness</li>
+      <li>Dizziness or balance problems</li>
+      <li>Previous falls</li>
+      <li>Difficulty getting safely down to the floor</li>
+
+    </ul>
+
+    <p class="home-test-final">
+      If any of these apply, it is safer to discuss your mobility with a
+      clinician or physiotherapist rather than forcing the movement simply
+      to obtain a score.
+    </p>
+
   </div>
 
 
@@ -998,162 +1234,149 @@
     painful joint, balance work or another approach is appropriate.
   </p>
 
-
-  <h2>What can help improve functional leg strength?</h2>
-
-  <p>
-    Management depends on why the movement is difficult. In many people,
-    improving strength and function can begin with simple, progressive
-    exercises rather than anything complicated.
-  </p>
-
+  <!-- The existing rehab-pathway component is preserved (do not duplicate) -->
   <div class="rehab-pathway">
-
     <div class="rehab-step">
-      <span class="rehab-number">01</span>
+      <div class="rehab-number">01</div>
       <div>
         <h3>Build strength</h3>
-        <p>
-          Progressive lower-limb strengthening can help improve the ability
-          to stand, walk and perform everyday transfers.
-        </p>
+        <p>Targeted strengthening, particularly of the quadriceps and hips.</p>
       </div>
     </div>
+      <div class="data-card">
 
-    <div class="rehab-step">
-      <span class="rehab-number">02</span>
-      <div>
-        <h3>Practice useful movements</h3>
-        <p>
-          Sit-to-stand practice and other functional exercises can help the
-          strength gained in exercise translate into everyday movement.
-        </p>
-      </div>
-    </div>
+    <strong>When structured rehabilitation may help:</strong>
 
-    <div class="rehab-step">
-      <span class="rehab-number">03</span>
-      <div>
-        <h3>Work on balance and mobility</h3>
-        <p>
-          Balance exercises, walking and appropriate physical activity can
-          support confidence and functional mobility.
-        </p>
-      </div>
-    </div>
+    <p>
+      If weakness, balance problems, stiffness or reduced mobility are
+      affecting everyday activities, a structured physiotherapy programme
+      may help us work on strength, movement control and functional recovery.
+    </p>
 
-    <div class="rehab-step">
-      <span class="rehab-number">04</span>
-      <div>
-        <h3>Address the reason for limitation</h3>
-        <p>
-          If pain, stiffness or another joint problem is limiting movement,
-          that underlying problem should also be assessed and managed.
-        </p>
-      </div>
-    </div>
+    <p>
+      At
+      <a href="/services/physiotherapy-thirumullaivoyal.html">
+        OrthoCure Bone &amp; Joint Speciality Clinic, Thirumullaivoyal
+      </a>,
+      Dr Sumesh Subramanian can assess the underlying problem and guide
+      rehabilitation when appropriate.
+    </p>
 
   </div>
 
-  <p>
-    If knee arthritis is limiting movement, for example, the goal is not
-    automatically surgery. Conservative measures such as appropriate
-    exercise, weight management and symptom control are important parts of
-    care, with escalation considered when genuinely necessary.
-  </p>
-
-
-  <h2>Related reading from Dr Sumesh Subramanian</h2>
-
-  <div class="related-grid">
-
-    <div class="related-card">
-      <a href="/blog/knee-pain-climbing-stairs-sit-to-stand-chennai.html">
-        Knee Pain While Climbing Stairs and Sit-to-Stand
-      </a>
-      <span>
-        Why stairs and getting up from a chair can expose problems with
-        knee function.
-      </span>
+    <div class="rehab-step">
+      <div class="rehab-number">02</div>
+      <div>
+        <h3>Practice useful movements</h3>
+        <p>Train functional transfers and floor-to-stand sequences safely.</p>
+      </div>
     </div>
+
+    <div class="rehab-step">
+      <div class="rehab-number">03</div>
+      <div>
+        <h3>Work on balance and mobility</h3>
+        <p>Balance retraining and mobility exercises for ankles and hips.</p>
+      </div>
+    </div>
+
+    <div class="rehab-step">
+      <div class="rehab-number">04</div>
+      <div>
+        <h3>Address the reason for limitation</h3>
+        <p>Treat pain, stiffness or medical issues contributing to limitation.</p>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="related-grid">
 
     <div class="related-card">
       <a href="/blog/fall-prevention-after-60.html">
         Fall Prevention After 60
       </a>
-      <span>
-        Fall risk factors in older adults and practical strategies to reduce
-        fall risk and maintain independence.
-      </span>
+      <div class="related-excerpt">
+        Practical ways to maintain balance, mobility and confidence as we age.
+      </div>
+    </div>
+
+    <div class="related-card">
+      <a href="/blog/knee-damaging-habits.html">
+        Habits That Can Affect Your Knees
+      </a>
+      <div class="related-excerpt">
+        Everyday habits that may contribute to knee discomfort and reduced function.
+      </div>
+    </div>
+
+    <div class="related-card">
+      <a href="/blog/ankle-sprain-twisted-ankle-thirumullaivoyal.html">
+        Ankle Sprain and Twisted Ankle
+      </a>
+      <div class="related-excerpt">
+        Understanding ankle injuries and why mobility and balance matter during recovery.
+      </div>
+    </div>
+
+    <div class="related-card">
+      <a href="/blog/leg-pain-sciatica-thirumullaivoyal.html">
+        Leg Pain and Sciatica
+      </a>
+      <div class="related-excerpt">
+        When leg symptoms may come from the spine rather than the knee or hip.
+      </div>
     </div>
 
   </div>
 
 
-  <section class="faq">
-    <h2>Frequently asked questions</h2>
+  <h2>When should you get your mobility assessed?</h2>
 
+  <p>
+    If you notice new difficulty getting down to or up from the floor, it is reasonable to discuss this with a clinician or physiotherapist.
+  </p>
+
+  <p>
+    <strong>Dr Sumesh Subramanian</strong><br>
+    Orthopaedic Surgeon<br>
+    OrthoCure Bone &amp; Joint Speciality Clinic, Thirumullaivoyal
+  </p>
+
+
+  <div class="faq" id="faq">
     <div class="faq-item">
       <h3>What is the sitting-rising test?</h3>
-      <p>
-        The sitting-rising test is a functional assessment in which a person
-        sits down on the floor and rises back to standing, using as little
-        support as possible. The original SRT scores both phases separately
-        and deducts points for hand, knee or other support used.
-      </p>
+      <p>The sitting-rising test is a functional assessment in which a person sits down on the floor and rises back to standing, using as little support as possible. The original SRT is [...]</p>
     </div>
 
     <div class="faq-item">
       <h3>What does the sitting-rising test measure?</h3>
-      <p>
-        It reflects several aspects of physical function: lower-limb strength,
-        balance, flexibility, coordination and the ability to control movement
-        during a floor transfer.
-      </p>
+      <p>It reflects several aspects of physical function, including lower-limb strength, balance, flexibility, coordination and the ability to control movement during a floor transfer.</p>
     </div>
 
     <div class="faq-item">
       <h3>Is the sitting-rising test the same as a chair-rise test?</h3>
-      <p>
-        No. The floor sitting-rising test and chair-rise tests assess related
-        aspects of functional mobility but use different movements and
-        assessment protocols.
-      </p>
+      <p>No. The floor sitting-rising test and chair-rise tests assess related aspects of functional mobility but are different assessments with different protocols.</p>
     </div>
 
     <div class="faq-item">
-      <h3>Does a poor sitting-rising test mean early death?</h3>
-      <p>
-        No. Research has found an <em>association</em> between lower test
-        performance and higher mortality risk in certain populations. But
-        association is not the same as causation. The test is a measure of
-        physical function, not a life prediction.
-      </p>
+      <h3>Does a poor sitting-rising test mean that someone will die early?</h3>
+      <p>No. Research has found an association between lower test performance and higher mortality risk in certain populations. The test should not be interpreted as a prediction that an individual's life expectancy is reduced — it is a marker of functional capacity.</p>
     </div>
 
     <div class="faq-item">
       <h3>What should I do if I find it difficult to get up from the floor?</h3>
-      <p>
-        Difficulty may reflect reduced strength, balance, flexibility, joint
-        pain or another functional limitation. If the difficulty is new,
-        worsening, associated with pain, weakness, falls or loss of everyday
-        independence, consider an assessment by an orthopaedic or medical
-        professional.
-      </p>
+      <p>Difficulty may reflect reduced strength, balance, flexibility, joint pain or other functional limitations. If the difficulty is new, worsening, associated with pain, weakness, falls or loss of independence, seek assessment.</p>
     </div>
-
-  </section>
-
+  </div>
 
   <div class="disclaimer">
-    <p>
-      <strong>Disclaimer:</strong>
-      This article is educational content about functional mobility and the
-      sitting-rising test. It is not personalised medical advice. You should
-      discuss symptoms, medical concerns, function and treatment options with
-      a healthcare professional who knows your individual case before making
-      any decisions about your health care.
-    </p>
+    The content here is general information and does not replace an individual clinical assessment.
+  </div>
+
+  <div class="sources">
+    Sources and further reading are available on request.
   </div>
 
 </article>
