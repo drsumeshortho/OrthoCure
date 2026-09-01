@@ -134,6 +134,58 @@
     }
     .faq summary{font-weight:700; cursor:pointer; color:#1f344f}
 
+    /* Related reading */
+.related-reading{
+  margin:2.5rem 0 3rem;
+}
+
+.related-reading h2{
+  margin:0 0 1.25rem;
+  font-size:28px;
+  color:var(--ink);
+}
+
+.related-links{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.related-links a{
+  display:block;
+  background:#fff;
+  border:1px solid #e7ecf4;
+  border-radius:12px;
+  padding:16px;
+  color:var(--ink);
+  text-decoration:none;
+  box-shadow:0 4px 14px rgba(10,35,66,.05);
+}
+
+.related-links a:hover{
+  border-color:#b9ccdf;
+}
+
+.related-links strong{
+  display:block;
+  margin-bottom:6px;
+  font-size:17px;
+  line-height:1.4;
+}
+
+.related-links span{
+  display:block;
+  font-size:15px;
+  line-height:1.55;
+  color:#5b6777;
+}
+
+@media (max-width:700px){
+  .related-links{
+    grid-template-columns:1fr;
+  }
+}
+
     .meta{display:flex; gap:12px; flex-wrap:wrap; color:#3a5270; font-size:15px}
     .toolbar{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:10px}
     .toolbtn{background:#fff; border:1px solid #d8e1ef; padding:8px 10px; border-radius:10px; cursor:pointer; font-size:15px}
